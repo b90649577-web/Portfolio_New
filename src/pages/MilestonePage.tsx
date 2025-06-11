@@ -1,27 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Calendar, 
-  Filter, 
-  Search, 
-  ExternalLink, 
-  Award, 
-  Briefcase, 
-  Code, 
-  GraduationCap, 
-  Users, 
-  BookOpen, 
-  Target, 
-  Lightbulb,
-  ChevronDown,
-  ChevronUp,
-  Download,
-  FileText,
-  Link as LinkIcon,
-  Certificate,
-  Presentation,
-  Folder
-} from 'lucide-react';
+import { Calendar, Filter, Search, ExternalLink, Award, Briefcase, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, ChevronDown, ChevronUp, Download, FileText, Link as LinkIcon, AlignCenterVertical as Certificate, Presentation, Folder } from 'lucide-react';
 import SectionHeading from '../components/common/SectionHeading';
 import { useTheme } from '../components/ThemeProvider';
 import { 
