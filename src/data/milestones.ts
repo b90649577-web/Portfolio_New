@@ -1,4 +1,4 @@
-import { Calendar, Award, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, Briefcase, Github, ExternalLink, Download, FileText, Link as LinkIcon, Certificate, Presentation, Folder } from 'lucide-react';
+import { Calendar, Award, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, Briefcase, Github, ExternalLink, Download, FileText, Link as LinkIcon, AlignCenterVertical as Certificate, Presentation, Folder } from 'lucide-react';
 
 export interface Milestone {
   id: string;
