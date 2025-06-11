@@ -8,6 +8,18 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const experienceList = [
   {
+    title: 'SSOC Contributor Season 4',
+    company: 'Social Summer Of Code',
+    location: 'India (Remote)',
+    date: 'Jun 2025 - Present',
+    logo: '/ssoc.png',
+    description: [
+      'Selected as a contributor for Script Summer of Code Season 4',
+      'Contributing to open source projects and collaborative development initiatives',
+      'Participating in community-driven software development and learning programs'
+    ],
+  },
+  {
     title: 'Campus Ambassador',
     company: 'International Model United Nations Association (IMUNA)',
     location: 'India',
@@ -15,7 +27,8 @@ const experienceList = [
     logo: '/imuna.png',
     description: [
       'Computer Information Systems and Statistical Data Analysis',
-      'Full-time role representing IMUNA'
+      'Full-time role representing IMUNA',
+      'Facilitating Model United Nations events and promoting international diplomacy education'
     ],
   },
   {
@@ -27,18 +40,19 @@ const experienceList = [
     description: [
       'Information Technology Infrastructure',
       'Statistical Data Analysis',
-      'Remote full-time position'
+      'Remote full-time position promoting IIT Madras programs and initiatives'
     ],
   },
   {
     title: 'Campus Ambassador',
     company: 'Indian Institute of Technology, Roorkee',
     location: 'India (Remote)',
-    date: 'Mar 2025- Apr 2025',
+    date: 'Mar 2025 - Apr 2025',
     logo: '/iitr.png',
     description: [
       'Represented Cognizance 2025',
-      'Managed student engagement and event promotion'
+      'Managed student engagement and event promotion',
+      'Coordinated technical fest activities and student participation'
     ],
   },
   {
@@ -49,7 +63,44 @@ const experienceList = [
     logo: '/iitd.png',
     description: [
       'Kaizen 2025 program representative',
-      'Coordinated between institution and student body'
+      'Coordinated between institution and student body',
+      'Promoted technical and cultural fest activities'
+    ],
+  },
+  {
+    title: 'Campus Ambassador',
+    company: 'Wayspire',
+    location: 'India (Remote)',
+    date: 'Dec 2024 - Jan 2025',
+    logo: '/wayspire.png',
+    description: [
+      'Represented Wayspire educational initiatives',
+      'Promoted skill development and career guidance programs',
+      'Facilitated student engagement and community building activities'
+    ],
+  },
+  {
+    title: 'GSSOC 2024 Contributor',
+    company: 'GirlScript Summer of Code',
+    location: 'Remote',
+    date: 'Oct 2024 - Nov 2024',
+    logo: '/gssoc.png',
+    description: [
+      'Contributed to open source projects during GirlScript Summer of Code 2024',
+      'Collaborated with developers worldwide on meaningful software projects',
+      'Enhanced coding skills through mentorship and peer collaboration'
+    ],
+  },
+  {
+    title: 'Campus Ambassador',
+    company: 'Lets Upgrad',
+    location: 'India (Remote)',
+    date: 'Jul 2024 - Aug 2024',
+    logo: '/letsupgrad.png',
+    description: [
+      'Promoted upskilling and professional development programs',
+      'Facilitated student engagement with career advancement opportunities',
+      'Organized workshops and information sessions for skill enhancement'
     ],
   },
   {
