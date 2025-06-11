@@ -1,18 +1,21 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Filter, Search, ExternalLink, Award, Briefcase, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, ChevronDown, ChevronUp, Download, FileText, Link as LinkIcon, AlignCenterVertical as Certificate, Presentation, Folder } from 'lucide-react';
+import { Calendar, Filter, Search, ExternalLink, Award, Briefcase, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, ChevronDown, ChevronUp, Download, FileText, Link as LinkIcon, Certificate, Presentation, Folder, Github, Globe } from 'lucide-react';
 import SectionHeading from '../components/common/SectionHeading';
 import { useTheme } from '../components/ThemeProvider';
 import { 
   milestones, 
   resources, 
+  projectResources,
   getMilestonesByYear, 
   getResourcesByYear, 
   getUniqueYears, 
   getUniqueTypes, 
   getUniqueResourceTypes,
+  getAllProjectsAlphabetically,
   type Milestone,
-  type Resource
+  type Resource,
+  type ProjectResource
 } from '../data/milestones';
 
 const getTypeIcon = (type: string) => {
@@ -63,6 +66,16 @@ const getResourceTypeColor = (type: string) => {
     case 'portfolio': return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
     case 'code': return 'bg-orange-500/20 text-orange-400 border-orange-500/30';
     case 'presentation': return 'bg-pink-500/20 text-pink-400 border-pink-500/30';
+    default: return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
+  }
+};
+
+const getCategoryColor = (category: string) => {
+  switch (category) {
+    case 'professional': return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+    case 'advanced': return 'bg-red-500/20 text-red-400 border-red-500/30';
+    case 'intermediate': return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30';
+    case 'beginner': return 'bg-green-500/20 text-green-400 border-green-500/30';
     default: return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
   }
 };
@@ -210,6 +223,82 @@ const ResourceCard: React.FC<{ resource: Resource; index: number }> = ({ resourc
   );
 };
 
+const ProjectResourceCard: React.FC<{ project: ProjectResource; index: number }> = ({ project, index }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.02 }}
+      viewport={{ once: true }}
+      className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl p-4 border border-teal-200 dark:border-teal-800 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 group"
+    >
+      {/* Header */}
+      <div className="flex items-start justify-between mb-3">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center">
+            <Globe className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+          </div>
+          <div>
+            <h4 className="text-base font-semibold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+              {project.title}
+            </h4>
+          </div>
+        </div>
+        
+        <div className={`flex items-center gap-1 px-2 py-1 rounded-full border text-xs font-medium ${getCategoryColor(project.category)}`}>
+          {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
+        </div>
+      </div>
+      
+      {/* Description */}
+      <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+        {project.description}
+      </p>
+      
+      {/* Tags */}
+      <div className="flex flex-wrap gap-1 mb-4">
+        {project.tags.slice(0, 4).map((tag) => (
+          <span
+            key={tag}
+            className="text-xs px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full border border-teal-200 dark:border-teal-700"
+          >
+            {tag}
+          </span>
+        ))}
+        {project.tags.length > 4 && (
+          <span className="text-xs text-gray-500 dark:text-gray-400">
+            +{project.tags.length - 4} more
+          </span>
+        )}
+      </div>
+      
+      {/* Actions */}
+      <div className="flex gap-2">
+        {project.githubUrl && (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 px-3 py-1.5 bg-gray-900 dark:bg-gray-800 text-white rounded-lg text-xs font-medium hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors"
+          >
+            <Github size={12} /> GitHub
+          </a>
+        )}
+        {project.demoUrl && (
+          <a
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 px-3 py-1.5 bg-teal-600 text-white rounded-lg text-xs font-medium hover:bg-teal-700 transition-colors"
+          >
+            <ExternalLink size={12} /> Demo
+          </a>
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
 const YearSection: React.FC<{ 
   year: string; 
   milestones: Milestone[]; 
@@ -221,11 +310,11 @@ const YearSection: React.FC<{
     <div className="mb-6">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-4 bg-light-card dark:bg-dark-card rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary-500/50 transition-all duration-300"
+        className="w-full flex items-center justify-between p-4 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-all duration-300"
       >
         <div className="flex items-center gap-4">
-          <h2 className="text-2xl font-bold text-primary-500">{year}</h2>
-          <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+          <h2 className="text-2xl font-bold">{year}</h2>
+          <div className="flex items-center gap-4 text-sm">
             <span>{milestones.length} milestones</span>
             <span>{resources.length} resources</span>
           </div>
@@ -273,18 +362,18 @@ const YearSection: React.FC<{
 };
 
 const MilestonePage = () => {
-  const [activeTab, setActiveTab] = useState<'milestones' | 'resources'>('milestones');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string>('');
   const [selectedYear, setSelectedYear] = useState<string>('');
   const [expandedYears, setExpandedYears] = useState<Set<string>>(new Set(['2025']));
+  const [projectSearchQuery, setProjectSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   
   const years = getUniqueYears();
-  const types = activeTab === 'milestones' ? getUniqueTypes() : getUniqueResourceTypes();
+  const types = getUniqueTypes();
   
-  const filteredData = useMemo(() => {
-    const data = activeTab === 'milestones' ? milestones : resources;
-    return data.filter(item => {
+  const filteredMilestones = useMemo(() => {
+    return milestones.filter(item => {
       const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            item.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -294,17 +383,29 @@ const MilestonePage = () => {
       
       return matchesSearch && matchesType && matchesYear;
     });
-  }, [searchQuery, selectedType, selectedYear, activeTab]);
+  }, [searchQuery, selectedType, selectedYear]);
+
+  const filteredProjects = useMemo(() => {
+    return getAllProjectsAlphabetically().filter(project => {
+      const matchesSearch = project.title.toLowerCase().includes(projectSearchQuery.toLowerCase()) ||
+                           project.description.toLowerCase().includes(projectSearchQuery.toLowerCase()) ||
+                           project.tags.some(tag => tag.toLowerCase().includes(projectSearchQuery.toLowerCase()));
+      
+      const matchesCategory = selectedCategory === '' || project.category === selectedCategory;
+      
+      return matchesSearch && matchesCategory;
+    });
+  }, [projectSearchQuery, selectedCategory]);
   
   const stats = useMemo(() => {
     const totalMilestones = milestones.length;
     const totalResources = resources.length;
+    const totalProjects = projectResources.length;
     const projectCount = milestones.filter(m => m.type === 'project').length;
     const eventCount = milestones.filter(m => m.type === 'event').length;
     const achievementCount = milestones.filter(m => m.type === 'achievement').length;
-    const certificateCount = resources.filter(r => r.type === 'certificate').length;
     
-    return { totalMilestones, totalResources, projectCount, eventCount, achievementCount, certificateCount };
+    return { totalMilestones, totalResources, totalProjects, projectCount, eventCount, achievementCount };
   }, []);
 
   const toggleYear = (year: string) => {
@@ -355,34 +456,8 @@ const MilestonePage = () => {
           <div className="text-xs text-gray-600 dark:text-gray-400">Resources</div>
         </div>
         <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-orange-500 mb-1">{stats.certificateCount}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Certificates</div>
-        </div>
-      </div>
-
-      {/* Tabs */}
-      <div className="flex items-center justify-center mb-8">
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-1 border border-gray-200 dark:border-gray-800">
-          <button
-            onClick={() => setActiveTab('milestones')}
-            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-              activeTab === 'milestones'
-                ? 'bg-primary-500 text-white shadow-md'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-            }`}
-          >
-            Milestones
-          </button>
-          <button
-            onClick={() => setActiveTab('resources')}
-            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-              activeTab === 'resources'
-                ? 'bg-primary-500 text-white shadow-md'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-            }`}
-          >
-            Resources
-          </button>
+          <div className="text-2xl font-bold text-teal-500 mb-1">{stats.totalProjects}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">All Projects</div>
         </div>
       </div>
 
@@ -394,7 +469,7 @@ const MilestonePage = () => {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
             <input
               type="text"
-              placeholder={`Search ${activeTab}...`}
+              placeholder="Search milestones..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="form-input pl-10"
@@ -445,41 +520,30 @@ const MilestonePage = () => {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="space-y-6">
+      {/* Milestones by Year */}
+      <div className="space-y-6 mb-16">
         {years.map(year => {
-          const yearMilestones = activeTab === 'milestones' 
-            ? filteredData.filter(item => item.year === year)
-            : getMilestonesByYear(year).filter(m => 
-                selectedType === '' || m.type === selectedType
-              ).filter(m =>
-                searchQuery === '' || 
-                m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                m.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                m.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-              );
+          const yearMilestones = getMilestonesByYear(year).filter(m => {
+            const matchesSearch = searchQuery === '' || 
+              m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              m.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              m.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+            
+            const matchesType = selectedType === '' || m.type === selectedType;
+            
+            return matchesSearch && matchesType;
+          });
           
-          const yearResources = activeTab === 'resources'
-            ? filteredData.filter(item => item.year === year)
-            : getResourcesByYear(year).filter(r =>
-                selectedType === '' || r.type === selectedType
-              ).filter(r =>
-                searchQuery === '' ||
-                r.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                r.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                r.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-              );
+          const yearResources = getResourcesByYear(year);
 
-          if (activeTab === 'milestones' && yearMilestones.length === 0) return null;
-          if (activeTab === 'resources' && yearResources.length === 0) return null;
-          if (activeTab === 'milestones' && yearMilestones.length === 0 && yearResources.length === 0) return null;
+          if (yearMilestones.length === 0 && yearResources.length === 0) return null;
 
           return (
             <YearSection
               key={year}
               year={year}
-              milestones={activeTab === 'milestones' ? yearMilestones as Milestone[] : getMilestonesByYear(year)}
-              resources={activeTab === 'resources' ? yearResources as Resource[] : getResourcesByYear(year)}
+              milestones={yearMilestones}
+              resources={yearResources}
               isExpanded={expandedYears.has(year)}
               onToggle={() => toggleYear(year)}
             />
@@ -487,10 +551,81 @@ const MilestonePage = () => {
         })}
       </div>
 
-      {filteredData.length === 0 && (
+      {/* Resource Vault Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="mt-16"
+      >
+        <div className="flex items-center gap-3 mb-8">
+          <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center">
+            <Folder className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+          </div>
+          <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400">Resource Vault</h2>
+        </div>
+
+        <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/10 dark:to-cyan-900/10 rounded-2xl p-6 border border-teal-200 dark:border-teal-800 mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-6 h-6 bg-teal-500/20 rounded-lg flex items-center justify-center">
+              <Code className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-teal-800 dark:text-teal-200">All Resources</h3>
+          </div>
+          
+          <p className="text-teal-700 dark:text-teal-300 mb-6">
+            Explore all {stats.totalProjects} projects I've built over the years, organized alphabetically. 
+            Each project includes source code access and relevant technologies used.
+          </p>
+
+          {/* Project Filters */}
+          <div className="flex flex-col md:flex-row gap-4 mb-6">
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500" size={20} />
+              <input
+                type="text"
+                placeholder="Search projects..."
+                value={projectSearchQuery}
+                onChange={(e) => setProjectSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              />
+            </div>
+            
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="px-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent min-w-[150px]"
+            >
+              <option value="">All Categories</option>
+              <option value="professional">Professional</option>
+              <option value="advanced">Advanced</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="beginner">Beginner</option>
+            </select>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredProjects.map((project, index) => (
+              <ProjectResourceCard key={project.id} project={project} index={index} />
+            ))}
+          </div>
+
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-teal-600 dark:text-teal-400">
+                No projects found matching your criteria.
+              </p>
+            </div>
+          )}
+        </div>
+      </motion.div>
+
+      {filteredMilestones.length === 0 && searchQuery && (
         <div className="text-center py-12">
           <p className="text-gray-500 dark:text-gray-400">
-            No {activeTab} found matching your criteria.
+            No milestones found matching your criteria.
           </p>
         </div>
       )}
