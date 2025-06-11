@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Filter, Search, ExternalLink, Award, Briefcase, Code, GraduationCap, Users, BookOpen, Target, Lightbulb, ChevronDown, ChevronUp, Download, FileText, Link as LinkIcon, AlignCenterVertical as Certificate, Presentation, Folder, Github, Globe } from 'lucide-react';
 import SectionHeading from '../components/common/SectionHeading';
+import MetaTags from '../components/SEO/MetaTags';
 import { useTheme } from '../components/ThemeProvider';
 import { 
   milestones, 
@@ -426,210 +427,241 @@ const MilestonePage = () => {
     setExpandedYears(new Set());
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Brajesh Kumar Professional Milestones and Projects",
+    "description": "Comprehensive timeline of professional milestones, achievements, and project resources",
+    "numberOfItems": stats.totalMilestones + stats.totalProjects,
+    "itemListElement": [
+      {
+        "@type": "Achievement",
+        "name": "OpenAI Academy Launch Attendance",
+        "description": "Attended OpenAI Academy launch at The Oberoi, Delhi",
+        "dateAchieved": "2025-06"
+      },
+      {
+        "@type": "Achievement", 
+        "name": "SSOC Season 4 Contributor",
+        "description": "Selected as contributor for Script Summer of Code Season 4",
+        "dateAchieved": "2025-06"
+      }
+    ]
+  };
+
   return (
-    <div className="container-section">
-      <SectionHeading
-        title="My Journey & Resources"
-        subtitle="A comprehensive timeline of my professional growth, projects, achievements, and important resources"
+    <>
+      <MetaTags
+        title="Brajesh Kumar Milestones & Project Resources | Professional Journey Timeline"
+        description="Explore Brajesh Kumar's professional milestones, achievements, and comprehensive project resources. Timeline includes AI events, campus ambassador roles, 100+ projects, and career highlights from 2020-2025."
+        keywords="Brajesh Kumar milestones, professional timeline, project resources, achievements, campus ambassador, AI events, OpenAI Academy, SSOC contributor, career journey, project portfolio"
+        url="https://brajeshkumar.dev/#/milestones"
+        structuredData={structuredData}
       />
+      <div className="container-section">
+        <SectionHeading
+          title="My Journey & Resources"
+          subtitle="A comprehensive timeline of my professional growth, projects, achievements, and important resources"
+        />
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-12">
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-primary-500 mb-1">{stats.totalMilestones}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Total Milestones</div>
-        </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-green-500 mb-1">{stats.projectCount}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Projects</div>
-        </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-blue-500 mb-1">{stats.eventCount}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Events</div>
-        </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-yellow-500 mb-1">{stats.achievementCount}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Achievements</div>
-        </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-purple-500 mb-1">{stats.totalResources}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Resources</div>
-        </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-2xl font-bold text-teal-500 mb-1">{stats.totalProjects}</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">All Projects</div>
-        </div>
-      </div>
-
-      {/* Filters */}
-      <div className="mb-8">
-        <div className="flex flex-col md:flex-row gap-4 items-center mb-4">
-          {/* Search */}
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-            <input
-              type="text"
-              placeholder="Search milestones..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="form-input pl-10"
-            />
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-12">
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-primary-500 mb-1">{stats.totalMilestones}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">Total Milestones</div>
           </div>
-          
-          {/* Type Filter */}
-          <select
-            value={selectedType}
-            onChange={(e) => setSelectedType(e.target.value)}
-            className="form-input min-w-[150px]"
-          >
-            <option value="">All Types</option>
-            {types.map(type => (
-              <option key={type} value={type}>
-                {type.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-              </option>
-            ))}
-          </select>
-          
-          {/* Year Filter */}
-          <select
-            value={selectedYear}
-            onChange={(e) => setSelectedYear(e.target.value)}
-            className="form-input min-w-[120px]"
-          >
-            <option value="">All Years</option>
-            {years.map(year => (
-              <option key={year} value={year}>{year}</option>
-            ))}
-          </select>
-        </div>
-
-        {/* Expand/Collapse Controls */}
-        <div className="flex items-center gap-4">
-          <button
-            onClick={expandAll}
-            className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
-          >
-            Expand All
-          </button>
-          <button
-            onClick={collapseAll}
-            className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
-          >
-            Collapse All
-          </button>
-        </div>
-      </div>
-
-      {/* Milestones by Year */}
-      <div className="space-y-6 mb-16">
-        {years.map(year => {
-          const yearMilestones = getMilestonesByYear(year).filter(m => {
-            const matchesSearch = searchQuery === '' || 
-              m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              m.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              m.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-            
-            const matchesType = selectedType === '' || m.type === selectedType;
-            
-            return matchesSearch && matchesType;
-          });
-          
-          const yearResources = getResourcesByYear(year);
-
-          if (yearMilestones.length === 0 && yearResources.length === 0) return null;
-
-          return (
-            <YearSection
-              key={year}
-              year={year}
-              milestones={yearMilestones}
-              resources={yearResources}
-              isExpanded={expandedYears.has(year)}
-              onToggle={() => toggleYear(year)}
-            />
-          );
-        })}
-      </div>
-
-      {/* Resource Vault Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="mt-16"
-      >
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center">
-            <Folder className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-green-500 mb-1">{stats.projectCount}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">Projects</div>
           </div>
-          <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400">Resource Vault</h2>
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-blue-500 mb-1">{stats.eventCount}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">Events</div>
+          </div>
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-yellow-500 mb-1">{stats.achievementCount}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">Achievements</div>
+          </div>
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-purple-500 mb-1">{stats.totalResources}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">Resources</div>
+          </div>
+          <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+            <div className="text-2xl font-bold text-teal-500 mb-1">{stats.totalProjects}</div>
+            <div className="text-xs text-gray-600 dark:text-gray-400">All Projects</div>
+          </div>
         </div>
 
-        <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/10 dark:to-cyan-900/10 rounded-2xl p-6 border border-teal-200 dark:border-teal-800 mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-6 h-6 bg-teal-500/20 rounded-lg flex items-center justify-center">
-              <Code className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-            </div>
-            <h3 className="text-xl font-semibold text-teal-800 dark:text-teal-200">All Resources</h3>
-          </div>
-          
-          <p className="text-teal-700 dark:text-teal-300 mb-6">
-            Explore all {stats.totalProjects} projects I've built over the years, organized alphabetically. 
-            Each project includes source code access and relevant technologies used.
-          </p>
-
-          {/* Project Filters */}
-          <div className="flex flex-col md:flex-row gap-4 mb-6">
+        {/* Filters */}
+        <div className="mb-8">
+          <div className="flex flex-col md:flex-row gap-4 items-center mb-4">
+            {/* Search */}
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500" size={20} />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
               <input
                 type="text"
-                placeholder="Search projects..."
-                value={projectSearchQuery}
-                onChange={(e) => setProjectSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                placeholder="Search milestones..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="form-input pl-10"
               />
             </div>
             
+            {/* Type Filter */}
             <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent min-w-[150px]"
+              value={selectedType}
+              onChange={(e) => setSelectedType(e.target.value)}
+              className="form-input min-w-[150px]"
             >
-              <option value="">All Categories</option>
-              <option value="professional">Professional</option>
-              <option value="advanced">Advanced</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="beginner">Beginner</option>
+              <option value="">All Types</option>
+              {types.map(type => (
+                <option key={type} value={type}>
+                  {type.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                </option>
+              ))}
+            </select>
+            
+            {/* Year Filter */}
+            <select
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}
+              className="form-input min-w-[120px]"
+            >
+              <option value="">All Years</option>
+              {years.map(year => (
+                <option key={year} value={year}>{year}</option>
+              ))}
             </select>
           </div>
 
-          {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProjects.map((project, index) => (
-              <ProjectResourceCard key={project.id} project={project} index={index} />
-            ))}
+          {/* Expand/Collapse Controls */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={expandAll}
+              className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+            >
+              Expand All
+            </button>
+            <button
+              onClick={collapseAll}
+              className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+            >
+              Collapse All
+            </button>
+          </div>
+        </div>
+
+        {/* Milestones by Year */}
+        <div className="space-y-6 mb-16">
+          {years.map(year => {
+            const yearMilestones = getMilestonesByYear(year).filter(m => {
+              const matchesSearch = searchQuery === '' || 
+                m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                m.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                m.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+              
+              const matchesType = selectedType === '' || m.type === selectedType;
+              
+              return matchesSearch && matchesType;
+            });
+            
+            const yearResources = getResourcesByYear(year);
+
+            if (yearMilestones.length === 0 && yearResources.length === 0) return null;
+
+            return (
+              <YearSection
+                key={year}
+                year={year}
+                milestones={yearMilestones}
+                resources={yearResources}
+                isExpanded={expandedYears.has(year)}
+                onToggle={() => toggleYear(year)}
+              />
+            );
+          })}
+        </div>
+
+        {/* Resource Vault Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center">
+              <Folder className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+            </div>
+            <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400">Resource Vault</h2>
           </div>
 
-          {filteredProjects.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-teal-600 dark:text-teal-400">
-                No projects found matching your criteria.
-              </p>
+          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/10 dark:to-cyan-900/10 rounded-2xl p-6 border border-teal-200 dark:border-teal-800 mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-6 h-6 bg-teal-500/20 rounded-lg flex items-center justify-center">
+                <Code className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-teal-800 dark:text-teal-200">All Resources</h3>
             </div>
-          )}
-        </div>
-      </motion.div>
+            
+            <p className="text-teal-700 dark:text-teal-300 mb-6">
+              Explore all {stats.totalProjects} projects I've built over the years, organized alphabetically. 
+              Each project includes source code access and relevant technologies used.
+            </p>
 
-      {filteredMilestones.length === 0 && searchQuery && (
-        <div className="text-center py-12">
-          <p className="text-gray-500 dark:text-gray-400">
-            No milestones found matching your criteria.
-          </p>
-        </div>
-      )}
-    </div>
+            {/* Project Filters */}
+            <div className="flex flex-col md:flex-row gap-4 mb-6">
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500" size={20} />
+                <input
+                  type="text"
+                  placeholder="Search projects..."
+                  value={projectSearchQuery}
+                  onChange={(e) => setProjectSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                />
+              </div>
+              
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="px-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent min-w-[150px]"
+              >
+                <option value="">All Categories</option>
+                <option value="professional">Professional</option>
+                <option value="advanced">Advanced</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="beginner">Beginner</option>
+              </select>
+            </div>
+
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {filteredProjects.map((project, index) => (
+                <ProjectResourceCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
+
+            {filteredProjects.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-teal-600 dark:text-teal-400">
+                  No projects found matching your criteria.
+                </p>
+              </div>
+            )}
+          </div>
+        </motion.div>
+
+        {filteredMilestones.length === 0 && searchQuery && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 dark:text-gray-400">
+              No milestones found matching your criteria.
+            </p>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

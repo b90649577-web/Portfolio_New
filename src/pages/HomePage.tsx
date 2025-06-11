@@ -12,6 +12,7 @@ import Stats from '../components/sections/Stats';
 import ThemeAwareImage from '../components/ThemeAwareImage';
 import { useTheme } from '../components/ThemeProvider';
 import AnimatedJobTitle from '../components/AnimatedJobTitle';
+import MetaTags from '../components/SEO/MetaTags';
 
 const jobTitles = [
   "Full Stack Developer",
@@ -206,157 +207,179 @@ function HomePage() {
     document.body.removeChild(link);
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Brajesh Kumar Portfolio",
+    "url": "https://brajeshkumar.dev",
+    "description": "Professional portfolio of Brajesh Kumar - AI Engineer, Full Stack Developer, and UI/UX Designer",
+    "author": {
+      "@type": "Person",
+      "name": "Brajesh Kumar",
+      "jobTitle": "AI Engineer & Full Stack Developer",
+      "url": "https://brajeshkumar.dev"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://brajeshkumar.dev/#/projects?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
-    <div className="min-h-screen">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideVariants}
-        custom="left"
-        className="container-section min-h-[85vh] flex flex-col justify-center pt-16"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex justify-center lg:justify-end order-1 lg:order-none"
-          >
-            <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px]">
-              <motion.div 
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 rounded-full border-2 border-dashed border-primary-500/30"
-              />
-              <motion.div
-                initial={{ scale: 1 }}
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute inset-4 rounded-full border-2 border-dashed border-primary-400/40"
-              />
-              <div className="absolute inset-8 rounded-full bg-gradient-to-br from-light-bg dark:from-dark-bg to-light-card dark:to-dark-card border border-primary-600/20 overflow-hidden shadow-xl">
-                <ThemeAwareImage
-                  darkSrc="/self-dark.png"
-                  lightSrc="/self-light.jpg"
-                  alt={personalInfo.fullName}
-                  className="w-full h-full object-cover"
+    <>
+      <MetaTags structuredData={structuredData} />
+      <div className="min-h-screen">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideVariants}
+          custom="left"
+          className="container-section min-h-[85vh] flex flex-col justify-center pt-16"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex justify-center lg:justify-end order-1 lg:order-none"
+            >
+              <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px]">
+                <motion.div 
+                  initial={{ rotate: 0 }}
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  className="absolute inset-0 rounded-full border-2 border-dashed border-primary-500/30"
                 />
+                <motion.div
+                  initial={{ scale: 1 }}
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute inset-4 rounded-full border-2 border-dashed border-primary-400/40"
+                />
+                <div className="absolute inset-8 rounded-full bg-gradient-to-br from-light-bg dark:from-dark-bg to-light-card dark:to-dark-card border border-primary-600/20 overflow-hidden shadow-xl">
+                  <ThemeAwareImage
+                    darkSrc="/self-dark.png"
+                    lightSrc="/self-light.jpg"
+                    alt={personalInfo.fullName}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center lg:text-left"
-          >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              <span className="block">{personalInfo.fullName.split(' ')[0]}</span>
-              <span className="block text-primary-500">{personalInfo.fullName.split(' ')[1]}</span>
-            </h1>
-            <AnimatedJobTitle 
-              titles={jobTitles}
-              className="text-lg sm:text-xl lg:text-2xl font-semibold mb-6"
-            />
+            </motion.div>
             
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
-              <Link
-                to="/contact"
-                className="btn btn-primary flex items-center gap-2"
-              >
-                Hire Me <ChevronRight size={16} />
-              </Link>
-              <Link
-                to="/projects"
-                className="btn btn-outline flex items-center gap-2"
-              >
-                View Projects <ChevronRight size={16} />
-              </Link>
-              <button
-                onClick={handleDownloadResume}
-                className="btn btn-outline flex items-center gap-2"
-              >
-                Download Resume <Download size={16} />
-              </button>
-            </div>
-            
-            <p className="text-base md:text-lg text-gray-600 dark:text-gray-400">
-              {personalInfo.bio.split('\n')[0]}
-            </p>
-          </motion.div>
-        </div>
-      </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-center lg:text-left"
+            >
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+                <span className="block">{personalInfo.fullName.split(' ')[0]}</span>
+                <span className="block text-primary-500">{personalInfo.fullName.split(' ')[1]}</span>
+              </h1>
+              <AnimatedJobTitle 
+                titles={jobTitles}
+                className="text-lg sm:text-xl lg:text-2xl font-semibold mb-6"
+              />
+              
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
+                <Link
+                  to="/contact"
+                  className="btn btn-primary flex items-center gap-2"
+                >
+                  Hire Me <ChevronRight size={16} />
+                </Link>
+                <Link
+                  to="/projects"
+                  className="btn btn-outline flex items-center gap-2"
+                >
+                  View Projects <ChevronRight size={16} />
+                </Link>
+                <button
+                  onClick={handleDownloadResume}
+                  className="btn btn-outline flex items-center gap-2"
+                >
+                  Download Resume <Download size={16} />
+                </button>
+              </div>
+              
+              <p className="text-base md:text-lg text-gray-600 dark:text-gray-400">
+                {personalInfo.bio.split('\n')[0]}
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideVariants}
-        custom="right"
-      >
-        <Stats />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideVariants}
+          custom="right"
+        >
+          <Stats />
+        </motion.div>
 
-      <FeaturedSection title="Featured Skills" viewAllLink="/skills" direction="left">
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
-          {featuredSkills.map((skill, index) => (
-            <SkillBall key={skill.name} skill={skill} index={index} />
-          ))}
-        </div>
-      </FeaturedSection>
+        <FeaturedSection title="Featured Skills" viewAllLink="/skills" direction="left">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+            {featuredSkills.map((skill, index) => (
+              <SkillBall key={skill.name} skill={skill} index={index} />
+            ))}
+          </div>
+        </FeaturedSection>
 
-      <FeaturedSection title="Featured Projects" viewAllLink="/projects" direction="right">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </FeaturedSection>
+        <FeaturedSection title="Featured Projects" viewAllLink="/projects" direction="right">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </FeaturedSection>
 
-      <FeaturedSection title="Featured Certificates" viewAllLink="/certificates" direction="left">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {featuredCertificates.map((certificate) => (
-            <CertificateCard key={certificate.id} certificate={certificate} />
-          ))}
-        </div>
-      </FeaturedSection>
+        <FeaturedSection title="Featured Certificates" viewAllLink="/certificates" direction="left">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {featuredCertificates.map((certificate) => (
+              <CertificateCard key={certificate.id} certificate={certificate} />
+            ))}
+          </div>
+        </FeaturedSection>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideVariants}
-        custom="right"
-        className="mt-2"
-      >
-        <Education />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideVariants}
+          custom="right"
+          className="mt-2"
+        >
+          <Education />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideVariants}
-        custom="left"
-        className="mt-2"
-      >
-        <Experience />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideVariants}
+          custom="left"
+          className="mt-2"
+        >
+          <Experience />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={slideVariants}
-        custom="right"
-        className="mt-2"
-      >
-        <Contact />
-      </motion.div>
-    </div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideVariants}
+          custom="right"
+          className="mt-2"
+        >
+          <Contact />
+        </motion.div>
+      </div>
+    </>
   );
 }
 

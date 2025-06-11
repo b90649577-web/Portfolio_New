@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from './components/ThemeProvider';
 import { AnimatedBackground } from './components/AnimatedBackground';
 import FallingStarsBackground from './components/FallingStarsBackground';
@@ -25,43 +26,45 @@ import MilestonePage from './pages/MilestonePage';
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <div className="relative min-h-screen flex flex-col transition-colors duration-300 dark:bg-dark-bg bg-light-bg text-gray-900 dark:text-white">
-          <LoadingScreen />
-          <AnimatedBackground 
-            count={6}
-            minSize={300}
-            maxSize={600}
-          />
-          <FallingStarsBackground />
-          
-          <Navbar />
-          <SocialSidebar />
-          <ChatbotButton />
-          
-          <main className="relative z-10 flex-grow">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/education" element={<EducationPage />} />
-              <Route path="/experience" element={<ExperiencePage />} />
-              <Route path="/profiles" element={<ProfilesPage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/certificates" element={<CertificatesPage />} />
-              <Route path="/skills" element={<SkillsPage />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/blogs" element={<BlogsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/milestones" element={<MilestonePage />} />
-            </Routes>
-          </main>
-          
-          <Footer />
-          <ScrollToTop />
-        </div>
-      </Router>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <Router>
+          <div className="relative min-h-screen flex flex-col transition-colors duration-300 dark:bg-dark-bg bg-light-bg text-gray-900 dark:text-white">
+            <LoadingScreen />
+            <AnimatedBackground 
+              count={6}
+              minSize={300}
+              maxSize={600}
+            />
+            <FallingStarsBackground />
+            
+            <Navbar />
+            <SocialSidebar />
+            <ChatbotButton />
+            
+            <main className="relative z-10 flex-grow">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/education" element={<EducationPage />} />
+                <Route path="/experience" element={<ExperiencePage />} />
+                <Route path="/profiles" element={<ProfilesPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/certificates" element={<CertificatesPage />} />
+                <Route path="/skills" element={<SkillsPage />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/blogs" element={<BlogsPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/milestones" element={<MilestonePage />} />
+              </Routes>
+            </main>
+            
+            <Footer />
+            <ScrollToTop />
+          </div>
+        </Router>
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import SectionHeading from '../components/common/SectionHeading';
+import MetaTags from '../components/SEO/MetaTags';
 
 interface Profile {
   name: string;
@@ -195,26 +196,46 @@ const ProfileCard: React.FC<{ profile: Profile }> = ({ profile }) => {
 const ProfilesPage = () => {
   const categories = ['Coding', 'Professional', 'Learning'] as const;
 
-  return (
-    <div className="container-section">
-      <SectionHeading
-        title="My Profiles"
-        subtitle="Connect with me across various platforms"
-      />
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brajesh Kumar",
+    "sameAs": profiles.map(profile => profile.url),
+    "mainEntityOfPage": {
+      "@type": "ProfilePage",
+      "name": "Brajesh Kumar Professional Profiles"
+    }
+  };
 
-      {categories.map(category => (
-        <div key={category} className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-primary-500">{category} Profiles</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {profiles
-              .filter(profile => profile.category === category)
-              .map(profile => (
-                <ProfileCard key={profile.name} profile={profile} />
-              ))}
+  return (
+    <>
+      <MetaTags
+        title="Brajesh Kumar Profiles | GitHub, LinkedIn, CodeChef, HackerRank & More"
+        description="Connect with Brajesh Kumar across various platforms including GitHub, LinkedIn, CodeChef, HackerRank, Coursera, and other professional and learning platforms. View coding profiles and achievements."
+        keywords="Brajesh Kumar profiles, GitHub Brajesh31, LinkedIn Brajesh Kumar, CodeChef brajesh31, HackerRank bk117134, Coursera profile, professional profiles, coding profiles"
+        url="https://brajeshkumar.dev/#/profiles"
+        structuredData={structuredData}
+      />
+      <div className="container-section">
+        <SectionHeading
+          title="My Profiles"
+          subtitle="Connect with me across various platforms"
+        />
+
+        {categories.map(category => (
+          <div key={category} className="mb-12">
+            <h2 className="text-2xl font-bold mb-6 text-primary-500">{category} Profiles</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {profiles
+                .filter(profile => profile.category === category)
+                .map(profile => (
+                  <ProfileCard key={profile.name} profile={profile} />
+                ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 
