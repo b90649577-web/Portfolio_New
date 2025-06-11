@@ -1,19 +1,19 @@
-import emma from '/src/assets/emma.jpg';
-import thea from '/src/assets/thea.jpg';
-import ella from '/src/assets/ella.jpg';
-import knights from '/src/assets/knights.jpg';
-import mathematrix from '/src/assets/mathematrix.jpg';
-import semac from '/src/assets/semc.jpg';
-import ideapool from '/src/assets/ideapool.jpg';
-import fitdeck from '/src/assets/firedeck.jpg';
-import chatterbox from '/src/assets/chatterbox.jpg';
-import capnshare from '/src/assets/capnshare.jpg';
-import careerMapper from '/src/assets/career-mapper.jpg';
-import inventory from '/src/assets/inventory.jpg';
-import faceRecognition from '/src/assets/face-recognition.jpg';
-import agilePlanner from '/src/assets/agile-planner.jpg';
-import agrotech from '/src/assets/agrotech.jpg';
-import influencer from '/src/assets/influencer.jpg';
+import emma from '../assets/emma.jpg';
+import thea from '../assets/thea.jpg';
+import ella from '../assets/ella.jpg';
+import knights from '../assets/knights.jpg';
+import mathematrix from '../assets/mathematrix.jpg';
+import semac from '../assets/semc.jpg';
+import ideapool from '../assets/ideapool.jpg';
+import fitdeck from '../assets/firedeck.jpg';
+import chatterbox from '../assets/chatterbox.jpg';
+import capnshare from '../assets/capnshare.jpg';
+import careerMapper from '../assets/career-mapper.jpg';
+import inventory from '../assets/inventory.jpg';
+import faceRecognition from '../assets/face-recognition.jpg';
+import agilePlanner from '../assets/agile-planner.jpg';
+import agrotech from '../assets/agrotech.jpg';
+import influencer from '../assets/influencer.jpg';
 
 export const projects = [
   {
