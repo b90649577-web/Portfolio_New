@@ -1,680 +1,40 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Filter, Search, ExternalLink, Award, Briefcase, Code, GraduationCap, Users, BookOpen, Target, Lightbulb } from 'lucide-react';
+import { 
+  Calendar, 
+  Filter, 
+  Search, 
+  ExternalLink, 
+  Award, 
+  Briefcase, 
+  Code, 
+  GraduationCap, 
+  Users, 
+  BookOpen, 
+  Target, 
+  Lightbulb,
+  ChevronDown,
+  ChevronUp,
+  Download,
+  FileText,
+  Link as LinkIcon,
+  Certificate,
+  Presentation,
+  Folder
+} from 'lucide-react';
 import SectionHeading from '../components/common/SectionHeading';
 import { useTheme } from '../components/ThemeProvider';
-
-interface Milestone {
-  id: string;
-  date: string;
-  month: string;
-  year: string;
-  title: string;
-  description: string;
-  type: 'event' | 'achievement' | 'project' | 'campus ambassador' | 'contributor' | 'learning' | 'planning';
-  icon: string;
-  tags: string[];
-  category: 'professional' | 'advanced' | 'intermediate' | 'beginner';
-  link?: string;
-}
-
-const milestones: Milestone[] = [
-  // June 2025
-  {
-    id: '2025-06-openai',
-    date: 'June 2025',
-    month: 'June',
-    year: '2025',
-    title: 'OpenAI Academy Launch at The Oberoi, Delhi',
-    description: 'Invited to the landmark OpenAI Academy launch focused on Future Skills for India.',
-    type: 'event',
-    icon: '🤖',
-    tags: ['AI', 'OpenAI', 'Event', 'Delhi'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-06-uiuxai',
-    date: 'June 2025',
-    month: 'June',
-    year: '2025',
-    title: 'UI/UX Design in the World of AI',
-    description: 'Attended a session on AI-powered design hosted by UXD Talks, Reskilll, and Azure Dev Community.',
-    type: 'event',
-    icon: '🎨',
-    tags: ['UI/UX', 'AI', 'Design', 'Event'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-06-ssoc4',
-    date: 'June 2025',
-    month: 'June',
-    year: '2025',
-    title: 'Selected as SSOC Season 4 Contributor',
-    description: 'Selected as a contributor in Script Summer of Code Season 4.',
-    type: 'achievement',
-    icon: '🏅',
-    tags: ['SSOC', 'Open Source', 'Achievement'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-06-mentorship-ui',
-    date: 'June 2025',
-    month: 'June',
-    year: '2025',
-    title: 'Mentorship Cards UI Concept',
-    description: 'Developed an advanced mentorship UI concept for student engagement.',
-    type: 'project',
-    icon: '💡',
-    tags: ['UI', 'Mentorship', 'Project'],
-    category: 'advanced',
-    link: ''
-  },
-  // May 2025
-  {
-    id: '2025-05-powerbi-ai',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'Power BI & AI Summit – Delhi Edition',
-    description: 'Attended summit at Microsoft Gurugram focusing on Power BI and AI.',
-    type: 'event',
-    icon: '📊',
-    tags: ['Power BI', 'AI', 'Event'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-aicamp',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'AICamp Meetup – Tata 1mg, Gurugram',
-    description: 'Participated in AICamp Meetup: transformers, coding agents, vision-AI apps.',
-    type: 'event',
-    icon: '🤝',
-    tags: ['AI', 'Meetup', 'Vision', 'LLM'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-business40',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'Business4.0 Meetup – AI for Business Augmentation',
-    description: 'Explored AI for business, real-world startup challenges, LLMs.',
-    type: 'event',
-    icon: '🏢',
-    tags: ['Business', 'AI', 'LLM', 'Event'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-ainxt',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'AI.NXT AI Summit – Gurugram',
-    description: 'Attended summit: GenAI, BERT, GPT, RAG, Copilot, impact.',
-    type: 'event',
-    icon: '🧠',
-    tags: ['GenAI', 'Summit', 'Azure'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-inclusiveux',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'Inclusive Design Research – Microsoft Gurugram',
-    description: 'Event on empathy-driven UX in social impact. Speaker: Jayesha M. Koushik.',
-    type: 'event',
-    icon: '🫱🏼‍🫲🏽',
-    tags: ['UX', 'Inclusive Design', 'Social Impact'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-mahakumbh',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'Starting Mahakumbh 2025',
-    description: 'Attended one of India\'s largest national innovation and entrepreneurship fairs.',
-    type: 'event',
-    icon: '🎪',
-    tags: ['Startup', 'Innovation', 'Fair'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-artistai',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'How Artists Use AI – Microsoft Gurugram',
-    description: 'Attended event on AI-powered creativity in music and arts.',
-    type: 'event',
-    icon: '🎶',
-    tags: ['AI', 'Creativity', 'Music', 'Art'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-aiinnovationpay',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'AI Innovation Pay 2025 – Gurgaon',
-    description: 'Attended hackathon and talks on language accessibility and ethical AI. Highlights: BHASHINI platform.',
-    type: 'event',
-    icon: '💬',
-    tags: ['AI', 'Hackathon', 'Language'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-05-cyberconnect',
-    date: 'May 2025',
-    month: 'May',
-    year: '2025',
-    title: 'Cyber Connect – Microsoft, Noida',
-    description: 'Attended event on cybersecurity, Zero Trust, and AI-driven security.',
-    type: 'event',
-    icon: '🛡️',
-    tags: ['Cybersecurity', 'AI', 'Microsoft'],
-    category: 'professional',
-    link: ''
-  },
-  // April 2025
-  {
-    id: '2025-04-xrhack',
-    date: 'April 2025',
-    month: 'April',
-    year: '2025',
-    title: 'XR Creator Hackathon – 91 Springboard, Noida',
-    description: 'Explored AR/VR/MR technologies at XR Creator Hackathon. Unity, Unreal, and more.',
-    type: 'event',
-    icon: '🕶️',
-    tags: ['XR', 'Hackathon', 'Unity', 'Unreal'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-04-dashboard-ui',
-    date: 'April 2025',
-    month: 'April',
-    year: '2025',
-    title: 'Advanced Dashboard UI',
-    description: 'Designed an advanced, modern dashboard UI for analytics and insights.',
-    type: 'project',
-    icon: '📊',
-    tags: ['Dashboard', 'UI', 'Analytics'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2025-04-resumeai',
-    date: 'April 2025',
-    month: 'April',
-    year: '2025',
-    title: 'AI-Powered Resume Evaluator',
-    description: 'Developed a machine-learning-powered resume evaluation system.',
-    type: 'project',
-    icon: '📝',
-    tags: ['AI', 'Resume', 'ML'],
-    category: 'advanced',
-    link: ''
-  },
-  // March 2025
-  {
-    id: '2025-03-iitdelhi-becon',
-    date: 'March 2025',
-    month: 'March',
-    year: '2025',
-    title: 'IIT Delhi – BECon & Startup Expo',
-    description: 'Attended one of India\'s largest startup expos with 300+ startups, 75+ investors, 200+ mentors.',
-    type: 'event',
-    icon: '🚀',
-    tags: ['Startup', 'IIT Delhi', 'Expo'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-03-unicorns-iitd',
-    date: 'March 2025',
-    month: 'March',
-    year: '2025',
-    title: 'The Unicorns from IIT Delhi – Feb 1 Event',
-    description: 'Participated in sessions on unicorn startups, funding, and market fit at IIT Delhi.',
-    type: 'event',
-    icon: '🦄',
-    tags: ['IIT Delhi', 'Startup', 'Unicorn'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-03-facerecog-dashboard',
-    date: 'March 2025',
-    month: 'March',
-    year: '2025',
-    title: 'Face Recognition Dashboard',
-    description: 'Built an advanced face recognition dashboard with modern UI and analytics.',
-    type: 'project',
-    icon: '🧑‍💻',
-    tags: ['AI', 'Face Recognition', 'Dashboard'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2025-03-promptwriter',
-    date: 'March 2025',
-    month: 'March',
-    year: '2025',
-    title: 'OpenAI Prompt Writer Tool',
-    description: 'Developed an advanced OpenAI prompt-writing tool for productivity.',
-    type: 'project',
-    icon: '📝',
-    tags: ['OpenAI', 'Prompt', 'Tool'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2025-03-cognizance-roorkee',
-    date: 'March 2025',
-    month: 'March',
-    year: '2025',
-    title: 'Cognizance 2025 (IIT Roorkee)',
-    description: 'Served as Campus Ambassador for Cognizance 2025, IIT Roorkee.',
-    type: 'campus ambassador',
-    icon: '🎓',
-    tags: ['IIT Roorkee', 'Ambassador', 'Cognizance'],
-    category: 'professional',
-    link: ''
-  },
-  // February 2025
-  {
-    id: '2025-02-nlp-chatbot',
-    date: 'February 2025',
-    month: 'February',
-    year: '2025',
-    title: 'NLP Chatbot with TensorFlow',
-    description: 'Developed an advanced NLP chatbot using TensorFlow and deep learning.',
-    type: 'project',
-    icon: '🤖',
-    tags: ['NLP', 'TensorFlow', 'Chatbot'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2025-02-cli-launcher',
-    date: 'February 2025',
-    month: 'February',
-    year: '2025',
-    title: 'CLI Project Launcher',
-    description: 'Built a command-line project launcher tool for developers.',
-    type: 'project',
-    icon: '💻',
-    tags: ['CLI', 'Tool', 'Automation'],
-    category: 'intermediate',
-    link: ''
-  },
-  // January 2025
-  {
-    id: '2025-01-azureacademy',
-    date: 'January 2025',
-    month: 'January',
-    year: '2025',
-    title: 'Azure Learning Academy – Jan 17',
-    description: 'Attended Azure Learning Academy, featuring experts and live demos.',
-    type: 'event',
-    icon: '☁️',
-    tags: ['Azure', 'Learning', 'Microsoft'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-01-agrilearn-launch',
-    date: 'January 2025',
-    month: 'January',
-    year: '2025',
-    title: 'Agrilearn AI Portfolio Launch',
-    description: 'Launched my professional portfolio for Agrilearn AI.',
-    type: 'achievement',
-    icon: '🌾',
-    tags: ['Agrilearn', 'Portfolio', 'AI'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-01-devtoolkit',
-    date: 'January 2025',
-    month: 'January',
-    year: '2025',
-    title: 'Dev Toolkit Vault',
-    description: 'Developed a toolkit vault for developers to manage resources.',
-    type: 'project',
-    icon: '🧰',
-    tags: ['DevTools', 'Productivity', 'Toolkit'],
-    category: 'intermediate',
-    link: ''
-  },
-  {
-    id: '2025-01-public-projects',
-    date: 'January 2025',
-    month: 'January',
-    year: '2025',
-    title: 'Shared 100+ Projects Publicly',
-    description: 'Shared over 100 projects in public repositories.',
-    type: 'achievement',
-    icon: '📢',
-    tags: ['Projects', 'GitHub', 'Public'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2025-01-kaizen-iitd',
-    date: 'January 2025',
-    month: 'January',
-    year: '2025',
-    title: 'Kaizen 2025 (IIT Delhi)',
-    description: 'Served as Campus Ambassador for Kaizen 2025, IIT Delhi.',
-    type: 'campus ambassador',
-    icon: '🎓',
-    tags: ['IIT Delhi', 'Kaizen', 'Ambassador'],
-    category: 'professional',
-    link: ''
-  },
-  // December 2024
-  {
-    id: '2024-12-devblog',
-    date: 'December 2024',
-    month: 'December',
-    year: '2024',
-    title: 'Personal Dev Blog Started',
-    description: 'Launched my personal development blog to share insights and tutorials.',
-    type: 'achievement',
-    icon: '✍️',
-    tags: ['Blog', 'Writing', 'Achievement'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2024-12-timeline',
-    date: 'December 2024',
-    month: 'December',
-    year: '2024',
-    title: 'Timeline Page Launched',
-    description: 'Built and launched a dynamic timeline page for my portfolio.',
-    type: 'project',
-    icon: '📅',
-    tags: ['Timeline', 'Portfolio', 'Web'],
-    category: 'intermediate',
-    link: ''
-  },
-  {
-    id: '2024-12-wayspire',
-    date: 'December 2024',
-    month: 'December',
-    year: '2024',
-    title: 'Wayspire',
-    description: 'Served as Campus Ambassador at Wayspire.',
-    type: 'campus ambassador',
-    icon: '🎓',
-    tags: ['Wayspire', 'Campus Ambassador', 'Leadership'],
-    category: 'professional',
-    link: ''
-  },
-  // November 2024
-  {
-    id: '2024-11-inventory',
-    date: 'November 2024',
-    month: 'November',
-    year: '2024',
-    title: 'Inventory Management System',
-    description: 'Developed a robust inventory management system with analytics dashboard.',
-    type: 'project',
-    icon: '📦',
-    tags: ['Inventory', 'Management', 'Analytics'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2024-11-facedetect-gui',
-    date: 'November 2024',
-    month: 'November',
-    year: '2024',
-    title: 'Face Detection GUI',
-    description: 'Created a GUI tool for face detection using OpenCV.',
-    type: 'project',
-    icon: '👁️',
-    tags: ['Face Detection', 'GUI', 'OpenCV'],
-    category: 'intermediate',
-    link: ''
-  },
-  {
-    id: '2024-11-movie-reco',
-    date: 'November 2024',
-    month: 'November',
-    year: '2024',
-    title: 'Movie Recommender System',
-    description: 'Built a movie recommender system using collaborative filtering.',
-    type: 'project',
-    icon: '🎬',
-    tags: ['Movie', 'Recommender', 'ML'],
-    category: 'advanced',
-    link: ''
-  },
-  // October 2024
-  {
-    id: '2024-10-semac',
-    date: 'October 2024',
-    month: 'October',
-    year: '2024',
-    title: 'SEMAC - College ML Utility App',
-    description: 'Developed an integrated machine learning utility app for college needs.',
-    type: 'project',
-    icon: '🏫',
-    tags: ['ML', 'College', 'Utility'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2024-10-iitmadras',
-    date: 'October 2024',
-    month: 'October',
-    year: '2024',
-    title: 'IIT Madras',
-    description: 'Campus Ambassador for IIT Madras tech events.',
-    type: 'campus ambassador',
-    icon: '🎓',
-    tags: ['IIT Madras', 'Ambassador', 'Leadership'],
-    category: 'professional',
-    link: ''
-  },
-  {
-    id: '2024-10-gssoc',
-    date: 'October 2024',
-    month: 'October',
-    year: '2024',
-    title: 'GirlScript Summer of Code (GSSoC 2024)',
-    description: 'Contributed as an open-source contributor in GSSoC 2024.',
-    type: 'contributor',
-    icon: '👩‍💻',
-    tags: ['GSSoC', 'Open Source', 'Contributor'],
-    category: 'professional',
-    link: ''
-  },
-  // September 2024
-  {
-    id: '2024-09-chatterbox',
-    date: 'September 2024',
-    month: 'September',
-    year: '2024',
-    title: 'ChatterBox - Real-Time Chat App',
-    description: 'Created a real-time chat application using Socket.io.',
-    type: 'project',
-    icon: '💬',
-    tags: ['Chat App', 'Socket.io', 'Real-Time'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2024-09-imuna',
-    date: 'September 2024',
-    month: 'September',
-    year: '2024',
-    title: 'IMUNA – International Model United Nations Association',
-    description: 'Serving as Campus Ambassador for IMUNA.',
-    type: 'campus ambassador',
-    icon: '🌍',
-    tags: ['IMUNA', 'Campus Ambassador', 'Leadership'],
-    category: 'professional',
-    link: ''
-  },
-  // August 2024
-  {
-    id: '2024-08-agrotech',
-    date: 'August 2024',
-    month: 'August',
-    year: '2024',
-    title: 'AgroTech - Smart Farming Platform',
-    description: 'Developed a smart farming platform using IoT and AI technologies.',
-    type: 'project',
-    icon: '🌱',
-    tags: ['AgroTech', 'Smart Farming', 'AI', 'IoT'],
-    category: 'advanced',
-    link: ''
-  },
-  // July 2024
-  {
-    id: '2024-07-knights-flovora',
-    date: 'July 2024',
-    month: 'July',
-    year: '2024',
-    title: 'The Knights of Flovora',
-    description: 'Launched an action-adventure RPG game built with Flutter and Dart.',
-    type: 'project',
-    icon: '🗡️',
-    tags: ['Game', 'RPG', 'Flutter', 'Dart'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2024-07-letsupgrad',
-    date: 'July 2024',
-    month: 'July',
-    year: '2024',
-    title: 'Lets Upgrad',
-    description: 'Campus Ambassador for Lets Upgrad.',
-    type: 'campus ambassador',
-    icon: '🎓',
-    tags: ['Lets Upgrad', 'Ambassador', 'Leadership'],
-    category: 'professional',
-    link: ''
-  },
-  // June 2024
-  {
-    id: '2024-06-careermapper',
-    date: 'June 2024',
-    month: 'June',
-    year: '2024',
-    title: 'Career Mapper',
-    description: 'Developed a web interface to compare jobs based on cost of living, health, and safety indices.',
-    type: 'project',
-    icon: '🗺️',
-    tags: ['Career', 'Mapping', 'Web', 'React'],
-    category: 'advanced',
-    link: ''
-  },
-  {
-    id: '2024-06-capnshare',
-    date: 'June 2024',
-    month: 'June',
-    year: '2024',
-    title: "Cap'nShare - Food Sharing App",
-    description: 'Designed a web application to reduce food wastage across campus by sharing surplus food.',
-    type: 'project',
-    icon: '🍱',
-    tags: ['Food', 'Sharing', 'Web', 'Campus'],
-    category: 'advanced',
-    link: ''
-  },
-  // May 2024
-  {
-    id: '2024-05-fitdeck',
-    date: 'May 2024',
-    month: 'May',
-    year: '2024',
-    title: 'FitDeck - Fitness Platform',
-    description: 'Developed a social networking web app for fitness enthusiasts to connect and learn.',
-    type: 'project',
-    icon: '🏋️‍♂️',
-    tags: ['Fitness', 'Social', 'Web'],
-    category: 'advanced',
-    link: ''
-  },
-  // April 2024
-  {
-    id: '2024-04-mathematrix',
-    date: 'April 2024',
-    month: 'April',
-    year: '2024',
-    title: 'Mathematrix',
-    description: 'Created a website to teach and test multiplication tables, making math learning interactive.',
-    type: 'project',
-    icon: '➗',
-    tags: ['Math', 'Learning', 'Education', 'Web'],
-    category: 'intermediate',
-    link: ''
-  },
-  // March 2024
-  {
-    id: '2024-03-ella',
-    date: 'March 2024',
-    month: 'March',
-    year: '2024',
-    title: 'Ella - AI Chat Companion',
-    description: 'Built an AI companion app using React Native and ML for personalized chat experiences.',
-    type: 'project',
-    icon: '🤖',
-    tags: ['AI', 'Chatbot', 'Companion', 'ML'],
-    category: 'advanced',
-    link: ''
-  },
-  // February 2024
-  {
-    id: '2024-02-learning-refresh',
-    date: 'February 2024',
-    month: 'February',
-    year: '2024',
-    title: 'Learning Refresh: Python & JavaScript',
-    description: 'Dedicated February to deepening knowledge in Python and JavaScript, building small daily tools and reviewing new ES features.',
-    type: 'learning',
-    icon: '📚',
-    tags: ['Learning', 'Python', 'JavaScript'],
-    category: 'beginner',
-    link: ''
-  },
-  // January 2024
-  {
-    id: '2024-01-project-planning',
-    date: 'January 2024',
-    month: 'January',
-    year: '2024',
-    title: 'Annual Project Planning & Goal Setting',
-    description: 'Started the year by outlining major projects, setting new tech learning goals, and planning collaborations for 2024.',
-    type: 'planning',
-    icon: '🗓️',
-    tags: ['Planning', 'Goals', 'Strategy'],
-    category: 'professional',
-    link: ''
-  }
-];
+import { 
+  milestones, 
+  resources, 
+  getMilestonesByYear, 
+  getResourcesByYear, 
+  getUniqueYears, 
+  getUniqueTypes, 
+  getUniqueResourceTypes,
+  type Milestone,
+  type Resource
+} from '../data/milestones';
 
 const getTypeIcon = (type: string) => {
   switch (type) {
@@ -685,6 +45,7 @@ const getTypeIcon = (type: string) => {
     case 'contributor': return <Users className="w-4 h-4" />;
     case 'learning': return <BookOpen className="w-4 h-4" />;
     case 'planning': return <Target className="w-4 h-4" />;
+    case 'education': return <GraduationCap className="w-4 h-4" />;
     default: return <Lightbulb className="w-4 h-4" />;
   }
 };
@@ -698,148 +59,363 @@ const getTypeColor = (type: string) => {
     case 'contributor': return 'bg-pink-500/20 text-pink-400 border-pink-500/30';
     case 'learning': return 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30';
     case 'planning': return 'bg-orange-500/20 text-orange-400 border-orange-500/30';
+    case 'education': return 'bg-teal-500/20 text-teal-400 border-teal-500/30';
+    default: return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
+  }
+};
+
+const getResourceIcon = (type: string) => {
+  switch (type) {
+    case 'certificate': return <Certificate className="w-4 h-4" />;
+    case 'document': return <FileText className="w-4 h-4" />;
+    case 'link': return <LinkIcon className="w-4 h-4" />;
+    case 'portfolio': return <Folder className="w-4 h-4" />;
+    case 'code': return <Code className="w-4 h-4" />;
+    case 'presentation': return <Presentation className="w-4 h-4" />;
+    default: return <FileText className="w-4 h-4" />;
+  }
+};
+
+const getResourceTypeColor = (type: string) => {
+  switch (type) {
+    case 'certificate': return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30';
+    case 'document': return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+    case 'link': return 'bg-green-500/20 text-green-400 border-green-500/30';
+    case 'portfolio': return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
+    case 'code': return 'bg-orange-500/20 text-orange-400 border-orange-500/30';
+    case 'presentation': return 'bg-pink-500/20 text-pink-400 border-pink-500/30';
     default: return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
   }
 };
 
 const MilestoneCard: React.FC<{ milestone: Milestone; index: number }> = ({ milestone, index }) => {
-  const { theme } = useTheme();
-  
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
       viewport={{ once: true }}
-      className="relative"
+      className="bg-light-card dark:bg-dark-card rounded-xl p-4 border border-gray-200 dark:border-gray-800 hover:border-primary-500/50 transition-all duration-300 group"
     >
-      {/* Timeline line */}
-      <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-transparent" />
-      
-      {/* Timeline dot */}
-      <div className="absolute left-4 top-6 w-4 h-4 rounded-full bg-primary-500 border-4 border-light-bg dark:border-dark-bg z-10" />
-      
-      {/* Content */}
-      <div className="ml-16 pb-8">
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-6 border border-gray-200 dark:border-gray-800 hover:border-primary-500/50 transition-all duration-300 group">
-          {/* Header */}
-          <div className="flex items-start justify-between mb-4">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">{milestone.icon}</span>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-400 transition-colors">
-                  {milestone.title}
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{milestone.date}</p>
-              </div>
-            </div>
-            
-            <div className={`flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-medium ${getTypeColor(milestone.type)}`}>
-              {getTypeIcon(milestone.type)}
-              {milestone.type.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-            </div>
+      {/* Header */}
+      <div className="flex items-start justify-between mb-3">
+        <div className="flex items-center gap-3">
+          <span className="text-xl">{milestone.icon}</span>
+          <div>
+            <h4 className="text-base font-semibold text-gray-900 dark:text-white group-hover:text-primary-400 transition-colors">
+              {milestone.title}
+            </h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{milestone.month} {milestone.year}</p>
           </div>
-          
-          {/* Description */}
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            {milestone.description}
-          </p>
-          
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {milestone.tags.map((tag) => (
-              <span
-                key={tag}
-                className="skill-tag text-xs"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          
-          {/* Link */}
-          {milestone.link && (
-            <a
-              href={milestone.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm"
-            >
-              View Details <ExternalLink size={14} />
-            </a>
-          )}
         </div>
+        
+        <div className={`flex items-center gap-1 px-2 py-1 rounded-full border text-xs font-medium ${getTypeColor(milestone.type)}`}>
+          {getTypeIcon(milestone.type)}
+          {milestone.type.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+        </div>
+      </div>
+      
+      {/* Description */}
+      <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+        {milestone.description}
+      </p>
+      
+      {/* Tags */}
+      <div className="flex flex-wrap gap-1 mb-3">
+        {milestone.tags.slice(0, 3).map((tag) => (
+          <span
+            key={tag}
+            className="skill-tag text-xs px-2 py-1"
+          >
+            {tag}
+          </span>
+        ))}
+        {milestone.tags.length > 3 && (
+          <span className="text-xs text-gray-500 dark:text-gray-400">
+            +{milestone.tags.length - 3} more
+          </span>
+        )}
+      </div>
+      
+      {/* Link */}
+      {milestone.link && (
+        <a
+          href={milestone.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-xs"
+        >
+          View Details <ExternalLink size={12} />
+        </a>
+      )}
+    </motion.div>
+  );
+};
+
+const ResourceCard: React.FC<{ resource: Resource; index: number }> = ({ resource, index }) => {
+  const handleAction = () => {
+    if (resource.downloadUrl) {
+      const link = document.createElement('a');
+      link.href = resource.downloadUrl;
+      link.download = resource.title;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (resource.url) {
+      window.open(resource.url, '_blank');
+    }
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+      viewport={{ once: true }}
+      className="bg-light-card dark:bg-dark-card rounded-xl p-4 border border-gray-200 dark:border-gray-800 hover:border-primary-500/50 transition-all duration-300 group cursor-pointer"
+      onClick={handleAction}
+    >
+      {/* Header */}
+      <div className="flex items-start justify-between mb-3">
+        <div className="flex items-center gap-3">
+          <span className="text-xl">{resource.icon}</span>
+          <div>
+            <h4 className="text-base font-semibold text-gray-900 dark:text-white group-hover:text-primary-400 transition-colors">
+              {resource.title}
+            </h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{resource.year}</p>
+          </div>
+        </div>
+        
+        <div className={`flex items-center gap-1 px-2 py-1 rounded-full border text-xs font-medium ${getResourceTypeColor(resource.type)}`}>
+          {getResourceIcon(resource.type)}
+          {resource.type.charAt(0).toUpperCase() + resource.type.slice(1)}
+        </div>
+      </div>
+      
+      {/* Description */}
+      <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+        {resource.description}
+      </p>
+      
+      {/* Tags */}
+      <div className="flex flex-wrap gap-1 mb-3">
+        {resource.tags.slice(0, 3).map((tag) => (
+          <span
+            key={tag}
+            className="skill-tag text-xs px-2 py-1"
+          >
+            {tag}
+          </span>
+        ))}
+        {resource.tags.length > 3 && (
+          <span className="text-xs text-gray-500 dark:text-gray-400">
+            +{resource.tags.length - 3} more
+          </span>
+        )}
+      </div>
+      
+      {/* Action */}
+      <div className="flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-xs">
+        {resource.downloadUrl ? (
+          <>
+            <Download size={12} /> Download
+          </>
+        ) : (
+          <>
+            <ExternalLink size={12} /> View
+          </>
+        )}
       </div>
     </motion.div>
   );
 };
 
+const YearSection: React.FC<{ 
+  year: string; 
+  milestones: Milestone[]; 
+  resources: Resource[];
+  isExpanded: boolean;
+  onToggle: () => void;
+}> = ({ year, milestones, resources, isExpanded, onToggle }) => {
+  return (
+    <div className="mb-6">
+      <button
+        onClick={onToggle}
+        className="w-full flex items-center justify-between p-4 bg-light-card dark:bg-dark-card rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary-500/50 transition-all duration-300"
+      >
+        <div className="flex items-center gap-4">
+          <h2 className="text-2xl font-bold text-primary-500">{year}</h2>
+          <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+            <span>{milestones.length} milestones</span>
+            <span>{resources.length} resources</span>
+          </div>
+        </div>
+        {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+      </button>
+      
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <div className="pt-6">
+              {milestones.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Milestones</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {milestones.map((milestone, index) => (
+                      <MilestoneCard key={milestone.id} milestone={milestone} index={index} />
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              {resources.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Resources</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {resources.map((resource, index) => (
+                      <ResourceCard key={resource.id} resource={resource} index={index} />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 const MilestonePage = () => {
+  const [activeTab, setActiveTab] = useState<'milestones' | 'resources'>('milestones');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string>('');
   const [selectedYear, setSelectedYear] = useState<string>('');
+  const [expandedYears, setExpandedYears] = useState<Set<string>>(new Set(['2025']));
   
-  const types = Array.from(new Set(milestones.map(m => m.type)));
-  const years = Array.from(new Set(milestones.map(m => m.year))).sort((a, b) => b.localeCompare(a));
+  const years = getUniqueYears();
+  const types = activeTab === 'milestones' ? getUniqueTypes() : getUniqueResourceTypes();
   
-  const filteredMilestones = useMemo(() => {
-    return milestones.filter(milestone => {
-      const matchesSearch = milestone.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           milestone.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           milestone.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+  const filteredData = useMemo(() => {
+    const data = activeTab === 'milestones' ? milestones : resources;
+    return data.filter(item => {
+      const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                           item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                           item.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
       
-      const matchesType = selectedType === '' || milestone.type === selectedType;
-      const matchesYear = selectedYear === '' || milestone.year === selectedYear;
+      const matchesType = selectedType === '' || item.type === selectedType;
+      const matchesYear = selectedYear === '' || item.year === selectedYear;
       
       return matchesSearch && matchesType && matchesYear;
     });
-  }, [searchQuery, selectedType, selectedYear]);
+  }, [searchQuery, selectedType, selectedYear, activeTab]);
   
   const stats = useMemo(() => {
     const totalMilestones = milestones.length;
+    const totalResources = resources.length;
     const projectCount = milestones.filter(m => m.type === 'project').length;
     const eventCount = milestones.filter(m => m.type === 'event').length;
     const achievementCount = milestones.filter(m => m.type === 'achievement').length;
+    const certificateCount = resources.filter(r => r.type === 'certificate').length;
     
-    return { totalMilestones, projectCount, eventCount, achievementCount };
+    return { totalMilestones, totalResources, projectCount, eventCount, achievementCount, certificateCount };
   }, []);
+
+  const toggleYear = (year: string) => {
+    const newExpanded = new Set(expandedYears);
+    if (newExpanded.has(year)) {
+      newExpanded.delete(year);
+    } else {
+      newExpanded.add(year);
+    }
+    setExpandedYears(newExpanded);
+  };
+
+  const expandAll = () => {
+    setExpandedYears(new Set(years));
+  };
+
+  const collapseAll = () => {
+    setExpandedYears(new Set());
+  };
 
   return (
     <div className="container-section">
       <SectionHeading
-        title="My Journey"
-        subtitle="A timeline of my professional growth, projects, and achievements"
+        title="My Journey & Resources"
+        subtitle="A comprehensive timeline of my professional growth, projects, achievements, and important resources"
       />
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-3xl font-bold text-primary-500 mb-2">{stats.totalMilestones}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Total Milestones</div>
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-12">
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-primary-500 mb-1">{stats.totalMilestones}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Total Milestones</div>
         </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-3xl font-bold text-green-500 mb-2">{stats.projectCount}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-green-500 mb-1">{stats.projectCount}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Projects</div>
         </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-3xl font-bold text-blue-500 mb-2">{stats.eventCount}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Events</div>
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-blue-500 mb-1">{stats.eventCount}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Events</div>
         </div>
-        <div className="bg-light-card dark:bg-dark-card rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800">
-          <div className="text-3xl font-bold text-yellow-500 mb-2">{stats.achievementCount}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Achievements</div>
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-yellow-500 mb-1">{stats.achievementCount}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Achievements</div>
+        </div>
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-purple-500 mb-1">{stats.totalResources}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Resources</div>
+        </div>
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-4 text-center border border-gray-200 dark:border-gray-800">
+          <div className="text-2xl font-bold text-orange-500 mb-1">{stats.certificateCount}</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Certificates</div>
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex items-center justify-center mb-8">
+        <div className="bg-light-card dark:bg-dark-card rounded-xl p-1 border border-gray-200 dark:border-gray-800">
+          <button
+            onClick={() => setActiveTab('milestones')}
+            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+              activeTab === 'milestones'
+                ? 'bg-primary-500 text-white shadow-md'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Milestones
+          </button>
+          <button
+            onClick={() => setActiveTab('resources')}
+            className={`px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+              activeTab === 'resources'
+                ? 'bg-primary-500 text-white shadow-md'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Resources
+          </button>
         </div>
       </div>
 
       {/* Filters */}
-      <div className="mb-12">
-        <div className="flex flex-col md:flex-row gap-4 items-center">
+      <div className="mb-8">
+        <div className="flex flex-col md:flex-row gap-4 items-center mb-4">
           {/* Search */}
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
             <input
               type="text"
-              placeholder="Search milestones..."
+              placeholder={`Search ${activeTab}...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="form-input pl-10"
@@ -872,28 +448,73 @@ const MilestonePage = () => {
             ))}
           </select>
         </div>
+
+        {/* Expand/Collapse Controls */}
+        <div className="flex items-center gap-4">
+          <button
+            onClick={expandAll}
+            className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+          >
+            Expand All
+          </button>
+          <button
+            onClick={collapseAll}
+            className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+          >
+            Collapse All
+          </button>
+        </div>
       </div>
 
-      {/* Timeline */}
-      <div className="relative">
-        {filteredMilestones.length > 0 ? (
-          <div className="space-y-0">
-            {filteredMilestones.map((milestone, index) => (
-              <MilestoneCard
-                key={milestone.id}
-                milestone={milestone}
-                index={index}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-500 dark:text-gray-400">
-              No milestones found matching your criteria.
-            </p>
-          </div>
-        )}
+      {/* Content */}
+      <div className="space-y-6">
+        {years.map(year => {
+          const yearMilestones = activeTab === 'milestones' 
+            ? filteredData.filter(item => item.year === year)
+            : getMilestonesByYear(year).filter(m => 
+                selectedType === '' || m.type === selectedType
+              ).filter(m =>
+                searchQuery === '' || 
+                m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                m.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                m.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+              );
+          
+          const yearResources = activeTab === 'resources'
+            ? filteredData.filter(item => item.year === year)
+            : getResourcesByYear(year).filter(r =>
+                selectedType === '' || r.type === selectedType
+              ).filter(r =>
+                searchQuery === '' ||
+                r.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                r.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                r.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+              );
+
+          if (activeTab === 'milestones' && yearMilestones.length === 0) return null;
+          if (activeTab === 'resources' && yearResources.length === 0) return null;
+          if (activeTab === 'milestones' && yearMilestones.length === 0 && yearResources.length === 0) return null;
+
+          return (
+            <YearSection
+              key={year}
+              year={year}
+              milestones={activeTab === 'milestones' ? yearMilestones as Milestone[] : getMilestonesByYear(year)}
+              resources={activeTab === 'resources' ? yearResources as Resource[] : getResourcesByYear(year)}
+              isExpanded={expandedYears.has(year)}
+              onToggle={() => toggleYear(year)}
+            />
+          );
+        })}
       </div>
+
+      {filteredData.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-gray-500 dark:text-gray-400">
+            No {activeTab} found matching your criteria.
+          </p>
+        </div>
+      )}
     </div>
   );
 };
