@@ -109,14 +109,14 @@ const SkillBall = ({ skill, index }) => {
   );
 };
 
-const FeaturedSection = ({ title, viewAllLink, children, direction = 'left' }) => (
+const FeaturedSection = ({ title, viewAllLink, children, direction = 'left', className = '' }) => (
   <motion.div
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, margin: "-100px" }}
     variants={slideVariants}
     custom={direction}
-    className="py-2 md:py-3 max-w-6xl mx-auto px-4 md:px-6 lg:px-8"
+    className={`py-2 md:py-3 max-w-6xl mx-auto px-4 md:px-6 lg:px-8 ${className}`}
   >
     <div className="flex justify-between items-center mb-3">
       <h2 className="text-2xl md:text-3xl font-bold">{title}</h2>
@@ -378,8 +378,13 @@ function HomePage() {
           </div>
         </FeaturedSection>
 
-        {/* Featured Certificates - Minimal spacing */}
-        <FeaturedSection title="Featured Certificates" viewAllLink="/certificates" direction="left">
+        {/* Featured Certificates - Added spacing from projects */}
+        <FeaturedSection 
+          title="Featured Certificates" 
+          viewAllLink="/certificates" 
+          direction="left"
+          className="mt-8"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuredCertificates.map((certificate) => (
               <CertificateCard key={certificate.id} certificate={certificate} />
