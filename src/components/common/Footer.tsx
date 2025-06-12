@@ -44,13 +44,6 @@ const Footer = () => {
     }
   ];
 
-  const techPartners = [
-    { name: 'Google Cloud', url: 'https://cloud.google.com/', title: 'Google Cloud Platform' },
-    { name: 'Microsoft Azure', url: 'https://azure.microsoft.com/', title: 'Microsoft Azure Cloud' },
-    { name: 'Firebase', url: 'https://firebase.google.com/', title: 'Firebase Platform' },
-    { name: 'Kong', url: 'https://konghq.com/', title: 'Kong API Gateway' }
-  ];
-
   return (
     <footer 
       className={`relative w-full mt-auto py-8 border-t z-10 transition-colors duration-300 
@@ -61,7 +54,7 @@ const Footer = () => {
       aria-label="Footer Information"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,37 +126,11 @@ const Footer = () => {
             </nav>
           </motion.div>
 
-          {/* Tech Partners */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center md:items-start"
-          >
-            <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Tech Partners</h3>
-            <div className="flex flex-col gap-2">
-              {techPartners.map((partner) => (
-                <a
-                  key={partner.name}
-                  href={partner.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={partner.title}
-                  aria-label={`Visit ${partner.name} website`}
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors flex items-center gap-1"
-                >
-                  {partner.name} <ExternalLink size={12} aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className="flex flex-col items-center md:items-start"
           >
@@ -190,7 +157,7 @@ const Footer = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
           className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
         >
