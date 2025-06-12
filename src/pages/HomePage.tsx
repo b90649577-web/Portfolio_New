@@ -260,14 +260,14 @@ function HomePage() {
     <>
       <MetaTags structuredData={[structuredData, breadcrumbData]} />
       <div className="min-h-screen">
-        {/* Hero Section - Reduced padding */}
+        {/* Hero Section - Added proper top spacing */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={slideVariants}
           custom="left"
-          className="container-section min-h-[70vh] flex flex-col justify-center pt-12 pb-4"
+          className="container-section min-h-[70vh] flex flex-col justify-center pt-20 pb-4"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
             <motion.div 
