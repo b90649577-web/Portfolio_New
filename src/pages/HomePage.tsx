@@ -107,7 +107,7 @@ const SkillBall = ({ skill, index }) => {
   const { theme } = useTheme();
   
   return (
-    <div className="relative group perspective-1000">
+    <div className="relative group perspective-1000 flex-shrink-0">
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.8 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -131,7 +131,7 @@ const SkillBall = ({ skill, index }) => {
           rotateX: 10,
           transition: { duration: 0.4, type: "spring", stiffness: 200 }
         }}
-        className={`w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-2xl flex flex-col items-center justify-center
+        className={`w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 rounded-2xl flex flex-col items-center justify-center
           preserve-3d cursor-pointer transform-gpu relative overflow-hidden
           ${theme === 'dark' ? 'bg-dark-card' : 'bg-light-card'}
           bg-gradient-to-br ${skill.gradient}
@@ -174,7 +174,7 @@ const SkillBall = ({ skill, index }) => {
         {/* Skill symbol/icon */}
         <div className="relative transform-gpu backface-hidden z-10">
           <motion.div
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-1"
+            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1"
             animate={{
               rotate: [0, 5, -5, 0],
             }}
@@ -190,10 +190,10 @@ const SkillBall = ({ skill, index }) => {
         
         {/* Skill name */}
         <div className="text-center z-10">
-          <h3 className="text-sm md:text-base font-bold text-white drop-shadow-lg">
+          <h3 className="text-xs md:text-sm lg:text-base font-bold text-white drop-shadow-lg">
             {skill.name}
           </h3>
-          <p className="text-xs text-white/80 font-medium">
+          <p className="text-xs text-white/80 font-medium hidden md:block">
             {skill.description}
           </p>
         </div>
@@ -503,9 +503,9 @@ function HomePage() {
           <Stats />
         </motion.div>
 
-        {/* Featured Skills - Minimal spacing */}
+        {/* Featured Skills - Single line on desktop */}
         <FeaturedSection title="Featured Skills" viewAllLink="/skills" direction="left">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
+          <div className="flex flex-wrap justify-center lg:justify-between xl:justify-center gap-3 md:gap-4 lg:gap-2 xl:gap-4 overflow-x-auto lg:overflow-x-visible">
             {featuredSkills.map((skill, index) => (
               <SkillBall key={skill.name} skill={skill} index={index} />
             ))}
