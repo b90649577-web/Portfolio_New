@@ -269,14 +269,14 @@ function HomePage() {
           custom="left"
           className="container-section min-h-[70vh] flex flex-col justify-center pt-20 pb-4"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             <motion.div 
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex justify-center lg:justify-end order-1 lg:order-none"
             >
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px]">
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px]">
                 <motion.div 
                   initial={{ rotate: 0 }}
                   animate={{ rotate: 360 }}
