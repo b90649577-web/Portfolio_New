@@ -8,7 +8,7 @@ import ThemeAwareImage from '../ThemeAwareImage';
 const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/', title: 'Go to Home - Brajesh Kumar EdTech-Community Portfolio', ariaLabel: 'Navigate to Home page' },
-    { name: 'About Me', path: '/about', title: 'About Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer', ariaLabel: 'Learn about Brajesh Kumar' },
+    { name: 'About', path: '/about', title: 'About Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer', ariaLabel: 'Learn about Brajesh Kumar' },
     { name: 'Education', path: '/education', title: 'Educational Background - B.Tech CSE at GL Bajaj Group of Institutions', ariaLabel: 'View educational background' },
     { name: 'Experience', path: '/experience', title: 'Professional Experience - Campus Ambassador, EdTech-Community & Student Leadership', ariaLabel: 'View professional experience' },
     { name: 'Profiles', path: '/profiles', title: 'Professional Profiles - GitHub, LinkedIn, CodeChef, Google Cloud, Azure & More', ariaLabel: 'View professional profiles' },
@@ -16,7 +16,7 @@ const Navbar = () => {
     { name: 'Services', path: '/services', title: 'AI Development, Google Cloud, Azure, Firebase, Kong, Full Stack & UI/UX Design Services', ariaLabel: 'View services offered' },
     { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development, EdTech-Community', ariaLabel: 'Read tech blogs and insights' },
     { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements' },
-    { name: 'Skills & Tools', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong, Machine Learning', ariaLabel: 'View technical skills and tools' },
+    { name: 'Skills', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong, Machine Learning', ariaLabel: 'View technical skills and tools' },
     { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources', ariaLabel: 'View professional milestones and journey' },
     { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration' },
   ];
@@ -39,17 +39,17 @@ const Navbar = () => {
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-light-card/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-md py-3'
-          : 'bg-transparent py-4'
+          ? 'bg-light-card/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-md py-2'
+          : 'bg-transparent py-3'
       }`}
       role="banner"
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center" aria-label="Main Navigation" role="navigation">
+      <nav className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 flex justify-between items-center" aria-label="Main Navigation" role="navigation">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-xl font-bold flex items-center gap-2"
+          className="text-lg font-bold flex items-center gap-2 flex-shrink-0"
         >
           <Link 
             to="/" 
@@ -61,7 +61,7 @@ const Navbar = () => {
               darkSrc="/personal-dark.jpg"
               lightSrc="/personal-light.jpg"
               alt="Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer"
-              className="h-8 w-8 rounded-full"
+              className="h-7 w-7 rounded-full"
             />
             <span>
               Brajesh<span className="text-primary-500">.</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden lg:flex space-x-1 xl:space-x-2 flex-wrap justify-center"
+          className="hidden lg:flex items-center space-x-1 flex-wrap justify-center flex-1 mx-4"
           role="menubar"
         >
           {navLinks.map((link) => (
@@ -83,7 +83,7 @@ const Navbar = () => {
                 to={link.path}
                 title={link.title}
                 aria-label={link.ariaLabel}
-                className={`nav-link text-xs xl:text-sm px-2 xl:px-3 py-2 ${
+                className={`nav-link text-xs px-2 py-2 whitespace-nowrap ${
                   location.pathname === link.path ? 'active' : ''
                 }`}
                 role="menuitem"
@@ -94,7 +94,7 @@ const Navbar = () => {
           ))}
         </motion.ul>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 flex-shrink-0">
           {/* Theme Toggle Button */}
           <motion.button
             initial={{ opacity: 0, scale: 0.5 }}
@@ -106,9 +106,9 @@ const Navbar = () => {
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
           >
             {theme === 'dark' ? (
-              <Sun className="w-5 h-5" aria-hidden="true" />
+              <Sun className="w-4 h-4" aria-hidden="true" />
             ) : (
-              <Moon className="w-5 h-5" aria-hidden="true" />
+              <Moon className="w-4 h-4" aria-hidden="true" />
             )}
           </motion.button>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
             aria-expanded={mobileMenuOpen}
             title={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
-            {mobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
+            {mobileMenuOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
           </button>
         </div>
       </nav>
