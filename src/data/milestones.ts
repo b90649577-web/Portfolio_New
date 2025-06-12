@@ -38,7 +38,6 @@ export const milestones: Milestone[] = [
   // JUNE 2025
   {
     id: '2025-06-openai',
-    date: 'June 2025',
     month: 'June',
     year: '2025',
     title: 'OpenAI Academy Launch at The Oberoi, Delhi',
@@ -51,7 +50,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-06-uiuxai',
-    date: 'June 2025',
     month: 'June',
     year: '2025',
     title: 'UI/UX Design in the World of AI',
@@ -63,7 +61,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-06-ssoc',
-    date: 'June 2025',
     month: 'June',
     year: '2025',
     title: 'Selected as SSOC Season 4 Contributor',
@@ -75,7 +72,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-06-mentorship-ui',
-    date: 'June 2025',
     month: 'June',
     year: '2025',
     title: 'Mentorship Cards UI Concept',
@@ -89,7 +85,6 @@ export const milestones: Milestone[] = [
   // MAY 2025
   {
     id: '2025-05-powerbi',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Power BI & AI Summit – Delhi Edition',
@@ -102,7 +97,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-aicamp',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'AICamp Meetup at Tata 1mg, Gurugram',
@@ -115,7 +109,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-business4',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Business4.0 Meetup – AI for Business Augmentation',
@@ -127,7 +120,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-ainxt',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'AI.NXT AI Summit – Gurugram',
@@ -139,7 +131,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-inclusivedesign',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Inclusive Design Research – Microsoft Gurugram',
@@ -151,7 +142,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-mahakumbh',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Starting Mahakumbh 2025',
@@ -163,7 +153,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-artists-ai',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'How Artists Use AI – Microsoft Gurugram',
@@ -175,7 +164,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-ai-pay',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'AI Innovation Pay 2025 – Gurgaon',
@@ -187,7 +175,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-cyberconnect',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Cyber Connect – Microsoft, Noida',
@@ -199,7 +186,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-05-voicebot',
-    date: 'May 2025',
     month: 'May',
     year: '2025',
     title: 'Voice Bot + Calendar Sync Prototype',
@@ -213,7 +199,6 @@ export const milestones: Milestone[] = [
   // APRIL 2025
   {
     id: '2025-04-xrcreator',
-    date: 'April 2025',
     month: 'April',
     year: '2025',
     title: 'XR Creator Hackathon – 91 Springboard, Noida',
@@ -225,7 +210,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-04-advdashboard',
-    date: 'April 2025',
     month: 'April',
     year: '2025',
     title: 'Advanced Dashboard UI',
@@ -237,7 +221,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-04-resumeeval',
-    date: 'April 2025',
     month: 'April',
     year: '2025',
     title: 'AI-Powered Resume Evaluator',
@@ -251,7 +234,6 @@ export const milestones: Milestone[] = [
   // MARCH 2025
   {
     id: '2025-03-iitdelhi',
-    date: 'March 2025',
     month: 'March',
     year: '2025',
     title: 'IIT Delhi – BECon & Startup Expo',
@@ -263,7 +245,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-03-unicorns-iitd',
-    date: 'March 2025',
     month: 'March',
     year: '2025',
     title: 'The Unicorns from IIT Delhi – Feb 1 Event',
@@ -275,7 +256,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-03-cognizance',
-    date: 'March 2025',
     month: 'March',
     year: '2025',
     title: 'Cognizance 2025 (IIT Roorkee)',
@@ -287,7 +267,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-03-facedash',
-    date: 'March 2025',
     month: 'March',
     year: '2025',
     title: 'Face Recognition Dashboard',
@@ -299,7 +278,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-03-promptwriter',
-    date: 'March 2025',
     month: 'March',
     year: '2025',
     title: 'OpenAI Prompt Writer Tool',
@@ -313,7 +291,6 @@ export const milestones: Milestone[] = [
   // FEBRUARY 2025
   {
     id: '2025-02-nlpchatbot',
-    date: 'February 2025',
     month: 'February',
     year: '2025',
     title: 'NLP Chatbot with TensorFlow',
@@ -325,7 +302,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-02-cli-launcher',
-    date: 'February 2025',
     month: 'February',
     year: '2025',
     title: 'CLI Project Launcher',
@@ -339,7 +315,6 @@ export const milestones: Milestone[] = [
   // JANUARY 2025
   {
     id: '2025-01-kaizen',
-    date: 'January 2025',
     month: 'January',
     year: '2025',
     title: 'Kaizen 2025 (IIT Delhi)',
@@ -351,7 +326,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-01-azureacademy',
-    date: 'January 2025',
     month: 'January',
     year: '2025',
     title: 'Azure Learning Academy – Jan 17',
@@ -363,7 +337,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-01-agrilearn',
-    date: 'January 2025',
     month: 'January',
     year: '2025',
     title: 'Agrilearn AI Portfolio Launch',
@@ -375,7 +348,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-01-devtoolkit',
-    date: 'January 2025',
     month: 'January',
     year: '2025',
     title: 'Dev Toolkit Vault',
@@ -387,7 +359,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2025-01-100projects',
-    date: 'January 2025',
     month: 'January',
     year: '2025',
     title: 'Shared 100+ Projects Publicly',
@@ -402,7 +373,6 @@ export const milestones: Milestone[] = [
   // DECEMBER 2024
   {
     id: '2024-12-devblog',
-    date: 'December 2024',
     month: 'December',
     year: '2024',
     title: 'Personal Dev Blog Started',
@@ -414,7 +384,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-12-timeline',
-    date: 'December 2024',
     month: 'December',
     year: '2024',
     title: 'Timeline Page Launched',
@@ -426,7 +395,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-12-wayspire',
-    date: 'December 2024',
     month: 'December',
     year: '2024',
     title: 'Wayspire',
@@ -440,7 +408,6 @@ export const milestones: Milestone[] = [
   // NOVEMBER 2024
   {
     id: '2024-11-inventory',
-    date: 'November 2024',
     month: 'November',
     year: '2024',
     title: 'Inventory Management System',
@@ -452,7 +419,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-11-facedetect',
-    date: 'November 2024',
     month: 'November',
     year: '2024',
     title: 'Face Detection GUI',
@@ -464,7 +430,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-11-movierec',
-    date: 'November 2024',
     month: 'November',
     year: '2024',
     title: 'Movie Recommender System',
@@ -478,7 +443,6 @@ export const milestones: Milestone[] = [
   // OCTOBER 2024
   {
     id: '2024-10-iitmadras',
-    date: 'October 2024',
     month: 'October',
     year: '2024',
     title: 'IIT Madras',
@@ -490,7 +454,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-10-gssoc',
-    date: 'October 2024',
     month: 'October',
     year: '2024',
     title: 'GirlScript Summer of Code (GSSoC 2024)',
@@ -502,7 +465,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-10-semac',
-    date: 'October 2024',
     month: 'October',
     year: '2024',
     title: 'SEMAC - College ML Utility App',
@@ -514,7 +476,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-10-mlformui',
-    date: 'October 2024',
     month: 'October',
     year: '2024',
     title: 'Machine Learning Form UI',
@@ -526,7 +487,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-10-figmahtml',
-    date: 'October 2024',
     month: 'October',
     year: '2024',
     title: 'Figma to HTML UI Clone',
@@ -540,7 +500,6 @@ export const milestones: Milestone[] = [
   // SEPTEMBER 2024
   {
     id: '2024-09-chatterbox',
-    date: 'September 2024',
     month: 'September',
     year: '2024',
     title: 'ChatterBox - Real-Time Chat App',
@@ -552,7 +511,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-09-imuna',
-    date: 'September 2024',
     month: 'September',
     year: '2024',
     title: 'IMUNA – International Model United Nations Association',
@@ -564,7 +522,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-09-expensetracker',
-    date: 'September 2024',
     month: 'September',
     year: '2024',
     title: 'Expense Tracker - React',
@@ -576,7 +533,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-09-cssuikit',
-    date: 'September 2024',
     month: 'September',
     year: '2024',
     title: 'CSS UI Kit',
@@ -590,7 +546,6 @@ export const milestones: Milestone[] = [
   // AUGUST 2024
   {
     id: '2024-08-agrotech',
-    date: 'August 2024',
     month: 'August',
     year: '2024',
     title: 'AgroTech - Smart Farming Platform',
@@ -602,7 +557,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-08-jwt',
-    date: 'August 2024',
     month: 'August',
     year: '2024',
     title: 'JWT Authentication System',
@@ -614,7 +568,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-08-mobileforms',
-    date: 'August 2024',
     month: 'August',
     year: '2024',
     title: 'Mobile Forms UI Mockups',
@@ -628,7 +581,6 @@ export const milestones: Milestone[] = [
   // JULY 2024
   {
     id: '2024-07-knightsflovora',
-    date: 'July 2024',
     month: 'July',
     year: '2024',
     title: 'The Knights of Flovora',
@@ -640,7 +592,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-07-prod-dashboard',
-    date: 'July 2024',
     month: 'July',
     year: '2024',
     title: 'Productivity Dashboard',
@@ -652,7 +603,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-07-javabill',
-    date: 'July 2024',
     month: 'July',
     year: '2024',
     title: 'Java Billing Application',
@@ -664,7 +614,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-07-letsupgrad',
-    date: 'July 2024',
     month: 'July',
     year: '2024',
     title: 'Lets Upgrad',
@@ -678,7 +627,6 @@ export const milestones: Milestone[] = [
   // JUNE 2024
   {
     id: '2024-06-careermapper',
-    date: 'June 2024',
     month: 'June',
     year: '2024',
     title: 'Career Mapper',
@@ -690,7 +638,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-06-capnshare',
-    date: 'June 2024',
     month: 'June',
     year: '2024',
     title: "Cap'nShare - Food Sharing App",
@@ -702,7 +649,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-06-roadmap',
-    date: 'June 2024',
     month: 'June',
     year: '2024',
     title: 'Roadmap Planner Web App',
@@ -716,7 +662,6 @@ export const milestones: Milestone[] = [
   // MAY 2024
   {
     id: '2024-05-fitdeck',
-    date: 'May 2024',
     month: 'May',
     year: '2024',
     title: 'FitDeck - Fitness Platform',
@@ -728,7 +673,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-05-fitnesstracker',
-    date: 'May 2024',
     month: 'May',
     year: '2024',
     title: 'Fitness Tracker with Charts',
@@ -740,7 +684,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-05-moodtracker',
-    date: 'May 2024',
     month: 'May',
     year: '2024',
     title: 'Mood Tracker UI Design',
@@ -754,7 +697,6 @@ export const milestones: Milestone[] = [
   // APRIL 2024
   {
     id: '2024-04-mathematrix',
-    date: 'April 2024',
     month: 'April',
     year: '2024',
     title: 'Mathematrix',
@@ -766,7 +708,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-04-resumegen',
-    date: 'April 2024',
     month: 'April',
     year: '2024',
     title: 'Resume Generator with HTML Export',
@@ -778,7 +719,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2024-04-musicviz',
-    date: 'April 2024',
     month: 'April',
     year: '2024',
     title: 'Music Visualizer',
@@ -792,7 +732,6 @@ export const milestones: Milestone[] = [
   // MARCH 2024
   {
     id: '2024-03-ella',
-    date: 'March 2024',
     month: 'March',
     year: '2024',
     title: 'Ella - AI Chat Companion',
@@ -808,7 +747,6 @@ export const milestones: Milestone[] = [
   // DECEMBER 2023
   {
     id: '2023-12-dataviz',
-    date: 'December 2023',
     month: 'December',
     year: '2023',
     title: 'Data Visualizer Dashboard',
@@ -820,7 +758,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-12-musicvisualizer',
-    date: 'December 2023',
     month: 'December',
     year: '2023',
     title: 'Music Visualizer Web App',
@@ -834,7 +771,6 @@ export const milestones: Milestone[] = [
   // NOVEMBER 2023
   {
     id: '2023-11-surveytool',
-    date: 'November 2023',
     month: 'November',
     year: '2023',
     title: 'Survey Creator Tool',
@@ -846,7 +782,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-11-login-firebase',
-    date: 'November 2023',
     month: 'November',
     year: '2023',
     title: 'Login Auth Flow (React + Firebase)',
@@ -858,7 +793,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-11-movie-recommend',
-    date: 'November 2023',
     month: 'November',
     year: '2023',
     title: 'Movie/Book Recommendation Engine',
@@ -872,7 +806,6 @@ export const milestones: Milestone[] = [
   // OCTOBER 2023
   {
     id: '2023-10-notesapp',
-    date: 'October 2023',
     month: 'October',
     year: '2023',
     title: 'Notes App with Rich Text & Folders',
@@ -886,7 +819,6 @@ export const milestones: Milestone[] = [
   // SEPTEMBER 2023
   {
     id: '2023-09-gbgigroup',
-    date: 'September 2023',
     month: 'September',
     year: '2023',
     title: 'GL Bajaj Group of Institutions',
@@ -898,7 +830,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-09-inventory-dashboard',
-    date: 'September 2023',
     month: 'September',
     year: '2023',
     title: 'Inventory Management Dashboard',
@@ -912,7 +843,6 @@ export const milestones: Milestone[] = [
   // AUGUST 2023
   {
     id: '2023-08-realtimechat',
-    date: 'August 2023',
     month: 'August',
     year: '2023',
     title: 'Real-Time Chat Application',
@@ -926,7 +856,6 @@ export const milestones: Milestone[] = [
   // JULY 2023
   {
     id: '2023-07-jobcomparison',
-    date: 'July 2023',
     month: 'July',
     year: '2023',
     title: 'Job Comparison Platform',
@@ -940,7 +869,6 @@ export const milestones: Milestone[] = [
   // JUNE 2023
   {
     id: '2023-06-attendance',
-    date: 'June 2023',
     month: 'June',
     year: '2023',
     title: 'Student/Employee Attendance App',
@@ -954,7 +882,6 @@ export const milestones: Milestone[] = [
   // MAY 2023
   {
     id: '2023-05-quizmgmt',
-    date: 'May 2023',
     month: 'May',
     year: '2023',
     title: 'Quiz Management System',
@@ -968,7 +895,6 @@ export const milestones: Milestone[] = [
   // APRIL 2023
   {
     id: '2023-04-figma-ui-kits',
-    date: 'April 2023',
     month: 'April',
     year: '2023',
     title: 'Figma UI Kits',
@@ -982,7 +908,6 @@ export const milestones: Milestone[] = [
   // MARCH 2023
   {
     id: '2023-03-minibank',
-    date: 'March 2023',
     month: 'March',
     year: '2023',
     title: 'Mini Banking System - Java',
@@ -994,7 +919,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-03-weatherdashboard',
-    date: 'March 2023',
     month: 'March',
     year: '2023',
     title: 'Weather Dashboard - ChartJS',
@@ -1006,7 +930,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-03-loginuikit',
-    date: 'March 2023',
     month: 'March',
     year: '2023',
     title: 'Login/Auth UI Kit',
@@ -1018,7 +941,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-03-completed12',
-    date: 'March 2023',
     month: 'March',
     year: '2023',
     title: 'Completed Class 12',
@@ -1032,7 +954,6 @@ export const milestones: Milestone[] = [
   // FEBRUARY 2023
   {
     id: '2023-02-imagefilter',
-    date: 'February 2023',
     month: 'February',
     year: '2023',
     title: 'Image Filter App',
@@ -1044,7 +965,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-02-faceblur',
-    date: 'February 2023',
     month: 'February',
     year: '2023',
     title: 'Face Blur Tool',
@@ -1056,7 +976,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-02-librarymanager',
-    date: 'February 2023',
     month: 'February',
     year: '2023',
     title: 'Library Book Manager',
@@ -1070,7 +989,6 @@ export const milestones: Milestone[] = [
   // JANUARY 2023
   {
     id: '2023-01-blogcms',
-    date: 'January 2023',
     month: 'January',
     year: '2023',
     title: 'Blog CMS - Flask CRUD',
@@ -1082,7 +1000,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-01-newscli',
-    date: 'January 2023',
     month: 'January',
     year: '2023',
     title: 'News API Reader CLI',
@@ -1094,7 +1011,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-01-yt-downloader',
-    date: 'January 2023',
     month: 'January',
     year: '2023',
     title: 'YouTube Downloader GUI',
@@ -1106,7 +1022,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2023-01-online-markdown-editor',
-    date: 'January 2023',
     month: 'January',
     year: '2023',
     title: 'Online Markdown Editor',
@@ -1121,7 +1036,6 @@ export const milestones: Milestone[] = [
   // DECEMBER 2022
   {
     id: '2022-12-taskscheduler',
-    date: 'December 2022',
     month: 'December',
     year: '2022',
     title: 'Task Scheduler',
@@ -1133,7 +1047,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-12-cms-markdown',
-    date: 'December 2022',
     month: 'December',
     year: '2022',
     title: 'Basic CMS with Markdown',
@@ -1145,7 +1058,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-12-restaurant-ui',
-    date: 'December 2022',
     month: 'December',
     year: '2022',
     title: 'Restaurant Ordering UI',
@@ -1159,7 +1071,6 @@ export const milestones: Milestone[] = [
   // NOVEMBER 2022
   {
     id: '2022-11-digitalclock',
-    date: 'November 2022',
     month: 'November',
     year: '2022',
     title: 'Digital Clock',
@@ -1173,7 +1084,6 @@ export const milestones: Milestone[] = [
   // OCTOBER 2022
   {
     id: '2022-10-recipefinder',
-    date: 'October 2022',
     month: 'October',
     year: '2022',
     title: 'Recipe Finder App',
@@ -1185,7 +1095,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-10-stopwatch',
-    date: 'October 2022',
     month: 'October',
     year: '2022',
     title: 'Stopwatch + Countdown Combo',
@@ -1197,7 +1106,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-10-themed-toggle',
-    date: 'October 2022',
     month: 'October',
     year: '2022',
     title: 'Light/Dark Theme Toggle UI',
@@ -1211,7 +1119,6 @@ export const milestones: Milestone[] = [
   // SEPTEMBER 2022
   {
     id: '2022-09-addressbook',
-    date: 'September 2022',
     month: 'September',
     year: '2022',
     title: 'Address Book',
@@ -1225,7 +1132,6 @@ export const milestones: Milestone[] = [
   // AUGUST 2022
   {
     id: '2022-08-banking-sim',
-    date: 'August 2022',
     month: 'August',
     year: '2022',
     title: 'Simple Banking Simulation',
@@ -1239,7 +1145,6 @@ export const milestones: Milestone[] = [
   // JULY 2022
   {
     id: '2022-07-screenshot-gui',
-    date: 'July 2022',
     month: 'July',
     year: '2022',
     title: 'Screenshot App - GUI',
@@ -1251,7 +1156,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-07-flask-login',
-    date: 'July 2022',
     month: 'July',
     year: '2022',
     title: 'Flask Login/Signup',
@@ -1263,7 +1167,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-07-file-encryptor',
-    date: 'July 2022',
     month: 'July',
     year: '2022',
     title: 'File Encryptor (Fernet)',
@@ -1277,7 +1180,6 @@ export const milestones: Milestone[] = [
   // JUNE 2022
   {
     id: '2022-06-portfolio-v2',
-    date: 'June 2022',
     month: 'June',
     year: '2022',
     title: 'Portfolio v2 - Multiple Sections',
@@ -1289,7 +1191,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-06-expensetracker',
-    date: 'June 2022',
     month: 'June',
     year: '2022',
     title: 'Expense Tracker (Pie Charts)',
@@ -1301,7 +1202,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-06-attendance-java',
-    date: 'June 2022',
     month: 'June',
     year: '2022',
     title: 'Attendance App - Java',
@@ -1315,7 +1215,6 @@ export const milestones: Milestone[] = [
   // MAY 2022
   {
     id: '2022-05-calculator',
-    date: 'May 2022',
     month: 'May',
     year: '2022',
     title: 'Basic Calculator (Swing/JavaFX)',
@@ -1329,7 +1228,6 @@ export const milestones: Milestone[] = [
   // APRIL 2022
   {
     id: '2022-04-emailfilesender',
-    date: 'April 2022',
     month: 'April',
     year: '2022',
     title: 'Email + File Sender Combo Tool',
@@ -1341,7 +1239,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-04-htmlcss-product-card',
-    date: 'April 2022',
     month: 'April',
     year: '2022',
     title: 'HTML/CSS Product Card Showcase',
@@ -1353,7 +1250,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-04-notes-localstorage',
-    date: 'April 2022',
     month: 'April',
     year: '2022',
     title: 'Notes App - JS LocalStorage',
@@ -1367,7 +1263,6 @@ export const milestones: Milestone[] = [
   // MARCH 2022
   {
     id: '2022-03-currencyconverter',
-    date: 'March 2022',
     month: 'March',
     year: '2022',
     title: 'Currency Converter GUI',
@@ -1379,7 +1274,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-03-bmi-tkinter',
-    date: 'March 2022',
     month: 'March',
     year: '2022',
     title: 'BMI Visual GUI - Tkinter',
@@ -1391,7 +1285,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-03-java-quiz',
-    date: 'March 2022',
     month: 'March',
     year: '2022',
     title: 'Java Quiz System',
@@ -1405,7 +1298,6 @@ export const milestones: Milestone[] = [
   // FEBRUARY 2022
   {
     id: '2022-02-file-encdec',
-    date: 'February 2022',
     month: 'February',
     year: '2022',
     title: 'File Encryption/Decryption',
@@ -1419,7 +1311,6 @@ export const milestones: Milestone[] = [
   // JANUARY 2022
   {
     id: '2022-01-grade-tracker',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'Student Grade Tracker',
@@ -1431,7 +1322,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-01-urlshortener',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'URL Shortener - Bitly API',
@@ -1443,7 +1333,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-01-hotel-c',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'Hotel Management System - C',
@@ -1455,7 +1344,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-01-grades-calc',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'Student Grades Calculator',
@@ -1467,7 +1355,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-01-personal-library',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'Personal Library Manager',
@@ -1479,7 +1366,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2022-01-bmi-swing',
-    date: 'January 2022',
     month: 'January',
     year: '2022',
     title: 'BMI Calculator (Swing GUI)',
@@ -1494,7 +1380,6 @@ export const milestones: Milestone[] = [
   // DECEMBER 2021
   {
     id: '2021-12-file-organizer',
-    date: 'December 2021',
     month: 'December',
     year: '2021',
     title: 'File Organizer - Folder Sorter',
@@ -1506,7 +1391,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-12-quiz-app',
-    date: 'December 2021',
     month: 'December',
     year: '2021',
     title: 'Quiz App (CLI)',
@@ -1520,7 +1404,6 @@ export const milestones: Milestone[] = [
   // NOVEMBER 2021
   {
     id: '2021-11-webscraper',
-    date: 'November 2021',
     month: 'November',
     year: '2021',
     title: 'Web Scraper - BeautifulSoup',
@@ -1532,7 +1415,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-11-bank-account',
-    date: 'November 2021',
     month: 'November',
     year: '2021',
     title: 'Bank Account Simulator',
@@ -1546,7 +1428,6 @@ export const milestones: Milestone[] = [
   // OCTOBER 2021
   {
     id: '2021-10-email-sender',
-    date: 'October 2021',
     month: 'October',
     year: '2021',
     title: 'Email Sender - smtplib',
@@ -1558,7 +1439,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-10-registration-form',
-    date: 'October 2021',
     month: 'October',
     year: '2021',
     title: 'Registration Form - Flask',
@@ -1570,7 +1450,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-10-memory-game',
-    date: 'October 2021',
     month: 'October',
     year: '2021',
     title: 'Memory Game - HTML/JS',
@@ -1584,7 +1463,6 @@ export const milestones: Milestone[] = [
   // SEPTEMBER 2021
   {
     id: '2021-09-address-book',
-    date: 'September 2021',
     month: 'September',
     year: '2021',
     title: 'Basic Address Book',
@@ -1598,7 +1476,6 @@ export const milestones: Milestone[] = [
   // AUGUST 2021
   {
     id: '2021-08-weather-cli',
-    date: 'August 2021',
     month: 'August',
     year: '2021',
     title: 'Weather CLI App',
@@ -1610,7 +1487,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-08-calculator-swing',
-    date: 'August 2021',
     month: 'August',
     year: '2021',
     title: 'Java Calculator - Swing',
@@ -1622,7 +1498,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-08-portfolio-page',
-    date: 'August 2021',
     month: 'August',
     year: '2021',
     title: 'Portfolio Page + Download Resume',
@@ -1636,7 +1511,6 @@ export const milestones: Milestone[] = [
   // JULY 2021
   {
     id: '2021-07-student-marks',
-    date: 'July 2021',
     month: 'July',
     year: '2021',
     title: 'Student Marks Manager',
@@ -1650,7 +1524,6 @@ export const milestones: Milestone[] = [
   // JUNE 2021
   {
     id: '2021-06-number-guess',
-    date: 'June 2021',
     month: 'June',
     year: '2021',
     title: 'Number Guessing Game',
@@ -1664,7 +1537,6 @@ export const milestones: Milestone[] = [
   // MAY 2021
   {
     id: '2021-05-bmi-chart',
-    date: 'May 2021',
     month: 'May',
     year: '2021',
     title: 'BMI Chart Plotter - matplotlib',
@@ -1676,7 +1548,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-05-blog-template',
-    date: 'May 2021',
     month: 'May',
     year: '2021',
     title: 'HTML/CSS Blog Template',
@@ -1688,7 +1559,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-05-resume-site',
-    date: 'May 2021',
     month: 'May',
     year: '2021',
     title: 'Single-Page Resume Website',
@@ -1702,7 +1572,6 @@ export const milestones: Milestone[] = [
   // APRIL 2021
   {
     id: '2021-04-contact-csv',
-    date: 'April 2021',
     month: 'April',
     year: '2021',
     title: 'Contact Manager - CSV',
@@ -1714,7 +1583,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-04-palindrome',
-    date: 'April 2021',
     month: 'April',
     year: '2021',
     title: 'Palindrome Checker',
@@ -1728,7 +1596,6 @@ export const milestones: Milestone[] = [
   // MARCH 2021
   {
     id: '2021-03-simple-atm',
-    date: 'March 2021',
     month: 'March',
     year: '2021',
     title: 'Simple ATM Interface',
@@ -1742,7 +1609,6 @@ export const milestones: Milestone[] = [
   // FEBRUARY 2021
   {
     id: '2021-02-rock-paper',
-    date: 'February 2021',
     month: 'February',
     year: '2021',
     title: 'Rock Paper Scissors GUI',
@@ -1754,7 +1620,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-02-image-resizer',
-    date: 'February 2021',
     month: 'February',
     year: '2021',
     title: 'Image Resizer - PIL',
@@ -1766,7 +1631,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-02-alarm-timer',
-    date: 'February 2021',
     month: 'February',
     year: '2021',
     title: 'Alarm + Timer Combo',
@@ -1780,7 +1644,6 @@ export const milestones: Milestone[] = [
   // JANUARY 2021
   {
     id: '2021-01-todo-file',
-    date: 'January 2021',
     month: 'January',
     year: '2021',
     title: 'To-Do List - File-based',
@@ -1792,7 +1655,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-01-currency-conv',
-    date: 'January 2021',
     month: 'January',
     year: '2021',
     title: 'Currency Converter - API',
@@ -1804,7 +1666,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2021-01-stopwatch-tkinter',
-    date: 'January 2021',
     month: 'January',
     year: '2021',
     title: 'Stopwatch - Tkinter',
@@ -1819,7 +1680,6 @@ export const milestones: Milestone[] = [
   // DECEMBER 2020
   {
     id: '2020-12-quiz-python',
-    date: 'December 2020',
     month: 'December',
     year: '2020',
     title: 'Quiz App - Python',
@@ -1831,7 +1691,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-12-screenshot-pyautogui',
-    date: 'December 2020',
     month: 'December',
     year: '2020',
     title: 'Screenshot Tool - pyautogui',
@@ -1843,7 +1702,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-12-file-copier',
-    date: 'December 2020',
     month: 'December',
     year: '2020',
     title: 'File Copier Script',
@@ -1857,7 +1715,6 @@ export const milestones: Milestone[] = [
   // NOVEMBER 2020
   {
     id: '2020-11-palindrome',
-    date: 'November 2020',
     month: 'November',
     year: '2020',
     title: 'Palindrome Checker',
@@ -1871,7 +1728,6 @@ export const milestones: Milestone[] = [
   // OCTOBER 2020
   {
     id: '2020-10-hangman',
-    date: 'October 2020',
     month: 'October',
     year: '2020',
     title: 'Hangman Game',
@@ -1883,7 +1739,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-10-login-htmlcss',
-    date: 'October 2020',
     month: 'October',
     year: '2020',
     title: 'Login Page - HTML/CSS',
@@ -1895,7 +1750,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-10-resume-html',
-    date: 'October 2020',
     month: 'October',
     year: '2020',
     title: 'Resume Template - HTML',
@@ -1909,7 +1763,6 @@ export const milestones: Milestone[] = [
   // SEPTEMBER 2020
   {
     id: '2020-09-shopping-list',
-    date: 'September 2020',
     month: 'September',
     year: '2020',
     title: 'Shopping List Manager',
@@ -1923,7 +1776,6 @@ export const milestones: Milestone[] = [
   // AUGUST 2020
   {
     id: '2020-08-password-generator',
-    date: 'August 2020',
     month: 'August',
     year: '2020',
     title: 'Password Generator',
@@ -1935,7 +1787,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-08-alarm-clock',
-    date: 'August 2020',
     month: 'August',
     year: '2020',
     title: 'Simple Alarm Clock',
@@ -1947,7 +1798,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-08-text-analyzer',
-    date: 'August 2020',
     month: 'August',
     year: '2020',
     title: 'Text File Analyzer',
@@ -1961,7 +1811,6 @@ export const milestones: Milestone[] = [
   // JULY 2020
   {
     id: '2020-07-number-guess',
-    date: 'July 2020',
     month: 'July',
     year: '2020',
     title: 'Number Guessing Game',
@@ -1973,7 +1822,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-07-madlibs',
-    date: 'July 2020',
     month: 'July',
     year: '2020',
     title: 'Mad Libs Generator',
@@ -1985,7 +1833,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-07-tip-calculator',
-    date: 'July 2020',
     month: 'July',
     year: '2020',
     title: 'Tip Calculator',
@@ -1997,7 +1844,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-07-bmi-cli',
-    date: 'July 2020',
     month: 'July',
     year: '2020',
     title: 'BMI Calculator CLI',
@@ -2011,7 +1857,6 @@ export const milestones: Milestone[] = [
   // JUNE 2020
   {
     id: '2020-06-calculator',
-    date: 'June 2020',
     month: 'June',
     year: '2020',
     title: 'Calculator - Arithmetic',
@@ -2023,7 +1868,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-06-rps-console',
-    date: 'June 2020',
     month: 'June',
     year: '2020',
     title: 'Rock Paper Scissors - Console',
@@ -2035,7 +1879,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-06-dice-roller',
-    date: 'June 2020',
     month: 'June',
     year: '2020',
     title: 'Dice Roller Simulator',
@@ -2049,7 +1892,6 @@ export const milestones: Milestone[] = [
   // MAY 2020
   {
     id: '2020-05-passed-10',
-    date: 'May 2020',
     month: 'May',
     year: '2020',
     title: 'Passed Class 10 – 91%',
@@ -2061,7 +1903,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: '2020-05-learned-python',
-    date: 'May 2020',
     month: 'May',
     year: '2020',
     title: 'Learned Python Basics',
@@ -2075,7 +1916,6 @@ export const milestones: Milestone[] = [
   // APRIL 2020
   {
     id: '2020-04-todo-list',
-    date: 'April 2020',
     month: 'April',
     year: '2020',
     title: 'To-Do List (CLI)',
@@ -2089,7 +1929,6 @@ export const milestones: Milestone[] = [
   // MARCH 2020
   {
     id: '2020-03-file-reader',
-    date: 'March 2020',
     month: 'March',
     year: '2020',
     title: 'File Reader/Writer',
@@ -2103,7 +1942,6 @@ export const milestones: Milestone[] = [
   // FEBRUARY 2020
   {
     id: '2020-02-mult-table',
-    date: 'February 2020',
     month: 'February',
     year: '2020',
     title: 'Multiplication Table Generator',
@@ -2117,7 +1955,6 @@ export const milestones: Milestone[] = [
   // JANUARY 2020
   {
     id: '2020-01-temp-conv',
-    date: 'January 2020',
     month: 'January',
     year: '2020',
     title: 'Temperature Converter',

@@ -84,6 +84,14 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Milestones Page -->
+  <url>
+    <loc>https://brajeshkumar.dev/#/milestones</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Contact Page -->
   <url>
     <loc>https://brajeshkumar.dev/#/contact</loc>
