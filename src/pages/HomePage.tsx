@@ -22,14 +22,70 @@ const jobTitles = [
 ];
 
 const featuredSkills = [
-  { name: 'React', icon: '⚛️', color: '#61DAFB', gradient: 'from-blue-400 to-cyan-400' },
-  { name: 'TypeScript', icon: '📘', color: '#3178C6', gradient: 'from-blue-500 to-blue-600' },
-  { name: 'Node.js', icon: '🟩', color: '#339933', gradient: 'from-green-400 to-green-600' },
-  { name: 'Python', icon: '🐍', color: '#3776AB', gradient: 'from-blue-600 to-blue-800' },
-  { name: 'Google Cloud', icon: '☁️', color: '#4285F4', gradient: 'from-blue-400 to-blue-600' },
-  { name: 'Azure', icon: '🔷', color: '#0078D4', gradient: 'from-blue-500 to-blue-700' },
-  { name: 'Firebase', icon: '🔥', color: '#FFCA28', gradient: 'from-yellow-400 to-orange-500' },
-  { name: 'Kong', icon: '🦍', color: '#003459', gradient: 'from-gray-600 to-gray-800' },
+  { 
+    name: 'React', 
+    symbol: '⚛️', 
+    color: '#61DAFB', 
+    gradient: 'from-blue-400 via-cyan-400 to-blue-500',
+    bgPattern: 'radial-gradient(circle at 30% 30%, rgba(97, 218, 251, 0.3) 0%, transparent 50%)',
+    description: 'Frontend Library'
+  },
+  { 
+    name: 'TypeScript', 
+    symbol: 'TS', 
+    color: '#3178C6', 
+    gradient: 'from-blue-500 via-blue-600 to-indigo-600',
+    bgPattern: 'linear-gradient(135deg, rgba(49, 120, 198, 0.2) 0%, rgba(79, 70, 229, 0.2) 100%)',
+    description: 'Type-Safe JS'
+  },
+  { 
+    name: 'Node.js', 
+    symbol: '🟢', 
+    color: '#339933', 
+    gradient: 'from-green-400 via-emerald-500 to-green-600',
+    bgPattern: 'radial-gradient(ellipse at 70% 20%, rgba(52, 211, 153, 0.3) 0%, transparent 60%)',
+    description: 'Backend Runtime'
+  },
+  { 
+    name: 'Python', 
+    symbol: '🐍', 
+    color: '#3776AB', 
+    gradient: 'from-yellow-400 via-blue-500 to-blue-700',
+    bgPattern: 'linear-gradient(45deg, rgba(255, 193, 7, 0.2) 0%, rgba(55, 118, 171, 0.2) 100%)',
+    description: 'AI & Backend'
+  },
+  { 
+    name: 'Google Cloud', 
+    symbol: '☁️', 
+    color: '#4285F4', 
+    gradient: 'from-blue-400 via-sky-500 to-blue-600',
+    bgPattern: 'radial-gradient(circle at 50% 50%, rgba(66, 133, 244, 0.2) 0%, rgba(52, 168, 83, 0.1) 100%)',
+    description: 'Cloud Platform'
+  },
+  { 
+    name: 'Azure', 
+    symbol: '🔷', 
+    color: '#0078D4', 
+    gradient: 'from-blue-500 via-blue-600 to-blue-700',
+    bgPattern: 'linear-gradient(135deg, rgba(0, 120, 212, 0.3) 0%, rgba(0, 120, 212, 0.1) 100%)',
+    description: 'Microsoft Cloud'
+  },
+  { 
+    name: 'Firebase', 
+    symbol: '🔥', 
+    color: '#FFCA28', 
+    gradient: 'from-yellow-400 via-orange-500 to-red-500',
+    bgPattern: 'radial-gradient(circle at 40% 60%, rgba(255, 202, 40, 0.3) 0%, rgba(255, 87, 34, 0.2) 100%)',
+    description: 'Backend Service'
+  },
+  { 
+    name: 'Kong', 
+    symbol: '🦍', 
+    color: '#003459', 
+    gradient: 'from-gray-600 via-slate-700 to-gray-800',
+    bgPattern: 'linear-gradient(45deg, rgba(0, 52, 89, 0.3) 0%, rgba(71, 85, 105, 0.2) 100%)',
+    description: 'API Gateway'
+  },
 ];
 
 const slideVariants = {
@@ -53,58 +109,145 @@ const SkillBall = ({ skill, index }) => {
   return (
     <div className="relative group perspective-1000">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: index * 0.1 }}
+        initial={{ opacity: 0, y: 50, scale: 0.8 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.6, delay: index * 0.1, type: "spring", stiffness: 100 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -10, 0],
-          rotateX: [0, 5, 0],
-          rotateY: [0, 10, 0],
+          y: [0, -8, 0],
+          rotateX: [0, 3, 0],
+          rotateY: [0, 5, 0],
         }}
         transition={{
           duration: 4,
           repeat: Infinity,
           repeatType: "reverse",
           ease: "easeInOut",
-          delay: index * 0.2,
+          delay: index * 0.3,
         }}
         whileHover={{
-          scale: 1.2,
-          rotateY: 180,
-          transition: { duration: 0.6 }
+          scale: 1.15,
+          rotateY: 15,
+          rotateX: 10,
+          transition: { duration: 0.4, type: "spring", stiffness: 200 }
         }}
-        className={`w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full flex items-center justify-center text-3xl md:text-4xl
-          preserve-3d cursor-pointer transform-gpu
+        className={`w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-2xl flex flex-col items-center justify-center
+          preserve-3d cursor-pointer transform-gpu relative overflow-hidden
           ${theme === 'dark' ? 'bg-dark-card' : 'bg-light-card'}
           bg-gradient-to-br ${skill.gradient}
-          shadow-[0_0_15px_rgba(0,0,0,0.1)]
-          dark:shadow-[0_0_15px_rgba(255,255,255,0.1)]
-          transition-all duration-300`}
+          shadow-[0_8px_32px_rgba(0,0,0,0.12)]
+          dark:shadow-[0_8px_32px_rgba(255,255,255,0.08)]
+          border border-white/20 dark:border-gray-700/30
+          transition-all duration-300 group-hover:shadow-2xl`}
         style={{
           transformStyle: 'preserve-3d',
+          background: `${skill.bgPattern}, linear-gradient(135deg, ${skill.gradient.split(' ').join(', ')})`
         }}
-        title={`${skill.name} - Core technology in EdTech-Community projects`}
-        aria-label={`${skill.name} technology skill`}
+        title={`${skill.name} - ${skill.description} | EdTech-Community Technology`}
+        aria-label={`${skill.name} technology skill - ${skill.description}`}
       >
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br opacity-20 backdrop-blur-sm" />
-        <div className="relative transform-gpu backface-hidden">
-          {skill.icon}
+        {/* Animated background particles */}
+        <div className="absolute inset-0 overflow-hidden rounded-2xl">
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-white/30 rounded-full"
+              animate={{
+                x: [0, 100, 0],
+                y: [0, -50, 0],
+                opacity: [0, 1, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                delay: i * 1,
+                ease: "easeInOut"
+              }}
+              style={{
+                left: `${20 + i * 30}%`,
+                top: `${60 + i * 10}%`,
+              }}
+            />
+          ))}
         </div>
+
+        {/* Skill symbol/icon */}
+        <div className="relative transform-gpu backface-hidden z-10">
+          <motion.div
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-1"
+            animate={{
+              rotate: [0, 5, -5, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              delay: index * 0.2,
+            }}
+          >
+            {skill.symbol}
+          </motion.div>
+        </div>
+        
+        {/* Skill name */}
+        <div className="text-center z-10">
+          <h3 className="text-sm md:text-base font-bold text-white drop-shadow-lg">
+            {skill.name}
+          </h3>
+          <p className="text-xs text-white/80 font-medium">
+            {skill.description}
+          </p>
+        </div>
+
+        {/* Hover overlay */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 1 }}
+        />
+
+        {/* Glowing border effect */}
         <div 
-          className="absolute inset-0 rounded-full flex items-center justify-center backface-hidden"
-          style={{ transform: 'rotateY(180deg)' }}
-        >
-          <span className="text-base font-medium">{skill.name}</span>
-        </div>
+          className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+          style={{
+            background: `linear-gradient(45deg, ${skill.color}40, transparent, ${skill.color}40)`,
+            filter: 'blur(1px)',
+          }}
+        />
       </motion.div>
       
+      {/* Enhanced shadow */}
       <div 
-        className={`absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-4 rounded-full
-          bg-gradient-to-b ${skill.gradient} opacity-30 blur-sm
-          transform-gpu scale-y-50 rotate-x-60`}
+        className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-4/5 h-6 rounded-full
+          bg-gradient-to-r ${skill.gradient} opacity-20 blur-md
+          transform-gpu scale-y-50 group-hover:opacity-40 transition-opacity duration-300`}
         aria-hidden="true"
       />
+
+      {/* Floating particles around the skill */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(2)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-current rounded-full opacity-60"
+            style={{ color: skill.color }}
+            animate={{
+              x: [0, 20, -20, 0],
+              y: [0, -30, 30, 0],
+              opacity: [0.6, 1, 0.6],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              delay: i * 2 + index * 0.5,
+              ease: "easeInOut"
+            }}
+            initial={{
+              left: `${30 + i * 40}%`,
+              top: `${20 + i * 60}%`,
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 };
@@ -362,7 +505,7 @@ function HomePage() {
 
         {/* Featured Skills - Minimal spacing */}
         <FeaturedSection title="Featured Skills" viewAllLink="/skills" direction="left">
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
             {featuredSkills.map((skill, index) => (
               <SkillBall key={skill.name} skill={skill} index={index} />
             ))}
