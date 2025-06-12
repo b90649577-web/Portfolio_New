@@ -6,32 +6,32 @@ const ProjectsPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Brajesh Kumar Projects Portfolio",
-    "description": "Showcase of AI, machine learning, and full-stack development projects by Brajesh Kumar",
+    "name": "Brajesh Kumar Projects Portfolio | EdTech-Community",
+    "description": "Showcase of AI, machine learning, Google Cloud, Azure, Firebase, Kong, and full-stack development projects by Brajesh Kumar, EdTech-Community founder",
     "mainEntity": {
       "@type": "ItemList",
       "name": "Software Development Projects",
-      "description": "Collection of AI, web development, and machine learning projects",
+      "description": "Collection of AI, web development, machine learning, Google Cloud, Azure, Firebase, Kong projects",
       "numberOfItems": "100+",
       "itemListElement": [
         {
           "@type": "SoftwareApplication",
           "name": "Emma - Personal Assistant",
-          "description": "AI-powered personal assistant built with Python",
+          "description": "AI-powered personal assistant built with Python for EdTech-Community",
           "applicationCategory": "AI Assistant",
           "operatingSystem": "Cross-platform"
         },
         {
           "@type": "SoftwareApplication", 
           "name": "Thea - AI Therapist",
-          "description": "AI-powered virtual mental health assistant",
+          "description": "AI-powered virtual mental health assistant for EdTech-Community wellness",
           "applicationCategory": "Healthcare AI",
           "operatingSystem": "Web-based"
         },
         {
           "@type": "SoftwareApplication",
           "name": "SEMAC",
-          "description": "College management system with ML-powered grade prediction",
+          "description": "College management system with ML-powered grade prediction for EdTech-Community",
           "applicationCategory": "Education Management",
           "operatingSystem": "Web-based"
         }
@@ -39,14 +39,33 @@ const ProjectsPage = () => {
     }
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brajeshkumar.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://brajeshkumar.dev/#/projects"
+      }
+    ]
+  };
+
   return (
     <>
       <MetaTags
-        title="Brajesh Kumar Projects | AI, Machine Learning & Full Stack Development Portfolio"
-        description="Explore 100+ projects by Brajesh Kumar including AI assistants, machine learning applications, React web apps, and Python tools. Featured projects: Emma AI Assistant, Thea AI Therapist, SEMAC."
-        keywords="Brajesh Kumar projects, AI projects, machine learning projects, React projects, Python projects, Emma AI assistant, Thea AI therapist, SEMAC, full stack projects, web development portfolio"
+        title="Brajesh Kumar Projects | EdTech-Community | AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Development Portfolio"
+        description="Explore 100+ projects by Brajesh Kumar, EdTech-Community founder including AI assistants, machine learning applications, Google Cloud, Azure, Firebase, Kong solutions, React web apps, and Python tools. Featured projects: Emma AI Assistant, Thea AI Therapist, SEMAC."
+        keywords="Brajesh Kumar projects, EdTech-Community projects, AI projects, machine learning projects, Google Cloud projects, Azure projects, Firebase projects, Kong projects, React projects, Python projects, Emma AI assistant, Thea AI therapist, SEMAC, full stack projects, web development portfolio"
         url="https://brajeshkumar.dev/#/projects"
-        structuredData={structuredData}
+        structuredData={[structuredData, breadcrumbData]}
       />
       <div className="container mx-auto px-4 py-16">
         <Projects />

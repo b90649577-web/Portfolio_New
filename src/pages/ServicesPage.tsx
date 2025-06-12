@@ -6,8 +6,8 @@ const ServicesPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Brajesh Kumar Development Services",
-    "description": "Professional AI development, full stack development, and UI/UX design services",
+    "name": "Brajesh Kumar Development Services | EdTech-Community",
+    "description": "Professional AI development, Google Cloud, Azure, Firebase, Kong solutions, full stack development, and UI/UX design services by EdTech-Community founder",
     "provider": {
       "@type": "Person",
       "name": "Brajesh Kumar"
@@ -19,7 +19,12 @@ const ServicesPage = () => {
       "React.js Development",
       "Python Development",
       "UI/UX Design",
-      "Technical Consulting"
+      "Technical Consulting",
+      "Google Cloud Solutions",
+      "Azure Solutions",
+      "Firebase Development",
+      "Kong API Gateway",
+      "EdTech-Community Services"
     ],
     "areaServed": {
       "@type": "Place",
@@ -27,14 +32,33 @@ const ServicesPage = () => {
     }
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brajeshkumar.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://brajeshkumar.dev/#/services"
+      }
+    ]
+  };
+
   return (
     <>
       <MetaTags
-        title="Brajesh Kumar Services | AI Development, Full Stack & UI/UX Design Services"
-        description="Professional services by Brajesh Kumar: AI development, machine learning solutions, full stack web development, React.js applications, Python automation, and UI/UX design. Available for global freelance projects."
-        keywords="Brajesh Kumar services, AI development services, machine learning services, full stack development services, React development services, Python development, UI/UX design services, freelance developer services"
+        title="Brajesh Kumar Services | EdTech-Community | AI Development, Google Cloud, Azure, Firebase, Kong, Full Stack & UI/UX Design Services"
+        description="Professional services by Brajesh Kumar, EdTech-Community founder: AI development, machine learning solutions, Google Cloud, Azure, Firebase, Kong implementations, full stack web development, React.js applications, Python automation, and UI/UX design. Available for global freelance projects."
+        keywords="Brajesh Kumar services, EdTech-Community services, AI development services, machine learning services, Google Cloud services, Azure services, Firebase services, Kong services, full stack development services, React development services, Python development, UI/UX design services, freelance developer services"
         url="https://brajeshkumar.dev/#/services"
-        structuredData={structuredData}
+        structuredData={[structuredData, breadcrumbData]}
       />
       <div className="container mx-auto px-4 py-16">
         <Services />

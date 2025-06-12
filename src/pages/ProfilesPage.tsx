@@ -165,6 +165,8 @@ const ProfileCard: React.FC<{ profile: Profile }> = ({ profile }) => {
       className="bg-light-card dark:bg-dark-card rounded-xl p-6 flex flex-col items-center gap-4
         border border-gray-200 dark:border-gray-800 hover:border-primary-500
         transition-all duration-300 group"
+      aria-label={`Visit ${profile.name} profile${profile.username ? ` - ${profile.username}` : ''} for EdTech-Community`}
+      title={`${profile.name} Profile${profile.username ? ` - ${profile.username}` : ''} | EdTech-Community`}
     >
       <div className="w-16 h-16 rounded-full bg-light-bg dark:bg-dark-bg p-3 
         group-hover:shadow-lg group-hover:shadow-primary-500/20 transition-shadow duration-300">
@@ -186,7 +188,7 @@ const ProfileCard: React.FC<{ profile: Profile }> = ({ profile }) => {
         )}
         <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400
           group-hover:text-primary-500 transition-colors">
-          Visit Profile <ExternalLink size={16} />
+          Visit Profile <ExternalLink size={16} aria-hidden="true" />
         </div>
       </div>
     </motion.a>
@@ -203,23 +205,46 @@ const ProfilesPage = () => {
     "sameAs": profiles.map(profile => profile.url),
     "mainEntityOfPage": {
       "@type": "ProfilePage",
-      "name": "Brajesh Kumar Professional Profiles"
+      "name": "Brajesh Kumar Professional Profiles | EdTech-Community"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "EdTech-Community"
     }
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brajeshkumar.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Profiles",
+        "item": "https://brajeshkumar.dev/#/profiles"
+      }
+    ]
   };
 
   return (
     <>
       <MetaTags
-        title="Brajesh Kumar Profiles | GitHub, LinkedIn, CodeChef, HackerRank & More"
-        description="Connect with Brajesh Kumar across various platforms including GitHub, LinkedIn, CodeChef, HackerRank, Coursera, and other professional and learning platforms. View coding profiles and achievements."
-        keywords="Brajesh Kumar profiles, GitHub Brajesh31, LinkedIn Brajesh Kumar, CodeChef brajesh31, HackerRank bk117134, Coursera profile, professional profiles, coding profiles"
+        title="Brajesh Kumar Profiles | EdTech-Community | GitHub, LinkedIn, CodeChef, HackerRank, Google Cloud, Azure & More"
+        description="Connect with Brajesh Kumar, EdTech-Community founder across various platforms including GitHub, LinkedIn, CodeChef, HackerRank, Google Cloud, Azure, Coursera, and other professional and learning platforms. View coding profiles, cloud certifications, and achievements."
+        keywords="Brajesh Kumar profiles, EdTech-Community profiles, GitHub Brajesh31, LinkedIn Brajesh Kumar, CodeChef brajesh31, HackerRank bk117134, Google Cloud profile, Azure profile, Coursera profile, professional profiles, coding profiles"
         url="https://brajeshkumar.dev/#/profiles"
-        structuredData={structuredData}
+        structuredData={[structuredData, breadcrumbData]}
       />
       <div className="container-section">
         <SectionHeading
           title="My Profiles"
-          subtitle="Connect with me across various platforms"
+          subtitle="Connect with me across various platforms and EdTech-Community initiatives"
         />
 
         {categories.map(category => (

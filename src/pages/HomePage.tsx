@@ -15,10 +15,10 @@ import AnimatedJobTitle from '../components/AnimatedJobTitle';
 import MetaTags from '../components/SEO/MetaTags';
 
 const jobTitles = [
+  "AI Engineer",
   "Full Stack Developer",
   "UI/UX Designer",
-  "AI Engineer",
-  "Software Architect"
+  "EdTech-Community founder"
 ];
 
 const featuredSkills = [
@@ -26,8 +26,10 @@ const featuredSkills = [
   { name: 'TypeScript', icon: '📘', color: '#3178C6', gradient: 'from-blue-500 to-blue-600' },
   { name: 'Node.js', icon: '🟩', color: '#339933', gradient: 'from-green-400 to-green-600' },
   { name: 'Python', icon: '🐍', color: '#3776AB', gradient: 'from-blue-600 to-blue-800' },
-  { name: 'MongoDB', icon: '🍃', color: '#47A248', gradient: 'from-green-500 to-green-700' },
-  { name: 'AWS', icon: '☁️', color: '#FF9900', gradient: 'from-orange-400 to-orange-600' },
+  { name: 'Google Cloud', icon: '☁️', color: '#4285F4', gradient: 'from-blue-400 to-blue-600' },
+  { name: 'Azure', icon: '🔷', color: '#0078D4', gradient: 'from-blue-500 to-blue-700' },
+  { name: 'Firebase', icon: '🔥', color: '#FFCA28', gradient: 'from-yellow-400 to-orange-500' },
+  { name: 'Kong', icon: '🦍', color: '#003459', gradient: 'from-gray-600 to-gray-800' },
 ];
 
 const slideVariants = {
@@ -49,14 +51,12 @@ const SkillBall = ({ skill, index }) => {
   const { theme } = useTheme();
   
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className="relative group perspective-1000"
-    >
+    <div className="relative group perspective-1000">
       <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
+        viewport={{ once: true }}
         animate={{
           y: [0, -10, 0],
           rotateX: [0, 5, 0],
@@ -84,6 +84,8 @@ const SkillBall = ({ skill, index }) => {
         style={{
           transformStyle: 'preserve-3d',
         }}
+        title={`${skill.name} - Core technology in EdTech-Community projects`}
+        aria-label={`${skill.name} technology skill`}
       >
         <div className="absolute inset-0 rounded-full bg-gradient-to-br opacity-20 backdrop-blur-sm" />
         <div className="relative transform-gpu backface-hidden">
@@ -101,8 +103,9 @@ const SkillBall = ({ skill, index }) => {
         className={`absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-4 rounded-full
           bg-gradient-to-b ${skill.gradient} opacity-30 blur-sm
           transform-gpu scale-y-50 rotate-x-60`}
+        aria-hidden="true"
       />
-    </motion.div>
+    </div>
   );
 };
 
@@ -120,8 +123,9 @@ const FeaturedSection = ({ title, viewAllLink, children, direction = 'left' }) =
       <Link
         to={viewAllLink}
         className="flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+        aria-label={`View all ${title.toLowerCase()}`}
       >
-        View All <ExternalLink size={16} />
+        View All <ExternalLink size={16} aria-hidden="true" />
       </Link>
     </div>
     {children}
@@ -142,6 +146,8 @@ const CertificateCard = ({ certificate }) => {
       <div
         className="h-40 md:h-48 bg-cover bg-center"
         style={{ backgroundImage: `url(${certificate.image})` }}
+        role="img"
+        aria-label={`Certificate image for ${certificate.title}`}
       />
       <div className="p-4">
         <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
@@ -153,7 +159,12 @@ const CertificateCard = ({ certificate }) => {
         <p className="text-gray-500 dark:text-gray-500 text-xs mb-4">
           {certificate.date}
         </p>
-        <button className="btn btn-primary w-full">View Certificate</button>
+        <button 
+          className="btn btn-primary w-full"
+          aria-label={`View certificate: ${certificate.title}`}
+        >
+          View Certificate
+        </button>
       </div>
     </motion.div>
   );
@@ -171,6 +182,8 @@ const ProjectCard = ({ project }) => {
       <div
         className="h-40 md:h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
         style={{ backgroundImage: `url(${project.image})` }}
+        role="img"
+        aria-label={`Project screenshot for ${project.title}`}
       />
       <div className="p-4">
         <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-primary-400 transition-colors">
@@ -186,7 +199,11 @@ const ProjectCard = ({ project }) => {
             </span>
           ))}
         </div>
-        <Link to={`/projects`} className="btn btn-primary w-full">
+        <Link 
+          to={`/projects`} 
+          className="btn btn-primary w-full"
+          aria-label={`View project details: ${project.title}`}
+        >
           View Project
         </Link>
       </div>
@@ -210,13 +227,13 @@ function HomePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Brajesh Kumar Portfolio",
+    "name": "Brajesh Kumar Portfolio | EdTech-Community",
     "url": "https://brajeshkumar.dev",
-    "description": "Professional portfolio of Brajesh Kumar - AI Engineer, Full Stack Developer, and UI/UX Designer",
+    "description": "Professional portfolio of Brajesh Kumar - AI Engineer, EdTech-Community founder, Full Stack Developer, and UI/UX Designer specializing in Google Cloud, Azure, Firebase, Kong",
     "author": {
       "@type": "Person",
       "name": "Brajesh Kumar",
-      "jobTitle": "AI Engineer & Full Stack Developer",
+      "jobTitle": "AI Engineer, Full Stack Developer, EdTech Community Builder",
       "url": "https://brajeshkumar.dev"
     },
     "potentialAction": {
@@ -226,9 +243,22 @@ function HomePage() {
     }
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brajeshkumar.dev/"
+      }
+    ]
+  };
+
   return (
     <>
-      <MetaTags structuredData={structuredData} />
+      <MetaTags structuredData={[structuredData, breadcrumbData]} />
       <div className="min-h-screen">
         <motion.div
           initial="hidden"
@@ -251,18 +281,20 @@ function HomePage() {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 rounded-full border-2 border-dashed border-primary-500/30"
+                  aria-hidden="true"
                 />
                 <motion.div
                   initial={{ scale: 1 }}
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                   className="absolute inset-4 rounded-full border-2 border-dashed border-primary-400/40"
+                  aria-hidden="true"
                 />
                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-light-bg dark:from-dark-bg to-light-card dark:to-dark-card border border-primary-600/20 overflow-hidden shadow-xl">
                   <ThemeAwareImage
                     darkSrc="/self-dark.png"
                     lightSrc="/self-light.jpg"
-                    alt={personalInfo.fullName}
+                    alt={`${personalInfo.fullName} - AI Engineer, EdTech-Community founder & Full Stack Developer`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -288,20 +320,23 @@ function HomePage() {
                 <Link
                   to="/contact"
                   className="btn btn-primary flex items-center gap-2"
+                  aria-label="Contact for hiring and EdTech-Community collaboration"
                 >
-                  Hire Me <ChevronRight size={16} />
+                  Hire Me <ChevronRight size={16} aria-hidden="true" />
                 </Link>
                 <Link
                   to="/projects"
                   className="btn btn-outline flex items-center gap-2"
+                  aria-label="View AI, Google Cloud, Azure, Firebase, Kong projects"
                 >
-                  View Projects <ChevronRight size={16} />
+                  View Projects <ChevronRight size={16} aria-hidden="true" />
                 </Link>
                 <button
                   onClick={handleDownloadResume}
                   className="btn btn-outline flex items-center gap-2"
+                  aria-label="Download Brajesh Kumar resume PDF"
                 >
-                  Download Resume <Download size={16} />
+                  Download Resume <Download size={16} aria-hidden="true" />
                 </button>
               </div>
               

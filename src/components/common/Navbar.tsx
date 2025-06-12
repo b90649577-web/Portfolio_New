@@ -7,18 +7,17 @@ import ThemeAwareImage from '../ThemeAwareImage';
 
 const Navbar = () => {
   const navLinks = [
-    { name: 'Home', path: '/', title: 'Go to Home - Brajesh Kumar Portfolio' },
-    { name: 'About Me', path: '/about', title: 'About Brajesh Kumar - AI Engineer & Full Stack Developer' },
-    { name: 'Education', path: '/education', title: 'Educational Background - B.Tech CSE at GL Bajaj' },
-    { name: 'Experience', path: '/experience', title: 'Professional Experience - Campus Ambassador & Student Leadership' },
-    { name: 'Profiles', path: '/profiles', title: 'Professional Profiles - GitHub, LinkedIn, CodeChef & More' },
-    { name: 'Projects', path: '/projects', title: 'AI, Machine Learning & Full Stack Development Projects' },
-    { name: 'Services', path: '/services', title: 'AI Development, Full Stack & UI/UX Design Services' },
-    { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Web Development' },
-    { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements' },
-    { name: 'Skills & Tools', path: '/skills', title: 'Technical Skills - AI, React, Python, Machine Learning' },
-    { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources' },
-    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects & Collaboration' },
+    { name: 'Home', path: '/', title: 'Go to Home - Brajesh Kumar EdTech-Community Portfolio', ariaLabel: 'Navigate to Home page' },
+    { name: 'About Me', path: '/about', title: 'About Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer', ariaLabel: 'Learn about Brajesh Kumar' },
+    { name: 'Education', path: '/education', title: 'Educational Background - B.Tech CSE at GL Bajaj Group of Institutions', ariaLabel: 'View educational background' },
+    { name: 'Experience', path: '/experience', title: 'Professional Experience - Campus Ambassador, EdTech-Community & Student Leadership', ariaLabel: 'View professional experience' },
+    { name: 'Profiles', path: '/profiles', title: 'Professional Profiles - GitHub, LinkedIn, CodeChef, Google Cloud, Azure & More', ariaLabel: 'View professional profiles' },
+    { name: 'Projects', path: '/projects', title: 'AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Development Projects', ariaLabel: 'View projects portfolio' },
+    { name: 'Services', path: '/services', title: 'AI Development, Google Cloud, Azure, Firebase, Kong, Full Stack & UI/UX Design Services', ariaLabel: 'View services offered' },
+    { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development, EdTech-Community', ariaLabel: 'Read tech blogs and insights' },
+    { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements' },
+    { name: 'Skills & Tools', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong, Machine Learning', ariaLabel: 'View technical skills and tools' },
+    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration' },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,18 +43,23 @@ const Navbar = () => {
       }`}
       role="banner"
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center" aria-label="Main Navigation">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center" aria-label="Main Navigation" role="navigation">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           className="text-xl font-bold flex items-center gap-2"
         >
-          <Link to="/" className="flex items-center gap-2" title="Brajesh Kumar - AI Engineer & Full Stack Developer Portfolio">
+          <Link 
+            to="/" 
+            className="flex items-center gap-2" 
+            title="Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer Portfolio"
+            aria-label="Go to homepage - Brajesh Kumar EdTech-Community Portfolio"
+          >
             <ThemeAwareImage
               darkSrc="/personal-dark.jpg"
               lightSrc="/personal-light.jpg"
-              alt="Brajesh Kumar - AI Engineer & Full Stack Developer"
+              alt="Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer"
               className="h-8 w-8 rounded-full"
             />
             <span>
@@ -77,6 +81,7 @@ const Navbar = () => {
               <Link
                 to={link.path}
                 title={link.title}
+                aria-label={link.ariaLabel}
                 className={`nav-link text-xs xl:text-sm px-2 xl:px-3 py-2 ${
                   location.pathname === link.path ? 'active' : ''
                 }`}
@@ -112,6 +117,7 @@ const Navbar = () => {
             className="lg:hidden p-2"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={mobileMenuOpen}
+            title={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
             {mobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
@@ -127,6 +133,7 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="lg:hidden bg-light-card dark:bg-dark-card border-t border-gray-800"
           role="menu"
+          aria-label="Mobile navigation menu"
         >
           <ul className="flex flex-col py-2">
             {navLinks.map((link) => (
@@ -134,6 +141,7 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   title={link.title}
+                  aria-label={link.ariaLabel}
                   className={`block px-4 py-3 hover:bg-light-bg dark:hover:bg-dark-bg ${
                     location.pathname === link.path ? 'text-primary-500' : ''
                   }`}

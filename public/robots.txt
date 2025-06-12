@@ -43,3 +43,10 @@ Allow: *.gif
 Allow: *.svg
 Allow: *.webp
 Allow: *.pdf
+
+# EdTech-Community specific paths
+Allow: /edtech-community/
+Allow: /community/
+Allow: /tech-blog/
+Allow: /ai-projects/
+Allow: /cloud-solutions/
