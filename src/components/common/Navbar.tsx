@@ -49,11 +49,11 @@ const Navbar = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-lg font-bold flex items-center gap-2 flex-shrink-0"
+          className="text-xl font-bold flex items-center gap-3 flex-shrink-0"
         >
           <Link 
             to="/" 
-            className="flex items-center gap-2" 
+            className="flex items-center gap-3" 
             title="Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer Portfolio"
             aria-label="Go to homepage - Brajesh Kumar EdTech-Community Portfolio"
           >
@@ -61,7 +61,7 @@ const Navbar = () => {
               darkSrc="/personal-dark.jpg"
               lightSrc="/personal-light.jpg"
               alt="Brajesh Kumar - AI Engineer, EdTech-Community founder & Full Stack Developer"
-              className="h-7 w-7 rounded-full"
+              className="h-8 w-8 rounded-full"
             />
             <span>
               Brajesh<span className="text-primary-500">.</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden lg:flex items-center space-x-1 flex-wrap justify-center flex-1 mx-4"
+          className="hidden lg:flex items-center space-x-1 flex-wrap justify-center flex-1 mx-6"
           role="menubar"
         >
           {navLinks.map((link) => (
@@ -83,7 +83,7 @@ const Navbar = () => {
                 to={link.path}
                 title={link.title}
                 aria-label={link.ariaLabel}
-                className={`nav-link text-xs px-2 py-2 whitespace-nowrap ${
+                className={`nav-link text-sm px-3 py-2 whitespace-nowrap ${
                   location.pathname === link.path ? 'active' : ''
                 }`}
                 role="menuitem"
@@ -94,7 +94,7 @@ const Navbar = () => {
           ))}
         </motion.ul>
 
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-3 flex-shrink-0">
           {/* Theme Toggle Button */}
           <motion.button
             initial={{ opacity: 0, scale: 0.5 }}
@@ -106,9 +106,9 @@ const Navbar = () => {
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
           >
             {theme === 'dark' ? (
-              <Sun className="w-4 h-4" aria-hidden="true" />
+              <Sun className="w-5 h-5" aria-hidden="true" />
             ) : (
-              <Moon className="w-4 h-4" aria-hidden="true" />
+              <Moon className="w-5 h-5" aria-hidden="true" />
             )}
           </motion.button>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
             aria-expanded={mobileMenuOpen}
             title={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
-            {mobileMenuOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+            {mobileMenuOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
           </button>
         </div>
       </nav>
@@ -143,7 +143,7 @@ const Navbar = () => {
                   to={link.path}
                   title={link.title}
                   aria-label={link.ariaLabel}
-                  className={`block px-4 py-3 hover:bg-light-bg dark:hover:bg-dark-bg ${
+                  className={`block px-4 py-3 text-base font-medium hover:bg-light-bg dark:hover:bg-dark-bg transition-colors ${
                     location.pathname === link.path ? 'text-primary-500' : ''
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
