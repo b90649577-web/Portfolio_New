@@ -116,9 +116,9 @@ const FeaturedSection = ({ title, viewAllLink, children, direction = 'left' }) =
     viewport={{ once: true, margin: "-100px" }}
     variants={slideVariants}
     custom={direction}
-    className="py-0.5 md:py-1 max-w-6xl mx-auto px-4 md:px-6 lg:px-8"
+    className="py-2 md:py-3 max-w-6xl mx-auto px-4 md:px-6 lg:px-8"
   >
-    <div className="flex justify-between items-center mb-4">
+    <div className="flex justify-between items-center mb-3">
       <h2 className="text-2xl md:text-3xl font-bold">{title}</h2>
       <Link
         to={viewAllLink}
@@ -260,13 +260,14 @@ function HomePage() {
     <>
       <MetaTags structuredData={[structuredData, breadcrumbData]} />
       <div className="min-h-screen">
+        {/* Hero Section - Reduced padding */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={slideVariants}
           custom="left"
-          className="container-section min-h-[85vh] flex flex-col justify-center pt-16"
+          className="container-section min-h-[70vh] flex flex-col justify-center pt-12 pb-4"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
             <motion.div 
@@ -275,7 +276,7 @@ function HomePage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex justify-center lg:justify-end order-1 lg:order-none"
             >
-              <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px]">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px]">
                 <motion.div 
                   initial={{ rotate: 0 }}
                   animate={{ rotate: 360 }}
@@ -347,6 +348,7 @@ function HomePage() {
           </div>
         </motion.div>
 
+        {/* Stats Section - Zero spacing */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -358,6 +360,7 @@ function HomePage() {
           <Stats />
         </motion.div>
 
+        {/* Featured Skills - Minimal spacing */}
         <FeaturedSection title="Featured Skills" viewAllLink="/skills" direction="left">
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
             {featuredSkills.map((skill, index) => (
@@ -366,6 +369,7 @@ function HomePage() {
           </div>
         </FeaturedSection>
 
+        {/* Featured Projects - Minimal spacing */}
         <FeaturedSection title="Featured Projects" viewAllLink="/projects" direction="right">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuredProjects.map((project) => (
@@ -374,6 +378,7 @@ function HomePage() {
           </div>
         </FeaturedSection>
 
+        {/* Featured Certificates - Minimal spacing */}
         <FeaturedSection title="Featured Certificates" viewAllLink="/certificates" direction="left">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuredCertificates.map((certificate) => (
@@ -382,6 +387,7 @@ function HomePage() {
           </div>
         </FeaturedSection>
 
+        {/* Education - Zero margin */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -393,6 +399,7 @@ function HomePage() {
           <Education />
         </motion.div>
 
+        {/* Experience - Zero margin */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -404,6 +411,7 @@ function HomePage() {
           <Experience />
         </motion.div>
 
+        {/* Contact - Zero margin */}
         <motion.div
           initial="hidden"
           whileInView="visible"
