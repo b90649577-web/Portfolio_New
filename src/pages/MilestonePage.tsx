@@ -312,6 +312,8 @@ const YearSection: React.FC<{
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between p-4 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-all duration-300"
+        aria-expanded={isExpanded}
+        aria-controls={`year-content-${year}`}
       >
         <div className="flex items-center gap-4">
           <h2 className="text-2xl font-bold">{year}</h2>
@@ -320,12 +322,13 @@ const YearSection: React.FC<{
             <span>{resources.length} resources</span>
           </div>
         </div>
-        {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+        {isExpanded ? <ChevronUp size={20} aria-hidden="true" /> : <ChevronDown size={20} aria-hidden="true" />}
       </button>
       
       <AnimatePresence>
         {isExpanded && (
           <motion.div
+            id={`year-content-${year}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -430,21 +433,46 @@ const MilestonePage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Brajesh Kumar Professional Milestones and Projects",
-    "description": "Comprehensive timeline of professional milestones, achievements, and project resources",
+    "name": "Brajesh Kumar Professional Milestones and Projects | EdTech-Community",
+    "description": "Comprehensive timeline of professional milestones, achievements, and project resources from EdTech-Community founder",
     "numberOfItems": stats.totalMilestones + stats.totalProjects,
     "itemListElement": [
       {
         "@type": "Achievement",
         "name": "OpenAI Academy Launch Attendance",
-        "description": "Attended OpenAI Academy launch at The Oberoi, Delhi",
+        "description": "Attended OpenAI Academy launch at The Oberoi, Delhi for EdTech-Community insights",
         "dateAchieved": "2025-06"
       },
       {
         "@type": "Achievement", 
         "name": "SSOC Season 4 Contributor",
-        "description": "Selected as contributor for Script Summer of Code Season 4",
+        "description": "Selected as contributor for Script Summer of Code Season 4 representing EdTech-Community",
         "dateAchieved": "2025-06"
+      },
+      {
+        "@type": "Organization",
+        "name": "EdTech-Community",
+        "description": "Founded EdTech-Community for collaborative learning and innovation",
+        "foundingDate": "2023"
+      }
+    ]
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://brajeshkumar.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Milestones",
+        "item": "https://brajeshkumar.dev/#/milestones"
       }
     ]
   };
@@ -452,16 +480,16 @@ const MilestonePage = () => {
   return (
     <>
       <MetaTags
-        title="Brajesh Kumar Milestones & Project Resources | Professional Journey Timeline"
-        description="Explore Brajesh Kumar's professional milestones, achievements, and comprehensive project resources. Timeline includes AI events, campus ambassador roles, 100+ projects, and career highlights from 2020-2025."
-        keywords="Brajesh Kumar milestones, professional timeline, project resources, achievements, campus ambassador, AI events, OpenAI Academy, SSOC contributor, career journey, project portfolio"
+        title="Brajesh Kumar Milestones & Project Resources | EdTech-Community | Professional Journey Timeline"
+        description="Explore Brajesh Kumar's professional milestones, achievements, and comprehensive project resources as EdTech-Community founder. Timeline includes AI events, campus ambassador roles, Google Cloud, Azure, Firebase, Kong implementations, 100+ projects, and career highlights from 2020-2025."
+        keywords="Brajesh Kumar milestones, EdTech-Community timeline, professional timeline, project resources, achievements, campus ambassador, AI events, OpenAI Academy, SSOC contributor, career journey, project portfolio, Google Cloud, Azure, Firebase, Kong"
         url="https://brajeshkumar.dev/#/milestones"
-        structuredData={structuredData}
+        structuredData={[structuredData, breadcrumbData]}
       />
       <div className="container-section">
         <SectionHeading
           title="My Journey & Resources"
-          subtitle="A comprehensive timeline of my professional growth, projects, achievements, and important resources"
+          subtitle="A comprehensive timeline of my professional growth, projects, achievements, and important resources from EdTech-Community"
         />
 
         {/* Stats */}
@@ -497,13 +525,14 @@ const MilestonePage = () => {
           <div className="flex flex-col md:flex-row gap-4 items-center mb-4">
             {/* Search */}
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} aria-hidden="true" />
               <input
                 type="text"
                 placeholder="Search milestones..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="form-input pl-10"
+                aria-label="Search milestones"
               />
             </div>
             
@@ -512,6 +541,7 @@ const MilestonePage = () => {
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
               className="form-input min-w-[150px]"
+              aria-label="Filter by milestone type"
             >
               <option value="">All Types</option>
               {types.map(type => (
@@ -526,6 +556,7 @@ const MilestonePage = () => {
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}
               className="form-input min-w-[120px]"
+              aria-label="Filter by year"
             >
               <option value="">All Years</option>
               {years.map(year => (
@@ -539,12 +570,14 @@ const MilestonePage = () => {
             <button
               onClick={expandAll}
               className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+              aria-label="Expand all year sections"
             >
               Expand All
             </button>
             <button
               onClick={collapseAll}
               className="text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
+              aria-label="Collapse all year sections"
             >
               Collapse All
             </button>
@@ -592,7 +625,7 @@ const MilestonePage = () => {
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center">
-              <Folder className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+              <Folder className="w-5 h-5 text-teal-600 dark:text-teal-400" aria-hidden="true" />
             </div>
             <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400">Resource Vault</h2>
           </div>
@@ -600,7 +633,7 @@ const MilestonePage = () => {
           <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/10 dark:to-cyan-900/10 rounded-2xl p-6 border border-teal-200 dark:border-teal-800 mb-8">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-6 bg-teal-500/20 rounded-lg flex items-center justify-center">
-                <Code className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+                <Code className="w-4 h-4 text-teal-600 dark:text-teal-400" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-semibold text-teal-800 dark:text-teal-200">All Resources</h3>
             </div>
@@ -613,13 +646,14 @@ const MilestonePage = () => {
             {/* Project Filters */}
             <div className="flex flex-col md:flex-row gap-4 mb-6">
               <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500" size={20} />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500" size={20} aria-hidden="true" />
                 <input
                   type="text"
                   placeholder="Search projects..."
                   value={projectSearchQuery}
                   onChange={(e) => setProjectSearchQuery(e.target.value)}
                   className="w-full pl-10 pr-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                  aria-label="Search projects"
                 />
               </div>
               
@@ -627,6 +661,7 @@ const MilestonePage = () => {
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="px-4 py-2 bg-white dark:bg-teal-900/20 border border-teal-300 dark:border-teal-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent min-w-[150px]"
+                aria-label="Filter by project category"
               >
                 <option value="">All Categories</option>
                 <option value="professional">Professional</option>
