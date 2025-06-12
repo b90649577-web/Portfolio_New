@@ -353,7 +353,7 @@ function HomePage() {
           viewport={{ once: true }}
           variants={slideVariants}
           custom="right"
-          className="py-8"
+          className="py-2"
         >
           <Stats />
         </motion.div>
