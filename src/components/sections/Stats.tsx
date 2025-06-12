@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, FolderGit, Award, Clock } from 'lucide-react';
+import { Users, FolderGit, Award, Clock, Code, Calendar } from 'lucide-react';
 import { useTheme } from '../ThemeProvider';
 
 interface StatItemProps {
@@ -38,13 +38,13 @@ const Stats = () => {
   
   const stats = [
     {
-      icon: <Clock className="w-8 h-8 text-primary-400" />,
-      value: "8+",
-      label: "Months Experience",
+      icon: <Calendar className="w-8 h-8 text-primary-400" />,
+      value: "6+",
+      label: "Years Coding Experience",
     },
     {
       icon: <FolderGit className="w-8 h-8 text-primary-400" />,
-      value: "15+",
+      value: "130+",
       label: "Projects Completed",
     },
     {
@@ -54,8 +54,18 @@ const Stats = () => {
     },
     {
       icon: <Users className="w-8 h-8 text-primary-400" />,
-      value: "200+",
+      value: "500+",
       label: "People Served",
+    },
+    {
+      icon: <Code className="w-8 h-8 text-primary-400" />,
+      value: "15+",
+      label: "Technologies Mastered",
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-primary-400" />,
+      value: "24/7",
+      label: "Learning & Building",
     },
   ];
 
@@ -91,7 +101,7 @@ const Stats = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 relative">
           {stats.map((stat, index) => (
             <React.Fragment key={stat.label}>
               <StatItem
@@ -100,10 +110,10 @@ const Stats = () => {
                 label={stat.label}
                 delay={index * 0.1}
               />
-              {index < stats.length - 1 && (
+              {index < stats.length - 1 && index % 2 === 1 && (
                 <div className="hidden md:block absolute top-1/2 -translate-y-1/2 h-16 w-px 
                   bg-gradient-to-b from-transparent via-primary-500/20 to-transparent"
-                  style={{ left: `${((index + 1) * 100) / 4}%` }}
+                  style={{ left: `${((index + 1) * 100) / 6}%` }}
                 />
               )}
             </React.Fragment>
