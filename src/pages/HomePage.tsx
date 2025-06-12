@@ -116,7 +116,7 @@ const FeaturedSection = ({ title, viewAllLink, children, direction = 'left' }) =
     viewport={{ once: true, margin: "-100px" }}
     variants={slideVariants}
     custom={direction}
-    className="py-1 md:py-2 max-w-6xl mx-auto px-4 md:px-6 lg:px-8"
+    className="py-0.5 md:py-1 max-w-6xl mx-auto px-4 md:px-6 lg:px-8"
   >
     <div className="flex justify-between items-center mb-4">
       <h2 className="text-2xl md:text-3xl font-bold">{title}</h2>
@@ -353,7 +353,7 @@ function HomePage() {
           viewport={{ once: true }}
           variants={slideVariants}
           custom="right"
-          className="py-1"
+          className="py-0"
         >
           <Stats />
         </motion.div>
@@ -388,7 +388,7 @@ function HomePage() {
           viewport={{ once: true }}
           variants={slideVariants}
           custom="right"
-          className="mt-2"
+          className="mt-0"
         >
           <Education />
         </motion.div>
@@ -399,7 +399,7 @@ function HomePage() {
           viewport={{ once: true }}
           variants={slideVariants}
           custom="left"
-          className="mt-2"
+          className="mt-0"
         >
           <Experience />
         </motion.div>
@@ -410,7 +410,7 @@ function HomePage() {
           viewport={{ once: true }}
           variants={slideVariants}
           custom="right"
-          className="mt-2"
+          className="mt-0"
         >
           <Contact />
         </motion.div>
