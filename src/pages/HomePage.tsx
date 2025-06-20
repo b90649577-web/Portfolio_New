@@ -31,7 +31,7 @@ const featuredSkills = [
     description: 'Frontend Library'
   },
   { 
-    name: 'TypeScript', 
+    name: 'TypeScript',
     symbol: 'TS', 
     color: '#3178C6', 
     gradient: 'from-blue-500 via-blue-600 to-indigo-600',
