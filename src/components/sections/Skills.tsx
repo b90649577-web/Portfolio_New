@@ -45,7 +45,6 @@ const skillsData: SkillCategory[] = [
     skills: [
       { name: 'MS SQL Server', icon: '🗃️' },
       { name: 'MongoDB', icon: '🍃' },
-      { name: 'PostgreSQL', icon: '🐘' },
       { name: 'MySQL', icon: '🐬' },
     ],
   },
