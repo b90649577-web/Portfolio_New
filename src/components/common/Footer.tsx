@@ -1,3 +1,4 @@
+// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 // SEO keywords globally merged by Bolt AI on 2025-01-27 for maximum ranking – excludes milestone page
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -127,7 +128,7 @@ const Footer = () => {
             </Link>
             
             <p className="text-sm text-gray-600 dark:text-gray-400 text-center lg:text-left mb-6 leading-relaxed">
-              AI Engineer, EdTech-Community founder & Full Stack Developer crafting innovative digital solutions with expertise in 
+              AI Engineer, EdTech-Community founder, Co-Founder of Tech Dev Club & Full Stack Developer crafting innovative digital solutions with expertise in 
               <span className="text-primary-600 dark:text-primary-400 font-medium"> Google Cloud, Azure, Firebase, Kong</span>, 
               React, Python, and Machine Learning.
             </p>
@@ -268,11 +269,36 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* EdTech Community Badge */}
+            {/* Tech Dev Club Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="p-4 rounded-xl bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-purple-500/10 border border-purple-500/20 mb-4"
+            >
+              <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2 flex items-center gap-2">
+                <Globe className="w-4 h-4" aria-hidden="true" />
+                Tech Dev Club
+              </h4>
+              <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Co-Founder of Tech Dev Club - connecting innovators and developers worldwide through events, mentorship, and projects.
+              </p>
+              <a
+                href="https://techdevclub.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+              >
+                Visit Tech Dev Club <ExternalLink size={12} />
+              </a>
+            </motion.div>
+
+            {/* EdTech Community Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true }}
               className="p-4 rounded-xl bg-gradient-to-br from-primary-500/10 via-secondary-500/10 to-primary-500/10 border border-primary-500/20"
             >

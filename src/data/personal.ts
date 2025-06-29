@@ -1,3 +1,4 @@
+// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 export const personalInfo = {
   fullName: "Brajesh Kumar",
   title: "Software Engineer & UI/UX Designer",
@@ -13,7 +14,9 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/brajesh-kumar-9b58651a8/",
     github: "https://github.com/Brajesh31"
   },
-  bio: `I'm Brajesh Kumar, a passionate and adaptable Computer Science and Engineering student at GL Bajaj Group of Institutions (Batch 2023–2027). With a strong foundation in full-stack development, machine learning, and AI-based systems, I thrive on building real-world tech solutions that are not only innovative but impactful.
+  bio: `I'm Brajesh Kumar, a passionate and adaptable Computer Science and Engineering student at GL Bajaj Group of Institutions (Batch 2023–2027). As Co-Founder of Tech Dev Club, I'm building a global tech community for collaboration and innovation.
+
+With a strong foundation in full-stack development, machine learning, and AI-based systems, I thrive on building real-world tech solutions that are not only innovative but impactful. Through Tech Dev Club, I connect innovators and developers worldwide through events, mentorship, and collaborative projects.
 
 I bring a hands-on approach to problem-solving, demonstrated through my wide array of projects ranging from intelligent personal assistants like Emma, AI-powered therapy bots like Thea, to full-fledged web platforms like SEMAC and IdeaPool. I've also contributed to game development and ed-tech innovations, combining creativity with code.
 

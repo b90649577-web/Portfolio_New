@@ -1,3 +1,4 @@
+// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 // SEO keywords globally merged by Bolt AI on 2025-01-27 for maximum ranking – excludes milestone page
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -19,9 +20,9 @@ const globalKeywords = "Python, Java, C, C++, C#, JavaScript, TypeScript, Go, Go
 
 const jobTitles = [
   "AI Engineer",
-  "Full Stack Developer",
+  "Full Stack Developer", 
   "UI/UX Designer",
-  "EdTech-Community founder"
+  "Co-Founder, Tech Dev Club"
 ];
 
 const featuredSkills = [
@@ -466,6 +467,24 @@ function HomePage() {
                 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-6"
               />
               
+              {/* Tech Dev Club Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="mb-6"
+              >
+                <a
+                  href="https://techdevclub.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full text-sm font-medium hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  🚀 Co-Founder, Tech Dev Club
+                  <ExternalLink size={14} />
+                </a>
+              </motion.div>
+              
               <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
                 <Link
                   to="/contact"
@@ -491,7 +510,7 @@ function HomePage() {
               </div>
               
               <p className="text-base md:text-lg text-gray-600 dark:text-gray-400">
-                {personalInfo.bio.split('\n')[0]}
+                Building a global tech community for collaboration and innovation through Tech Dev Club.
               </p>
             </motion.div>
           </div>
