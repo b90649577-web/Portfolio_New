@@ -24,6 +24,7 @@ const Footer = () => {
     { name: 'Profiles', path: '/profiles', title: 'Professional Profiles - GitHub, LinkedIn, CodeChef, Google Cloud, Azure & More', ariaLabel: 'View professional profiles', icon: Globe },
     { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development', ariaLabel: 'Read tech blogs and insights', icon: Code },
     { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements', icon: Award },
+    { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources', ariaLabel: 'View professional milestones and journey', icon: Briefcase },
     { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration', icon: Mail },
   ];
 
