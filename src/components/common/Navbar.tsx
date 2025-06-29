@@ -1,3 +1,4 @@
+// SEO keywords globally merged by Bolt AI on 2025-01-27 for maximum ranking – excludes milestone page
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Sun, Moon } from 'lucide-react';
@@ -17,7 +18,6 @@ const Navbar = () => {
     { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development, EdTech-Community', ariaLabel: 'Read tech blogs and insights' },
     { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements' },
     { name: 'Skills', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong, Machine Learning', ariaLabel: 'View technical skills and tools' },
-    { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources', ariaLabel: 'View professional milestones and journey' },
     { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration' },
   ];
 
