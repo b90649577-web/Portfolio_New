@@ -1,3 +1,4 @@
+// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 import React from 'react';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -7,6 +8,20 @@ import { useTheme } from '../ThemeProvider';
 import 'react-vertical-timeline-component/style.min.css';
 
 const experienceList = [
+  {
+    title: 'Co-Founder, Tech Dev Club',
+    company: 'Tech Dev Club',
+    location: 'Global (Remote)',
+    date: 'June 2024 - Present',
+    logo: '/techdevclub.png',
+    description: [
+      'Launched and co-lead Tech Dev Club, connecting innovators and developers worldwide through events, mentorship, and projects',
+      'Building a global tech community for collaboration and innovation',
+      'Organizing workshops, hackathons, and networking events for developers',
+      'Mentoring aspiring developers and fostering open-source contributions'
+    ],
+    link: 'https://techdevclub.com/'
+  },
   {
     title: 'SSOC Contributor Season 4',
     company: 'Social Summer Of Code',
@@ -196,6 +211,19 @@ const Experience = () => {
                   <li key={i}>{desc}</li>
                 ))}
               </ul>
+
+              {item.link && (
+                <div className="mt-4">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium"
+                  >
+                    Visit Tech Dev Club →
+                  </a>
+                </div>
+              )}
             </motion.div>
           </VerticalTimelineElement>
         ))}

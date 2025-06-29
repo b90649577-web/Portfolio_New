@@ -1,3 +1,4 @@
+// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../common/SectionHeading';
@@ -38,10 +39,15 @@ const About = () => {
           >
             I'm <strong>Brajesh Kumar</strong>, a passionate and adaptable
             Computer Science and Engineering student at GL Bajaj Group of
-            Institutions (Batch 2023–2027). With a strong foundation in full-stack
-            development, machine learning, and AI-based systems, I thrive on
-            building real-world tech solutions that are not only innovative but
-            impactful.
+            Institutions (Batch 2023–2027). As <strong>Co-Founder of Tech Dev Club</strong>, 
+            I'm building a global tech community for collaboration and innovation.
+            <br />
+            <br />
+            With a strong foundation in full-stack development, machine learning, 
+            and AI-based systems, I thrive on building real-world tech solutions 
+            that are not only innovative but impactful. Through Tech Dev Club, I 
+            connect innovators and developers worldwide through events, mentorship, 
+            and collaborative projects.
             <br />
             <br />
             I bring a hands-on approach to problem-solving, demonstrated through my
@@ -65,7 +71,7 @@ const About = () => {
             frontDark="/personal-dark.jpg"
             backLight="/self-light.jpg"
             backDark="/self-dark.png"
-            alt="Brajesh Kumar"
+            alt="Brajesh Kumar - Co-Founder, Tech Dev Club"
             className="aspect-square w-full max-w-[500px] h-auto"
           />
         </motion.div>
