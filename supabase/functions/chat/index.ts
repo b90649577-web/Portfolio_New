@@ -1,11 +1,22 @@
-import { createClient } from 'npm:@supabase/supabase-js@4.39.5'
-import { Configuration, OpenAIApi } from 'npm:openai@6.24.3'
-import config from '../../../src/data/chatbot.json\' assert { type: "json" }
+import { createClient } from 'npm:@supabase/supabase-js@2'
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
+}
+
+// Default chatbot configuration
+const defaultConfig = {
+  settings: {
+    model: 'gpt-3.5-turbo',
+    temperature: 0.7,
+    maxTokens: 150,
+    topP: 1,
+    frequencyPenalty: 0,
+    presencePenalty: 0
+  },
+  systemPrompt: 'You are a helpful AI assistant. Provide concise and helpful responses.'
 }
 
 Deno.serve(async (req) => {
@@ -21,73 +32,52 @@ Deno.serve(async (req) => {
     }
 
     const { input } = JSON.parse(body);
-    if (!input) {
-      throw new Error('Input is required');
+    if (!input || typeof input !== 'string' || input.trim().length === 0) {
+      throw new Error('Valid input is required');
     }
 
     // Validate environment variables
-    const supabaseUrl = Deno.env.get('SUPABASE_URL');
-    const supabaseKey = Deno.env.get('SUPABASE_ANON_KEY');
     const openaiKey = Deno.env.get('OPENAI_API_KEY');
 
-    if (!supabaseUrl || !supabaseKey) {
-      throw new Error('Missing Supabase credentials');
-    }
-
     if (!openaiKey) {
-      throw new Error('Missing OpenAI API key');
+      throw new Error('OpenAI API key is not configured');
     }
 
-    const supabase = createClient(supabaseUrl, supabaseKey);
-
-    const configuration = new Configuration({
-      apiKey: openaiKey,
-    })
-
-    const openai = new OpenAIApi(configuration)
-
-    try {
-      const completion = await openai.createChatCompletion({
-        model: config.settings.model,
+    // Use modern fetch API to call OpenAI directly
+    const openaiResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${openaiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: defaultConfig.settings.model,
         messages: [
           {
             role: 'system',
-            content: config.systemPrompt
+            content: defaultConfig.systemPrompt
           },
           {
             role: 'user',
-            content: input
+            content: input.trim()
           }
         ],
-        temperature: config.settings.temperature,
-        max_tokens: config.settings.maxTokens,
-        top_p: config.settings.topP,
-        frequency_penalty: config.settings.frequencyPenalty,
-        presence_penalty: config.settings.presencePenalty
+        temperature: defaultConfig.settings.temperature,
+        max_tokens: defaultConfig.settings.maxTokens,
+        top_p: defaultConfig.settings.topP,
+        frequency_penalty: defaultConfig.settings.frequencyPenalty,
+        presence_penalty: defaultConfig.settings.presencePenalty
       })
+    });
 
-      if (!completion.data.choices?.[0]?.message) {
-        throw new Error('No response received from OpenAI');
-      }
-
-      const response = completion.data.choices[0].message;
-
-      return new Response(
-        JSON.stringify({ response }),
-        { 
-          headers: { 
-            ...corsHeaders,
-            'Content-Type': 'application/json'
-          }
-        }
-      )
-    } catch (openaiError: any) {
-      // Handle OpenAI specific errors
-      const statusCode = openaiError.response?.status || 500;
+    if (!openaiResponse.ok) {
+      const errorData = await openaiResponse.json().catch(() => ({}));
+      const statusCode = openaiResponse.status;
+      
       let errorMessage = 'An error occurred while processing your request';
-
-      if (openaiError.response?.data?.error?.message) {
-        errorMessage = openaiError.response.data.error.message;
+      
+      if (errorData.error?.message) {
+        errorMessage = errorData.error.message;
       } else {
         switch (statusCode) {
           case 401:
@@ -104,25 +94,60 @@ Deno.serve(async (req) => {
             break;
         }
       }
-
+      
       throw new Error(errorMessage);
     }
+
+    const completion = await openaiResponse.json();
+
+    if (!completion.choices?.[0]?.message?.content) {
+      throw new Error('No response received from OpenAI');
+    }
+
+    const response = {
+      content: completion.choices[0].message.content.trim()
+    };
+
+    return new Response(
+      JSON.stringify({ response }),
+      { 
+        headers: { 
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+
   } catch (error) {
     console.error('Error in chat function:', error);
     
     let statusCode = 500;
-    let message = error instanceof Error ? error.message : 'An unexpected error occurred';
+    let message = 'An unexpected error occurred';
 
-    // Handle validation errors
-    if (message === 'Request body is empty' || message === 'Input is required') {
-      statusCode = 400;
-    }
-    
-    // Handle configuration errors
-    if (message.includes('Missing')) {
-      statusCode = 503;
+    if (error instanceof Error) {
+      message = error.message;
+      
+      // Handle validation errors
+      if (message.includes('Request body is empty') || message.includes('Valid input is required')) {
+        statusCode = 400;
+      }
+      
+      // Handle configuration errors
+      if (message.includes('not configured')) {
+        statusCode = 503;
+      }
+      
+      // Handle OpenAI API errors
+      if (message.includes('Invalid OpenAI API key')) {
+        statusCode = 401;
+      }
+      
+      if (message.includes('Rate limit exceeded')) {
+        statusCode = 429;
+      }
     }
 
+    // Always return a valid JSON response
     return new Response(
       JSON.stringify({ error: message }),
       { 
