@@ -73,13 +73,13 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
         }
       }, 30000);
 
-      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`, {
+      // Send request to Flask backend
+      const response = await fetch('http://localhost:5000/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify({ input }),
+        body: JSON.stringify({ question: input }),
         signal: abortControllerRef.current.signal
       });
 
@@ -120,12 +120,12 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
         throw new Error('Server returned invalid response. Please try again.');
       }
 
-      if (!data.response?.content) {
+      if (!data.answer) {
         throw new Error('Invalid response format from server');
       }
 
       const botMessage = {
-        text: data.response.content.trim(),
+        text: data.answer.trim(),
         isBot: true,
         timestamp: new Date(),
       };
