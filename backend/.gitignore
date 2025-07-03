@@ -28,7 +28,7 @@ ENV/
 
 # Logs
 *.log
-logs/
+chatbot.log
 
 # Environment variables
 .env
@@ -44,16 +44,3 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
-
-# Flask
-instance/
-.webassets-cache
-
-# Testing
-.coverage
-.pytest_cache/
-htmlcov/
-
-# Backup files
-*.bak
-*.backup

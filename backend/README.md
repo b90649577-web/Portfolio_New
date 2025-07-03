@@ -48,6 +48,12 @@ python app.py
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
 
+#### Quick Start (Unix/Linux/macOS)
+```bash
+chmod +x run.sh
+./run.sh
+```
+
 ### 4. Testing the API
 
 The backend will be available at `http://localhost:5000`

@@ -41,6 +41,8 @@ Key information about Brajesh Kumar:
 - Contact: bk117134@gmail.com, +91-7452971645
 - Location: Mathura, UP, India
 
+If the question is not related to Brajesh Kumar's portfolio, respond with: "Sorry, I can only answer questions about Brajesh Kumar's portfolio."
+
 Keep responses concise, helpful, and focused on Brajesh's professional profile."""
 
 @app.route('/health', methods=['GET'])
