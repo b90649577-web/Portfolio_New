@@ -11,13 +11,10 @@ interface MetaTagsProps {
   structuredData?: object | object[];
 }
 
-// Import the global keywords from App.tsx
-import { globalKeywords } from '../../App';
-
 const MetaTags: React.FC<MetaTagsProps> = ({
   title = "Brajesh Kumar | AI Engineer, Full Stack Developer & UI/UX Designer Portfolio",
   description = "Portfolio of Brajesh Kumar - AI Engineer, Full Stack Developer, and UI/UX Designer from India. Specializing in React, Python, Machine Learning, and modern web technologies. Available for freelance projects globally.",
-  keywords = globalKeywords.join(', '),
+  keywords = "Brajesh Kumar, AI Engineer, Full Stack Developer, UI/UX Designer, React, Python, Machine Learning, Web Development, Portfolio, Freelance, India",
   image = "https://brajeshkumar.dev/personal-dark.jpg",
   url = "https://brajeshkumar.dev/",
   type = "website",
