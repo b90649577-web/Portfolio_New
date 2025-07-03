@@ -2,9 +2,9 @@
 
 This guide will help you resolve common issues with the portfolio chatbot integration.
 
-## "Failed to fetch" Errors
+## "Failed to fetch" or "Network error" Issues
 
-If you're seeing "Failed to fetch" errors in the browser console, follow these steps:
+If you're seeing "Failed to fetch" or "Network error" messages in the chatbot, follow these steps:
 
 ### 1. Verify the Backend is Running
 
@@ -13,6 +13,7 @@ If you're seeing "Failed to fetch" errors in the browser console, follow these s
 cd backend
 
 # Start the backend if it's not running
+chmod +x run_backend.sh
 ./run_backend.sh
 ```
 
@@ -103,20 +104,6 @@ const response = await fetch('/api/chat', {
 
 // For absolute URL (different domain)
 const response = await fetch('https://api.yourdomain.com/api/chat', {
-  // ...
-});
-```
-
-### Using Environment Variables
-For flexible configuration, use environment variables:
-
-```typescript
-// In .env file
-VITE_API_URL=http://localhost:5000/api/chat
-
-// In ChatWindow.tsx
-const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/chat';
-const response = await fetch(apiUrl, {
   // ...
 });
 ```

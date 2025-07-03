@@ -25,6 +25,7 @@ pip install -r requirements.txt
 # Run the application
 echo "🌟 Starting Flask application..."
 echo "📍 Backend will be available at: http://localhost:5000"
+echo "🔍 Health check: http://localhost:5000/health"
 echo "💬 Chat endpoint: http://localhost:5000/api/chat"
 echo ""
 echo "Press Ctrl+C to stop the server"
