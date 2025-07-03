@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, X, Paperclip } from 'lucide-react';
+import { Send, X, Paperclip, Loader2 } from 'lucide-react';
 import ChatMessage from './ChatMessage';
 import config from '../../data/chatbot.json';
 
@@ -149,6 +149,8 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
           errorMessage = 'The service is temporarily unavailable. Please try again later.';
         } else if (error.message.includes('Authentication failed')) {
           errorMessage = 'Authentication failed. Please contact support.';
+        } else if (error.message.includes('Failed to fetch')) {
+          errorMessage = 'Network error - please check your connection and make sure the backend is running at http://localhost:5000';
         } else {
           errorMessage = error.message;
         }
@@ -205,6 +207,12 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
             timestamp={msg.timestamp}
           />
         ))}
+        {isLoading && (
+          <div className="flex items-center gap-2 text-gray-500">
+            <Loader2 className="animate-spin" size={16} />
+            <span>Thinking...</span>
+          </div>
+        )}
         <div ref={messagesEndRef} />
       </div>
 
@@ -241,7 +249,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
           </button>
         </div>
         <div className="text-xs text-center text-gray-500 mt-2">
-          Powered by OpenAI
+          Powered by OpenAI via ChatAnywhere
         </div>
       </form>
     </div>

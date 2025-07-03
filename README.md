@@ -45,10 +45,11 @@ The chatbot is already integrated into the portfolio website. The frontend compo
 
 ### Common Issues
 
-1. **404 Errors**:
+1. **"Failed to fetch" Errors**:
    - Make sure the Flask backend is running on port 5000
    - Verify the API endpoint is `/api/chat`
    - Check that the frontend is sending requests to `http://localhost:5000/api/chat`
+   - See TROUBLESHOOTING.md for detailed steps
 
 2. **CORS Issues**:
    - The backend has CORS enabled for all origins
