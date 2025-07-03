@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, X, Paperclip } from 'lucide-react';
+import { Send, X, Paperclip, Loader2 } from 'lucide-react';
 import ChatMessage from './ChatMessage';
 import config from '../../data/chatbot.json';
 
@@ -73,30 +73,59 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
         }
       }, 30000);
 
-      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat`, {
+      // Send request to Flask backend
+      const response = await fetch('http://localhost:5000/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify({ input }),
+        body: JSON.stringify({ question: input }),
         signal: abortControllerRef.current.signal
       });
 
       clearTimeout(timeout);
 
-      const data = await response.json();
-
+      // Check if response is ok before trying to parse JSON
       if (!response.ok) {
-        throw new Error(data.error || 'An error occurred while processing your request');
+        // Try to get error message from response
+        let errorMessage = 'Server error occurred';
+        try {
+          const errorData = await response.json();
+          errorMessage = errorData.error || errorMessage;
+        } catch {
+          // If JSON parsing fails, use status-based message
+          switch (response.status) {
+            case 401:
+              errorMessage = 'Authentication failed';
+              break;
+            case 429:
+              errorMessage = 'Too many requests. Please wait a moment and try again.';
+              break;
+            case 503:
+              errorMessage = 'Service temporarily unavailable. Please try again later.';
+              break;
+            default:
+              errorMessage = `Server error (${response.status})`;
+          }
+        }
+        throw new Error(errorMessage);
       }
 
-      if (!data.response?.content) {
+      // Parse JSON response
+      let data;
+      try {
+        data = await response.json();
+      } catch (jsonError) {
+        console.error('JSON parsing error:', jsonError);
+        throw new Error('Server returned invalid response. Please try again.');
+      }
+
+      if (!data.answer) {
         throw new Error('Invalid response format from server');
       }
 
       const botMessage = {
-        text: data.response.content.trim(),
+        text: data.answer.trim(),
         isBot: true,
         timestamp: new Date(),
       };
@@ -110,12 +139,18 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
       if (error instanceof Error) {
         if (error.name === 'AbortError') {
           errorMessage = 'Request timed out. Please try again.';
+        } else if (error.message.includes('Server returned invalid response')) {
+          errorMessage = 'There was a problem with the server response. Please try again.';
         } else if (error.message.includes('API key')) {
           errorMessage = 'The service is not properly configured. Please contact support.';
-        } else if (error.message.includes('rate limit')) {
+        } else if (error.message.includes('rate limit') || error.message.includes('Too many requests')) {
           errorMessage = 'Too many requests. Please wait a moment and try again.';
         } else if (error.message.includes('maintenance') || error.message.includes('unavailable')) {
           errorMessage = 'The service is temporarily unavailable. Please try again later.';
+        } else if (error.message.includes('Authentication failed')) {
+          errorMessage = 'Authentication failed. Please contact support.';
+        } else if (error.message.includes('Failed to fetch')) {
+          errorMessage = 'Network error - please check your connection and make sure the backend is running at http://localhost:5000';
         } else {
           errorMessage = error.message;
         }
@@ -172,6 +207,12 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
             timestamp={msg.timestamp}
           />
         ))}
+        {isLoading && (
+          <div className="flex items-center gap-2 text-gray-500">
+            <Loader2 className="animate-spin" size={16} />
+            <span>Thinking...</span>
+          </div>
+        )}
         <div ref={messagesEndRef} />
       </div>
 
@@ -208,7 +249,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
           </button>
         </div>
         <div className="text-xs text-center text-gray-500 mt-2">
-          Powered by OpenAI
+          Powered by OpenAI via ChatAnywhere
         </div>
       </form>
     </div>
