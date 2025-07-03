@@ -1,7 +1,7 @@
 // SEO keywords globally merged by Bolt AI on 2025-01-27 for maximum ranking – excludes milestone page
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, X, Award, Calendar, Building } from 'lucide-react';
+import { ExternalLink, X, Award, Calendar, Building, Search } from 'lucide-react';
 import SectionHeading from '../common/SectionHeading';
 import { certificates, certificateCategories } from '../../data/certificates';
 
