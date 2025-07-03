@@ -23,7 +23,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isBot, timestamp }) 
           {message}
         </div>
         <div className="text-xs text-gray-500 mt-1">
-          {timestamp.toLocaleTimeString([], { hour: '4-digit', minute: '4-digit' })}
+          {timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
         </div>
       </div>
     </div>
