@@ -32,7 +32,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WRVYTRZ5VGYJ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -42,7 +42,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "HTOO8M00GD19",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -52,7 +52,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DB3PNC7HBA93",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -62,7 +62,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8DTQS6F2TR63",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -72,7 +72,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "2L3TURUU9QJO",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -82,7 +82,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FGH37PNHVSLN",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -92,7 +92,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "T10T2RAL5ILI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -102,7 +102,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "B6R9JTJ5AR3D",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -112,7 +112,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "X7OAFQLVABI9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -122,7 +122,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "GYRO5U6WZ8TF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -132,7 +132,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "569PZOUB0VGS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -142,7 +142,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JFGZWUN6MMYW",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -152,7 +152,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "CR03PAW9KCGT",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -162,7 +162,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "QVSTBQPBO4C0",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -172,7 +172,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "R93VJ0DS5N4N",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -182,7 +182,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "XC1DF5OV8F53",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -192,7 +192,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SOJMI9JE36KN",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -202,7 +202,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XEYBVO42KZD2",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -212,7 +212,7 @@ export const certificates = [
     issuer: "Forage",
     date: "March 2025",
     credentialId: "g5sno7hGQtPfLJrrb",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -222,7 +222,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "6YSPMK2JPRKU",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -232,7 +232,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "J8976NJ3VMYQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -242,7 +242,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HCJ4HMJ3Y8KQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -252,7 +252,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AW7SEWYRE41Y",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -262,7 +262,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8EE2GLS76DJ4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -272,7 +272,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XSNZY8KGL4PT",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -282,7 +282,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "IS2L5RUG6CKG",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -292,7 +292,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "30TFGKRD59AF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -302,7 +302,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "K073WI84ZE1W",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -312,7 +312,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NF2EVESJHHXK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -322,7 +322,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOVX7BE1RTYK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -332,7 +332,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "I8DF0VYY8B0P",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -342,7 +342,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FBDQ27HXWWF0",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -352,7 +352,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AGUYDJSLKZRX",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -362,7 +362,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "X27VK8M57K3N",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -372,7 +372,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "W9W0UJ32CICL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -382,7 +382,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "9H2ZZFR6PPJK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -392,7 +392,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "V7XG1B8VIFG8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -402,7 +402,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "95OKVKDABICM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -412,7 +412,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "0JFX6QVGPKR5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -422,7 +422,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "G82E6AXSTEF6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -432,7 +432,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "I4E2X6UOGH7Z",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -442,7 +442,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3K4KEXV3LLE6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -452,7 +452,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "3KWF2RO3VG7P",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -462,7 +462,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JXXFRBRG9OXP",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -472,7 +472,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "B3FAVOKTGOTL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -482,7 +482,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SYK4M3WJQ6VR",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -492,7 +492,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3P3M6UJ1N8PB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -502,7 +502,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FUK9VLTL7MWS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -512,7 +512,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "D9C8SR9P1X0E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -522,7 +522,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TYYOJP97BAYC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -532,7 +532,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Z7P27P0PQKYY",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -542,7 +542,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "M3XTLTQQOBMO",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -552,7 +552,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UZUWBJFA6XRP",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -562,7 +562,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "5OQ8USMPCJAK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -572,7 +572,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8NSIUZH3Y3AE",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -582,7 +582,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RNYCEAKBJJUZ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -592,7 +592,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "L2HKLL1XEQY4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -602,7 +602,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "0BO9GTVLJDAT",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -612,7 +612,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LM1G8VC3Z7HV",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -622,7 +622,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KGESNNASRBT5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -632,7 +632,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IT7R6J3ZTXRV",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -642,7 +642,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "5T4CU7H96KAD",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -652,7 +652,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HZ3S5JVEG4WL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -662,7 +662,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "C8PQ4Y92EJNC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -672,7 +672,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EGQY9XBM86ZM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -682,7 +682,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "2Y6BCO94W67N",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -692,7 +692,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GY4BLFTTY0CN",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -702,7 +702,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KZTK1NNZFXAP",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -722,7 +722,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "7BSJZCRBZVVI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -732,7 +732,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PK0OMCLQMGL6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -742,7 +742,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "S0Y3G0Q63BE8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -752,7 +752,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NUE06IUFWY1B",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -762,7 +762,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MPUCKEGASAC7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -772,7 +772,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KRSEEVF3S95E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -782,7 +782,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DNJCY200IB9O",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -792,7 +792,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JNE5YP648F8O",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -802,7 +802,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RSFO9MIXS7LE",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -812,7 +812,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SQ167RI2YCZC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -822,7 +822,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZG0QBSD8KJA4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -832,7 +832,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IK3TNUZS3A4Y",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -842,7 +842,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "1N2CHIWLNH34",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -852,7 +852,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KQAQ1WQYCPRC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -872,7 +872,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IYY4SR2OD06R",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -882,7 +882,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "Q7WFBDPSFZ8X",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -892,7 +892,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "K6Z6OYU5G98K",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -902,7 +902,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KRSEEVF3S95E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -912,7 +912,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "S6UK41L554FM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -922,7 +922,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "0ZL4TP8UZYSC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -932,7 +932,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "YHRR3XPV5JVQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -942,7 +942,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WCUTAD8YU27I",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -952,7 +952,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DNJCY200IB9O",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -962,7 +962,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GWJGMSXSCR92",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -972,7 +972,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YBTCUTLT27RH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -982,7 +982,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SQ167RI2YCZC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -992,7 +992,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IK3TNUZS3A4Y",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1002,7 +1002,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "POHMVG4KOVFW",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1012,7 +1012,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "QXBS7ZAF3FQA",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1022,7 +1022,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "K6NL4S04JZTL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1032,7 +1032,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZG0QBSD8KJA4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1042,7 +1042,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "G1K6HDZZRTFH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1052,7 +1052,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "L2ADXPRWPW2L",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1062,7 +1062,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "7Y0PPF0O73FZ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1072,7 +1072,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "J7VZZ3LTUSB9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1082,7 +1082,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NKDQNSGZTHS0",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1092,7 +1092,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "44ZIW9CDPCO6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1102,7 +1102,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "7QE14D8KUJP5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1112,7 +1112,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "0SGXQSRGRPP2",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1122,7 +1122,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "S0Y3G0Q63BE8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1132,7 +1132,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "H9WO4ATJ78LB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1142,7 +1142,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "7BSJZCRBZVVI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1152,7 +1152,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MPUCKEGASAC7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1162,7 +1162,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8MOIZXI4E1CY",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1172,7 +1172,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "S6UK41L554FM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1182,7 +1182,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RSFO9MIXS7LE",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1192,7 +1192,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "17MVWT63SVII",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1202,7 +1202,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8TV78UU71HST",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1212,7 +1212,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Y5XRH7BVHZY7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1222,7 +1222,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "3N7HJKKYETPM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1232,7 +1232,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GEPTT9LRDFZI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1242,7 +1242,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "OJNGTHX87WKS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1252,7 +1252,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YPR2LQ62N09X",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1272,7 +1272,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "58YWCZ73YWUM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1282,7 +1282,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "JT72XJYI48V6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1292,7 +1292,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KQAQ1WQYCPRC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1302,7 +1302,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "M554KXELMRMK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1312,7 +1312,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SI8BJIAGA6IF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1322,7 +1322,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "G7E0MZ71SS4E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1332,7 +1332,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HHQOGKI8I4P7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1342,7 +1342,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3104V29XYNLF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1352,7 +1352,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "F7D8F3PC94BS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1362,7 +1362,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "Y0RQ4WY71RIB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1372,7 +1372,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PV5TT3N8IC27",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1382,7 +1382,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "5AVCKUZKSVR4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1392,7 +1392,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "3CWLRJ7TH5KM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1402,7 +1402,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Q4TQI687KI0F",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1412,7 +1412,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "YQ5K0LIMZ46Q",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1422,7 +1422,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UOL99DYSM4W8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1442,7 +1442,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3U4D49FFC3A3",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1452,7 +1452,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NJATP4B8B9FG",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1462,7 +1462,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "HPJXL9O13FV1",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1472,7 +1472,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "UZCO63KQKS5K",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1482,7 +1482,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HVNFZILN7GLS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1492,7 +1492,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LYVUPB3LZ7OS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1502,7 +1502,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "f9da92bf-52af-46dd-8f62-0118bf45b051",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1512,7 +1512,7 @@ export const certificates = [
     issuer: "Udemy",
     date: "March 2025",
     credentialId: "UC-cb5cfeOc-0859-4563-b348-718e21f9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1522,7 +1522,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JNE5YP648F8O",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1532,7 +1532,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "QFVMAGYIFFGH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1542,7 +1542,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "1YZDUHMWNDGF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1552,7 +1552,7 @@ export const certificates = [
     issuer: "Microsoft",
     date: "March 2025",
     credentialId: "RKKF6ZJFM0IQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1562,7 +1562,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "Y2GNDQMPZPAE",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1572,7 +1572,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XFZZ1ZUVBMTQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1582,7 +1582,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "K6Z6OYU5G98K",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1592,7 +1592,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "NUD7PFFBI0NV",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1602,7 +1602,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KS6H06KDB0C1",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1612,7 +1612,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZKGKDQA02C5F",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1622,7 +1622,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XNN2KYUFIQ24",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1632,7 +1632,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WG1LMIY6L30B",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1642,7 +1642,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "H7ZT1S7AZX1W",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1652,7 +1652,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "OULMB3R5NKXH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1662,7 +1662,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3PO29AYDG9LR",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1672,7 +1672,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "N3DJFVWTU7DC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1682,7 +1682,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "28b2aae3-4f23-4bc0-80a6-9dbedc5d76fb",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1692,7 +1692,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "25fa2a50-ffa9-4859-a755-5d31f3325f4c",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1702,7 +1702,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "f6a7cfb6-9580-464a-8981-690dc6855a14",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1712,7 +1712,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "a1859b6a-e590-40f5-9b2e-a2405b06d2d9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1722,7 +1722,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "22dccce4-f797-49e7-85e1-b69ea262be1c",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1732,7 +1732,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "5ec13340-bce6-40e8-87f6-fcb00d22ea43",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1742,7 +1742,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "caab3a7a-b6a2-4821-85db-8c1886c910f4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1752,7 +1752,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "78deb237-73d8-4d7d-91e5-8c096beb13a5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1762,7 +1762,7 @@ export const certificates = [
     issuer: "Unstop",
     date: "March 2025",
     credentialId: "f2125667-41e2-4f22-bb01-d77a4b90af14",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1772,7 +1772,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ATHSIF7B1CES",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1782,7 +1782,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TJLGI394JTDZ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1792,7 +1792,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UPEXJPAWB4B5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1802,7 +1802,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WCUTAD8YU27I",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1812,7 +1812,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DNJCY200IB9O",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1822,7 +1822,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GWJGMSXSCR92",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1832,7 +1832,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YBTCUTLT27RH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1842,7 +1842,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SQ167RI2YCZC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1852,7 +1852,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IK3TNUZS3A4Y",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1862,7 +1862,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "POHMVG4KOVFW",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1872,7 +1872,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "YHRR3XPV5JVQ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1882,8 +1882,8 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "H32NN875QYLJ",
-    image: null,
-    featured: false,
+    image: uxPortfolioImg,
+    featured: true,
     keywords: globalKeywords.slice(0, 533)
   },
   {
@@ -1892,7 +1892,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "QXBS7ZAF3FQA",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1902,7 +1902,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "K6NL4S04JZTL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1912,7 +1912,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KRSEEVF3S95E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1922,7 +1922,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZG0QBSD8KJA4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1932,7 +1932,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "G1K6HDZZRTFH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1942,7 +1942,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "L2ADXPRWPW2L",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1952,7 +1952,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "7Y0PPF0O73FZ",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1962,7 +1962,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "J7VZZ3LTUSB9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1972,7 +1972,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NKDQNSGZTHS0",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1982,7 +1982,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "44ZIW9CDPCO6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -1992,7 +1992,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "7QE14D8KUJP5",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2002,7 +2002,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "0SGXQSRGRPP2",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2012,7 +2012,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "S0Y3G0Q63BE8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2022,7 +2022,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "H9WO4ATJ78LB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2032,7 +2032,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "7BSJZCRBZVVI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2042,7 +2042,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MPUCKEGASAC7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2052,7 +2052,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8MOIZXI4E1CY",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2062,7 +2062,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "S6UK41L554FM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2072,7 +2072,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RSFO9MIXS7LE",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2082,7 +2082,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "17MVWT63SVII",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2092,7 +2092,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "8TV78UU71HST",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2102,7 +2102,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Y5XRH7BVHZY7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2112,7 +2112,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "3N7HJKKYETPM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2122,7 +2122,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GEPTT9LRDFZI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2132,7 +2132,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "OJNGTHX87WKS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2142,7 +2142,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YPR2LQ62N09X",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2152,8 +2152,8 @@ export const certificates = [
     issuer: "EDX Alumni",
     date: "March 2025",
     credentialId: "QS8RY49ISMIR",
-    image: null,
-    featured: false,
+    image: websiteVideosImg,
+    featured: true,
     keywords: globalKeywords.slice(0, 533)
   },
   {
@@ -2162,7 +2162,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "58YWCZ73YWUM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2172,7 +2172,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "JT72XJYI48V6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2182,7 +2182,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KQAQ1WQYCPRC",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2192,7 +2192,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "M554KXELMRMK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2202,7 +2202,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SI8BJIAGA6IF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2212,7 +2212,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "G7E0MZ71SS4E",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2222,7 +2222,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HHQOGKI8I4P7",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2232,7 +2232,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3104V29XYNLF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2242,7 +2242,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "F7D8F3PC94BS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2252,7 +2252,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "Y0RQ4WY71RIB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2262,7 +2262,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PV5TT3N8IC27",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2272,7 +2272,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "5AVCKUZKSVR4",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2282,7 +2282,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "3CWLRJ7TH5KM",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2292,7 +2292,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Q4TQI687KI0F",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2302,7 +2302,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "YQ5K0LIMZ46Q",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2312,7 +2312,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UOL99DYSM4W8",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2322,8 +2322,8 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "G1K53UY9ZGKW",
-    image: null,
-    featured: false,
+    image: pitchDeckImg,
+    featured: true,
     keywords: globalKeywords.slice(0, 533)
   },
   {
@@ -2332,7 +2332,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "3U4D49FFC3A3",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2342,7 +2342,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NJATP4B8B9FG",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2352,7 +2352,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "HPJXL9O13FV1",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2362,7 +2362,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "UZCO63KQKS5K",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2372,7 +2372,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HVNFZILN7GLS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2382,7 +2382,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LYVUPB3LZ7OS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2392,7 +2392,7 @@ export const certificates = [
     issuer: "United Latino Students Association",
     date: "March 2025",
     credentialId: "f9da92bf-52af-46dd-8f62-0118bf45b051",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2402,7 +2402,7 @@ export const certificates = [
     issuer: "Udemy",
     date: "March 2025",
     credentialId: "UC-cb5cfeOc-0859-4563-b348-718e21f9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2412,7 +2412,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FXH3UVG4EPLN",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2422,7 +2422,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "P7NGLXOISNDP",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2432,7 +2432,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TXLCMH3G7H3J",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2442,7 +2442,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RM8FAZ95E9K6",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2452,7 +2452,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JPJNZ8H9SDFK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2462,7 +2462,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "K98EMV2YV7OP",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2472,7 +2472,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XJE9KDUV84MB",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2482,7 +2482,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "R45DKLSUQW4A",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2492,7 +2492,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "Z1DKLSUE3PLW",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2502,7 +2502,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REWPLZKTD9PL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2512,7 +2512,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "POE9V2LWSL3K",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2522,7 +2522,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KF3LPZV92MVX",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2532,7 +2532,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YUIOPZXCVB34",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2542,7 +2542,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ASDF1234POIU",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2552,7 +2552,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DF34UIOPOIUY",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2562,7 +2562,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LOP93WESD2ZS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2572,7 +2572,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XZCVBNMPOIU2",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2582,7 +2582,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LOPZK38DHG31",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2592,7 +2592,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NMXCV9282UUD",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2602,7 +2602,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "OIPLMN394KXS",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2612,7 +2612,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZMNPOIU834KL",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2622,7 +2622,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PLKJHGZX234T",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2632,7 +2632,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LMZXC09876OK",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2642,7 +2642,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DFG89PLKJHGF",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2652,7 +2652,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KLOIUYTREWQ9",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2662,7 +2662,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NBGKLOIUYT89",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2672,7 +2672,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "QWER2345TYUI",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2682,7 +2682,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "XCVBNM98345U",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2692,7 +2692,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DFG0987UJHGG",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2702,7 +2702,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LKJHGF2345YH",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2712,7 +2712,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SWAGGERDOC271",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2722,7 +2722,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NODEAPI272",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2732,7 +2732,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PORTHTMLCSS273",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2742,7 +2742,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FIREAUTH274",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2752,7 +2752,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REACTBLOG275",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2762,7 +2762,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "VERCELDEPLOY276",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2772,7 +2772,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GHPAGES277",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2782,7 +2782,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SHEETINV278",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2792,7 +2792,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PYREPS279",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2802,7 +2802,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "BOOTRES280",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2812,7 +2812,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CANVASIGN281",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2822,7 +2822,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MSFORM282",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2832,7 +2832,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "KEEPNOTE283",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2842,7 +2842,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ONENOTE284",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2852,7 +2852,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TRELLOPM285",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2862,7 +2862,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONPORT286",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2872,7 +2872,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PPTSLIDE287",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2882,7 +2882,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SLACKCOLLAB288",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2892,7 +2892,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DISCORDTEAM289",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2902,7 +2902,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "IFTTTAUTO290",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2912,7 +2912,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONHABIT291",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2922,7 +2922,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CARRDLAND292",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2932,7 +2932,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FIGMACV293",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2942,7 +2942,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JSJOURNAL294",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2952,7 +2952,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "OPENAIAPI295",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2962,7 +2962,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MIDJVIS296",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2972,7 +2972,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MEMEBUILD297",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2982,7 +2982,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TYPEFORMS298",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -2992,7 +2992,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MAILCHIMP299",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3002,7 +3002,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CANVAPOST300",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3012,7 +3012,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "BUFFER301",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3022,7 +3022,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REELSCANVA302",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3032,7 +3032,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "COLORBRAND303",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3042,7 +3042,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "YTCANVA304",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3052,7 +3052,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EBOOKLAYOUT305",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3062,7 +3062,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LINKBRAND306",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3072,7 +3072,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZAPIERLINK307",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3082,7 +3082,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SEMAUDIT308",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3092,7 +3092,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LANDING309",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3102,7 +3102,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LEADMAGDOC310",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3112,7 +3112,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SALESFUN311",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3122,7 +3122,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "INFOGRAPH312",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3132,7 +3132,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIRCAL313",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3142,7 +3142,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ANIMCAN314",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3152,7 +3152,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONPORT315",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3162,7 +3162,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MCNEWS316",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3172,7 +3172,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EVENTCAN317",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3182,7 +3182,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LOOKALOGO318",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3192,7 +3192,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PHPLAN319",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3202,7 +3202,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIBNAME320",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3212,7 +3212,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DESCRIPT321",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3222,7 +3222,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WEBFLOW322",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3232,7 +3232,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ADSPARK323",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3242,7 +3242,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ADTRACK324",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3252,7 +3252,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SOCIALSAAS325",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3262,7 +3262,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIDACOPY326",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3272,7 +3272,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GPTSEO327",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3282,7 +3282,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CLIENTCANVA328",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3292,7 +3292,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONCHECK329",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3302,7 +3302,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FOTORPOST330",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3312,7 +3312,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EMAILFUNNEL331",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3322,7 +3322,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SMARTMOCK332",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3332,7 +3332,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TWEETCARO333",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3342,7 +3342,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EMAILSIGN334",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3352,7 +3352,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GIFAD335",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3362,7 +3362,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CARRDSPAGE336",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3372,7 +3372,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TYPEFORMLEAD337",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3382,7 +3382,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "COLDMAIL338",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3392,7 +3392,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "BEAUTIFULDECK339",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3402,7 +3402,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WELCOMEEMAIL340",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3412,7 +3412,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TEACHABLE341",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3422,7 +3422,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FBADS342",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3432,7 +3432,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "BLOGAI343",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3442,7 +3442,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "COUPONCANVA344",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3452,7 +3452,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONCASE345",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3462,7 +3462,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SERVICEWP346",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3472,7 +3472,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "POSTCALENDAR347",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3482,7 +3482,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CERTCANVA348",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3492,7 +3492,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PORTFZAPIER349",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3502,7 +3502,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "RATECALC350",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3512,7 +3512,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "COLDNOTION351",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3522,7 +3522,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "VISMEPDF352",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3532,7 +3532,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UTMTRACK353",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3542,7 +3542,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FIGAD354",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3552,7 +3552,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TESTHIGHLIGHT355",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3562,7 +3562,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CANVADOCS356",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3572,7 +3572,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SNAPPAYOUTUBE357",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3582,7 +3582,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PITCHSLIDE358",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3592,7 +3592,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "INSTAHL359",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3602,7 +3602,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "VOICEAI360",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3612,7 +3612,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PRODLAUNCH361",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3622,7 +3622,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AICANVABLOG362",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3632,7 +3632,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONPROD363",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3642,7 +3642,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TIMELINEPPT364",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3652,7 +3652,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TECHPOSTER365",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3662,7 +3662,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "DIGIBIZCARD366",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3672,7 +3672,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MOBMOCK367",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3682,7 +3682,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WORKFIGMA368",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3692,7 +3692,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WABAUTO369",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3702,7 +3702,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UXRESEARCH370",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3712,7 +3712,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIAVATAR371",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3722,7 +3722,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EMAILHEADER372",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3732,7 +3732,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PRICETABLE373",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3742,7 +3742,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PHLAUNCH374",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3752,7 +3752,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HACKPOSTER375",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3762,7 +3762,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "UXFORM376",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3772,7 +3772,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JOBDASH377",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3782,7 +3782,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CHROMEEXT378",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3792,7 +3792,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CANVAANIM379",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3802,7 +3802,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AUTODATA380",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3812,7 +3812,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "PROOFBANNER381",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3822,7 +3822,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REVIEWGRAPHIC382",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3832,7 +3832,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TECHPORT383",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3842,7 +3842,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SURVEYDASH384",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3852,7 +3852,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MOCKTEMP385",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3862,7 +3862,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "SIGNUPWIDGET386",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3872,7 +3872,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ALUMNIWP387",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3882,7 +3882,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TYPEQUIZ388",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3892,7 +3892,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REACTPORT389",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3902,7 +3902,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "WAITLIST390",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3912,7 +3912,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIBIZ391",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3922,7 +3922,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LOGOCANVA392",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3932,7 +3932,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "NOTIONWORK393",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3942,7 +3942,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "BADGECANVA394",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3952,7 +3952,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "ZAPIERLEAD395",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3962,7 +3962,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIPERSONA396",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3972,7 +3972,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "TRELLOCAMPAIGN397",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3982,7 +3982,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AICOVER398",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -3992,7 +3992,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "STARTEXPLAIN399",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4002,7 +4002,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CHATBOT400",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4012,7 +4012,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "INTERNSHIP401",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4022,7 +4022,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "VISUALDASH402",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4032,7 +4032,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FEEDBACK403",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4042,7 +4042,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "JOBSPOWER404",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4052,7 +4052,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MAILNEWS405",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4062,7 +4062,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "HACKSCHED406",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4072,7 +4072,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MIROROADMAP407",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4082,7 +4082,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CASESTUDY408",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4092,7 +4092,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EVENTREPORT409",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4102,7 +4102,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "AIRTABLE410",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4112,7 +4112,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "GAMIFYUI411",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4122,7 +4122,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "INVESTORPITCH412",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4132,7 +4132,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "REMOTEJOBSITE413",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4142,7 +4142,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "LEARNTRACK414",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4152,7 +4152,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "FEEDBACKLOOP415",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4162,7 +4162,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "MULTIREZ416",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4172,7 +4172,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EVENTSYS417",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4182,7 +4182,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "EDTECHFIGMA418",
-    image: null,
+    image: canvaImg,
     featured: false,
     keywords: globalKeywords.slice(0, 533)
   },
@@ -4192,17 +4192,7 @@ export const certificates = [
     issuer: "Coursera",
     date: "March 2025",
     credentialId: "CODINGHUB419",
-    image: null,
-    featured: true,
-    keywords: globalKeywords.slice(0, 533)
-  },
-  {
-    id: "420",
-    title: "Use Canva to Create Desktop and Mobile-friendly Web Pages",
-    issuer: "Coursera",
-    date: "March 2025",
-    credentialId: "8ULAP5KM83Y0",
-    image: canvaWebImg,
+    image: canvaImg,
     featured: true,
     keywords: globalKeywords.slice(0, 533)
   }

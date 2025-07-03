@@ -160,6 +160,23 @@ const CertificateCard: React.FC<{ certificate: any; onClick: () => void }> = ({
 
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<any>(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const certificatesPerPage = 12;
+
+  // Filter certificates based on search query
+  const filteredCertificates = certificates.filter(cert => 
+    cert.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    cert.issuer.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  // Calculate pagination
+  const indexOfLastCertificate = currentPage * certificatesPerPage;
+  const indexOfFirstCertificate = indexOfLastCertificate - certificatesPerPage;
+  const currentCertificates = filteredCertificates.slice(indexOfFirstCertificate, indexOfLastCertificate);
+  const totalPages = Math.ceil(filteredCertificates.length / certificatesPerPage);
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
     <div className="container-section">
@@ -168,29 +185,33 @@ const Certificates = () => {
         subtitle="Professional certifications and accomplishments across various technologies and platforms"
       />
 
-      {/* Featured Certificates */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-primary-500">Featured Certificates</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {certificates
-            .filter(cert => cert.featured)
-            .map((certificate) => (
-              <CertificateCard
-                key={certificate.id}
-                certificate={certificate}
-                onClick={() => setSelectedCertificate(certificate)}
-              />
-            ))}
+      {/* Search Bar */}
+      <div className="mb-8">
+        <div className="relative max-w-md mx-auto">
+          <input
+            type="text"
+            placeholder="Search certificates..."
+            value={searchQuery}
+            onChange={(e) => {
+              setSearchQuery(e.target.value);
+              setCurrentPage(1); // Reset to first page on search
+            }}
+            className="form-input w-full pl-10 pr-4 py-2"
+          />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
         </div>
+        <p className="text-center mt-2 text-gray-500 dark:text-gray-400">
+          Showing {filteredCertificates.length} of {certificates.length} certificates
+        </p>
       </div>
 
-      {/* All Certificates by Category */}
-      {certificateCategories.map((category) => (
-        <div key={category.name} className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-primary-500">{category.name}</h2>
+      {/* Featured Certificates */}
+      {searchQuery === '' && currentPage === 1 && (
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6 text-primary-500">Featured Certificates</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certificates
-              .filter(cert => category.certificates.includes(cert.title))
+              .filter(cert => cert.featured)
               .map((certificate) => (
                 <CertificateCard
                   key={certificate.id}
@@ -200,8 +221,74 @@ const Certificates = () => {
               ))}
           </div>
         </div>
-      ))}
+      )}
 
+      {/* All Certificates */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 text-primary-500">All Certificates</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {currentCertificates.map((certificate) => (
+            <CertificateCard
+              key={certificate.id}
+              certificate={certificate}
+              onClick={() => setSelectedCertificate(certificate)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex justify-center mt-8 mb-4">
+          <div className="flex space-x-2">
+            <button
+              onClick={() => paginate(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 rounded-md bg-light-card dark:bg-dark-card border border-gray-200 dark:border-gray-800 disabled:opacity-50"
+            >
+              Previous
+            </button>
+            
+            {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+              // Calculate which page numbers to show
+              let pageNum;
+              if (totalPages <= 5) {
+                pageNum = i + 1;
+              } else if (currentPage <= 3) {
+                pageNum = i + 1;
+              } else if (currentPage >= totalPages - 2) {
+                pageNum = totalPages - 4 + i;
+              } else {
+                pageNum = currentPage - 2 + i;
+              }
+              
+              return (
+                <button
+                  key={pageNum}
+                  onClick={() => paginate(pageNum)}
+                  className={`px-4 py-2 rounded-md ${
+                    currentPage === pageNum
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-light-card dark:bg-dark-card border border-gray-200 dark:border-gray-800'
+                  }`}
+                >
+                  {pageNum}
+                </button>
+              );
+            })}
+            
+            <button
+              onClick={() => paginate(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 rounded-md bg-light-card dark:bg-dark-card border border-gray-200 dark:border-gray-800 disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Certificate Modal */}
       <AnimatePresence>
         {selectedCertificate && (
           <CertificateModal
