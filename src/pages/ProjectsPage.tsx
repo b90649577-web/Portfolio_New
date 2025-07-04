@@ -10,11 +10,11 @@ const ProjectsPage = () => {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Brajesh Kumar Projects Portfolio | EdTech-Community",
-    "description": "Showcase of AI, machine learning, Google Cloud, Azure, Firebase, Kong, and full-stack development projects by Brajesh Kumar, EdTech-Community founder",
+    "description": "Showcase of AI, machine learning, Google Cloud, Azure, Firebase, Kong, and full-stack development project by Brajesh Kumar, EdTech-Community founder",
     "mainEntity": {
       "@type": "ItemList",
       "name": "Software Development Projects",
-      "description": "Collection of AI, web development, machine learning, Google Cloud, Azure, Firebase, Kong projects",
+      "description": "Collection of AI, web development, machine learning, Google Cloud, Azure, Firebase, Kong project",
       "numberOfItems": "100+",
       "itemListElement": [
         {

@@ -14,7 +14,7 @@ const Footer = () => {
   const quickLinksLeft = [
     { name: 'Home', path: '/', title: 'Go to Home - Brajesh Kumar EdTech-Community Portfolio', ariaLabel: 'Navigate to Home page', icon: Globe },
     { name: 'About', path: '/about', title: 'About Brajesh Kumar - AI Engineer, EdTech-Community founder', ariaLabel: 'Learn about Brajesh Kumar', icon: Code },
-    { name: 'Projects', path: '/projects', title: 'AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Projects', ariaLabel: 'View projects portfolio', icon: Code },
+    { name: 'Projects', path: '/project', title: 'AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Projects', ariaLabel: 'View project portfolio', icon: Code },
     { name: 'Experience', path: '/experience', title: 'Professional Experience, Campus Ambassador & EdTech-Community Leadership Roles', ariaLabel: 'View professional experience', icon: Briefcase },
     { name: 'Skills', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong', ariaLabel: 'View technical skills', icon: Award },
     { name: 'Services', path: '/services', title: 'AI Development, Google Cloud, Azure, Firebase, Kong, Full Stack & UI/UX Design Services', ariaLabel: 'View services offered', icon: Code },
@@ -26,7 +26,7 @@ const Footer = () => {
     { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development', ariaLabel: 'Read tech blogs and insights', icon: Code },
     { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements', icon: Award },
     { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources', ariaLabel: 'View professional milestones and journey', icon: Briefcase },
-    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration', icon: Mail },
+    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for project and collaboration', icon: Mail },
   ];
 
   const socialLinks = [
@@ -36,7 +36,7 @@ const Footer = () => {
       href: personalInfo.contact.github,
       color: 'hover:text-[#333333] hover:bg-[#333333]/10',
       title: 'View GitHub Profile - Brajesh31 | EdTech-Community Projects',
-      ariaLabel: 'Visit Brajesh Kumar GitHub profile with EdTech-Community projects'
+      ariaLabel: 'Visit Brajesh Kumar GitHub profile with EdTech-Community project'
     },
     {
       name: 'LinkedIn',

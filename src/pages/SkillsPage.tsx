@@ -15,7 +15,7 @@ const SkillsPage = () => {
       {
         "@type": "Skill",
         "name": "JavaScript",
-        "description": "Advanced proficiency in JavaScript for web development and EdTech-Community projects"
+        "description": "Advanced proficiency in JavaScript for web development and EdTech-Community project"
       },
       {
         "@type": "Skill", 

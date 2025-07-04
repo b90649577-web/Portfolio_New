@@ -29,7 +29,7 @@ const socialLinks = [
     icon: Github,
     href: 'https://github.com/Brajesh31',
     color: 'hover:bg-[#333333]',
-    ariaLabel: 'View GitHub profile with EdTech-Community projects',
+    ariaLabel: 'View GitHub profile with EdTech-Community project',
     title: 'GitHub - Brajesh31 | EdTech-Community Projects & Open Source',
     keywords: globalKeywords.slice(0, 20)
   },
@@ -47,7 +47,7 @@ const socialLinks = [
     icon: Mail,
     href: 'mailto:bk117134@gmail.com',
     color: 'hover:bg-[#EA4335]',
-    ariaLabel: 'Send email for EdTech-Community collaboration and projects',
+    ariaLabel: 'Send email for EdTech-Community collaboration and project',
     title: 'Email - Contact for EdTech-Community & Project Collaboration',
     keywords: globalKeywords.slice(40, 60)
   },

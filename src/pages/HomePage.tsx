@@ -546,7 +546,7 @@ function HomePage() {
           </div>
         </FeaturedSection>
 
-        {/* Featured Certificates - Added spacing from projects */}
+        {/* Featured Certificates - Added spacing from project */}
         <FeaturedSection 
           title="Featured Certificates" 
           viewAllLink="/certificates" 

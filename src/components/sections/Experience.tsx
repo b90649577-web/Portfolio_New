@@ -15,7 +15,7 @@ const experienceList = [
     date: 'June 2024 - Present',
     logo: '/techdevclub.png',
     description: [
-      'Launched and co-lead Tech Dev Club, connecting innovators and developers worldwide through events, mentorship, and projects',
+      'Launched and co-lead Tech Dev Club, connecting innovators and developers worldwide through events, mentorship, and project',
       'Building a global tech community for collaboration and innovation',
       'Organizing workshops, hackathons, and networking events for developers',
       'Mentoring aspiring developers and fostering open-source contributions'
@@ -30,7 +30,7 @@ const experienceList = [
     logo: '/ssoc.png',
     description: [
       'Selected as a contributor for Script Summer of Code Season 4',
-      'Contributing to open source projects and collaborative development initiatives',
+      'Contributing to open source project and collaborative development initiatives',
       'Participating in community-driven software development and learning programs'
     ],
   },
@@ -101,8 +101,8 @@ const experienceList = [
     date: 'Oct 2024 - Nov 2024',
     logo: '/gssoc.png',
     description: [
-      'Contributed to open source projects during GirlScript Summer of Code 2024',
-      'Collaborated with developers worldwide on meaningful software projects',
+      'Contributed to open source project during GirlScript Summer of Code 2024',
+      'Collaborated with developers worldwide on meaningful software project',
       'Enhanced coding skills through mentorship and peer collaboration'
     ],
   },
@@ -127,7 +127,7 @@ const experienceList = [
     description: [
       'B.Tech in Computer Science and Engineering',
       'Focus on Artificial Intelligence (AI) and Project Management',
-      'Active participation in technical events and projects'
+      'Active participation in technical events and project'
     ],
   }
 ];
