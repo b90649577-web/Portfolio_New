@@ -159,14 +159,14 @@ function App() {
 **Request:**
 ```json
 {
-  "question": "Tell me about Brajesh's project"
+  "question": "Tell me about Brajesh's projects"
 }
 ```
 
 **Response:**
 ```json
 {
-  "answer": "Brajesh Kumar has worked on 100+ project including Emma AI Assistant, Thea AI Therapist, and SEMAC college management system..."
+  "answer": "Brajesh Kumar has worked on 100+ projects including Emma AI Assistant, Thea AI Therapist, and SEMAC college management system..."
 }
 ```
 

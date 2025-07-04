@@ -13,13 +13,13 @@ const Navbar = () => {
     { name: 'Education', path: '/education', title: 'Educational Background - B.Tech CSE at GL Bajaj Group of Institutions', ariaLabel: 'View educational background' },
     { name: 'Experience', path: '/experience', title: 'Professional Experience - Campus Ambassador, EdTech-Community & Student Leadership', ariaLabel: 'View professional experience' },
     { name: 'Profiles', path: '/profiles', title: 'Professional Profiles - GitHub, LinkedIn, CodeChef, Google Cloud, Azure & More', ariaLabel: 'View professional profiles' },
-    { name: 'Projects', path: '/project', title: 'AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Development Projects', ariaLabel: 'View project portfolio' },
+    { name: 'Projects', path: '/projects', title: 'AI, Machine Learning, Google Cloud, Azure, Firebase, Kong & Full Stack Development Projects', ariaLabel: 'View projects portfolio' },
     { name: 'Services', path: '/services', title: 'AI Development, Google Cloud, Azure, Firebase, Kong, Full Stack & UI/UX Design Services', ariaLabel: 'View services offered' },
     { name: 'Blogs', path: '/blogs', title: 'Tech Blogs & Insights - AI, Machine Learning, Google Cloud, Azure, Web Development, EdTech-Community', ariaLabel: 'Read tech blogs and insights' },
     { name: 'Certificates', path: '/certificates', title: '100+ Professional Certifications & Achievements in AI, Cloud, Development', ariaLabel: 'View certifications and achievements' },
     { name: 'Skills', path: '/skills', title: 'Technical Skills - AI, React, Python, Google Cloud, Azure, Firebase, Kong, Machine Learning', ariaLabel: 'View technical skills and tools' },
     { name: 'Milestones', path: '/milestones', title: 'Professional Journey Timeline & Project Resources', ariaLabel: 'View professional milestones and journey' },
-    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for project and collaboration' },
+    { name: 'Contact', path: '/contact', title: 'Contact for Freelance Projects, EdTech-Community & Collaboration', ariaLabel: 'Contact for projects and collaboration' },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
