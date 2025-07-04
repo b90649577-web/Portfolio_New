@@ -15,6 +15,8 @@ import faceRecognition from '../assets/face-recognition.jpg';
 import agilePlanner from '../assets/agile-planner.jpg';
 import agrotech from '../assets/agrotech.jpg';
 import influencer from '../assets/influencer.jpg';
+// Import placeholder image for new projects
+import placeholder from '../assets/emma.jpg'; // Using emma as placeholder for now
 
 const globalKeywords = [
   "Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "Go", "Golang", "Rust", "Kotlin", "Swift", "R", "Ruby", "PHP", "Dart", "Scala", "MATLAB", "Julia", "Haskell", "Perl", "Shell", "Bash", "PowerShell", "Fortran", "Objective-C", "Assembly", "F#", "Elixir", "COBOL", "VBA", "Solidity", "Groovy", "SAS", "PL/SQL", "SQL", "NoSQL", "GraphQL",
@@ -37,7 +39,7 @@ const globalKeywords = [
 
 export const projects = [
   {
-    id: '3',
+    id: '1',
     title: 'Emma – Personal Assistant',
     description:
       'A smart command-line Python-based personal assistant that performs everyday digital tasks such as setting reminders, opening applications, fetching real-time weather and news, and managing personal schedules.',
@@ -54,7 +56,7 @@ export const projects = [
     categories: ['AI/ML & Chatbots', 'Productivity Tools & Utilities', 'Backend/API Development']
   },
   {
-    id: '4',
+    id: '2',
     title: 'Thea – AI Therapist',
     description:
       'An AI-powered virtual mental health assistant that provides therapeutic interactions using a custom dataset of emotional responses to mimic empathetic conversations.',
@@ -69,7 +71,7 @@ export const projects = [
     categories: ['AI/ML & Chatbots', 'Healthcare & Wellness', 'Backend/API Development']
   },
   {
-    id: '5',
+    id: '3',
     title: 'Ella – AI Chat Companion',
     description:
       'A mobile-friendly AI chatbot app that provides context-aware, friendly conversations for daily engagement and emotional support.',
@@ -80,7 +82,7 @@ export const projects = [
     categories: ['AI/ML & Chatbots', 'Mobile App Development', 'Frontend Development']
   },
   {
-    id: '6',
+    id: '4',
     title: 'The Knights of Flovora',
     description:
       'A 2D adventure RPG with quest-based progression, combat mechanics, and collectible items, offering a classic dungeon crawler experience.',
@@ -91,7 +93,7 @@ export const projects = [
     categories: ['Game Development', 'Mobile App Development']
   },
   {
-    id: '6',
+    id: '5',
     title: 'Mathematrix',
     description:
       'An interactive learning platform for children to practice multiplication tables through gamified quizzes and animations.',
@@ -111,6 +113,166 @@ export const projects = [
     github: 'https://github.com/Brajesh31/semac',
     featured: true,
     categories: ['Full Stack Development', 'EdTech & Learning', 'Data Science & Analytics']
+  },
+  {
+    id: '7',
+    title: 'TEC_DEV_CL',
+    description:
+      'A comprehensive admin panel for managing Tech Dev Club events, sponsors, team members, and volunteers with role-based access control and real-time updates.',
+    image: placeholder,
+    tags: [
+      'React',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Admin Panel',
+      'CRUD Operations',
+      'Real-time Updates'
+    ],
+    github: 'https://github.com/Brajesh31/TEC_DEV_CL',
+    featured: true,
+    categories: ['Full Stack Development', 'Admin & Management Tools']
+  },
+  {
+    id: '8',
+    title: 'IdeaPool',
+    description:
+      'A collaborative idea-sharing platform for developers to pitch project ideas and form teams, featuring one-click GitHub repo setup and integrated team chat.',
+    image: ideapool,
+    tags: [
+      'MERN Stack',
+      'Team Collaboration',
+      'GitHub API',
+      'Real-time Chat',
+      'Project Management'
+    ],
+    github: 'https://github.com/Brajesh31/IdeaPool',
+    featured: true,
+    categories: ['Full Stack Development', 'Collaboration Tools', 'Developer Tools']
+  },
+  {
+    id: '9',
+    title: 'FitDeck',
+    description:
+      'A social fitness community platform with coach following, progress sharing, workout challenges, and a health badge gamification system.',
+    image: fitdeck,
+    tags: [
+      'MERN Stack',
+      'Social Platform',
+      'Fitness Tracking',
+      'Gamification',
+      'Notifications'
+    ],
+    github: 'https://github.com/Brajesh31/FitDeck',
+    featured: false,
+    categories: ['Full Stack Development', 'Health & Fitness', 'Social Platforms']
+  },
+  {
+    id: '10',
+    title: 'ChatterBox',
+    description:
+      'Real-time chat application with themed rooms, live messaging, emojis, typing indicators, and room-lock features for secure conversations.',
+    image: chatterbox,
+    tags: [
+      'Node.js',
+      'Express',
+      'Socket.io',
+      'Real-time Communication',
+      'Dark Mode'
+    ],
+    github: 'https://github.com/Brajesh31/ChatterBox',
+    featured: false,
+    categories: ['Full Stack Development', 'Communication Tools', 'Real-time Applications']
+  },
+  {
+    id: '11',
+    title: 'Invoice Flow',
+    description:
+      'A SaaS platform for freelancers and small businesses to generate invoices with server-side rendering optimization, PDF export, and dashboard analytics.',
+    image: placeholder,
+    tags: [
+      'Next.js',
+      'Node.js',
+      'Prisma',
+      'PostgreSQL',
+      'PDF Generation',
+      'Analytics'
+    ],
+    github: 'https://github.com/Brajesh31/invoice-flow-nextjs-app',
+    featured: false,
+    categories: ['Full Stack Development', 'Business Tools', 'SaaS Applications']
+  },
+  {
+    id: '12',
+    title: 'Car Rental System',
+    description:
+      'A real-time car booking platform with fleet management, location-based availability, and live vehicle tracking via WebSockets.',
+    image: placeholder,
+    tags: [
+      'Vue.js',
+      'Laravel',
+      'MySQL',
+      'WebSockets',
+      'Geolocation',
+      'Booking System'
+    ],
+    github: 'https://github.com/Brajesh31/car-rental-vue-laravel-app',
+    featured: false,
+    categories: ['Full Stack Development', 'Booking Systems', 'Location-based Services']
+  },
+  {
+    id: '13',
+    title: 'Face Recognition System',
+    description:
+      'An attendance system using face recognition with liveness detection, face detection history, and optimized UI for educational institutions.',
+    image: faceRecognition,
+    tags: [
+      'React',
+      'Node.js',
+      'Express',
+      'SQLite',
+      'Computer Vision',
+      'Biometrics'
+    ],
+    github: 'https://github.com/Brajesh31/Face-Recognition',
+    featured: true,
+    categories: ['AI/ML & Chatbots', 'Security & Authentication', 'Education Tools']
+  },
+  {
+    id: '14',
+    title: 'Cap\'nShare',
+    description:
+      'A food sharing and donation platform for campus students with admin moderation, food request flow, and map-based donor tracking.',
+    image: capnshare,
+    tags: [
+      'Ruby on Rails',
+      'PostgreSQL',
+      'AWS S3',
+      'Food Sharing',
+      'Notifications',
+      'Maps API'
+    ],
+    github: 'https://github.com/Brajesh31/cap-and-share',
+    featured: false,
+    categories: ['Full Stack Development', 'Community Platforms', 'Social Impact']
+  },
+  {
+    id: '15',
+    title: 'Career Mapper',
+    description:
+      'An AI-powered career suggestion tool that analyzes skills and interests to recommend suitable career paths with industry demand insights.',
+    image: careerMapper,
+    tags: [
+      'Streamlit',
+      'Python',
+      'Pandas',
+      'CSV',
+      'Career Planning',
+      'Data Analysis'
+    ],
+    github: 'https://github.com/Brajesh31/CareerCompass',
+    featured: false,
+    categories: ['AI/ML & Chatbots', 'Career Tools', 'Data Science & Analytics']
   }
 ];
 
