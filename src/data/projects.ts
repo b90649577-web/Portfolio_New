@@ -41,84 +41,145 @@ export const projects = [
   {
     id: '1',
     title: 'Emma – Personal Assistant',
-    description:
-      'A smart command-line Python-based personal assistant that performs everyday digital tasks such as setting reminders, opening applications, fetching real-time weather and news, and managing personal schedules.',
+    description: 'An advanced personal assistant that automates daily tasks like schedule management, reminders, and productivity planning.',
     image: emma,
     tags: [
       ...globalKeywords.slice(0, 5),
-      'APIs (NewsAPI, OpenWeather)',
-      'CLI Interface',
-      'pyttsx3',
-      'SpeechRecognition',
+      'Python',
+      'Natural Language Processing',
+      'Shell Support',
+      'Task Automation'
     ],
     github: 'https://github.com/Brajesh31/emma',
     featured: true,
-    categories: ['AI/ML & Chatbots', 'Productivity Tools & Utilities', 'Backend/API Development']
+    categories: ['AI/ML & Chatbots', 'Productivity Tools & Utilities', 'Backend/API Development'],
+    improvements: 'Integrated natural language understanding, shell support, and personalized task queues.',
+    innovations: 'Time-based triggers, context-aware recommendations.',
+    techStack: {
+      frontend: null,
+      backend: 'Python',
+      frameworks: null,
+      database: null
+    }
   },
   {
     id: '2',
     title: 'Thea – AI Therapist',
-    description:
-      'An AI-powered virtual mental health assistant that provides therapeutic interactions using a custom dataset of emotional responses to mimic empathetic conversations.',
+    description: 'Empathetic AI chatbot designed to simulate mental health therapy sessions with emotional intelligence.',
     image: thea,
     tags: [
       ...globalKeywords.slice(5, 10),
-      'Custom Dataset',
-      'Flask',
+      'Python',
+      'Sentiment Analysis',
+      'Emotional Intelligence',
+      'Mental Health'
     ],
     github: 'https://github.com/Brajesh31/thea',
     featured: true,
-    categories: ['AI/ML & Chatbots', 'Healthcare & Wellness', 'Backend/API Development']
+    categories: ['AI/ML & Chatbots', 'Healthcare & Wellness', 'Backend/API Development'],
+    improvements: 'Added sentiment analysis + mood tracking.',
+    innovations: 'Introduced "emotion memory" to adjust future interactions.',
+    techStack: {
+      frontend: null,
+      backend: 'Python',
+      frameworks: null,
+      database: null
+    }
   },
   {
     id: '3',
     title: 'Ella – AI Chat Companion',
-    description:
-      'A mobile-friendly AI chatbot app that provides context-aware, friendly conversations for daily engagement and emotional support.',
+    description: 'A mobile companion that helps users with emotional support, productivity, and motivation.',
     image: ella,
-    tags: [...globalKeywords.slice(10, 15), 'ML Models (Dialogflow)'],
+    tags: [
+      ...globalKeywords.slice(10, 15), 
+      'React Native', 
+      'Expo', 
+      'ML', 
+      'Emotional Support'
+    ],
     github: 'https://github.com/Brajesh31/ella',
     featured: true,
-    categories: ['AI/ML & Chatbots', 'Mobile App Development', 'Frontend Development']
+    categories: ['AI/ML & Chatbots', 'Mobile App Development', 'Frontend Development'],
+    improvements: 'Enhanced UI with animations and offline message queue.',
+    innovations: 'Daily goal reminders and emotional check-ins using ML.',
+    techStack: {
+      frontend: 'React Native',
+      backend: null,
+      frameworks: 'Expo',
+      database: null
+    }
   },
   {
     id: '4',
     title: 'The Knights of Flovora',
-    description:
-      'A 2D adventure RPG with quest-based progression, combat mechanics, and collectible items, offering a classic dungeon crawler experience.',
+    description: 'A dungeon-crawling RPG game with leveling, inventory, and boss fights.',
     image: knights,
-    tags: [...globalKeywords.slice(15, 20), 'Custom UI/UX'],
+    tags: [
+      ...globalKeywords.slice(15, 20), 
+      'Flutter', 
+      'Dart', 
+      'Game Development', 
+      'RPG'
+    ],
     github: 'https://github.com/Brajesh31/knights',
     featured: true,
-    categories: ['Game Development', 'Mobile App Development']
+    categories: ['Game Development', 'Mobile App Development'],
+    improvements: 'Added save progress and sound effects.',
+    innovations: 'Turn-based combat and enemy AI logic.',
+    techStack: {
+      frontend: 'Flutter',
+      backend: null,
+      frameworks: 'Dart',
+      database: null
+    }
   },
   {
     id: '5',
     title: 'Mathematrix',
-    description:
-      'An interactive learning platform for children to practice multiplication tables through gamified quizzes and animations.',
+    description: 'An interactive learning platform for children to practice multiplication tables through gamified quizzes and animations.',
     image: mathematrix,
     tags: [...globalKeywords.slice(20, 25)],
     github: 'https://github.com/Brajesh31/mathematrix',
     featured: false,
-    categories: ['Frontend Development', 'EdTech & Learning']
+    categories: ['Frontend Development', 'EdTech & Learning'],
+    improvements: 'Added progressive difficulty levels and visual feedback.',
+    innovations: 'Gamified learning with animated rewards.',
+    techStack: {
+      frontend: 'HTML, CSS, JavaScript',
+      backend: null,
+      frameworks: null,
+      database: null
+    }
   },
   {
     id: '6',
     title: 'SEMAC',
-    description:
-      'A central hub for college students to manage semester-related resources including timetables, attendance, notes, and grade prediction using ML.',
+    description: 'College management and collaboration platform with study groups, notes, and reminders.',
     image: semac,
-    tags: [...globalKeywords.slice(25, 30)],
+    tags: [
+      ...globalKeywords.slice(25, 30),
+      'Next.js',
+      'MongoDB',
+      'Machine Learning',
+      'Education'
+    ],
     github: 'https://github.com/Brajesh31/semac',
     featured: true,
-    categories: ['Full Stack Development', 'EdTech & Learning', 'Data Science & Analytics']
+    categories: ['Full Stack Development', 'EdTech & Learning', 'Data Science & Analytics'],
+    improvements: 'Random Forest–based notification prioritization.',
+    innovations: 'Study match prediction and smart scheduling.',
+    techStack: {
+      frontend: 'Next.js',
+      backend: 'Node.js',
+      frameworks: 'Next.js',
+      database: 'MongoDB'
+    }
   },
   {
     id: '7',
     title: 'TEC_DEV_CL',
-    description:
-      'A comprehensive admin panel for managing Tech Dev Club events, sponsors, team members, and volunteers with role-based access control and real-time updates.',
+    description: 'Admin panel for managing Tech Dev Club events, sponsors, team members, and volunteers.',
     image: placeholder,
     tags: [
       'React',
@@ -131,13 +192,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/TEC_DEV_CL',
     featured: true,
-    categories: ['Full Stack Development', 'Admin & Management Tools']
+    categories: ['Full Stack Development', 'Admin & Management Tools'],
+    improvements: 'Added speaker/sponsor CRUD, role-based access control, real-time updates.',
+    innovations: 'Dynamic event modules and multi-admin permissions.',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'MongoDB'
+    }
   },
   {
     id: '8',
     title: 'IdeaPool',
-    description:
-      'A collaborative idea-sharing platform for developers to pitch project ideas and form teams, featuring one-click GitHub repo setup and integrated team chat.',
+    description: 'Collaborative idea-sharing platform for developers to pitch and team up on projects.',
     image: ideapool,
     tags: [
       'MERN Stack',
@@ -148,13 +216,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/IdeaPool',
     featured: true,
-    categories: ['Full Stack Development', 'Collaboration Tools', 'Developer Tools']
+    categories: ['Full Stack Development', 'Collaboration Tools', 'Developer Tools'],
+    improvements: 'Improved team formation UX and project filtering.',
+    innovations: 'One-click GitHub repo setup and team chat integration.',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'MongoDB'
+    }
   },
   {
     id: '9',
     title: 'FitDeck',
-    description:
-      'A social fitness community platform with coach following, progress sharing, workout challenges, and a health badge gamification system.',
+    description: 'A social fitness community platform with coach following, progress sharing, and workout challenges.',
     image: fitdeck,
     tags: [
       'MERN Stack',
@@ -165,13 +240,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/FitDeck',
     featured: false,
-    categories: ['Full Stack Development', 'Health & Fitness', 'Social Platforms']
+    categories: ['Full Stack Development', 'Health & Fitness', 'Social Platforms'],
+    improvements: 'Added article publishing, notification system.',
+    innovations: 'Health badge gamification system.',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'MongoDB'
+    }
   },
   {
     id: '10',
     title: 'ChatterBox',
-    description:
-      'Real-time chat application with themed rooms, live messaging, emojis, typing indicators, and room-lock features for secure conversations.',
+    description: 'Real-time chat app with themed rooms and live messaging.',
     image: chatterbox,
     tags: [
       'Node.js',
@@ -182,13 +264,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/ChatterBox',
     featured: false,
-    categories: ['Full Stack Development', 'Communication Tools', 'Real-time Applications']
+    categories: ['Full Stack Development', 'Communication Tools', 'Real-time Applications'],
+    improvements: 'Added emojis, typing indicator, dark mode.',
+    innovations: 'Room-lock feature and image sharing via socket.',
+    techStack: {
+      frontend: 'HTML, CSS, JavaScript',
+      backend: 'Node.js',
+      frameworks: 'Express, Socket.io',
+      database: null
+    }
   },
   {
     id: '11',
     title: 'Invoice Flow',
-    description:
-      'A SaaS platform for freelancers and small businesses to generate invoices with server-side rendering optimization, PDF export, and dashboard analytics.',
+    description: 'Invoice generation SaaS platform for freelancers and small businesses.',
     image: placeholder,
     tags: [
       'Next.js',
@@ -200,13 +289,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/invoice-flow-nextjs-app',
     featured: false,
-    categories: ['Full Stack Development', 'Business Tools', 'SaaS Applications']
+    categories: ['Full Stack Development', 'Business Tools', 'SaaS Applications'],
+    improvements: 'SSR optimization and PDF export.',
+    innovations: 'Dashboard analytics, auto-tax calculations.',
+    techStack: {
+      frontend: 'Next.js',
+      backend: 'Node.js',
+      frameworks: 'Prisma',
+      database: 'PostgreSQL'
+    }
   },
   {
     id: '12',
     title: 'Car Rental System',
-    description:
-      'A real-time car booking platform with fleet management, location-based availability, and live vehicle tracking via WebSockets.',
+    description: 'Real-time car booking platform with fleet management.',
     image: placeholder,
     tags: [
       'Vue.js',
@@ -218,13 +314,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/car-rental-vue-laravel-app',
     featured: false,
-    categories: ['Full Stack Development', 'Booking Systems', 'Location-based Services']
+    categories: ['Full Stack Development', 'Booking Systems', 'Location-based Services'],
+    improvements: 'Integrated location-based availability.',
+    innovations: 'Live vehicle tracking via sockets.',
+    techStack: {
+      frontend: 'Vue.js',
+      backend: 'Laravel',
+      frameworks: 'Laravel Blade',
+      database: 'MySQL'
+    }
   },
   {
     id: '13',
     title: 'Face Recognition System',
-    description:
-      'An attendance system using face recognition with liveness detection, face detection history, and optimized UI for educational institutions.',
+    description: 'Real-time face recognition and logging system for access control or attendance.',
     image: faceRecognition,
     tags: [
       'React',
@@ -236,13 +339,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/Face-Recognition',
     featured: true,
-    categories: ['AI/ML & Chatbots', 'Security & Authentication', 'Education Tools']
+    categories: ['AI/ML & Chatbots', 'Security & Authentication', 'Education Tools'],
+    improvements: 'Optimized FPS; added unknown face alert system.',
+    innovations: 'Auto-store recognized faces with time-stamp.',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'SQLite'
+    }
   },
   {
     id: '14',
     title: 'Cap\'nShare',
-    description:
-      'A food sharing and donation platform for campus students with admin moderation, food request flow, and map-based donor tracking.',
+    description: 'Food sharing and donation platform for campus students.',
     image: capnshare,
     tags: [
       'Ruby on Rails',
@@ -254,13 +364,20 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/cap-and-share',
     featured: false,
-    categories: ['Full Stack Development', 'Community Platforms', 'Social Impact']
+    categories: ['Full Stack Development', 'Community Platforms', 'Social Impact'],
+    improvements: 'Admin moderation and food request flow.',
+    innovations: 'Notifications and image uploads to S3.',
+    techStack: {
+      frontend: 'Ruby on Rails',
+      backend: 'Ruby on Rails',
+      frameworks: 'Ruby on Rails',
+      database: 'PostgreSQL'
+    }
   },
   {
     id: '15',
     title: 'Career Mapper',
-    description:
-      'An AI-powered career suggestion tool that analyzes skills and interests to recommend suitable career paths with industry demand insights.',
+    description: 'Career suggestion AI that analyzes skills and interests to recommend suitable career paths.',
     image: careerMapper,
     tags: [
       'Streamlit',
@@ -272,7 +389,15 @@ export const projects = [
     ],
     github: 'https://github.com/Brajesh31/CareerCompass',
     featured: false,
-    categories: ['AI/ML & Chatbots', 'Career Tools', 'Data Science & Analytics']
+    categories: ['AI/ML & Chatbots', 'Career Tools', 'Data Science & Analytics'],
+    improvements: 'Updated data source.',
+    innovations: 'Smart industry-fit analysis.',
+    techStack: {
+      frontend: 'Streamlit',
+      backend: 'Python',
+      frameworks: 'Pandas',
+      database: 'CSV'
+    }
   }
 ];
 
