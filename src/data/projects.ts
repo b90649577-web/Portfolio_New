@@ -15,8 +15,8 @@ import faceRecognition from '../assets/face-recognition.jpg';
 import agilePlanner from '../assets/agile-planner.jpg';
 import agrotech from '../assets/agrotech.jpg';
 import influencer from '../assets/influencer.jpg';
-// Import placeholder image for new projects
-import placeholder from '../assets/emma.jpg'; // Using emma as placeholder for now
+// Import placeholder images for new projects
+import placeholder from '../assets/emma.jpg'; // Using emma as placeholder temporarily
 
 const globalKeywords = [
   "Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "Go", "Golang", "Rust", "Kotlin", "Swift", "R", "Ruby", "PHP", "Dart", "Scala", "MATLAB", "Julia", "Haskell", "Perl", "Shell", "Bash", "PowerShell", "Fortran", "Objective-C", "Assembly", "F#", "Elixir", "COBOL", "VBA", "Solidity", "Groovy", "SAS", "PL/SQL", "SQL", "NoSQL", "GraphQL",
@@ -174,6 +174,319 @@ export const projects = [
       backend: 'Node.js',
       frameworks: 'Next.js',
       database: 'MongoDB'
+    }
+  },
+  {
+    id: '101',
+    title: 'TEC_DEV_CL – Tech Dev Club Official Website',
+    description:
+      'A modern, full-stack web platform built for Tech Dev Club to showcase its events, sponsors, community initiatives, and core team. It features dynamic sections for speaker profiles, event listings, sponsor tiers, and contributor highlights. The system includes a role-based backend that enables real-time updates and decentralized control by authorized members. The interface is optimized for performance, accessibility, and mobile responsiveness to ensure a seamless experience across devices.',
+    image: placeholder,
+    tags: [
+      'React', 
+      'Node.js', 
+      'Express', 
+      'MongoDB', 
+      'Socket.io',
+      'Real-time Updates',
+      'Role-based Access Control'
+    ],
+    github: 'https://github.com/Brajesh31/TEC_DEV_CL',
+    featured: true,
+    categories: [
+      'Community Platforms',
+      'Event & Club Websites',
+      'Full-Stack Development',
+      'Real-time Web Apps'
+    ],
+    improvements: 'Integrated dynamic speaker and sponsor sections with live CRUD, implemented custom event modules and contributor spotlight system, role-based permission control for secure content editing',
+    innovations: 'Dynamic event modules and multi-admin permissions',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'MongoDB'
+    }
+  },
+  {
+    id: '102',
+    title: 'Portfolio_New – Progressive Developer Portfolio (PWA)',
+    description:
+      'A high-performance, SEO-optimized personal portfolio built as a Progressive Web App (PWA). Designed to showcase projects, certificates, blog content, and achievements with a mobile-first layout. It features deep SEO integration (Open Graph, JSON-LD), lightning-fast load times using Vite bundling, and offline access via service workers. Animations and interactive elements enhance user engagement while maintaining minimal CLS and FCP for core web vitals.',
+    image: placeholder,
+    tags: [
+      'React', 
+      'Node.js', 
+      'Vite', 
+      'Service Workers',
+      'PWA',
+      'SEO Optimization'
+    ],
+    github: 'https://github.com/Brajesh31/Portfolio_New',
+    featured: true,
+    categories: [
+      'Personal Branding',
+      'Progressive Web Apps',
+      'Performance Optimization',
+      'Web Design & Development'
+    ],
+    improvements: 'Transformed into a PWA with offline-first capabilities, enhanced SEO through advanced metadata and schema, implemented code-splitting and lazy loading to reduce load time',
+    innovations: 'Introduced responsive PWA layout with deep SEO integration',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Vite',
+      database: null
+    }
+  },
+  {
+    id: '103',
+    title: 'portfolio – Classic Personal Résumé Site',
+    description:
+      'A minimalist, single-page résumé website built using React and Markdown for content flexibility. Designed to deliver a polished online presence with sections for skills, education, experience, and contact. The layout is clean, responsive, and enriched with testimonial sliders, profile badges, and an elegant content structure powered by a Markdown parser for quick updates.',
+    image: placeholder,
+    tags: [
+      'React', 
+      'Markdown-It', 
+      'Node.js',
+      'Responsive Design',
+      'Personal Branding'
+    ],
+    github: 'https://github.com/Brajesh31/portfolio',
+    featured: false,
+    categories: [
+      'Personal Branding',
+      'Static Sites',
+      'Web Design'
+    ],
+    improvements: 'Enabled Markdown-powered content updates without code changes, enhanced visual design with custom testimonials and badges, optimized responsiveness across all major device viewports',
+    innovations: 'Markdown integration for content updates',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: null,
+      database: null
+    }
+  },
+  {
+    id: '104',
+    title: 'invoice-flow-nextjs-app – SaaS Invoice Automation Platform',
+    description:
+      'A multi-tenant SaaS invoicing platform that allows businesses to manage billing, generate tax-compliant PDF invoices, and track key revenue analytics. Developed using Next.js for SSR, Prisma ORM for secure data operations, and PostgreSQL for persistent storage. Includes dynamic invoice rendering, recurring billing logic, analytics dashboards, and automated e-mail delivery of generated invoices.',
+    image: placeholder,
+    tags: [
+      'Next.js', 
+      'Node.js', 
+      'Prisma', 
+      'PostgreSQL', 
+      'React-PDF',
+      'SaaS',
+      'Invoicing'
+    ],
+    github: 'https://github.com/Brajesh31/invoice-flow-nextjs-app',
+    featured: true,
+    categories: [
+      'SaaS Platforms',
+      'Finance & Billing',
+      'Full-Stack Development',
+      'PDF Automation'
+    ],
+    improvements: 'Optimized server-side rendering and reduced TTFB by over 30%, integrated automatic PDF generation and dashboard metrics, added regional invoice templates and export support',
+    innovations: 'Auto PDF invoice + dashboard analytics',
+    techStack: {
+      frontend: 'Next.js',
+      backend: 'Node.js',
+      frameworks: 'Prisma',
+      database: 'PostgreSQL'
+    }
+  },
+  {
+    id: '105',
+    title: 'car-rental-vue-laravel-app – Real-Time Vehicle Booking System',
+    description:
+      'A complete booking system for vehicle rentals, developed with Vue.js and Laravel. This application enables users to view real-time availability of cars, make instant bookings, and manage fleet schedules. Backed by MySQL and Pusher for real-time socket communication, the system includes live booking updates, fleet tracking, dynamic pricing, and admin-side approval panels.',
+    image: placeholder,
+    tags: [
+      'Vue.js', 
+      'Laravel', 
+      'Laravel Blade', 
+      'MySQL', 
+      'Pusher',
+      'Real-time',
+      'Booking System'
+    ],
+    github: 'https://github.com/Brajesh31/car-rental-vue-laravel-app',
+    featured: true,
+    categories: [
+      'Travel & Rentals',
+      'Real-time Web Apps',
+      'Full-Stack Development',
+      'Booking Systems'
+    ],
+    improvements: 'Added live socket-based fleet tracking with availability grid, optimized booking flow for faster vehicle reservation, implemented real-time status change notifications',
+    innovations: 'Live socket-based fleet tracking system',
+    techStack: {
+      frontend: 'Vue.js',
+      backend: 'Laravel',
+      frameworks: 'Laravel Blade',
+      database: 'MySQL'
+    }
+  },
+  {
+    id: '106',
+    title: 'saas-landing-page-template – SaaS Launch Page UI Kit',
+    description:
+      'A responsive and conversion-oriented landing page template tailored for SaaS startups. Built with semantic HTML5 and TailwindCSS, it includes modular sections for pricing, features, testimonials, and CTAs. The layout is built for high performance with scroll animations, preconfigured SEO tags, and A/B testing ready CTA elements.',
+    image: placeholder,
+    tags: [
+      'HTML5', 
+      'Tailwind CSS', 
+      'Alpine.js',
+      'Landing Page',
+      'SaaS',
+      'A/B Testing'
+    ],
+    github: 'https://github.com/Brajesh31/saas-landing-page-template',
+    featured: false,
+    categories: [
+      'UI/UX Templates',
+      'Marketing Websites',
+      'Startup Tools',
+      'Web Design'
+    ],
+    improvements: 'Mobile-first layout with performance-optimized components, built-in A/B split testing logic with modular CTA variants, enhanced visual polish using animations and scroll triggers',
+    innovations: 'Split A/B CTA layout for testing',
+    techStack: {
+      frontend: 'HTML5, Tailwind CSS, Alpine.js',
+      backend: null,
+      frameworks: null,
+      database: null
+    }
+  },
+  {
+    id: '107',
+    title: 'Brajesh31 – GitHub Profile README + Automations',
+    description:
+      'A fully automated GitHub profile that dynamically showcases contributions, highlights pinned projects, and reflects real-time statistics like visitor count and streaks. Built using GitHub Actions and Shields.io APIs to automate badge updates, this project emphasizes personal branding and engineering visibility.',
+    image: placeholder,
+    tags: [
+      'Markdown', 
+      'GitHub Actions', 
+      'YAML', 
+      'Shields.io',
+      'GitHub Profile',
+      'Personal Branding'
+    ],
+    github: 'https://github.com/Brajesh31/Brajesh31',
+    featured: false,
+    categories: [
+      'Developer Branding',
+      'DevOps',
+      'Open-Source Automation',
+      'GitHub Projects'
+    ],
+    improvements: 'Automated dynamic stats like streaks, contributions, and stars, integrated visitor tracking and social links with branded badges, scheduled GitHub Actions for daily data refresh',
+    innovations: 'GitHub visitor tracker and profile badges',
+    techStack: {
+      frontend: 'Markdown',
+      backend: 'GitHub Actions',
+      frameworks: 'YAML',
+      database: null
+    }
+  },
+  {
+    id: '108',
+    title: 'MachineLearning_with_AT – Modular ML Experimentation Tool',
+    description:
+      'A Flask-powered ML experimentation platform designed for rapid testing of scikit-learn models through a user-friendly interface. Built on Jupyter pipelines with modular training logic, it supports CSV data uploads, visual evaluation metrics, and comparative model scoring. Ideal for research, education, and quick experimentation workflows.',
+    image: placeholder,
+    tags: [
+      'Flask', 
+      'Jupyter', 
+      'scikit-learn', 
+      'Pandas', 
+      'CSV',
+      'Machine Learning',
+      'Data Science'
+    ],
+    github: 'https://github.com/Brajesh31/MachineLearning_with_AT',
+    featured: false,
+    categories: [
+      'Machine Learning',
+      'Research Tools',
+      'Data Science',
+      'Python Applications'
+    ],
+    improvements: 'Refactored into reusable model components, integrated visual comparison charts for metrics, added modular upload + evaluation system via Flask endpoints',
+    innovations: 'Added auto-evaluation metric reporting',
+    techStack: {
+      frontend: 'Jupyter',
+      backend: 'Flask',
+      frameworks: 'scikit-learn',
+      database: 'CSV'
+    }
+  },
+  {
+    id: '109',
+    title: 'Github-bot – GitHub CLI Bot for Issue & PR Management',
+    description:
+      'A command-line Python bot that automates GitHub repository maintenance. It intelligently labels pull requests, comments on issues based on configured rules, and maintains contribution hygiene across large open-source projects. Designed for use in active repos where human triaging becomes time-intensive.',
+    image: placeholder,
+    tags: [
+      'Python', 
+      'GitHub API', 
+      'Click CLI', 
+      'JSON',
+      'Automation',
+      'DevOps'
+    ],
+    github: 'https://github.com/Brajesh31/Github-bot',
+    featured: false,
+    categories: [
+      'Open Source Tools',
+      'DevOps Automation',
+      'CLI Applications',
+      'Repository Management'
+    ],
+    improvements: 'Added rule-based PR comment engine, implemented regex logic for auto-labeling issues, scheduled CLI executions for unattended repo cleanup',
+    innovations: 'Pull request comment assistant via rules',
+    techStack: {
+      frontend: null,
+      backend: 'Python CLI',
+      frameworks: 'GitHub API',
+      database: 'JSON'
+    }
+  },
+  {
+    id: '110',
+    title: 'EcoAware – Carbon Footprint & Lifestyle Tracker',
+    description:
+      'A React + Firebase-powered web app to monitor and reduce personal carbon footprint. Users log daily activities, receive AI-based recommendations for sustainable habits, and visualize their monthly CO₂ trends through detailed charts. Built with a focus on eco-impact awareness and intelligent behavior nudging.',
+    image: placeholder,
+    tags: [
+      'React', 
+      'Firebase', 
+      'Node.js', 
+      'Express', 
+      'Chart.js',
+      'Sustainability',
+      'AI Recommendations'
+    ],
+    github: 'https://github.com/Brajesh31/EcoAware',
+    featured: false,
+    categories: [
+      'Sustainability & Environment',
+      'AI Integrations',
+      'Full-Stack Development',
+      'Personal Productivity Tools'
+    ],
+    improvements: 'Optimized JS bundle and lazy loading for performance, integrated GPT for eco-friendly suggestions, added interactive carbon trend graphs and data visualisation',
+    innovations: 'AI suggestions for greener habits',
+    techStack: {
+      frontend: 'React',
+      backend: 'Node.js',
+      frameworks: 'Express',
+      database: 'Firebase'
     }
   },
   {
