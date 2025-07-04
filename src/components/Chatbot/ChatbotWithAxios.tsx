@@ -30,7 +30,7 @@ const ChatbotWithAxios: React.FC<ChatbotWithAxiosProps> = ({
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm Brajesh Kumar's portfolio assistant. You can ask me about his project, skills, education, experience, or how to contact him. What would you like to know?",
+      text: "Hello! I'm Brajesh Kumar's portfolio assistant. You can ask me about his projects, skills, education, experience, or how to contact him. What would you like to know?",
       isBot: true,
       timestamp: new Date(),
     },

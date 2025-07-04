@@ -16,6 +16,30 @@ import agilePlanner from '../assets/agile-planner.jpg';
 import agrotech from '../assets/agrotech.jpg';
 import influencer from '../assets/influencer.jpg';
 
+import tecDevCl from '../assets/tec_dev_club.jpg';
+import portfolioNew from '../assets/portfolio_new.jpg';
+import portfolioClassic from '../assets/portfolio.jpg';
+import invoiceFlow from '../assets/invoice_flow_nextjs_app.jpg';
+import carRental from '../assets/car_rental_vue_laravel_app.jpg';
+import saasLanding from '../assets/saas_landing_page_template.jpg';
+import brajeshProfile from '../assets/brajesh31.jpg';
+import mlWithAt from '../assets/machinelearning_with_at.jpg';
+import ecoAware from '../assets/ecoaware.jpg';
+import shoppyCart from '../assets/shoppycart.jpg';
+import luckyPorter from '../assets/luckyporter.jpg';
+import gupt from '../assets/gupt.jpg';
+import groceryReminder from '../assets/grocery_reminder_2.jpg';
+import mernStack from '../assets/mern_stack.jpg';
+import djangoChat from '../assets/django_chat.jpg';
+import stockManagement from '../assets/stock_management_application.jpg';
+import nlpAnalysis from '../assets/analysis_of_products_using_nlp.jpg';
+import ticTakToe from '../assets/tic_tak_toe.jpg';
+import careerCompass from '../assets/careercompass.jpg';
+import reunite from '../assets/reunite.jpg';
+import ecoNirvana from '../assets/econirvana.jpg';
+import covidDetection from '../assets/covid_detection.jpg';
+import snapnote from '../assets/snapnote.jpg';
+
 const globalKeywords = [
   "Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "Go", "Golang", "Rust", "Kotlin", "Swift", "R", "Ruby", "PHP", "Dart", "Scala", "MATLAB", "Julia", "Haskell", "Perl", "Shell", "Bash", "PowerShell", "Fortran", "Objective-C", "Assembly", "F#", "Elixir", "COBOL", "VBA", "Solidity", "Groovy", "SAS", "PL/SQL", "SQL", "NoSQL", "GraphQL",
   "React", "React Native", "Angular", "Vue", "Next.js", "Nuxt.js", "Svelte", "Preact", "Tailwind CSS", "Bootstrap", "Material UI", "Chakra UI", "jQuery", "Ember.js", "Alpine.js", "Redux", "MobX", "Zustand", "SWR", "TanStack Query", "Node.js", "Express", "NestJS", "Fastify", "Socket.io", "Django", "Flask", "Spring Boot", "Spring", "Hibernate", "ASP.NET", "Laravel", "Symfony", "Ruby on Rails", "Meteor", "Phoenix", "Ktor", "FastAPI", "Fiber", "Gatsby", "Eleventy", "Gridsome", "Remix", "Quasar", "Expo", "Capacitor", "Ionic", "Electron", "Tauri",
@@ -302,7 +326,7 @@ export const projects = [
     title: 'TEC_DEV_CL – Tech Dev Club Official Website',
     description:
         'A robust, full-stack web platform for Tech Dev Club. Features dynamic event listings, sponsor tiers, speaker profiles, contributor highlights, and a role-based backend for decentralized club management. Real-time updates and mobile-first UI deliver seamless community engagement.',
-    image: '/public/images/project/tec_dev_cl.png',
+    image: tecDevCl,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Community Platform', 'Real-time', 'SEO', 'Events', 'Club'
     ],
@@ -314,8 +338,8 @@ export const projects = [
     id: '18',
     title: 'Portfolio_New – Progressive Developer Portfolio (PWA)',
     description:
-        'A high-performance, SEO-driven personal portfolio built as a PWA. Showcases project, blogs, certificates, and achievements with offline access, deep metadata integration, and responsive Vite-powered design.',
-    image: '/public/images/project/portfolio_new.png',
+        'A high-performance, SEO-driven personal portfolio built as a PWA. Showcases projects, blogs, certificates, and achievements with offline access, deep metadata integration, and responsive Vite-powered design.',
+    image:portfolioNew ,
     tags: [
       'React', 'Node.js', 'Vite', 'Service Workers', 'Portfolio', 'PWA', 'SEO', 'Performance'
     ],
@@ -328,7 +352,7 @@ export const projects = [
     title: 'portfolio – Classic Personal Résumé Site',
     description:
         'A minimalist résumé website built with React and Markdown for rapid updates. Features testimonial sliders, responsive layout, and elegant skills/experience sections.',
-    image: '/public/images/project/portfolio.png',
+    image: portfolioClassic ,
     tags: [
       'React', 'Markdown', 'Node.js', 'Resume', 'Personal Branding', 'Static Site'
     ],
@@ -341,7 +365,7 @@ export const projects = [
     title: 'invoice-flow-nextjs-app – SaaS Invoice Automation Platform',
     description:
         'A SaaS platform for invoice generation and billing, built with Next.js, Prisma, and PostgreSQL. Offers automated PDF invoices, analytics dashboards, and regionally compliant billing templates.',
-    image: '/public/images/project/invoice_flow_nextjs_app.png',
+    image: invoiceFlow ,
     tags: [
       'Next.js', 'Node.js', 'Prisma', 'PostgreSQL', 'SaaS', 'Finance', 'PDF'
     ],
@@ -354,7 +378,7 @@ export const projects = [
     title: 'car-rental-vue-laravel-app – Real-Time Vehicle Booking System',
     description:
         'A full-featured car rental app built with Vue.js and Laravel, offering real-time fleet tracking, instant booking, and admin approval panels. Uses MySQL and Pusher for live communication.',
-    image: '/public/images/project/car_rental_vue_laravel_app.png',
+    image: carRental,
     tags: [
       'Vue.js', 'Laravel', 'MySQL', 'Pusher', 'Car Rental', 'Booking'
     ],
@@ -367,7 +391,7 @@ export const projects = [
     title: 'saas-landing-page-template – SaaS Startup Landing Page',
     description:
         'A highly-optimized, mobile-first landing page template for SaaS startups, built with HTML and Tailwind CSS. Features split A/B CTA layout and performance-focused design.',
-    image: '/public/images/project/saas_landing_page_template.png',
+    image: saasLanding  ,
     tags: [
       'HTML', 'Tailwind CSS', 'Landing Page', 'SaaS', 'Performance', 'Mobile-first'
     ],
@@ -380,7 +404,7 @@ export const projects = [
     title: 'Brajesh31 – GitHub Profile Repository',
     description:
         'A markdown-optimized, SEO-enriched GitHub profile README. Integrates custom badges, visitor tracking, and auto-updating stats via GitHub Actions and YAML workflows.',
-    image: '/public/images/project/brajesh31.png',
+    image: brajeshProfile ,
     tags: [
       'Markdown', 'GitHub Actions', 'YAML', 'Profile', 'SEO'
     ],
@@ -393,7 +417,7 @@ export const projects = [
     title: 'MachineLearning_with_AT – ML Experiment Platform',
     description:
         'A modular platform for running machine learning experiments, built with Jupyter, Flask, and scikit-learn. Supports modular ML model integration, auto-evaluation, and CSV I/O.',
-    image: '/public/images/project/machinelearning_with_at.png',
+    image: mlWithAt,
     tags: [
       'Jupyter', 'Flask', 'scikit-learn', 'CSV', 'Machine Learning', 'ML'
     ],
@@ -406,7 +430,7 @@ export const projects = [
     title: 'Github-bot – GitHub Automation CLI',
     description:
         'A Python CLI bot leveraging the GitHub API to automate repository tasks: auto-labeling, PR comment assistance, and JSON-based workflows. Boosts contributor efficiency for maintainers.',
-    image: '/public/images/project/github_bot.png',
+    image: githubBot,
     tags: [
       'Python', 'GitHub API', 'CLI', 'Automation', 'Open Source'
     ],
@@ -419,7 +443,7 @@ export const projects = [
     title: 'EcoAware – Environmental Impact Tracker',
     description:
         'A React and Firebase-based app for tracking and improving environmental habits. Includes AI-powered suggestions, impact analytics, and a compact mobile-first UI.',
-    image: '/public/images/project/ecoaware.png',
+    image: ecoAware ,
     tags: [
       'React', 'Node.js', 'Express', 'Firebase', 'AI', 'Environment'
     ],
@@ -432,7 +456,7 @@ export const projects = [
     title: 'ShoppyCart – Lightweight Shopping Cart',
     description:
         'A simple JavaScript shopping cart using localStorage for persistence. Features stock tracking, save-for-later, and item quantity management without backend dependencies.',
-    image: '/public/images/project/shoppycart.png',
+    image: shoppyCart ,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'LocalStorage', 'E-commerce', 'Cart'
     ],
@@ -445,7 +469,7 @@ export const projects = [
     title: 'luckyporter – Delivery Cost Estimator CLI',
     description:
         'A Python command-line utility for estimating delivery costs based on input parameters, supporting CSV I/O and real-time shipping API integration.',
-    image: '/public/images/project/luckyporter.png',
+    image: luckyPorter ,
     tags: [
       'Python', 'CLI', 'CSV', 'Logistics', 'Shipping'
     ],
@@ -458,7 +482,7 @@ export const projects = [
     title: 'gupt – File Encryption CLI Tool',
     description:
         'A C-based encryption utility providing secure AES-256 encryption/decryption for files. CLI-driven, optimized for speed and robust file I/O handling.',
-    image: '/public/images/project/gupt.png',
+    image: gupt ,
     tags: [
       'C', 'CLI', 'Encryption', 'AES-256', 'Security'
     ],
@@ -471,7 +495,7 @@ export const projects = [
     title: 'Grocery-Reminder-2 – Smart Grocery Alert App',
     description:
         'A Kotlin/Android app to manage grocery lists and get expiry reminders. Auto-groups notifications, optimizes for low-memory devices, and tracks items with SQLite.',
-    image: '/public/images/project/grocery_reminder_2.png',
+    image: groceryReminder ,
     tags: [
       'Kotlin', 'Android SDK', 'SQLite', 'Reminder', 'Notifications'
     ],
@@ -484,7 +508,7 @@ export const projects = [
     title: 'mern-stack – MERN Boilerplate Starter',
     description:
         'A ready-to-use MERN (MongoDB, Express, React, Node.js) boilerplate with JWT authentication, role-based access, and modular folder structure for quick project spin-up.',
-    image: '/public/images/project/mern_stack.png',
+    image: mernStack ,
     tags: [
       'MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Boilerplate'
     ],
@@ -497,7 +521,7 @@ export const projects = [
     title: 'django-chat – Real-Time Django Chat App',
     description:
         'A full-featured chat web app using Django Channels, PostgreSQL, and JavaScript. Features emoji support, typing indicators, and smooth WebSocket-based interactions.',
-    image: '/public/images/project/django_chat.png',
+    image: djangoChat ,
     tags: [
       'Django', 'Channels', 'PostgreSQL', 'WebSockets', 'Chat'
     ],
@@ -510,7 +534,7 @@ export const projects = [
     title: 'Stock-Management-application – Inventory Dashboard',
     description:
         'A React-Node-MongoDB inventory dashboard for small businesses to track stock levels, get low-stock alerts, and visualize product flow. Performance-optimized for quick operations.',
-    image: '/public/images/project/stock_management_application.png',
+    image: stockManagement ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Inventory', 'Dashboard'
     ],
@@ -523,7 +547,7 @@ export const projects = [
     title: 'Analysis-of-products-using-NLP – Product Sentiment Visualizer',
     description:
         'A Flask-based web app for analyzing customer product reviews using NLP. Presents visual sentiment analysis with pie charts, detailed UI, and JSON-powered backend for scalable product feeds.',
-    image: '/public/images/project/analysis_of_products_using_nlp.png',
+    image: nlpAnalysis ,
     tags: [
       'HTML', 'JavaScript', 'Python', 'Flask', 'NLP', 'Sentiment Analysis', 'Visualization'
     ],
@@ -536,7 +560,7 @@ export const projects = [
     title: 'Tic-tak-toe – Web-Based Tic Tac Toe Game',
     description:
         'A browser-based two-player Tic Tac Toe game built with JavaScript and CSS. Features logic validation, animated resets, and a responsive UI for all devices.',
-    image: '/public/images/project/tic_tak_toe.png',
+    image: ticTakToe ,
     tags: [
       'JavaScript', 'CSS', 'HTML', 'Game', 'Logic', 'Animation'
     ],
@@ -549,7 +573,7 @@ export const projects = [
     title: 'CareerCompass – AI Career Suggestion Tool',
     description:
         'A Python-Streamlit application that recommends best-fit career paths using Pandas-based analytics and CSV datasets. Features smart analysis for industry fit and user data uploads.',
-    image: '/public/images/project/careercompass.png',
+    image: careerCompass ,
     tags: [
       'Streamlit', 'Python', 'Pandas', 'Career Guidance', 'Data Analysis'
     ],
@@ -562,7 +586,7 @@ export const projects = [
     title: 'REUNITE – Event Reconnection Platform',
     description:
         'A React-based event reconnection platform for attendees to RSVP, check-in via location-based QR codes, and network during tech events. Real-time validation and dynamic event state rendering make it ideal for conferences.',
-    image: '/public/images/project/reunite.png',
+    image: reunite ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'QR Code', 'Event'
     ],
@@ -575,7 +599,7 @@ export const projects = [
     title: 'EcoNirvana – Eco-Habit Builder',
     description:
         'A full-stack app promoting sustainable habits by tracking daily eco-activities. Features weekly progress visualization, badge rewards, and a data dashboard, built on MERN.',
-    image: '/public/images/project/econirvana.png',
+    image: ecoNirvana ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Habit Tracker', 'Sustainability'
     ],
@@ -588,7 +612,7 @@ export const projects = [
     title: 'Covid-Detection – X-ray COVID Classifier',
     description:
         'A deep learning model using TensorFlow and Flask to detect COVID-19 from chest X-ray images. Supports drag-drop UI and real-time confidence score output for health screening.',
-    image: '/public/images/project/covid_detection.png',
+    image: covidDetection ,
     tags: [
       'Python', 'TensorFlow', 'Flask', 'CNN', 'Healthcare', 'X-ray'
     ],
@@ -601,7 +625,7 @@ export const projects = [
     title: 'Snapnote – Code & Content Snippet Sharing',
     description:
         'A Node.js and Cloudinary-powered app to upload, tag, and share code or content snippets. Features note compression, tag-based filtering, and instant sharing links.',
-    image: '/public/images/project/snapnote.png',
+    image: snapnote,
     tags: [
       'Node.js', 'Express', 'Cloudinary', 'HTML', 'Snippet', 'File Sharing'
     ],
@@ -614,7 +638,7 @@ export const projects = [
     title: 'Hacktober-Fest-2023 – C Practice & PR Automation',
     description:
         'An open-source Hacktoberfest hub with structured C programming challenges and automated CI for PR validation. Built for first-time contributors to learn C and GitHub.',
-    image: '/public/images/project/hacktober_fest_2023.png',
+    image: '/public/images/projects/hacktober_fest_2023.png',
     tags: [
       'C', 'Open Source', 'Hacktoberfest', 'GitHub', 'PR Automation'
     ],
@@ -627,7 +651,7 @@ export const projects = [
     title: 'Hacktoberfest2023 – Java Coding Assignments',
     description:
         'A Java repository for Hacktoberfest featuring beginner-friendly assignments, OOP refactoring, and input validation. Helps learners practice Java and contribution workflow.',
-    image: '/public/images/project/hacktoberfest2023.png',
+    image: '/public/images/projects/hacktoberfest2023.png',
     tags: [
       'Java', 'Open Source', 'Hacktoberfest', 'OOP', 'GitHub'
     ],
@@ -640,7 +664,7 @@ export const projects = [
     title: 'Image_detecting_telegram_bot – Telegram Image Scanner',
     description:
         'A Python Telegram bot using OpenCV to detect and label objects in uploaded images. Supports inline previews and delivers labeled results with confidence scores instantly.',
-    image: '/public/images/project/image_detecting_telegram_bot.png',
+    image: '/public/images/projects/image_detecting_telegram_bot.png',
     tags: [
       'Python', 'Telegram API', 'OpenCV', 'Image Detection', 'Bot'
     ],
@@ -653,7 +677,7 @@ export const projects = [
     title: 'Robotic-Process-Automation-UiPath – Document Automation',
     description:
         'A UiPath RPA solution for automating document parsing, error logging, and mail notifications. Reduces manual business workflow effort with scheduled and conditional triggers.',
-    image: '/public/images/project/robotic_process_automation_uipath.png',
+    image: '/public/images/projects/robotic_process_automation_uipath.png',
     tags: [
       'UiPath Studio', 'RPA', 'Automation', 'Document Processing'
     ],
@@ -666,7 +690,7 @@ export const projects = [
     title: 'NewsTraker – Custom News Dashboard',
     description:
         'A Node.js and MongoDB-powered news aggregator that uses NLP to surface trending topics. Customizable filters, category-based feeds, and sentiment sorting included.',
-    image: '/public/images/project/newstraker.png',
+    image: '/public/images/projects/newstraker.png',
     tags: [
       'Node.js', 'Express', 'MongoDB', 'NLP', 'News', 'Dashboard'
     ],
@@ -679,7 +703,7 @@ export const projects = [
     title: 'AT_LearnHub – Gamified Learning Management System',
     description:
         'A full-stack LMS platform with gamified progress tracking, badges, and analytics for student engagement. Built using React, Node.js, Express, and PostgreSQL.',
-    image: '/public/images/project/at_learnhub.png',
+    image: '/public/images/projects/at_learnhub.png',
     tags: [
       'React', 'Node.js', 'Express', 'PostgreSQL', 'LMS', 'Gamification'
     ],
@@ -692,7 +716,7 @@ export const projects = [
     title: 'Google_search_automation – Automated Search Scraper',
     description:
         'A Python CLI tool that scrapes Google search results into CSV for rapid research and SEO analysis. Supports proxy rotation, batch queries, and robust export.',
-    image: '/public/images/project/google_search_automation.png',
+    image: '/public/images/projects/google_search_automation.png',
     tags: [
       'Python', 'Selenium', 'CLI', 'CSV', 'Web Scraping'
     ],
@@ -705,7 +729,7 @@ export const projects = [
     title: 'tracker – Static Timeline Tracker',
     description:
         'A responsive HTML/CSS tool for visualizing timelines and progress. Features clean CSS grid layout, modern UI, and mobile support.',
-    image: '/public/images/project/tracker.png',
+    image: '/public/images/projects/tracker.png',
     tags: [
       'HTML', 'CSS', 'Timeline', 'Responsive Design'
     ],
@@ -718,7 +742,7 @@ export const projects = [
     title: 'InsightFace_Pytorch – Face Detection Notebook',
     description:
         'A PyTorch/Jupyter notebook pipeline for face detection and recognition, with dataset annotation and liveness detection modules for robust security.',
-    image: '/public/images/project/insightface_pytorch.png',
+    image: '/public/images/projects/insightface_pytorch.png',
     tags: [
       'Python', 'PyTorch', 'Jupyter', 'Face Detection', 'Liveness'
     ],
@@ -731,7 +755,7 @@ export const projects = [
     title: 'flexlayout-vite-example – UI Layout Engine Demo',
     description:
         'A React/Vite-based demo for flexible drag-resizable layouts, using Snap/FlexLayout libraries. Enables snapping, resizing, and state saving for component-rich UIs.',
-    image: '/public/images/project/flexlayout_vite_example.png',
+    image: '/public/images/projects/flexlayout_vite_example.png',
     tags: [
       'TypeScript', 'React', 'Vite', 'UI Layout', 'FlexLayout', 'Snap'
     ],
@@ -744,7 +768,7 @@ export const projects = [
     title: 'Influencer-Sponsor-Coordination-Platform – Creator/Brand Matchmaking',
     description:
         'A full-stack MERN application connecting influencers with sponsors, featuring deal dashboards, analytics, and real-time coordination. Empowers creators to monetize and brands to discover relevant talent.',
-    image: '/public/images/project/influencer_sponsor_coordination_platform.png',
+    image: '/public/images/projects/influencer_sponsor_coordination_platform.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Creator Economy', 'Brand Analytics'
     ],
@@ -757,7 +781,7 @@ export const projects = [
     title: 'Stock_Alert_Notifier – Multi-Stock Price Alert Tool',
     description:
         'A Python CLI utility that monitors multiple stock tickers and sends notifications via Telegram when thresholds are met. Multi-threaded for fast, concurrent alerts.',
-    image: '/public/images/project/stock_alert_notifier.png',
+    image: '/public/images/projects/stock_alert_notifier.png',
     tags: [
       'Python', 'CLI', 'Telegram API', 'Finance', 'Stock Notifier'
     ],
@@ -770,7 +794,7 @@ export const projects = [
     title: 'Amazon-Automation – E-commerce Scraper & Price Watcher',
     description:
         'A Selenium-based Python tool for tracking Amazon product prices and stock. Supports multi-ASIN, smart retries, and e-mail alerts for instant deal monitoring.',
-    image: '/public/images/project/amazon_automation.png',
+    image: '/public/images/projects/amazon_automation.png',
     tags: [
       'Python', 'Selenium', 'E-commerce', 'Automation', 'Email Alerts'
     ],
@@ -783,7 +807,7 @@ export const projects = [
     title: 'To-Do-List – Interactive Task Manager',
     description:
         'A simple, drag-and-drop to-do app in vanilla JS, with persistent LocalStorage, sorting, themes, and real-time filtering for easy productivity.',
-    image: '/public/images/project/to_do_list.png',
+    image: '/public/images/projects/to_do_list.png',
     tags: [
       'JavaScript', 'HTML', 'CSS', 'LocalStorage', 'Productivity'
     ],
@@ -796,7 +820,7 @@ export const projects = [
     title: 'SimpleCalcultor – Web-Based Calculator',
     description:
         'A clean, modern calculator app using HTML/CSS and JS. Supports keyboard input, multiple themes, and advanced arithmetic functions for smooth user experience.',
-    image: '/public/images/project/simplecalcultor.png',
+    image: '/public/images/projects/simplecalcultor.png',
     tags: [
       'JavaScript', 'HTML', 'CSS', 'Calculator', 'UI'
     ],
@@ -809,7 +833,7 @@ export const projects = [
     title: 'Chota-Bheem-Adventure-game – 2D Web Game',
     description:
         'A browser-based 2D adventure game featuring Chota Bheem, with enemy AI, level transitions, and scoring. Built using JavaScript Canvas for fun, interactive gameplay.',
-    image: '/public/images/project/chota_bheem_adventure_game.png',
+    image: '/public/images/projects/chota_bheem_adventure_game.png',
     tags: [
       'JavaScript', 'Canvas', 'Game', '2D', 'AI'
     ],
@@ -822,7 +846,7 @@ export const projects = [
     title: 'Agro_tech_AI – Smart Farm Dashboard',
     description:
         'A MERN stack web dashboard integrating IoT sensor data for real-time farm management. Features weather-based AI alerts, sponsor feedback modules, and beautiful charts.',
-    image: '/public/images/project/agro_tech_ai.png',
+    image: '/public/images/projects/agro_tech_ai.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'IoT', 'Agriculture'
     ],
@@ -835,7 +859,7 @@ export const projects = [
     title: 'profile-management – User Data Admin Portal',
     description:
         'A React/Node.js/MongoDB portal for user CRUD, bulk CSV import, enhanced form validation, and role-based dashboards. Designed for robust data management and admin productivity.',
-    image: '/public/images/project/profile_management.png',
+    image: '/public/images/projects/profile_management.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'CRUD', 'CSV'
     ],
@@ -848,7 +872,7 @@ export const projects = [
     title: 'Amazon-Sales-Analysis-Dashboard – Seller Analytics Tool',
     description:
         'A React/Node.js dashboard with Chart.js and PostgreSQL for Amazon seller analytics. Includes regional maps, email summaries, and multi-dimensional filters.',
-    image: '/public/images/project/amazon_sales_analysis_dashboard.png',
+    image: '/public/images/projects/amazon_sales_analysis_dashboard.png',
     tags: [
       'React', 'Node.js', 'Chart.js', 'PostgreSQL', 'Analytics', 'Amazon'
     ],
@@ -861,7 +885,7 @@ export const projects = [
     title: 'Data-Analysis-Dashboard – Real-Time Analytics Viewer',
     description:
         'A Python/Dash/Plotly app for real-time data analytics with upload, PDF/Excel export, and interactive dashboards. Ideal for business and education insights.',
-    image: '/public/images/project/data_analysis_dashboard.png',
+    image: '/public/images/projects/data_analysis_dashboard.png',
     tags: [
       'Python', 'Plotly', 'Dash', 'CSV', 'Analytics', 'Dashboard'
     ],
@@ -874,7 +898,7 @@ export const projects = [
     title: 'File-Management-App – Cloud Storage UI',
     description:
         'A Flask-based cloud file manager with JWT authentication, drag-drop multi-upload, and SQLite backend. Designed for secure, user-friendly cloud storage.',
-    image: '/public/images/project/file_management_app.png',
+    image: '/public/images/projects/file_management_app.png',
     tags: [
       'Python', 'Flask', 'SQLite', 'Cloud Storage', 'JWT', 'File Management'
     ],
@@ -887,7 +911,7 @@ export const projects = [
     title: 'kfc – Responsive KFC Landing Page Clone',
     description:
         'A static KFC landing page clone with optimized image delivery, parallax effects, and scroll animations, built in pure HTML/CSS.',
-    image: '/public/images/project/kfc.png',
+    image: '/public/images/projects/kfc.png',
     tags: [
       'HTML', 'CSS', 'Parallax', 'Landing Page', 'Clone'
     ],
@@ -900,7 +924,7 @@ export const projects = [
     title: 'word_counter – Live Text Stats Tool',
     description:
         'A React and TypeScript-powered word counter for real-time character and word stats, export as reports, and clipboard support.',
-    image: '/public/images/project/word_counter.png',
+    image: '/public/images/projects/word_counter.png',
     tags: [
       'TypeScript', 'React', 'Word Counter', 'Export', 'Text Analytics'
     ],
@@ -913,7 +937,7 @@ export const projects = [
     title: 'Number_guessing_game – Console Guess Game',
     description:
         'A classic JavaScript number guessing game with improved UI, timer, and scoring system. Simple, fun, and ideal for practice.',
-    image: '/public/images/project/number_guessing_game.png',
+    image: '/public/images/projects/number_guessing_game.png',
     tags: [
       'JavaScript', 'HTML', 'Game', 'Number Guess', 'UI'
     ],
@@ -926,7 +950,7 @@ export const projects = [
     title: 'currency_converter – Real-Time Currency Rate App',
     description:
         'A React/TypeScript currency converter with live API rates, dark mode, caching, and transaction history. Designed for global travelers and finance tracking.',
-    image: '/public/images/project/currency_converter.png',
+    image: '/public/images/projects/currency_converter.png',
     tags: [
       'TypeScript', 'React', 'Currency', 'Finance', 'API'
     ],
@@ -939,7 +963,7 @@ export const projects = [
     title: 'Adventure-Game – Text RPG Engine',
     description:
         'A JavaScript/HTML5 Canvas-powered text RPG game engine with dynamic scene loading, branching storylines, and local saves for immersive browser play.',
-    image: '/public/images/project/adventure_game.png',
+    image: '/public/images/projects/adventure_game.png',
     tags: [
       'JavaScript', 'HTML5 Canvas', 'Game', 'RPG', 'Story'
     ],
@@ -952,7 +976,7 @@ export const projects = [
     title: 'My_Bank – Mini Banking Simulation',
     description:
         'A Node.js/MongoDB banking simulation with encrypted localStorage, transaction history, and interactive UI for learning basic fintech concepts.',
-    image: '/public/images/project/my_bank.png',
+    image: '/public/images/projects/my_bank.png',
     tags: [
       'HTML', 'JavaScript', 'Node.js', 'MongoDB', 'Banking'
     ],
@@ -965,7 +989,7 @@ export const projects = [
     title: 'student_management_system – Admin Portal for Students',
     description:
         'A React/Node.js/MongoDB admin panel for student management. Features CRUD, dashboards, analytics, and secure role-based access.',
-    image: '/public/images/project/student_management_system.png',
+    image: '/public/images/projects/student_management_system.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Dashboard', 'Students'
     ],
@@ -978,7 +1002,7 @@ export const projects = [
     title: 'Todo_App – Essential To-Do App',
     description:
         'A fast, simple JavaScript to-do list app with localStorage, check/uncheck logic, category sorting, and theme switcher.',
-    image: '/public/images/project/todo_app.png',
+    image: '/public/images/projects/todo_app.png',
     tags: [
       'JavaScript', 'HTML', 'To-Do', 'LocalStorage', 'Theme'
     ],
@@ -991,7 +1015,7 @@ export const projects = [
     title: 'AATM – Attendance App with Biometric Fallback',
     description:
         'A React Native/Firebase attendance tracking app supporting offline sync, instant alerts, and biometric fallback for robust student recordkeeping.',
-    image: '/public/images/project/aatm.png',
+    image: '/public/images/projects/aatm.png',
     tags: [
       'React Native', 'Firebase', 'Node.js', 'Firestore', 'Attendance', 'Biometrics'
     ],
@@ -1004,7 +1028,7 @@ export const projects = [
     title: 'spotify-clone – Spotify UI Replica',
     description:
         'A responsive Spotify homepage UI clone built in HTML and CSS. Features dark theme, interactive audio cards, and pixel-perfect design for music fans.',
-    image: '/public/images/project/spotify_clone.png',
+    image: '/public/images/projects/spotify_clone.png',
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Spotify', 'Dark Theme'
     ],
@@ -1017,7 +1041,7 @@ export const projects = [
     title: 'Digital-Clock – Web Clock with Themes',
     description:
         'A live digital clock app using HTML, CSS, and JS. Includes multiple timezone support, theme toggle, and font customization for a stylish personal dashboard.',
-    image: '/public/images/project/digital_clock.png',
+    image: '/public/images/projects/digital_clock.png',
     tags: [
       'JavaScript', 'HTML', 'CSS', 'Clock', 'Theme'
     ],
@@ -1030,7 +1054,7 @@ export const projects = [
     title: 'QuizAppProject – Web Quiz Game',
     description:
         'A fully interactive quiz game with a randomized question pool, timer logic, and real-time scoring. Built with HTML, CSS, and JS for learning and fun.',
-    image: '/public/images/project/quiz_app_project.png',
+    image: '/public/images/projects/quiz_app_project.png',
     tags: [
       'HTML', 'CSS', 'JavaScript', 'Quiz', 'Game'
     ],
@@ -1043,7 +1067,7 @@ export const projects = [
     title: 'Theme-color-switcher – Customizable Theme App',
     description:
         'A simple JS app for toggling themes and building custom color palettes. Persists user preferences via localStorage for a unique user experience.',
-    image: '/public/images/project/theme_color_switcher.png',
+    image: '/public/images/projects/theme_color_switcher.png',
     tags: [
       'JavaScript', 'HTML', 'Theme', 'Color Palette', 'UI'
     ],
@@ -1056,7 +1080,7 @@ export const projects = [
     title: 'Random-Quote-Generator – Daily Quotes App',
     description:
         'Fetches and displays random quotes, supports Twitter sharing, and lets users filter by category or copy to clipboard. Built with vanilla JS and open quote APIs.',
-    image: '/public/images/project/random_quote_generator.png',
+    image: '/public/images/projects/random_quote_generator.png',
     tags: [
       'JavaScript', 'HTML', 'Quotes', 'API', 'Sharing'
     ],
@@ -1069,7 +1093,7 @@ export const projects = [
     title: 'Emoji-Mood-Tracker-app – Daily Emotion Analytics',
     description:
         'A browser-based mood tracking app using IndexedDB for storage. Tracks daily emotions with emojis and shows analytics graphs; export logs as CSV.',
-    image: '/public/images/project/emoji_mood_tracker_app.png',
+    image: '/public/images/projects/emoji_mood_tracker_app.png',
     tags: [
       'JavaScript', 'HTML', 'CSS', 'IndexedDB', 'Mood Tracker'
     ],
@@ -1082,7 +1106,7 @@ export const projects = [
     title: 'Guess-Number-Game – Animated Guessing Game',
     description:
         'A simple number guessing game in JS/HTML with animated celebrations, hints, and improved logic. Perfect for beginners and browser fun.',
-    image: '/public/images/project/guess_number_game.png',
+    image: '/public/images/projects/guess_number_game.png',
     tags: [
       'JavaScript', 'HTML', 'Game', 'Animation', 'Guessing'
     ],
@@ -1095,7 +1119,7 @@ export const projects = [
     title: 'Condition-and-Loops-in-JS-Assignment – Live Practice Sandbox',
     description:
         'A JS practice app with real-time code testing for conditions and loops. Includes live examples and console output for hands-on learning.',
-    image: '/public/images/project/condition_and_loops_in_js_assignment.png',
+    image: '/public/images/projects/condition_and_loops_in_js_assignment.png',
     tags: [
       'JavaScript', 'HTML', 'Live Practice', 'Learning', 'Console'
     ],
@@ -1108,7 +1132,7 @@ export const projects = [
     title: 'Operators-in-JavaScript-Part_2 – JS Operators Demo',
     description:
         'Interactive project to demo JS operators with enhanced UI. Users can trigger operations with buttons and see instant results.',
-    image: '/public/images/project/operators_in_javascript_part_2.png',
+    image: '/public/images/projects/operators_in_javascript_part_2.png',
     tags: [
       'JavaScript', 'HTML', 'Operators', 'Demo', 'UI'
     ],
@@ -1121,7 +1145,7 @@ export const projects = [
     title: 'Introduction-to-JavaScript-Assignment – Beginner JS Lessons',
     description:
         'A project to help absolute beginners learn JS. Collapsible sections, code sandbox integration, and simple examples for easy understanding.',
-    image: '/public/images/project/introduction_to_javascript_assignment.png',
+    image: '/public/images/projects/introduction_to_javascript_assignment.png',
     tags: [
       'JavaScript', 'HTML', 'Learning', 'Beginners', 'Code Sandbox'
     ],
@@ -1134,7 +1158,7 @@ export const projects = [
     title: 'Webpage-Clone-Project – Pixel-Perfect UI Clone',
     description:
         'A clone of popular web UIs using pure HTML and CSS. Migrates classic Flex layouts to CSS Grid for improved responsiveness.',
-    image: '/public/images/project/webpage_clone_project.png',
+    image: '/public/images/projects/webpage_clone_project.png',
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Flexbox', 'Grid'
     ],
@@ -1147,7 +1171,7 @@ export const projects = [
     title: 'Tailwind-CSS-Assignment – Tailwind Practice Page',
     description:
         'A hands-on page to practice Tailwind CSS spacing, theming, and responsive utilities. Features dark/light toggle and real-world layout examples.',
-    image: '/public/images/project/tailwind_css_assignment.png',
+    image: '/public/images/projects/tailwind_css_assignment.png',
     tags: [
       'HTML', 'Tailwind CSS', 'UI Practice', 'Dark Mode', 'Responsive'
     ],
@@ -1160,7 +1184,7 @@ export const projects = [
     title: 'Bootstrap-Assignment – Modern Bootstrap Demo',
     description:
         'A responsive Bootstrap 5 project featuring navbar, cards, and classic layout. Upgraded from v4, now fully mobile-ready and visually polished.',
-    image: '/public/images/project/bootstrap_assignment.png',
+    image: '/public/images/projects/bootstrap_assignment.png',
     tags: [
       'HTML', 'Bootstrap', 'CSS', 'Responsive', 'UI Demo'
     ],
@@ -1173,7 +1197,7 @@ export const projects = [
     title: 'Advanced-CSS – Creative CSS Layout Showcase',
     description:
         'A collection of advanced CSS techniques including variable-driven theming, transitions, and complex layout demos. Features mixins for maintainable styles.',
-    image: '/public/images/project/advanced_css.png',
+    image: '/public/images/projects/advanced_css.png',
     tags: [
       'CSS', 'HTML', 'Advanced', 'Theming', 'Transitions'
     ],
@@ -1186,7 +1210,7 @@ export const projects = [
     title: 'More-on-CSS-Selector-Assignment – CSS Selector Playground',
     description:
         'An interactive CSS selector playground with live feedback and commented explanations. Great for practicing and understanding CSS specificity.',
-    image: '/public/images/project/more_on_css_selector_assignment.png',
+    image: '/public/images/projects/more_on_css_selector_assignment.png',
     tags: [
       'CSS', 'HTML', 'Selectors', 'Practice', 'Live Playground'
     ],
@@ -1199,7 +1223,7 @@ export const projects = [
     title: 'Media-Query-Assignment – Responsive Design Demo',
     description:
         'A practical example showing responsive design with media queries. Features device frame previews and extended breakpoints for advanced CSS layouts.',
-    image: '/public/images/project/media_query_assignment.png',
+    image: '/public/images/projects/media_query_assignment.png',
     tags: [
       'CSS', 'HTML', 'Responsive', 'Media Queries', 'Design'
     ],
@@ -1212,7 +1236,7 @@ export const projects = [
     title: 'CSS-Grid-Assignment – Modern Grid Layout Task',
     description:
         'Demonstrates CSS Grid concepts, named areas, auto-fill logic, and responsive redesigns. Ideal for learning grid-based design.',
-    image: '/public/images/project/css_grid_assignment.png',
+    image: '/public/images/projects/css_grid_assignment.png',
     tags: [
       'CSS', 'HTML', 'Grid', 'Responsive', 'Design'
     ],
@@ -1225,7 +1249,7 @@ export const projects = [
     title: 'Flexbox-in-CSS – Flexbox Playground',
     description:
         'A CSS playground to test multi-axis alignment, flex debugger overlays, and layout prototypes using Flexbox.',
-    image: '/public/images/project/flexbox_in_css.png',
+    image: '/public/images/projects/flexbox_in_css.png',
     tags: [
       'CSS', 'HTML', 'Flexbox', 'Playground', 'UI'
     ],
@@ -1238,7 +1262,7 @@ export const projects = [
     title: 'Positions-in-CSS-Assignment – Positioning Demo',
     description:
         'An assignment exploring CSS positioning with sticky navbars, overlays, and commented code. Perfect for learning z-index and stacking contexts.',
-    image: '/public/images/project/positions_in_css_assignment.png',
+    image: '/public/images/projects/positions_in_css_assignment.png',
     tags: [
       'CSS', 'HTML', 'Positioning', 'Sticky', 'Overlay'
     ],
@@ -1251,7 +1275,7 @@ export const projects = [
     title: 'More-on-CSS-Assignment – Layering & Z-Index Showcase',
     description:
         'A project focused on advanced CSS layering, z-index stacking, and layout improvements for visually complex web apps.',
-    image: '/public/images/project/more_on_css_assignment.png',
+    image: '/public/images/projects/more_on_css_assignment.png',
     tags: [
       'CSS', 'HTML', 'Z-Index', 'Layering', 'UI'
     ],
@@ -1264,7 +1288,7 @@ export const projects = [
     title: 'Starting-with-CSS-Assignment – CSS Basics Practice',
     description:
         'A hands-on starter assignment for CSS beginners. Features live code samples, mobile layout refinement, and step-by-step guides to common styling techniques.',
-    image: '/public/images/project/starting_with_css_assignment.png',
+    image: '/public/images/projects/starting_with_css_assignment.png',
     tags: [
       'CSS', 'HTML', 'Beginner', 'Mobile Layout', 'Styling'
     ],
@@ -1277,7 +1301,7 @@ export const projects = [
     title: 'SEO-Assignment – Meta Tags & Open Graph Demo',
     description:
         'A demonstration project focused on improving SEO for static websites. Teaches meta tags, Open Graph data, and structured markup for maximum discoverability.',
-    image: '/public/images/project/seo_assignment.png',
+    image: '/public/images/projects/seo_assignment.png',
     tags: [
       'HTML', 'CSS', 'SEO', 'Meta Tags', 'Open Graph'
     ],
@@ -1290,7 +1314,7 @@ export const projects = [
     title: 'Modern-HTML-Assignment – Semantic HTML5 Tutorial',
     description:
         'An HTML5 practice project introducing semantic tags, ARIA roles, and accessibility tips for modern, standards-compliant web development.',
-    image: '/public/images/project/modern_html_assignment.png',
+    image: '/public/images/projects/modern_html_assignment.png',
     tags: [
       'HTML5', 'Semantic', 'Accessibility', 'ARIA', 'Web Standards'
     ],
@@ -1303,7 +1327,7 @@ export const projects = [
     title: 'Media-and-form-Assignment – Responsive Media & Form Demo',
     description:
         'A hands-on project for building accessible, responsive media and form components. Includes floating labels, enhanced validation, and custom tooltips.',
-    image: '/public/images/project/media_and_form_assignment.png',
+    image: '/public/images/projects/media_and_form_assignment.png',
     tags: [
       'HTML', 'CSS', 'Responsive', 'Forms', 'Accessibility'
     ],
@@ -1316,7 +1340,7 @@ export const projects = [
     title: 'getting-started-with-html-assignment1 – HTML Basics',
     description:
         'A beginner-focused HTML assignment covering structure, boilerplate, and tag organization into logical sections for rapid learning.',
-    image: '/public/images/project/getting_started_with_html_assignment1.png',
+    image: '/public/images/projects/getting_started_with_html_assignment1.png',
     tags: [
       'HTML', 'Beginner', 'Boilerplate', 'Tags', 'Learning'
     ],
@@ -1329,7 +1353,7 @@ export const projects = [
     title: 'Core-HTML-Assignment – HTML Embeds & Examples',
     description:
         'A hands-on HTML exercise with commented examples, iframe demos, and modern structure. Ideal for grasping embed elements and standard markup.',
-    image: '/public/images/project/core_html_assignment.png',
+    image: '/public/images/projects/core_html_assignment.png',
     tags: [
       'HTML', 'Iframe', 'Embeds', 'Examples', 'Learning'
     ],
@@ -1342,7 +1366,7 @@ export const projects = [
     title: 'Cervical-Cancer-Prediction – ML Risk Predictor',
     description:
         'A Flask/scikit-learn app to predict cervical cancer risk based on user data. Features a chart-based results dashboard and model accuracy tuning.',
-    image: '/public/images/project/cervical_cancer_prediction.png',
+    image: '/public/images/projects/cervical_cancer_prediction.png',
     tags: [
       'Python', 'Flask', 'scikit-learn', 'ML', 'Healthcare'
     ],
@@ -1355,7 +1379,7 @@ export const projects = [
     title: 'Admission-Prediction – University Admit Predictor',
     description:
         'A Flask-based machine learning tool that predicts university admission chances with feature scaling and graphical score outputs.',
-    image: '/public/images/project/admission_prediction.png',
+    image: '/public/images/projects/admission_prediction.png',
     tags: [
       'Python', 'Flask', 'scikit-learn', 'University', 'Prediction'
     ],
@@ -1368,7 +1392,7 @@ export const projects = [
     title: 'Air-Passengers-Time-series-forecasting – Passenger Growth Forecaster',
     description:
         'A Jupyter/ARIMA-based tool for forecasting air passenger growth. Features automated parameter tuning and interactive charts for time series analysis.',
-    image: '/public/images/project/air_passengers_time_series_forecasting.png',
+    image: '/public/images/projects/air_passengers_time_series_forecasting.png',
     tags: [
       'Python', 'Jupyter', 'ARIMA', 'Time Series', 'Forecasting'
     ],
@@ -1381,7 +1405,7 @@ export const projects = [
     title: 'Fake-News-Prediction – News Classifier Dashboard',
     description:
         'A Flask/SVM/TF-IDF app to classify news articles as real or fake. Delivers visual stats and high-accuracy dashboards for easy verification.',
-    image: '/public/images/project/fake_news_prediction.png',
+    image: '/public/images/projects/fake_news_prediction.png',
     tags: [
       'Python', 'Flask', 'SVM', 'TF-IDF', 'News', 'Classifier'
     ],
@@ -1394,7 +1418,7 @@ export const projects = [
     title: 'lock-screen – Java Swing Desktop Lock',
     description:
         'A Java Swing desktop lock simulator with a custom UI and random keypad generator. Designed for desktop app security learning.',
-    image: '/public/images/project/lock_screen.png',
+    image: '/public/images/projects/lock_screen.png',
     tags: [
       'Java', 'Swing', 'Desktop', 'Lock Screen', 'UI'
     ],
@@ -1407,7 +1431,7 @@ export const projects = [
     title: 'Region-Growing – OpenCV Image Segmentation',
     description:
         'A Python/OpenCV GUI tool for region growing segmentation of grayscale images. Includes plot viewer and optimized seed selection logic.',
-    image: '/public/images/project/region_growing.png',
+    image: '/public/images/projects/region_growing.png',
     tags: [
       'Python', 'OpenCV', 'Segmentation', 'Image Processing', 'GUI'
     ],
@@ -1420,7 +1444,7 @@ export const projects = [
     title: 'image-analysis-for-segmentation-of-grayscale-image – DIP Lab Notebook',
     description:
         'A Jupyter/OpenCV notebook for advanced image segmentation. Covers edge detection, filters, and threshold visualizations for grayscale images.',
-    image: '/public/images/project/image_analysis_for_segmentation_of_grayscale_image.png',
+    image: '/public/images/projects/image_analysis_for_segmentation_of_grayscale_image.png',
     tags: [
       'Python', 'OpenCV', 'Jupyter', 'Image Segmentation', 'Edge Detection'
     ],
@@ -1433,7 +1457,7 @@ export const projects = [
     title: 'USER_MANAGEMENt – LocalStorage User Form Manager',
     description:
         'A vanilla JS user manager with password validation, table-based listings, and edit/delete options. Stores all data in LocalStorage for quick access.',
-    image: '/public/images/project/user_management.png',
+    image: '/public/images/projects/user_management.png',
     tags: [
       'JavaScript', 'HTML', 'LocalStorage', 'User Management', 'CRUD'
     ],
@@ -1446,7 +1470,7 @@ export const projects = [
     title: 'QUIZ_WEB – Dynamic Web Quiz Platform',
     description:
         'A Node.js/EJS quiz platform supporting timer-based quizzes, dynamic question pools, and result analytics. Uses MongoDB for data persistence.',
-    image: '/public/images/project/quiz_web.png',
+    image: '/public/images/projects/quiz_web.png',
     tags: [
       'Node.js', 'EJS', 'Express', 'MongoDB', 'Quiz', 'Analytics'
     ],
@@ -1459,7 +1483,7 @@ export const projects = [
     title: 'React_MOVIEAPP – Movie Listing SPA',
     description:
         'A single-page React app consuming TMDB API to list, filter, and watchlist movies. Features lazy loading, genre filter, and stylish modals.',
-    image: '/public/images/project/react_movieapp.png',
+    image: '/public/images/projects/react_movieapp.png',
     tags: [
       'React', 'Node.js', 'Axios', 'TMDB API', 'Movies'
     ],
@@ -1472,7 +1496,7 @@ export const projects = [
     title: 'Country_Location – Interactive World Map',
     description:
         'A Leaflet.js-powered JS app that maps countries with cluster markers, filters, and REST API-based info popups for geographical exploration.',
-    image: '/public/images/project/country_location.png',
+    image: '/public/images/projects/country_location.png',
     tags: [
       'JavaScript', 'Leaflet.js', 'REST API', 'Maps', 'Geography'
     ],
@@ -1485,7 +1509,7 @@ export const projects = [
     title: 'MATLAB_FingerPrint – Fingerprint Comparison GUI',
     description:
         'A MATLAB-based desktop GUI for fingerprint comparison, with advanced ridge-thinning, noise reduction, and custom interface improvements.',
-    image: '/public/images/project/matlab_fingerprint.png',
+    image: '/public/images/projects/matlab_fingerprint.png',
     tags: [
       'MATLAB', 'GUI', 'Fingerprint', 'Biometrics', 'Image Processing'
     ],
@@ -1498,7 +1522,7 @@ export const projects = [
     title: 'digital-image-processing-home-exam – DIP Notebook Solutions',
     description:
         'A Jupyter/OpenCV notebook for digital image processing coursework: histogram equalization, thresholding, and visual explanations for each technique.',
-    image: '/public/images/project/digital_image_processing_home_exam.png',
+    image: '/public/images/projects/digital_image_processing_home_exam.png',
     tags: [
       'Python', 'OpenCV', 'Jupyter', 'Image Processing', 'DIP'
     ],
@@ -1511,7 +1535,7 @@ export const projects = [
     title: 'financial-analysis-rag – RAG Chatbot for Finance PDFs',
     description:
         'A Python/FastAPI/LangChain app to chat with and analyze finance PDFs. Features file parsing, index refresh, and a conversational analytics UI.',
-    image: '/public/images/project/financial_analysis_rag.png',
+    image: '/public/images/projects/financial_analysis_rag.png',
     tags: [
       'Python', 'FastAPI', 'LangChain', 'FAISS', 'Finance', 'Chatbot'
     ],
@@ -1524,7 +1548,7 @@ export const projects = [
     title: 'Bifoga – Lightweight Notes App',
     description:
         'A minimalist HTML/JS notes app with Markdown support, drag-to-reorder, and export to PDF. Stores data in LocalStorage for instant access and privacy.',
-    image: '/public/images/project/bifoga.png',
+    image: '/public/images/projects/bifoga.png',
     tags: [
       'HTML', 'JavaScript', 'LocalStorage', 'Markdown', 'Notes', 'PDF Export'
     ],
@@ -1537,7 +1561,7 @@ export const projects = [
     title: 'alien-invasion-game – Classic Arcade Game',
     description:
         'A Python/Pygame remake of the classic Alien Invasion arcade game, featuring scoring, boss battles, and explosion animations for a retro gaming experience.',
-    image: '/public/images/project/alien_invasion_game.png',
+    image: '/public/images/projects/alien_invasion_game.png',
     tags: [
       'Python', 'Pygame', 'Arcade Game', 'Animation', 'Retro'
     ],
@@ -1550,7 +1574,7 @@ export const projects = [
     title: 'Amazon_Clone – UI Clone of Amazon Store',
     description:
         'A static clone of the Amazon e-commerce site using HTML and CSS, featuring responsive grids, redesigned header, and product showcase cards.',
-    image: '/public/images/project/amazon_clone.png',
+    image: '/public/images/projects/amazon_clone.png',
     tags: [
       'HTML', 'CSS', 'UI Clone', 'E-commerce', 'Amazon'
     ],
@@ -1563,7 +1587,7 @@ export const projects = [
     title: 'Whether-web – Weather Data App',
     description:
         'A weather dashboard that fetches real-time data from OpenWeatherMap API. Supports caching, location-based forecast, and visual icons.',
-    image: '/public/images/project/whether_web.png',
+    image: '/public/images/projects/whether_web.png',
     tags: [
       'JavaScript', 'HTML', 'CSS', 'OpenWeatherMap API', 'Weather', 'Dashboard'
     ],
@@ -1576,7 +1600,7 @@ export const projects = [
     title: 'React-Typescript-Pro – Production Boilerplate',
     description:
         'A robust React+TypeScript starter with Prettier, ESLint, Storybook, and reusable form components. Built for scalable and maintainable SPAs.',
-    image: '/public/images/project/react_typescript_pro.png',
+    image: '/public/images/projects/react_typescript_pro.png',
     tags: [
       'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Storybook', 'Boilerplate'
     ],
@@ -1589,7 +1613,7 @@ export const projects = [
     title: 'Simple_Calculator – Web Calculator',
     description:
         'A polished HTML/JS calculator with support for keyboard shortcuts, percent operator, and modern visual styling. Designed for smooth, fast calculations.',
-    image: '/public/images/project/simple_calculator.png',
+    image: '/public/images/projects/simple_calculator.png',
     tags: [
       'HTML', 'JavaScript', 'Calculator', 'Frontend', 'UI'
     ],
@@ -1602,7 +1626,7 @@ export const projects = [
     title: 'Contact-Display – Responsive Contact Cards',
     description:
         'A simple HTML/CSS project displaying contact info as responsive cards with grid layout and hover transitions. Useful for business websites or portfolios.',
-    image: '/public/images/project/contact_display.png',
+    image: '/public/images/projects/contact_display.png',
     tags: [
       'HTML', 'CSS', 'Contact Cards', 'Responsive Design', 'UI'
     ],
@@ -1615,7 +1639,7 @@ export const projects = [
     title: 'Kilimani – Hotel Landing Page',
     description:
         'A visually rich HTML/CSS hotel landing page with animated room slider, responsive booking CTA, and smooth scroll effects for hospitality businesses.',
-    image: '/public/images/project/kilimani.png',
+    image: '/public/images/projects/kilimani.png',
     tags: [
       'HTML', 'CSS', 'Landing Page', 'Hotel', 'Animation'
     ],
@@ -1628,7 +1652,7 @@ export const projects = [
     title: 'E_Commers – E-commerce Product Layout',
     description:
         'A static HTML/CSS e-commerce layout with grid-based product showcase and UI enhancements. Fast-loading and ideal for shop mockups.',
-    image: '/public/images/project/e_commers.png',
+    image: '/public/images/projects/e_commers.png',
     tags: [
       'HTML', 'CSS', 'E-commerce', 'Product Grid', 'Mockup'
     ],
@@ -1641,7 +1665,7 @@ export const projects = [
     title: 'Python-AI – ML Model Testing UI',
     description:
         'A Flask-based UI for testing various machine learning models and endpoints, including HuggingFace API demos. Built for fast, hands-on ML prototyping.',
-    image: '/public/images/project/python_ai.png',
+    image: '/public/images/projects/python_ai.png',
     tags: [
       'Python', 'Flask', 'ML Models', 'API', 'Prototyping'
     ],
@@ -1654,7 +1678,7 @@ export const projects = [
     title: 'RadarScope – Radar Plot CLI Tool',
     description:
         'A Python/Matplotlib CLI tool to generate radar plots, heatmaps, and density analysis from data files. Great for quick visual analytics.',
-    image: '/public/images/project/radarscope.png',
+    image: '/public/images/projects/radarscope.png',
     tags: [
       'Python', 'Matplotlib', 'CLI', 'Radar Plot', 'Visualization'
     ],
@@ -1667,7 +1691,7 @@ export const projects = [
     title: 'Guess_the_NUMBER – Interactive Guessing Game',
     description:
         'A simple HTML/JS number guessing game with timer, hints, retry flow, and animated celebration. Fun for quick browser play.',
-    image: '/public/images/project/guess_the_number.png',
+    image: '/public/images/projects/guess_the_number.png',
     tags: [
       'HTML', 'JavaScript', 'Game', 'Guessing', 'Fun'
     ],
@@ -1680,7 +1704,7 @@ export const projects = [
     title: 'Udemy_Clone – Responsive Course Platform UI',
     description:
         'A static HTML/CSS clone of Udemy’s course platform with responsive design, rating stars, and promo card layouts for educational apps.',
-    image: '/public/images/project/udemy_clone.png',
+    image: '/public/images/projects/udemy_clone.png',
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Education', 'Responsive'
     ],
@@ -1693,7 +1717,7 @@ export const projects = [
     title: 'Shopping_NOSTRA – Online Shopping Mockup',
     description:
         'A modern e-commerce static layout with section scroll, CTA highlights, and CSS refactoring. Designed for shop site prototypes.',
-    image: '/public/images/project/shopping_nostra.png',
+    image: '/public/images/projects/shopping_nostra.png',
     tags: [
       'HTML', 'CSS', 'E-commerce', 'Mockup', 'UI'
     ],
@@ -1706,7 +1730,7 @@ export const projects = [
     title: 'Skill_share_grow_final – Skill Exchange Platform',
     description:
         'A MERN skill sharing platform with payments, contributor badges, and admin dashboard metrics. Fosters learning and peer support.',
-    image: '/public/images/project/skill_share_grow_final.png',
+    image: '/public/images/projects/skill_share_grow_final.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Skill Sharing', 'Payments'
     ],
@@ -1719,7 +1743,7 @@ export const projects = [
     title: 'emotion-detector – Webcam-Based Mood Detection',
     description:
         'A browser app using face-api.js to detect emotions from webcam feeds. Features emoji feedback, real-time UI, and analytics chart.',
-    image: '/public/images/project/emotion_detector.png',
+    image: '/public/images/projects/emotion_detector.png',
     tags: [
       'JavaScript', 'HTML', 'face-api.js', 'Webcam', 'Emotion Detection'
     ],
@@ -1732,7 +1756,7 @@ export const projects = [
     title: 'Skill-Sharing-Growing – Community UI Demo',
     description:
         'A SCSS/HTML/JS UI for a learning community, featuring team profiles, join forms, and responsive design for mobile and desktop.',
-    image: '/public/images/project/skill_sharing_growing.png',
+    image: '/public/images/projects/skill_sharing_growing.png',
     tags: [
       'HTML', 'SCSS', 'JavaScript', 'Community', 'Responsive'
     ],
@@ -1745,7 +1769,7 @@ export const projects = [
     title: 'Tech_Dev_Club – Tech Club Platform',
     description:
         'A Next.js/Node.js web platform for Tech Dev Club with CMS-style admin dashboard, speaker/event management, and dynamic routes for club events.',
-    image: '/public/images/project/tech_dev_club.png',
+    image: '/public/images/projects/tech_dev_club.png',
     tags: [
       'Next.js', 'Node.js', 'Express', 'MongoDB', 'Club Platform', 'CMS'
     ],
@@ -1758,7 +1782,7 @@ export const projects = [
     title: 'TDC – Sub-site for Tech Dev Club',
     description:
         'A sub-site built on Next.js for Tech Dev Club. Shares core components, optimized routing, and easy deployment workflows for event microsites.',
-    image: '/public/images/project/tdc.png',
+    image: '/public/images/projects/tdc.png',
     tags: [
       'Next.js', 'Node.js', 'Express', 'MongoDB', 'Events', 'Microsite'
     ],
@@ -1771,7 +1795,7 @@ export const projects = [
     title: 'AI-Powered-Task-Optimizer – Smart Task Manager',
     description:
         'A Streamlit+LangChain-powered AI tool for personal task optimization, emotion analysis, and automatic OpenAI-powered summaries. Includes mood tracking and productivity insights.',
-    image: '/public/images/project/ai_powered_task_optimizer.png',
+    image: '/public/images/projects/ai_powered_task_optimizer.png',
     tags: [
       'Streamlit', 'Python', 'LangChain', 'FAISS', 'AI', 'Productivity'
     ],
@@ -1784,7 +1808,7 @@ export const projects = [
     title: 'MazeCrafter – Maze Generator & Editor',
     description:
         'A React/Node.js maze generator app with BFS/DFS pathfinding, editor for custom levels, and level sharing for browser gaming.',
-    image: '/public/images/project/mazecrafter.png',
+    image: '/public/images/projects/mazecrafter.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Maze', 'Pathfinding'
     ],
@@ -1797,7 +1821,7 @@ export const projects = [
     title: 'semac – Student Utility Platform',
     description:
         'A React/Node.js platform for student utilities with role-based panels, academic analytics, and ML-powered GPA prediction. Includes notes, timetables, and notifications.',
-    image: '/public/images/project/semac.png',
+    image: '/public/images/projects/semac.png',
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Education', 'Analytics'
     ],
@@ -1810,7 +1834,7 @@ export const projects = [
     title: 'Face-Recognition – Attendance via Face Scan',
     description:
         'A React/Node.js/SQLite attendance app using face recognition with liveness detection and scan history. Optimized for classroom security and ease of use.',
-    image: '/public/images/project/face_recognition.png',
+    image: '/public/images/projects/face_recognition.png',
     tags: [
       'React', 'Node.js', 'Express', 'SQLite', 'Face Recognition', 'Attendance'
     ],
@@ -1820,7 +1844,7 @@ export const projects = [
   }
 ];
 
-// Helper function to get unique categories from project
+// Helper function to get unique categories from projects
 export const getUniqueCategories = () => {
   const categories = new Set<string>();
   projects.forEach(project => {
@@ -1829,7 +1853,7 @@ export const getUniqueCategories = () => {
   return Array.from(categories).sort();
 };
 
-// Helper function to get project by category
+// Helper function to get projects by category
 export const getProjectsByCategory = (category: string) => {
   return projects.filter(project => project.categories.includes(category));
 };

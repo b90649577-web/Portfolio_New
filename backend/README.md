@@ -142,7 +142,7 @@ const chatWithBot = async (question) => {
 };
 
 // Usage
-chatWithBot("Tell me about Brajesh's project")
+chatWithBot("Tell me about Brajesh's projects")
   .then(answer => console.log(answer))
   .catch(error => console.error(error));
 ```

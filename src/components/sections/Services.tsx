@@ -153,7 +153,7 @@ const services: ServiceCategory[] = [
     subServices: [
       {
         title: 'College-Level Project Mentorship',
-        description: 'Provide structured, personalized guidance to students on academic or capstone project, from ideation to deployment.',
+        description: 'Provide structured, personalized guidance to students on academic or capstone projects, from ideation to deployment.',
       },
       {
         title: 'Workshops and Training',
