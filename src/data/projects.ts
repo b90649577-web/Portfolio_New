@@ -39,6 +39,113 @@ import reunite from '../assets/reunite.jpg';
 import ecoNirvana from '../assets/econirvana.jpg';
 import covidDetection from '../assets/covid_detection.jpg';
 import snapnote from '../assets/snapnote.jpg';
+import hacktoberFestC from '../assets/hacktober_fest_2023.jpg';
+import hacktoberFestJava from '../assets/hacktoberfest2023.jpg';
+import imgDetectBot from '../assets/image_detecting_telegram_bot.jpg';
+import rpaUiPath from '../assets/robotic_process_automation_uipath.jpg';
+import newsTraker from '../assets/newstraker.jpg';
+import atLearnHub from '../assets/at_learnhub.jpg';
+import googleSearchAutomation from '../assets/google_search_automation.jpg';
+import tracker from '../assets/tracker.jpg';
+import insightFacePytorch from '../assets/insightface_pytorch.jpg';
+import flexLayoutVite from '../assets/flexlayout_vite_example.jpg';
+import influencerSponsorPlatform from '../assets/influencer_sponsor_coordination_platform.jpg';
+import stockAlertNotifier from '../assets/stock_alert_notifier.jpg';
+import amazonAutomation from '../assets/amazon_automation.jpg';
+import toDoList from '../assets/to_do_list.jpg';
+import simpleCalculator from '../assets/simplecalcultor.jpg';
+import chotaBheem from '../assets/chota_bheem_adventure_game.jpg';
+import agroTechAI from '../assets/agro_tech_ai.jpg';
+import profileManagement from '../assets/profile_management.jpg';
+import amazonSalesDashboard from '../assets/amazon_sales_analysis_dashboard.jpg';
+import dataAnalysisDashboard from '../assets/data_analysis_dashboard.jpg';
+import fileManagementApp from '../assets/file_management_app.jpg';
+import kfcLanding from '../assets/kfc.jpg';
+import wordCounter from '../assets/word_counter.jpg';
+import numberGuessingGame from '../assets/number_guessing_game.jpg';
+import currencyConverter from '../assets/currency_converter.jpg';
+import adventureGame from '../assets/adventure_game.jpg';
+import myBank from '../assets/my_bank.jpg';
+import studentManagement from '../assets/student_management_system.jpg';
+import todoApp from '../assets/todo_app.jpg';
+import aatm from '../assets/aatm.jpg';
+import spotifyClone from '../assets/spotify_clone.jpg';
+import digitalClock from '../assets/digital_clock.jpg';
+import quizAppProject from '../assets/quiz_app_project.jpg';
+import themeColorSwitcher from '../assets/theme_color_switcher.jpg';
+import randomQuoteGenerator from '../assets/random_quote_generator.jpg';
+import emojiMoodTracker from '../assets/emoji_mood_tracker_app.jpg';
+import guessNumberGame from '../assets/guess_number_game.jpg';
+import jsConditionLoops from '../assets/condition_and_loops_in_js_assignment.jpg';
+import jsOperatorsPart2 from '../assets/operators_in_javascript_part_2.jpg';
+import introToJsAssignment from '../assets/introduction_to_javascript_assignment.jpg';
+import webpageCloneProject from '../assets/webpage_clone_project.jpg';
+import tailwindCssAssignment from '../assets/tailwind_css_assignment.jpg';
+import bootstrapAssignment from '../assets/bootstrap_assignment.jpg';
+import advancedCss from '../assets/advanced_css.jpg';
+import cssSelectorAssignment from '../assets/more_on_css_selector_assignment.jpg';
+import mediaQueryAssignment from '../assets/media_query_assignment.jpg';
+import cssGridAssignment from '../assets/css_grid_assignment.jpg';
+import flexboxInCss from '../assets/flexbox_in_css.jpg';
+import positionsInCss from '../assets/positions_in_css_assignment.jpg';
+import moreOnCssAssignment from '../assets/more_on_css_assignment.jpg';
+import startingWithCssAssignment from '../assets/starting_with_css_assignment.jpg';
+import seoAssignment from '../assets/seo_assignment.jpg';
+import modernHtmlAssignment from '../assets/modern_html_assignment.jpg';
+import mediaAndFormAssignment from '../assets/media_and_form_assignment.jpg';
+import gettingStartedWithHtml from '../assets/getting_started_with_html_assignment1.jpg';
+import coreHtmlAssignment from '../assets/core_html_assignment.jpg';
+import cervicalCancerPrediction from '../assets/cervical_cancer_prediction.jpg';
+import admissionPrediction from '../assets/admission_prediction.jpg';
+import airPassengersForecast from '../assets/air_passengers_time_series_forecasting.jpg';
+import fakeNewsPrediction from '../assets/fake_news_prediction.jpg';
+import lockScreen from '../assets/lock_screen.jpg';
+import regionGrowing from '../assets/region_growing.jpg';
+import imgSegmentationGrayscale from '../assets/image_analysis_for_segmentation_of_grayscale_image.jpg';
+import userManagement from '../assets/user_management.jpg';
+import quizWeb from '../assets/quiz_web.jpg';
+import reactMovieApp from '../assets/react_movieapp.jpg';
+import countryLocation from '../assets/country_location.jpg';
+import matlabFingerprint from '../assets/matlab_fingerprint.jpg';
+import dipHomeExam from '../assets/digital_image_processing_home_exam.jpg';
+import financialAnalysisRag from '../assets/financial_analysis_rag.jpg';
+import bifoga from '../assets/bifoga.jpg';
+import alienInvasionGame from '../assets/alien_invasion_game.jpg';
+import amazonClone from '../assets/amazon_clone.jpg';
+import whetherWeb from '../assets/whether_web.jpg';
+import reactTypescriptPro from '../assets/react_typescript_pro.jpg';
+import simpleCalculator2 from '../assets/simple_calculator.jpg';
+import contactDisplay from '../assets/contact_display.jpg';
+import kilimani from '../assets/kilimani.jpg';
+import eCommers from '../assets/e_commers.jpg';
+import pythonAI from '../assets/python_ai.jpg';
+import radarscope from '../assets/radarscope.jpg';
+import guessTheNumber from '../assets/guess_the_number.jpg';
+import udemyClone from '../assets/udemy_clone.jpg';
+import shoppingNostra from '../assets/shopping_nostra.jpg';
+import skillShareGrow from '../assets/skill_share_grow_final.jpg';
+import emotionDetector from '../assets/emotion_detector.jpg';
+import skillSharingGrowing from '../assets/skill_sharing_growing.jpg';
+import techDevClub from '../assets/tech_dev_club.jpg';
+import tdc from '../assets/tdc.jpg';
+import aiTaskOptimizer from '../assets/ai_powered_task_optimizer.jpg';
+import mazeCrafter from '../assets/mazecrafter.jpg';
+import capAndShare from '../assets/cap_and_share.jpg';
+import emmaMern from '../assets/emma_mernst.jpg';
+import quoteGenerator from '../assets/quote_generator_main.jpg';
+import videoQualityConversion from '../assets/video_quality_conversion_sd_to_hd_main.jpg';
+import coffeeShopDashboard from '../assets/coffee_shop_sales_dashboard_using_powerbi_main.jpg';
+import zigaoWang from '../assets/zigao_wang.jpg';
+import liveWeatherApp from '../assets/live_weather_app_main.jpg';
+import weatherApkMaster from '../assets/weather_apk_master.jpg';
+import heartDiseasePrediction from '../assets/heart_disease_prediction_master.jpg';
+import urlShortening from '../assets/url_shortening.jpg';
+import foodOrdering from '../assets/food_ordering.jpg';
+import hemu21 from '../assets/hemu21.jpg';
+import digibhem from '../assets/digibhem.jpg';
+import codsoft from '../assets/codsoft.jpg';
+import basilAssignment from '../assets/basil_assignment.jpg';
+import worldTimeApp from '../assets/world_time_app.jpg';
 
 const globalKeywords = [
   "Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "Go", "Golang", "Rust", "Kotlin", "Swift", "R", "Ruby", "PHP", "Dart", "Scala", "MATLAB", "Julia", "Haskell", "Perl", "Shell", "Bash", "PowerShell", "Fortran", "Objective-C", "Assembly", "F#", "Elixir", "COBOL", "VBA", "Solidity", "Groovy", "SAS", "PL/SQL", "SQL", "NoSQL", "GraphQL",
@@ -426,19 +533,6 @@ export const projects = [
     categories: ['Machine Learning', 'Experiment Platforms', 'Data Science']
   },
   {
-    id: '25',
-    title: 'Github-bot – GitHub Automation CLI',
-    description:
-        'A Python CLI bot leveraging the GitHub API to automate repository tasks: auto-labeling, PR comment assistance, and JSON-based workflows. Boosts contributor efficiency for maintainers.',
-    image: githubBot,
-    tags: [
-      'Python', 'GitHub API', 'CLI', 'Automation', 'Open Source'
-    ],
-    github: 'https://github.com/Brajesh31/Github-bot',
-    featured: false,
-    categories: ['Automation Tools', 'Open Source', 'CLI Utilities']
-  },
-  {
     id: '26',
     title: 'EcoAware – Environmental Impact Tracker',
     description:
@@ -638,7 +732,7 @@ export const projects = [
     title: 'Hacktober-Fest-2023 – C Practice & PR Automation',
     description:
         'An open-source Hacktoberfest hub with structured C programming challenges and automated CI for PR validation. Built for first-time contributors to learn C and GitHub.',
-    image: '/public/images/projects/hacktober_fest_2023.png',
+    image: hacktoberFestC ,
     tags: [
       'C', 'Open Source', 'Hacktoberfest', 'GitHub', 'PR Automation'
     ],
@@ -651,7 +745,7 @@ export const projects = [
     title: 'Hacktoberfest2023 – Java Coding Assignments',
     description:
         'A Java repository for Hacktoberfest featuring beginner-friendly assignments, OOP refactoring, and input validation. Helps learners practice Java and contribution workflow.',
-    image: '/public/images/projects/hacktoberfest2023.png',
+    image: hacktoberFestJava ,
     tags: [
       'Java', 'Open Source', 'Hacktoberfest', 'OOP', 'GitHub'
     ],
@@ -664,7 +758,7 @@ export const projects = [
     title: 'Image_detecting_telegram_bot – Telegram Image Scanner',
     description:
         'A Python Telegram bot using OpenCV to detect and label objects in uploaded images. Supports inline previews and delivers labeled results with confidence scores instantly.',
-    image: '/public/images/projects/image_detecting_telegram_bot.png',
+    image: imgDetectBot ,
     tags: [
       'Python', 'Telegram API', 'OpenCV', 'Image Detection', 'Bot'
     ],
@@ -677,7 +771,7 @@ export const projects = [
     title: 'Robotic-Process-Automation-UiPath – Document Automation',
     description:
         'A UiPath RPA solution for automating document parsing, error logging, and mail notifications. Reduces manual business workflow effort with scheduled and conditional triggers.',
-    image: '/public/images/projects/robotic_process_automation_uipath.png',
+    image: rpaUiPath ,
     tags: [
       'UiPath Studio', 'RPA', 'Automation', 'Document Processing'
     ],
@@ -690,7 +784,7 @@ export const projects = [
     title: 'NewsTraker – Custom News Dashboard',
     description:
         'A Node.js and MongoDB-powered news aggregator that uses NLP to surface trending topics. Customizable filters, category-based feeds, and sentiment sorting included.',
-    image: '/public/images/projects/newstraker.png',
+    image: newsTraker ,
     tags: [
       'Node.js', 'Express', 'MongoDB', 'NLP', 'News', 'Dashboard'
     ],
@@ -703,7 +797,7 @@ export const projects = [
     title: 'AT_LearnHub – Gamified Learning Management System',
     description:
         'A full-stack LMS platform with gamified progress tracking, badges, and analytics for student engagement. Built using React, Node.js, Express, and PostgreSQL.',
-    image: '/public/images/projects/at_learnhub.png',
+    image: atLearnHub ,
     tags: [
       'React', 'Node.js', 'Express', 'PostgreSQL', 'LMS', 'Gamification'
     ],
@@ -716,7 +810,7 @@ export const projects = [
     title: 'Google_search_automation – Automated Search Scraper',
     description:
         'A Python CLI tool that scrapes Google search results into CSV for rapid research and SEO analysis. Supports proxy rotation, batch queries, and robust export.',
-    image: '/public/images/projects/google_search_automation.png',
+    image: googleSearchAutomation ,
     tags: [
       'Python', 'Selenium', 'CLI', 'CSV', 'Web Scraping'
     ],
@@ -729,7 +823,7 @@ export const projects = [
     title: 'tracker – Static Timeline Tracker',
     description:
         'A responsive HTML/CSS tool for visualizing timelines and progress. Features clean CSS grid layout, modern UI, and mobile support.',
-    image: '/public/images/projects/tracker.png',
+    image: tracker ,
     tags: [
       'HTML', 'CSS', 'Timeline', 'Responsive Design'
     ],
@@ -742,7 +836,7 @@ export const projects = [
     title: 'InsightFace_Pytorch – Face Detection Notebook',
     description:
         'A PyTorch/Jupyter notebook pipeline for face detection and recognition, with dataset annotation and liveness detection modules for robust security.',
-    image: '/public/images/projects/insightface_pytorch.png',
+    image:insightFacePytorch ,
     tags: [
       'Python', 'PyTorch', 'Jupyter', 'Face Detection', 'Liveness'
     ],
@@ -755,7 +849,7 @@ export const projects = [
     title: 'flexlayout-vite-example – UI Layout Engine Demo',
     description:
         'A React/Vite-based demo for flexible drag-resizable layouts, using Snap/FlexLayout libraries. Enables snapping, resizing, and state saving for component-rich UIs.',
-    image: '/public/images/projects/flexlayout_vite_example.png',
+    image: flexLayoutVite ,
     tags: [
       'TypeScript', 'React', 'Vite', 'UI Layout', 'FlexLayout', 'Snap'
     ],
@@ -768,7 +862,7 @@ export const projects = [
     title: 'Influencer-Sponsor-Coordination-Platform – Creator/Brand Matchmaking',
     description:
         'A full-stack MERN application connecting influencers with sponsors, featuring deal dashboards, analytics, and real-time coordination. Empowers creators to monetize and brands to discover relevant talent.',
-    image: '/public/images/projects/influencer_sponsor_coordination_platform.png',
+    image: influencerSponsorPlatform,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Creator Economy', 'Brand Analytics'
     ],
@@ -781,7 +875,7 @@ export const projects = [
     title: 'Stock_Alert_Notifier – Multi-Stock Price Alert Tool',
     description:
         'A Python CLI utility that monitors multiple stock tickers and sends notifications via Telegram when thresholds are met. Multi-threaded for fast, concurrent alerts.',
-    image: '/public/images/projects/stock_alert_notifier.png',
+    image: stockAlertNotifier ,
     tags: [
       'Python', 'CLI', 'Telegram API', 'Finance', 'Stock Notifier'
     ],
@@ -794,7 +888,7 @@ export const projects = [
     title: 'Amazon-Automation – E-commerce Scraper & Price Watcher',
     description:
         'A Selenium-based Python tool for tracking Amazon product prices and stock. Supports multi-ASIN, smart retries, and e-mail alerts for instant deal monitoring.',
-    image: '/public/images/projects/amazon_automation.png',
+    image: amazonAutomation ,
     tags: [
       'Python', 'Selenium', 'E-commerce', 'Automation', 'Email Alerts'
     ],
@@ -807,7 +901,7 @@ export const projects = [
     title: 'To-Do-List – Interactive Task Manager',
     description:
         'A simple, drag-and-drop to-do app in vanilla JS, with persistent LocalStorage, sorting, themes, and real-time filtering for easy productivity.',
-    image: '/public/images/projects/to_do_list.png',
+    image: toDoList ,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'LocalStorage', 'Productivity'
     ],
@@ -820,7 +914,7 @@ export const projects = [
     title: 'SimpleCalcultor – Web-Based Calculator',
     description:
         'A clean, modern calculator app using HTML/CSS and JS. Supports keyboard input, multiple themes, and advanced arithmetic functions for smooth user experience.',
-    image: '/public/images/projects/simplecalcultor.png',
+    image: simpleCalculator ,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'Calculator', 'UI'
     ],
@@ -833,7 +927,7 @@ export const projects = [
     title: 'Chota-Bheem-Adventure-game – 2D Web Game',
     description:
         'A browser-based 2D adventure game featuring Chota Bheem, with enemy AI, level transitions, and scoring. Built using JavaScript Canvas for fun, interactive gameplay.',
-    image: '/public/images/projects/chota_bheem_adventure_game.png',
+    image: chotaBheem ,
     tags: [
       'JavaScript', 'Canvas', 'Game', '2D', 'AI'
     ],
@@ -846,7 +940,7 @@ export const projects = [
     title: 'Agro_tech_AI – Smart Farm Dashboard',
     description:
         'A MERN stack web dashboard integrating IoT sensor data for real-time farm management. Features weather-based AI alerts, sponsor feedback modules, and beautiful charts.',
-    image: '/public/images/projects/agro_tech_ai.png',
+    image: agroTechAI ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'IoT', 'Agriculture'
     ],
@@ -859,7 +953,7 @@ export const projects = [
     title: 'profile-management – User Data Admin Portal',
     description:
         'A React/Node.js/MongoDB portal for user CRUD, bulk CSV import, enhanced form validation, and role-based dashboards. Designed for robust data management and admin productivity.',
-    image: '/public/images/projects/profile_management.png',
+    image: profileManagement ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'CRUD', 'CSV'
     ],
@@ -872,7 +966,7 @@ export const projects = [
     title: 'Amazon-Sales-Analysis-Dashboard – Seller Analytics Tool',
     description:
         'A React/Node.js dashboard with Chart.js and PostgreSQL for Amazon seller analytics. Includes regional maps, email summaries, and multi-dimensional filters.',
-    image: '/public/images/projects/amazon_sales_analysis_dashboard.png',
+    image: amazonSalesDashboard ,
     tags: [
       'React', 'Node.js', 'Chart.js', 'PostgreSQL', 'Analytics', 'Amazon'
     ],
@@ -885,7 +979,7 @@ export const projects = [
     title: 'Data-Analysis-Dashboard – Real-Time Analytics Viewer',
     description:
         'A Python/Dash/Plotly app for real-time data analytics with upload, PDF/Excel export, and interactive dashboards. Ideal for business and education insights.',
-    image: '/public/images/projects/data_analysis_dashboard.png',
+    image: dataAnalysisDashboard ,
     tags: [
       'Python', 'Plotly', 'Dash', 'CSV', 'Analytics', 'Dashboard'
     ],
@@ -898,7 +992,7 @@ export const projects = [
     title: 'File-Management-App – Cloud Storage UI',
     description:
         'A Flask-based cloud file manager with JWT authentication, drag-drop multi-upload, and SQLite backend. Designed for secure, user-friendly cloud storage.',
-    image: '/public/images/projects/file_management_app.png',
+    image: fileManagementApp ,
     tags: [
       'Python', 'Flask', 'SQLite', 'Cloud Storage', 'JWT', 'File Management'
     ],
@@ -911,7 +1005,7 @@ export const projects = [
     title: 'kfc – Responsive KFC Landing Page Clone',
     description:
         'A static KFC landing page clone with optimized image delivery, parallax effects, and scroll animations, built in pure HTML/CSS.',
-    image: '/public/images/projects/kfc.png',
+    image: kfcLanding ,
     tags: [
       'HTML', 'CSS', 'Parallax', 'Landing Page', 'Clone'
     ],
@@ -924,7 +1018,7 @@ export const projects = [
     title: 'word_counter – Live Text Stats Tool',
     description:
         'A React and TypeScript-powered word counter for real-time character and word stats, export as reports, and clipboard support.',
-    image: '/public/images/projects/word_counter.png',
+    image: wordCounter ,
     tags: [
       'TypeScript', 'React', 'Word Counter', 'Export', 'Text Analytics'
     ],
@@ -937,7 +1031,7 @@ export const projects = [
     title: 'Number_guessing_game – Console Guess Game',
     description:
         'A classic JavaScript number guessing game with improved UI, timer, and scoring system. Simple, fun, and ideal for practice.',
-    image: '/public/images/projects/number_guessing_game.png',
+    image: numberGuessingGame ,
     tags: [
       'JavaScript', 'HTML', 'Game', 'Number Guess', 'UI'
     ],
@@ -950,7 +1044,7 @@ export const projects = [
     title: 'currency_converter – Real-Time Currency Rate App',
     description:
         'A React/TypeScript currency converter with live API rates, dark mode, caching, and transaction history. Designed for global travelers and finance tracking.',
-    image: '/public/images/projects/currency_converter.png',
+    image: currencyConverter,
     tags: [
       'TypeScript', 'React', 'Currency', 'Finance', 'API'
     ],
@@ -963,7 +1057,7 @@ export const projects = [
     title: 'Adventure-Game – Text RPG Engine',
     description:
         'A JavaScript/HTML5 Canvas-powered text RPG game engine with dynamic scene loading, branching storylines, and local saves for immersive browser play.',
-    image: '/public/images/projects/adventure_game.png',
+    image: adventureGame ,
     tags: [
       'JavaScript', 'HTML5 Canvas', 'Game', 'RPG', 'Story'
     ],
@@ -976,7 +1070,7 @@ export const projects = [
     title: 'My_Bank – Mini Banking Simulation',
     description:
         'A Node.js/MongoDB banking simulation with encrypted localStorage, transaction history, and interactive UI for learning basic fintech concepts.',
-    image: '/public/images/projects/my_bank.png',
+    image: myBank ,
     tags: [
       'HTML', 'JavaScript', 'Node.js', 'MongoDB', 'Banking'
     ],
@@ -989,7 +1083,7 @@ export const projects = [
     title: 'student_management_system – Admin Portal for Students',
     description:
         'A React/Node.js/MongoDB admin panel for student management. Features CRUD, dashboards, analytics, and secure role-based access.',
-    image: '/public/images/projects/student_management_system.png',
+    image: studentManagement ,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Dashboard', 'Students'
     ],
@@ -1002,7 +1096,7 @@ export const projects = [
     title: 'Todo_App – Essential To-Do App',
     description:
         'A fast, simple JavaScript to-do list app with localStorage, check/uncheck logic, category sorting, and theme switcher.',
-    image: '/public/images/projects/todo_app.png',
+    image: todoApp ,
     tags: [
       'JavaScript', 'HTML', 'To-Do', 'LocalStorage', 'Theme'
     ],
@@ -1015,7 +1109,7 @@ export const projects = [
     title: 'AATM – Attendance App with Biometric Fallback',
     description:
         'A React Native/Firebase attendance tracking app supporting offline sync, instant alerts, and biometric fallback for robust student recordkeeping.',
-    image: '/public/images/projects/aatm.png',
+    image: aatm ,
     tags: [
       'React Native', 'Firebase', 'Node.js', 'Firestore', 'Attendance', 'Biometrics'
     ],
@@ -1028,7 +1122,7 @@ export const projects = [
     title: 'spotify-clone – Spotify UI Replica',
     description:
         'A responsive Spotify homepage UI clone built in HTML and CSS. Features dark theme, interactive audio cards, and pixel-perfect design for music fans.',
-    image: '/public/images/projects/spotify_clone.png',
+    image: spotifyClone ,
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Spotify', 'Dark Theme'
     ],
@@ -1041,7 +1135,7 @@ export const projects = [
     title: 'Digital-Clock – Web Clock with Themes',
     description:
         'A live digital clock app using HTML, CSS, and JS. Includes multiple timezone support, theme toggle, and font customization for a stylish personal dashboard.',
-    image: '/public/images/projects/digital_clock.png',
+    image: digitalClock ,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'Clock', 'Theme'
     ],
@@ -1054,7 +1148,7 @@ export const projects = [
     title: 'QuizAppProject – Web Quiz Game',
     description:
         'A fully interactive quiz game with a randomized question pool, timer logic, and real-time scoring. Built with HTML, CSS, and JS for learning and fun.',
-    image: '/public/images/projects/quiz_app_project.png',
+    image: quizAppProject ,
     tags: [
       'HTML', 'CSS', 'JavaScript', 'Quiz', 'Game'
     ],
@@ -1067,7 +1161,7 @@ export const projects = [
     title: 'Theme-color-switcher – Customizable Theme App',
     description:
         'A simple JS app for toggling themes and building custom color palettes. Persists user preferences via localStorage for a unique user experience.',
-    image: '/public/images/projects/theme_color_switcher.png',
+    image: themeColorSwitcher ,
     tags: [
       'JavaScript', 'HTML', 'Theme', 'Color Palette', 'UI'
     ],
@@ -1080,7 +1174,7 @@ export const projects = [
     title: 'Random-Quote-Generator – Daily Quotes App',
     description:
         'Fetches and displays random quotes, supports Twitter sharing, and lets users filter by category or copy to clipboard. Built with vanilla JS and open quote APIs.',
-    image: '/public/images/projects/random_quote_generator.png',
+    image: randomQuoteGenerator ,
     tags: [
       'JavaScript', 'HTML', 'Quotes', 'API', 'Sharing'
     ],
@@ -1093,7 +1187,7 @@ export const projects = [
     title: 'Emoji-Mood-Tracker-app – Daily Emotion Analytics',
     description:
         'A browser-based mood tracking app using IndexedDB for storage. Tracks daily emotions with emojis and shows analytics graphs; export logs as CSV.',
-    image: '/public/images/projects/emoji_mood_tracker_app.png',
+    image: emojiMoodTracker ,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'IndexedDB', 'Mood Tracker'
     ],
@@ -1106,7 +1200,7 @@ export const projects = [
     title: 'Guess-Number-Game – Animated Guessing Game',
     description:
         'A simple number guessing game in JS/HTML with animated celebrations, hints, and improved logic. Perfect for beginners and browser fun.',
-    image: '/public/images/projects/guess_number_game.png',
+    image: guessNumberGame ,
     tags: [
       'JavaScript', 'HTML', 'Game', 'Animation', 'Guessing'
     ],
@@ -1119,7 +1213,7 @@ export const projects = [
     title: 'Condition-and-Loops-in-JS-Assignment – Live Practice Sandbox',
     description:
         'A JS practice app with real-time code testing for conditions and loops. Includes live examples and console output for hands-on learning.',
-    image: '/public/images/projects/condition_and_loops_in_js_assignment.png',
+    image: jsConditionLoops ,
     tags: [
       'JavaScript', 'HTML', 'Live Practice', 'Learning', 'Console'
     ],
@@ -1132,7 +1226,7 @@ export const projects = [
     title: 'Operators-in-JavaScript-Part_2 – JS Operators Demo',
     description:
         'Interactive project to demo JS operators with enhanced UI. Users can trigger operations with buttons and see instant results.',
-    image: '/public/images/projects/operators_in_javascript_part_2.png',
+    image: jsOperatorsPart2 ,
     tags: [
       'JavaScript', 'HTML', 'Operators', 'Demo', 'UI'
     ],
@@ -1145,7 +1239,7 @@ export const projects = [
     title: 'Introduction-to-JavaScript-Assignment – Beginner JS Lessons',
     description:
         'A project to help absolute beginners learn JS. Collapsible sections, code sandbox integration, and simple examples for easy understanding.',
-    image: '/public/images/projects/introduction_to_javascript_assignment.png',
+    image: introToJsAssignment ,
     tags: [
       'JavaScript', 'HTML', 'Learning', 'Beginners', 'Code Sandbox'
     ],
@@ -1158,7 +1252,7 @@ export const projects = [
     title: 'Webpage-Clone-Project – Pixel-Perfect UI Clone',
     description:
         'A clone of popular web UIs using pure HTML and CSS. Migrates classic Flex layouts to CSS Grid for improved responsiveness.',
-    image: '/public/images/projects/webpage_clone_project.png',
+    image: webpageCloneProject ,
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Flexbox', 'Grid'
     ],
@@ -1171,7 +1265,7 @@ export const projects = [
     title: 'Tailwind-CSS-Assignment – Tailwind Practice Page',
     description:
         'A hands-on page to practice Tailwind CSS spacing, theming, and responsive utilities. Features dark/light toggle and real-world layout examples.',
-    image: '/public/images/projects/tailwind_css_assignment.png',
+    image: tailwindCssAssignment ,
     tags: [
       'HTML', 'Tailwind CSS', 'UI Practice', 'Dark Mode', 'Responsive'
     ],
@@ -1184,7 +1278,7 @@ export const projects = [
     title: 'Bootstrap-Assignment – Modern Bootstrap Demo',
     description:
         'A responsive Bootstrap 5 project featuring navbar, cards, and classic layout. Upgraded from v4, now fully mobile-ready and visually polished.',
-    image: '/public/images/projects/bootstrap_assignment.png',
+    image: bootstrapAssignment ,
     tags: [
       'HTML', 'Bootstrap', 'CSS', 'Responsive', 'UI Demo'
     ],
@@ -1197,7 +1291,8 @@ export const projects = [
     title: 'Advanced-CSS – Creative CSS Layout Showcase',
     description:
         'A collection of advanced CSS techniques including variable-driven theming, transitions, and complex layout demos. Features mixins for maintainable styles.',
-    image: '/public/images/projects/advanced_css.png',
+    image: advancedCss
+    ,
     tags: [
       'CSS', 'HTML', 'Advanced', 'Theming', 'Transitions'
     ],
