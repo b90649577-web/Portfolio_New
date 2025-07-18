@@ -127,7 +127,6 @@ import skillShareGrow from '../assets/skill_share_grow_final.jpg';
 import emotionDetector from '../assets/emotion_detector.jpg';
 import skillSharingGrowing from '../assets/skill_sharing_growing.jpg';
 import techDevClub from '../assets/tech_dev_club.jpg';
-import tdc from '../assets/tdc.jpg';
 import aiTaskOptimizer from '../assets/ai_powered_task_optimizer.jpg';
 import mazeCrafter from '../assets/mazecrafter.jpg';
 import capAndShare from '../assets/cap_and_share.jpg';
@@ -1331,7 +1330,7 @@ export const projects = [
     title: 'CSS-Grid-Assignment – Modern Grid Layout Task',
     description:
         'Demonstrates CSS Grid concepts, named areas, auto-fill logic, and responsive redesigns. Ideal for learning grid-based design.',
-    image: '/public/images/projects/css_grid_assignment.png',
+    image: cssGridAssignment,
     tags: [
       'CSS', 'HTML', 'Grid', 'Responsive', 'Design'
     ],
@@ -1344,7 +1343,7 @@ export const projects = [
     title: 'Flexbox-in-CSS – Flexbox Playground',
     description:
         'A CSS playground to test multi-axis alignment, flex debugger overlays, and layout prototypes using Flexbox.',
-    image: '/public/images/projects/flexbox_in_css.png',
+    image: flexboxInCss ,
     tags: [
       'CSS', 'HTML', 'Flexbox', 'Playground', 'UI'
     ],
@@ -1357,7 +1356,7 @@ export const projects = [
     title: 'Positions-in-CSS-Assignment – Positioning Demo',
     description:
         'An assignment exploring CSS positioning with sticky navbars, overlays, and commented code. Perfect for learning z-index and stacking contexts.',
-    image: '/public/images/projects/positions_in_css_assignment.png',
+    image: positionsInCss,
     tags: [
       'CSS', 'HTML', 'Positioning', 'Sticky', 'Overlay'
     ],
@@ -1370,7 +1369,7 @@ export const projects = [
     title: 'More-on-CSS-Assignment – Layering & Z-Index Showcase',
     description:
         'A project focused on advanced CSS layering, z-index stacking, and layout improvements for visually complex web apps.',
-    image: '/public/images/projects/more_on_css_assignment.png',
+    image: moreOnCssAssignment,
     tags: [
       'CSS', 'HTML', 'Z-Index', 'Layering', 'UI'
     ],
@@ -1383,7 +1382,7 @@ export const projects = [
     title: 'Starting-with-CSS-Assignment – CSS Basics Practice',
     description:
         'A hands-on starter assignment for CSS beginners. Features live code samples, mobile layout refinement, and step-by-step guides to common styling techniques.',
-    image: '/public/images/projects/starting_with_css_assignment.png',
+    image: startingWithCssAssignment,
     tags: [
       'CSS', 'HTML', 'Beginner', 'Mobile Layout', 'Styling'
     ],
@@ -1396,7 +1395,7 @@ export const projects = [
     title: 'SEO-Assignment – Meta Tags & Open Graph Demo',
     description:
         'A demonstration project focused on improving SEO for static websites. Teaches meta tags, Open Graph data, and structured markup for maximum discoverability.',
-    image: '/public/images/projects/seo_assignment.png',
+    image: seoAssignment,
     tags: [
       'HTML', 'CSS', 'SEO', 'Meta Tags', 'Open Graph'
     ],
@@ -1409,7 +1408,7 @@ export const projects = [
     title: 'Modern-HTML-Assignment – Semantic HTML5 Tutorial',
     description:
         'An HTML5 practice project introducing semantic tags, ARIA roles, and accessibility tips for modern, standards-compliant web development.',
-    image: '/public/images/projects/modern_html_assignment.png',
+    image: modernHtmlAssignment,
     tags: [
       'HTML5', 'Semantic', 'Accessibility', 'ARIA', 'Web Standards'
     ],
@@ -1422,7 +1421,7 @@ export const projects = [
     title: 'Media-and-form-Assignment – Responsive Media & Form Demo',
     description:
         'A hands-on project for building accessible, responsive media and form components. Includes floating labels, enhanced validation, and custom tooltips.',
-    image: '/public/images/projects/media_and_form_assignment.png',
+    image: mediaAndFormAssignment,
     tags: [
       'HTML', 'CSS', 'Responsive', 'Forms', 'Accessibility'
     ],
@@ -1435,7 +1434,7 @@ export const projects = [
     title: 'getting-started-with-html-assignment1 – HTML Basics',
     description:
         'A beginner-focused HTML assignment covering structure, boilerplate, and tag organization into logical sections for rapid learning.',
-    image: '/public/images/projects/getting_started_with_html_assignment1.png',
+    image: gettingStartedWithHtml,
     tags: [
       'HTML', 'Beginner', 'Boilerplate', 'Tags', 'Learning'
     ],
@@ -1448,7 +1447,7 @@ export const projects = [
     title: 'Core-HTML-Assignment – HTML Embeds & Examples',
     description:
         'A hands-on HTML exercise with commented examples, iframe demos, and modern structure. Ideal for grasping embed elements and standard markup.',
-    image: '/public/images/projects/core_html_assignment.png',
+    image: coreHtmlAssignment,
     tags: [
       'HTML', 'Iframe', 'Embeds', 'Examples', 'Learning'
     ],
@@ -1461,7 +1460,7 @@ export const projects = [
     title: 'Cervical-Cancer-Prediction – ML Risk Predictor',
     description:
         'A Flask/scikit-learn app to predict cervical cancer risk based on user data. Features a chart-based results dashboard and model accuracy tuning.',
-    image: '/public/images/projects/cervical_cancer_prediction.png',
+    image: cervicalCancerPrediction,
     tags: [
       'Python', 'Flask', 'scikit-learn', 'ML', 'Healthcare'
     ],
@@ -1474,7 +1473,7 @@ export const projects = [
     title: 'Admission-Prediction – University Admit Predictor',
     description:
         'A Flask-based machine learning tool that predicts university admission chances with feature scaling and graphical score outputs.',
-    image: '/public/images/projects/admission_prediction.png',
+    image: admissionPrediction,
     tags: [
       'Python', 'Flask', 'scikit-learn', 'University', 'Prediction'
     ],
@@ -1487,7 +1486,7 @@ export const projects = [
     title: 'Air-Passengers-Time-series-forecasting – Passenger Growth Forecaster',
     description:
         'A Jupyter/ARIMA-based tool for forecasting air passenger growth. Features automated parameter tuning and interactive charts for time series analysis.',
-    image: '/public/images/projects/air_passengers_time_series_forecasting.png',
+    image: airPassengersForecast,
     tags: [
       'Python', 'Jupyter', 'ARIMA', 'Time Series', 'Forecasting'
     ],
@@ -1500,7 +1499,7 @@ export const projects = [
     title: 'Fake-News-Prediction – News Classifier Dashboard',
     description:
         'A Flask/SVM/TF-IDF app to classify news articles as real or fake. Delivers visual stats and high-accuracy dashboards for easy verification.',
-    image: '/public/images/projects/fake_news_prediction.png',
+    image:fakeNewsPrediction,
     tags: [
       'Python', 'Flask', 'SVM', 'TF-IDF', 'News', 'Classifier'
     ],
@@ -1513,7 +1512,7 @@ export const projects = [
     title: 'lock-screen – Java Swing Desktop Lock',
     description:
         'A Java Swing desktop lock simulator with a custom UI and random keypad generator. Designed for desktop app security learning.',
-    image: '/public/images/projects/lock_screen.png',
+    image: lockScreen,
     tags: [
       'Java', 'Swing', 'Desktop', 'Lock Screen', 'UI'
     ],
@@ -1526,7 +1525,7 @@ export const projects = [
     title: 'Region-Growing – OpenCV Image Segmentation',
     description:
         'A Python/OpenCV GUI tool for region growing segmentation of grayscale images. Includes plot viewer and optimized seed selection logic.',
-    image: '/public/images/projects/region_growing.png',
+    image: regionGrowing,
     tags: [
       'Python', 'OpenCV', 'Segmentation', 'Image Processing', 'GUI'
     ],
@@ -1539,7 +1538,7 @@ export const projects = [
     title: 'image-analysis-for-segmentation-of-grayscale-image – DIP Lab Notebook',
     description:
         'A Jupyter/OpenCV notebook for advanced image segmentation. Covers edge detection, filters, and threshold visualizations for grayscale images.',
-    image: '/public/images/projects/image_analysis_for_segmentation_of_grayscale_image.png',
+    image: imgSegmentationGrayscale,
     tags: [
       'Python', 'OpenCV', 'Jupyter', 'Image Segmentation', 'Edge Detection'
     ],
@@ -1552,7 +1551,7 @@ export const projects = [
     title: 'USER_MANAGEMENt – LocalStorage User Form Manager',
     description:
         'A vanilla JS user manager with password validation, table-based listings, and edit/delete options. Stores all data in LocalStorage for quick access.',
-    image: '/public/images/projects/user_management.png',
+    image: userManagement,
     tags: [
       'JavaScript', 'HTML', 'LocalStorage', 'User Management', 'CRUD'
     ],
@@ -1565,7 +1564,7 @@ export const projects = [
     title: 'QUIZ_WEB – Dynamic Web Quiz Platform',
     description:
         'A Node.js/EJS quiz platform supporting timer-based quizzes, dynamic question pools, and result analytics. Uses MongoDB for data persistence.',
-    image: '/public/images/projects/quiz_web.png',
+    image: quizWeb,
     tags: [
       'Node.js', 'EJS', 'Express', 'MongoDB', 'Quiz', 'Analytics'
     ],
@@ -1578,7 +1577,7 @@ export const projects = [
     title: 'React_MOVIEAPP – Movie Listing SPA',
     description:
         'A single-page React app consuming TMDB API to list, filter, and watchlist movies. Features lazy loading, genre filter, and stylish modals.',
-    image: '/public/images/projects/react_movieapp.png',
+    image: reactMovieApp,
     tags: [
       'React', 'Node.js', 'Axios', 'TMDB API', 'Movies'
     ],
@@ -1591,7 +1590,7 @@ export const projects = [
     title: 'Country_Location – Interactive World Map',
     description:
         'A Leaflet.js-powered JS app that maps countries with cluster markers, filters, and REST API-based info popups for geographical exploration.',
-    image: '/public/images/projects/country_location.png',
+    image: countryLocation,
     tags: [
       'JavaScript', 'Leaflet.js', 'REST API', 'Maps', 'Geography'
     ],
@@ -1604,7 +1603,7 @@ export const projects = [
     title: 'MATLAB_FingerPrint – Fingerprint Comparison GUI',
     description:
         'A MATLAB-based desktop GUI for fingerprint comparison, with advanced ridge-thinning, noise reduction, and custom interface improvements.',
-    image: '/public/images/projects/matlab_fingerprint.png',
+    image: matlabFingerprint,
     tags: [
       'MATLAB', 'GUI', 'Fingerprint', 'Biometrics', 'Image Processing'
     ],
@@ -1617,7 +1616,7 @@ export const projects = [
     title: 'digital-image-processing-home-exam – DIP Notebook Solutions',
     description:
         'A Jupyter/OpenCV notebook for digital image processing coursework: histogram equalization, thresholding, and visual explanations for each technique.',
-    image: '/public/images/projects/digital_image_processing_home_exam.png',
+    image: dipHomeExam,
     tags: [
       'Python', 'OpenCV', 'Jupyter', 'Image Processing', 'DIP'
     ],
@@ -1630,7 +1629,7 @@ export const projects = [
     title: 'financial-analysis-rag – RAG Chatbot for Finance PDFs',
     description:
         'A Python/FastAPI/LangChain app to chat with and analyze finance PDFs. Features file parsing, index refresh, and a conversational analytics UI.',
-    image: '/public/images/projects/financial_analysis_rag.png',
+    image: financialAnalysisRag,
     tags: [
       'Python', 'FastAPI', 'LangChain', 'FAISS', 'Finance', 'Chatbot'
     ],
@@ -1643,7 +1642,7 @@ export const projects = [
     title: 'Bifoga – Lightweight Notes App',
     description:
         'A minimalist HTML/JS notes app with Markdown support, drag-to-reorder, and export to PDF. Stores data in LocalStorage for instant access and privacy.',
-    image: '/public/images/projects/bifoga.png',
+    image: bifoga,
     tags: [
       'HTML', 'JavaScript', 'LocalStorage', 'Markdown', 'Notes', 'PDF Export'
     ],
@@ -1656,7 +1655,7 @@ export const projects = [
     title: 'alien-invasion-game – Classic Arcade Game',
     description:
         'A Python/Pygame remake of the classic Alien Invasion arcade game, featuring scoring, boss battles, and explosion animations for a retro gaming experience.',
-    image: '/public/images/projects/alien_invasion_game.png',
+    image: alienInvasionGame,
     tags: [
       'Python', 'Pygame', 'Arcade Game', 'Animation', 'Retro'
     ],
@@ -1669,7 +1668,7 @@ export const projects = [
     title: 'Amazon_Clone – UI Clone of Amazon Store',
     description:
         'A static clone of the Amazon e-commerce site using HTML and CSS, featuring responsive grids, redesigned header, and product showcase cards.',
-    image: '/public/images/projects/amazon_clone.png',
+    image: amazonClone,
     tags: [
       'HTML', 'CSS', 'UI Clone', 'E-commerce', 'Amazon'
     ],
@@ -1682,7 +1681,7 @@ export const projects = [
     title: 'Whether-web – Weather Data App',
     description:
         'A weather dashboard that fetches real-time data from OpenWeatherMap API. Supports caching, location-based forecast, and visual icons.',
-    image: '/public/images/projects/whether_web.png',
+    image: whetherWeb,
     tags: [
       'JavaScript', 'HTML', 'CSS', 'OpenWeatherMap API', 'Weather', 'Dashboard'
     ],
@@ -1695,7 +1694,7 @@ export const projects = [
     title: 'React-Typescript-Pro – Production Boilerplate',
     description:
         'A robust React+TypeScript starter with Prettier, ESLint, Storybook, and reusable form components. Built for scalable and maintainable SPAs.',
-    image: '/public/images/projects/react_typescript_pro.png',
+    image: reactTypescriptPro,
     tags: [
       'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Storybook', 'Boilerplate'
     ],
@@ -1708,7 +1707,7 @@ export const projects = [
     title: 'Simple_Calculator – Web Calculator',
     description:
         'A polished HTML/JS calculator with support for keyboard shortcuts, percent operator, and modern visual styling. Designed for smooth, fast calculations.',
-    image: '/public/images/projects/simple_calculator.png',
+    image:  simpleCalculator2,
     tags: [
       'HTML', 'JavaScript', 'Calculator', 'Frontend', 'UI'
     ],
@@ -1721,7 +1720,7 @@ export const projects = [
     title: 'Contact-Display – Responsive Contact Cards',
     description:
         'A simple HTML/CSS project displaying contact info as responsive cards with grid layout and hover transitions. Useful for business websites or portfolios.',
-    image: '/public/images/projects/contact_display.png',
+    image: contactDisplay,
     tags: [
       'HTML', 'CSS', 'Contact Cards', 'Responsive Design', 'UI'
     ],
@@ -1734,7 +1733,7 @@ export const projects = [
     title: 'Kilimani – Hotel Landing Page',
     description:
         'A visually rich HTML/CSS hotel landing page with animated room slider, responsive booking CTA, and smooth scroll effects for hospitality businesses.',
-    image: '/public/images/projects/kilimani.png',
+    image: kilimani,
     tags: [
       'HTML', 'CSS', 'Landing Page', 'Hotel', 'Animation'
     ],
@@ -1747,7 +1746,7 @@ export const projects = [
     title: 'E_Commers – E-commerce Product Layout',
     description:
         'A static HTML/CSS e-commerce layout with grid-based product showcase and UI enhancements. Fast-loading and ideal for shop mockups.',
-    image: '/public/images/projects/e_commers.png',
+    image: eCommers,
     tags: [
       'HTML', 'CSS', 'E-commerce', 'Product Grid', 'Mockup'
     ],
@@ -1760,7 +1759,7 @@ export const projects = [
     title: 'Python-AI – ML Model Testing UI',
     description:
         'A Flask-based UI for testing various machine learning models and endpoints, including HuggingFace API demos. Built for fast, hands-on ML prototyping.',
-    image: '/public/images/projects/python_ai.png',
+    image: pythonAI,
     tags: [
       'Python', 'Flask', 'ML Models', 'API', 'Prototyping'
     ],
@@ -1773,7 +1772,7 @@ export const projects = [
     title: 'RadarScope – Radar Plot CLI Tool',
     description:
         'A Python/Matplotlib CLI tool to generate radar plots, heatmaps, and density analysis from data files. Great for quick visual analytics.',
-    image: '/public/images/projects/radarscope.png',
+    image: radarscope,
     tags: [
       'Python', 'Matplotlib', 'CLI', 'Radar Plot', 'Visualization'
     ],
@@ -1786,7 +1785,7 @@ export const projects = [
     title: 'Guess_the_NUMBER – Interactive Guessing Game',
     description:
         'A simple HTML/JS number guessing game with timer, hints, retry flow, and animated celebration. Fun for quick browser play.',
-    image: '/public/images/projects/guess_the_number.png',
+    image: guessTheNumber,
     tags: [
       'HTML', 'JavaScript', 'Game', 'Guessing', 'Fun'
     ],
@@ -1799,7 +1798,7 @@ export const projects = [
     title: 'Udemy_Clone – Responsive Course Platform UI',
     description:
         'A static HTML/CSS clone of Udemy’s course platform with responsive design, rating stars, and promo card layouts for educational apps.',
-    image: '/public/images/projects/udemy_clone.png',
+    image: udemyClone,
     tags: [
       'HTML', 'CSS', 'UI Clone', 'Education', 'Responsive'
     ],
@@ -1812,7 +1811,7 @@ export const projects = [
     title: 'Shopping_NOSTRA – Online Shopping Mockup',
     description:
         'A modern e-commerce static layout with section scroll, CTA highlights, and CSS refactoring. Designed for shop site prototypes.',
-    image: '/public/images/projects/shopping_nostra.png',
+    image: shoppingNostra,
     tags: [
       'HTML', 'CSS', 'E-commerce', 'Mockup', 'UI'
     ],
@@ -1825,7 +1824,7 @@ export const projects = [
     title: 'Skill_share_grow_final – Skill Exchange Platform',
     description:
         'A MERN skill sharing platform with payments, contributor badges, and admin dashboard metrics. Fosters learning and peer support.',
-    image: '/public/images/projects/skill_share_grow_final.png',
+    image: skillShareGrow,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Skill Sharing', 'Payments'
     ],
@@ -1838,7 +1837,7 @@ export const projects = [
     title: 'emotion-detector – Webcam-Based Mood Detection',
     description:
         'A browser app using face-api.js to detect emotions from webcam feeds. Features emoji feedback, real-time UI, and analytics chart.',
-    image: '/public/images/projects/emotion_detector.png',
+    image: emotionDetector,
     tags: [
       'JavaScript', 'HTML', 'face-api.js', 'Webcam', 'Emotion Detection'
     ],
@@ -1851,7 +1850,7 @@ export const projects = [
     title: 'Skill-Sharing-Growing – Community UI Demo',
     description:
         'A SCSS/HTML/JS UI for a learning community, featuring team profiles, join forms, and responsive design for mobile and desktop.',
-    image: '/public/images/projects/skill_sharing_growing.png',
+    image: skillSharingGrowing,
     tags: [
       'HTML', 'SCSS', 'JavaScript', 'Community', 'Responsive'
     ],
@@ -1864,7 +1863,7 @@ export const projects = [
     title: 'Tech_Dev_Club – Tech Club Platform',
     description:
         'A Next.js/Node.js web platform for Tech Dev Club with CMS-style admin dashboard, speaker/event management, and dynamic routes for club events.',
-    image: '/public/images/projects/tech_dev_club.png',
+    image: techDevClub,
     tags: [
       'Next.js', 'Node.js', 'Express', 'MongoDB', 'Club Platform', 'CMS'
     ],
@@ -1877,7 +1876,7 @@ export const projects = [
     title: 'TDC – Sub-site for Tech Dev Club',
     description:
         'A sub-site built on Next.js for Tech Dev Club. Shares core components, optimized routing, and easy deployment workflows for event microsites.',
-    image: '/public/images/projects/tdc.png',
+    image: techDevClub,
     tags: [
       'Next.js', 'Node.js', 'Express', 'MongoDB', 'Events', 'Microsite'
     ],
@@ -1890,7 +1889,7 @@ export const projects = [
     title: 'AI-Powered-Task-Optimizer – Smart Task Manager',
     description:
         'A Streamlit+LangChain-powered AI tool for personal task optimization, emotion analysis, and automatic OpenAI-powered summaries. Includes mood tracking and productivity insights.',
-    image: '/public/images/projects/ai_powered_task_optimizer.png',
+    image: aiTaskOptimizer,
     tags: [
       'Streamlit', 'Python', 'LangChain', 'FAISS', 'AI', 'Productivity'
     ],
