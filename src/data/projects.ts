@@ -128,23 +128,8 @@ import emotionDetector from '../assets/emotion_detector.jpg';
 import skillSharingGrowing from '../assets/skill_sharing_growing.jpg';
 import techDevClub from '../assets/tech_dev_club.jpg';
 import aiTaskOptimizer from '../assets/ai_powered_task_optimizer.jpg';
-import mazeCrafter from '../assets/mazecrafter.jpg';
-import capAndShare from '../assets/cap_and_share.jpg';
-import emmaMern from '../assets/emma_mernst.jpg';
-import quoteGenerator from '../assets/quote_generator_main.jpg';
-import videoQualityConversion from '../assets/video_quality_conversion_sd_to_hd_main.jpg';
-import coffeeShopDashboard from '../assets/coffee_shop_sales_dashboard_using_powerbi_main.jpg';
-import zigaoWang from '../assets/zigao_wang.jpg';
-import liveWeatherApp from '../assets/live_weather_app_main.jpg';
-import weatherApkMaster from '../assets/weather_apk_master.jpg';
-import heartDiseasePrediction from '../assets/heart_disease_prediction_master.jpg';
-import urlShortening from '../assets/url_shortening.jpg';
-import foodOrdering from '../assets/food_ordering.jpg';
-import hemu21 from '../assets/hemu21.jpg';
-import digibhem from '../assets/digibhem.jpg';
-import codsoft from '../assets/codsoft.jpg';
-import basilAssignment from '../assets/basil_assignment.jpg';
-import worldTimeApp from '../assets/world_time_app.jpg';
+import mazeCrafter from '../assets/mazecrafter1.jpg';
+
 
 const globalKeywords = [
   "Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "Go", "Golang", "Rust", "Kotlin", "Swift", "R", "Ruby", "PHP", "Dart", "Scala", "MATLAB", "Julia", "Haskell", "Perl", "Shell", "Bash", "PowerShell", "Fortran", "Objective-C", "Assembly", "F#", "Elixir", "COBOL", "VBA", "Solidity", "Groovy", "SAS", "PL/SQL", "SQL", "NoSQL", "GraphQL",
@@ -1902,7 +1887,7 @@ export const projects = [
     title: 'MazeCrafter – Maze Generator & Editor',
     description:
         'A React/Node.js maze generator app with BFS/DFS pathfinding, editor for custom levels, and level sharing for browser gaming.',
-    image: '/public/images/projects/mazecrafter.png',
+    image: mazeCrafter,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Maze', 'Pathfinding'
     ],
@@ -1915,7 +1900,7 @@ export const projects = [
     title: 'semac – Student Utility Platform',
     description:
         'A React/Node.js platform for student utilities with role-based panels, academic analytics, and ML-powered GPA prediction. Includes notes, timetables, and notifications.',
-    image: '/public/images/projects/semac.png',
+    image: semac,
     tags: [
       'React', 'Node.js', 'Express', 'MongoDB', 'Education', 'Analytics'
     ],
@@ -1928,7 +1913,7 @@ export const projects = [
     title: 'Face-Recognition – Attendance via Face Scan',
     description:
         'A React/Node.js/SQLite attendance app using face recognition with liveness detection and scan history. Optimized for classroom security and ease of use.',
-    image: '/public/images/projects/face_recognition.png',
+    image: faceRecognition,
     tags: [
       'React', 'Node.js', 'Express', 'SQLite', 'Face Recognition', 'Attendance'
     ],
