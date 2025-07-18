@@ -18,7 +18,7 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H YOUR_HOSTINGER_SERVER_IP >> ~/.ssh/known_hosts
+        ssh-keyscan -H 157.173.208.175 >> ~/.ssh/known_hosts
 
     - name: Deploy via SCP
       run: |
