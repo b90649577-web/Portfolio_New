@@ -1305,7 +1305,7 @@ export const projects = [
     title: 'More-on-CSS-Selector-Assignment – CSS Selector Playground',
     description:
         'An interactive CSS selector playground with live feedback and commented explanations. Great for practicing and understanding CSS specificity.',
-    image: '/public/images/projects/more_on_css_selector_assignment.png',
+    image: cssSelectorAssignment,
     tags: [
       'CSS', 'HTML', 'Selectors', 'Practice', 'Live Playground'
     ],
@@ -1318,7 +1318,7 @@ export const projects = [
     title: 'Media-Query-Assignment – Responsive Design Demo',
     description:
         'A practical example showing responsive design with media queries. Features device frame previews and extended breakpoints for advanced CSS layouts.',
-    image: '/public/images/projects/media_query_assignment.png',
+    image: mediaQueryAssignment,
     tags: [
       'CSS', 'HTML', 'Responsive', 'Media Queries', 'Design'
     ],
