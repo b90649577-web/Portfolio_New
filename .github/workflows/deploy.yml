@@ -30,4 +30,5 @@ jobs:
           server: ftp://157.173.208.175
           username: u288920822
           password: Bk@31012004
+          server-dir: /public_html/
           local-dir: ./dist
