@@ -12,7 +12,8 @@ const AboutPage = () => {
     "mainEntity": {
       "@type": "Person",
       "name": "Brajesh Kumar",
-      "jobTitle": "AI Engineer, Full Stack Developer, EdTech Community Builder",
+      "jobTitle": "AI Engineer, Full Stack Developer, EdTech Community Builder, Technical Product Strategist",
+
       "description": "Passionate Computer Science student, EdTech-Community founder specializing in AI, machine learning, Google Cloud, Azure, Firebase, Kong, and full-stack development",
       "knowsAbout": [
         "Artificial Intelligence",
