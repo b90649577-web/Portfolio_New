@@ -1,3 +1,5 @@
+import { defineConfig } from 'vite'
+
 export default defineConfig({
-  base: '/',
-});
+  base: './', // ⚠️ this is important for relative paths
+})
