@@ -1,6 +1,5 @@
-// vite.config.ts
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/', // IMPORTANT! '/' for root domain
-})
+  base: '/', // use '/' for root domain
+});
