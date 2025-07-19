@@ -23,6 +23,19 @@ const experienceList = [
     link: 'https://techdevclub.com/'
   },
   {
+    title: 'Open Source Contributor Intern',
+    company: 'OSCI (Open Source Community India)',
+    location: 'Remote, India',
+    date: 'May 2025 - Jul 2025',
+    logo: '/osci.png',
+    description: [
+      'Selected as an open source contributor under OSCI program',
+      'Contributed to community-driven open source projects and repositories',
+      'Collaborated with mentors and fellow contributors across various tech stacks',
+      'Improved code quality, fixed issues, and added new features based on real-world use cases'
+    ],
+  },
+  {
     title: 'SSOC Contributor Season 4',
     company: 'Social Summer Of Code',
     location: 'India (Remote)',

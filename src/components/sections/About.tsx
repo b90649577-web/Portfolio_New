@@ -1,4 +1,3 @@
-// Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../common/SectionHeading';
@@ -22,117 +21,125 @@ const About = () => {
   };
 
   return (
-    <div className="container-section">
-      <SectionHeading title="About Me" subtitle="My personal journey" />
+      <div className="container-section">
+        <SectionHeading title="About Me" subtitle="My personal journey" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-12">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="bg-light-card dark:bg-dark-card rounded-xl p-6 md:p-8 lg:p-10 border border-gray-200 dark:border-gray-800 shadow-lg transition-colors duration-300 h-full flex flex-col justify-center"
-        >
-          <motion.p
-            {...fadeInUp}
-            className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300 space-y-4"
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch mb-12">
+          {/* Text box */}
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-light-card dark:bg-dark-card rounded-xl px-10 py-6 border border-gray-200 dark:border-gray-800 shadow-lg h-full flex flex-col justify-center min-h-[480px]"
           >
-            I'm <strong>Brajesh Kumar</strong>, a passionate and adaptable
-            Computer Science and Engineering student at GL Bajaj Group of
-            Institutions (Batch 2023–2027). As <strong>Co-Founder of Tech Dev Club</strong>, 
-            I'm building a global tech community for collaboration and innovation.
-            <br />
-            <br />
-            With a strong foundation in full-stack development, machine learning, 
-            and AI-based systems, I thrive on building real-world tech solutions 
-            that are not only innovative but impactful. Through Tech Dev Club, I 
-            connect innovators and developers worldwide through events, mentorship, 
-            and collaborative projects.
-            <br />
-            <br />
-            I bring a hands-on approach to problem-solving, demonstrated through my
-            wide array of projects ranging from intelligent personal assistants
-            like <em>Emma</em>, AI-powered therapy bots like <em>Thea</em>, to
-            full-fledged web platforms like <em>SEMAC</em> and <em>IdeaPool</em>.
-            I've also contributed to game development and ed-tech innovations,
-            combining creativity with code.
-          </motion.p>
-        </motion.div>
+            <motion.p
+                {...fadeInUp}
+                className="text-base md:text-lg leading-relaxed text-gray-700 dark:text-gray-300"
+            >
+              I'm <strong>Brajesh Kumar</strong>, a passionate and adaptable Computer Science and Engineering student at
+              GL Bajaj Group of Institutions (Batch 2023–2027). As <strong>Co-Founder of Tech Dev Club</strong>,
+              I'm building a global tech community for collaboration and innovation.
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex items-center justify-center lg:justify-end h-full"
-        >
-          <FlippingImage
-            frontLight="/personal-light.jpg"
-            frontDark="/personal-dark.jpg"
-            backLight="/self-light.jpg"
-            backDark="/self-dark.png"
-            alt="Brajesh Kumar - Co-Founder, Tech Dev Club"
-            className="aspect-square w-full max-w-[500px] h-auto"
-          />
-        </motion.div>
+              <br /><br />
+              With a strong foundation in full-stack development, machine learning, and AI-based systems,
+              I thrive on building real-world tech solutions that are not only innovative but impactful.
+              Through Tech Dev Club, I connect innovators and developers worldwide through events,
+              mentorship, and collaborative projects.
+
+              <br /><br />
+              I actively contribute to open-source communities as an
+              <strong> Open Source Contributor Intern at OSCI</strong>, a
+              <strong> GSSOC 2024 Contributor</strong>, and a
+              <strong> SSOC Season 4 Contributor</strong>. I’ve worked on real-world repositories, collaborated
+              with global developers, and contributed meaningful code and features.
+
+              <br /><br />
+              I’ve also served as a <strong>Campus Ambassador</strong> at organizations like
+              <strong> IMUNA</strong>, <strong> LetsUpgrad</strong>, <strong> Wayspire</strong>, and
+              <strong> Social Summer of Code</strong>, where I promoted student engagement, tech events,
+              and educational initiatives across remote platforms.
+
+              <br /><br />
+              I bring a hands-on approach to problem-solving, demonstrated through my wide array of projects
+              ranging from intelligent personal assistants like <em>Emma</em>, AI-powered therapy bots like
+              <em>Thea</em>, to full-fledged web platforms like <em>SEMAC</em> and <em>IdeaPool</em>.
+              I've also contributed to game development and ed-tech innovations, combining creativity with code.
+            </motion.p>
+          </motion.div>
+
+          {/* Image box */}
+          <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex justify-center items-center h-full min-h-[480px]"
+          >
+            <FlippingImage
+                frontLight="/personal-light.jpg"
+                frontDark="/personal-dark.jpg"
+                backLight="/self-light.jpg"
+                backDark="/self-dark.png"
+                alt="Brajesh Kumar - Co-Founder, Tech Dev Club"
+                className="w-full h-full object-cover max-w-[520px] rounded-xl"
+            />
+          </motion.div>
+        </div>
+
+        {/* Skills section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          {/* Frontend Skills */}
+          <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-light-card dark:bg-dark-card rounded-xl p-6 border border-gray-200 dark:border-gray-800 shadow-lg"
+          >
+            <h3 className="text-xl font-semibold mb-6 text-primary-400">Front-End</h3>
+            <div className="flex flex-wrap gap-3">
+              {frontendSkills.map((skill, index) => (
+                  <motion.span
+                      key={skill}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      viewport={{ once: true }}
+                      className="skill-tag"
+                  >
+                    {skill}
+                  </motion.span>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Backend Skills */}
+          <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-light-card dark:bg-dark-card rounded-xl p-6 border border-gray-200 dark:border-gray-800 shadow-lg"
+          >
+            <h3 className="text-xl font-semibold mb-6 text-primary-400">Back-End</h3>
+            <div className="flex flex-wrap gap-3">
+              {backendSkills.map((skill, index) => (
+                  <motion.span
+                      key={skill}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      viewport={{ once: true }}
+                      className="skill-tag"
+                  >
+                    {skill}
+                  </motion.span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-        {/* Frontend Skills */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-light-card dark:bg-dark-card rounded-xl p-6 border border-gray-200 dark:border-gray-800 shadow-lg transition-colors duration-300"
-        >
-          <h3 className="text-xl font-semibold mb-6 text-primary-400">
-            Front-End
-          </h3>
-          <div className="flex flex-wrap gap-3">
-            {frontendSkills.map((skill, index) => (
-              <motion.span
-                key={skill}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                className="skill-tag"
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Backend Skills */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-light-card dark:bg-dark-card rounded-xl p-6 border border-gray-200 dark:border-gray-800 shadow-lg transition-colors duration-300"
-        >
-          <h3 className="text-xl font-semibold mb-6 text-primary-400">
-            Back-End
-          </h3>
-          <div className="flex flex-wrap gap-3">
-            {backendSkills.map((skill, index) => (
-              <motion.span
-                key={skill}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                className="skill-tag"
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </div>
   );
 };
 
