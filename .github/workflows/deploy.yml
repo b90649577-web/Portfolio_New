@@ -31,4 +31,4 @@ jobs:
           username: u288920822
           password: Bk@31012004
           server-dir: /public_html/
-          local-dir: ./dist
+          local-dir: ./dist/
