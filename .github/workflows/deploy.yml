@@ -27,7 +27,7 @@ jobs:
       - name: 🚀 Upload to Hostinger via FTP
         uses: samkirkland/ftp-deploy-action@v4.3.4
         with:
-          server: ftp://157.173.208.175
+          server: 157.173.208.175
           username: u288920822
           password: Bk@31012004
           server-dir: /public_html/
