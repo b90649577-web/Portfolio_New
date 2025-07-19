@@ -29,7 +29,7 @@ const experienceList = [
     date: 'Jun 2025 - Present',
     logo: '/ssoc.png',
     description: [
-      'Selected as a contributor for Script Summer of Code Season 4',
+      'Selected as a contributor for Script Summer of Code Season-4',
       'Contributing to open source projects and collaborative development initiatives',
       'Participating in community-driven software development and learning programs'
     ],
