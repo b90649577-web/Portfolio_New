@@ -56,7 +56,7 @@ const About = () => {
 
               <br /><br />
               I’ve also served as a <strong>Campus Ambassador</strong> at organizations like
-              <strong> IMUNA</strong>, <strong> LetsUpgrad</strong>, <strong> Wayspire</strong>, and
+              <strong> IMUNA </strong>, <strong> LetsUpgrad</strong>, <strong> Wayspire</strong>, and
               <strong> Social Summer of Code</strong>, where I promoted student engagement, tech events,
               and educational initiatives across remote platforms.
 
