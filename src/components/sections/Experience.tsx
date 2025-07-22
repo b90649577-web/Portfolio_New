@@ -23,6 +23,20 @@ const experienceList = [
     link: 'https://techdevclub.com/'
   },
   {
+    title: 'Open Source Contributor - GSSoC 2025',
+    company: 'GirlScript Summer of Code',
+    location: 'Remote, India',
+    date: 'July 2025 – Present',
+    logo: '/gssoc2.png',
+    description: [
+      'Selected as an open source contributor for GSSoC 2025 among nationwide applicants',
+      'Actively contributing to community-driven open source projects under expert mentorship',
+      'Working across tech stacks to add new features, fix issues, and improve documentation',
+      'Collaborating with maintainers and fellow contributors using Git, GitHub, and issue tracking',
+      'Engaging in weekly syncs, PR reviews, and discussions to improve code quality and project impact'
+    ],
+  },
+  {
     title: 'Open Source Contributor Intern',
     company: 'OSCI (Open Source Community India)',
     location: 'Remote, India',
