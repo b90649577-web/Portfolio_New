@@ -22,97 +22,278 @@ const globalKeywords = [
 
 export const blogPosts: BlogPost[] = [
   {
-    id: '1',
-    title: "OpenAI Academy Launch 2025 – Future Skills for India: My Reflections",
-    summary: "Invited to The Oberoi, New Delhi for the OpenAI Academy launch — a visionary leap in India's AI journey. Here's what made it unforgettable.",
-    content: `🚀 Humbled to Be Invited: Shaping India's AI Future with OpenAI, MeitY Startup Hub & IndiaAI 🇮🇳🤖
+    "id": "16",
+    "title": "Social Summer Of Code 4.0 – Debugging Motivation, Not Just Code",
+    "summary": "What started as a tech meetup turned into a celebration of community, memes, and mentorship. SSOC 4.0 brought energy, insight, and open-source love to Noida.",
+    "content": `💻☀️ Social Summer Of Code 4.0 just launched… and so did my motivation levels.
 
-On June 5, 2025, I had the incredible honor of being invited to attend the landmark launch of **OpenAI Academy: Future Skills for India** — hosted at The Oberoi, New Delhi, in collaboration with IndiaAI Future Skills Mission and the Ministry of Electronics & Information Technology (MeitY).
+I showed up at the Microsoft Sovereign Office, Noida, expecting WiFi and AC.  
+What I got instead?  
+Mind-blowing insights, high-voltage community energy, and enough inspiration to survive the upcoming debugging season.
 
-This event wasn't just about tech — it was about **inclusion, vision, and responsibility** in AI.
+Huge shoutout to the Reskill team (who never miss) and the Azure Developer Community (who powered the tech and the cool points).
 
-✨ **Key Moments That Made It Unforgettable**:
+🎙️ Here’s the squad that brought the 🔥 to the stage:
 
-🎤 **Alex Nawar** (Head, OpenAI Academy) shared how **India is the second-largest user of ChatGPT globally** and how the new Academy will democratize AI literacy with localized content and hands-on training.
+- Arpan Mondal spoke fluent DevRel and made the community sound cooler than code.  
+- Uday Sharma – built “Us Bro” but felt like all of us bro.  
+- Raajeev Anand broke down crypto, content, and chaos into clean concepts.  
+- Jay Saadana – made “domains” feel like a Netflix original.  
+- Shivam Arora – literally explained how to grow anything... except my GitHub streak.  
+- Sudhansu Kumar – the backbone of SSOC energy and Reskill’s true community ninja.
 
-💬 **Lauren Oliphant** (Solutions Engineer, OpenAI) gave jaw-dropping live demos:
-- ChatGPT conversing in Hindi & English
-- Generating Hindi *dohaas*
-- Visualizing real-time web data
-- Use cases in yoga, education, art, and even as a personal employee assistant.
+🎯 Think open-source is all about code?  
+SSOC 4.0 said: "Hold my pull request."
 
-🧠 **Jason K.** (Chief Strategy Officer, OpenAI) reminded us that **India isn't just a user base — it's a global AI catalyst**. His words: *"This is just the beginning."* resonated deeply.
+From memes to mentorship, crypto to community, this event reminded me that developers aren’t just building apps — we’re building culture.
 
-💡 **Abhishek Singh**, DG (NIC) & AS at MeitY, emphasized **regional learning, prompt engineering**, and the power of **OpenAI's APIs** to transform sectors like agri-tech, education, and governance.
+🧠 My big learning?  
+In open source, your impact isn’t measured in commits… but in connections.
 
-👥 The **panel discussion** was pure inspiration:
-- **Azeez Gupta** (Rocket Learning)
-- **Amrita Mahale** (ARMMAN)
-- **Nidhi Bhasin** (Digital Green Trust)
-- **Anubhav Arora** (Noora Health)
+Big thanks to the organizers for making tech events feel like home — but with more stickers, fewer bugs, and much better coffee.
 
-Their real-world AI impact — from **rural education** to **public health** — proved one thing: **AI is not just about algorithms; it's about people**. 💛
+Grateful for all the unexpected connections that turned into real conversations 💬
 
-🎉 And yes — **finally meeting Ansh Mehra** in person was a huge highlight for me. Humble, brilliant, and a powerhouse of design + AI wisdom. 🙌
+Finally met legends like:  
+Aryan Chauhan, Kanik Gupta, Arni Johry, Vanshika Chauhan, Rashmeet Kaur, Himanshu Kabra, Rishita Chaudhary, Riya Chhabra, Gunjan Pasricha, AKANKSHA YADAV, Khushi Gupta, Yuvraj Sharma, Yakshit Ranga, Abhienaya Sri, Neetu Naikyaz, Bhavya Mishra, Yuvika ., Vansh Chauhan, Chhavi Bhalla, Anshul Gupta, Pooja Jain, Aditya Singh, Shubrali Jain, Vishesh Garg, Shonal Dhauni and Raman Mahadevan —  
+no more hiding behind GitHub usernames and PR comments!
 
-Gratitude to **OpenAI, IndiaAI, MeitY, and all the minds behind the mission** for crafting such an immersive and action-driven event. This wasn't about the future of AI — it was about **building** that future, here and now.
+📣 Wanna build, meme, or just talk about domain names that aren't taken yet?  
+Let’s connect.
 
-Let's collaborate, innovate, and grow — for **India and beyond**. 🌐
+This summer, I’m contributing with curiosity and just enough caffeine. ☕🚀`,
+    "date": "2025-08-03",
+    "readingTime": "5 min",
+    "author": {
+      "name": "Brajesh Kumar",
+      "avatar": "/personal-dark.jpg"
+    },
+    "images": [
+      "/blog/16/image1.jpg",
+      "/blog/16/image2.jpg",
+      "/blog/16/image3.jpg",
+      "/blog/16/image4.jpg",
+      "/blog/16/image5.jpg",
+      "/blog/16/image6.jpg",
+      "/blog/16/image7.jpg",
+      "/blog/16/image8.jpg",
+      "/blog/16/image9.jpg",
+      "/blog/16/image10.jpg"
+    ],
+    "tags": [
+      "Open Source",
+      "Community",
+      "Tech Events",
+      "DevRel",
+      "SSOC",
+      "Social Summer of Code",
+      "Azure Developer Community",
+      "Reskill",
+      "GitHub",
+      "Tech Culture",
+      "Crypto",
+      "Design Thinking",
+      "Productivity",
+      "Innovation",
+      "Networking",
+      "Coding Community",
+      "Mentorship",
+      "Debugging",
+      "Web3",
+      "Memes in Tech"
+    ],
+    "featured": true,
+    "linkedin": "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_ssoc4-techcommunity-open-source-activity-7167654301234567890-example"
+  },
+  {
+    id: '15',
+    title: 'Designing Fearlessly: UI/UX in the Age of AI',
+    summary: "A paradigm-shifting session by UXD Talks that redefined how designers think about AI—not as a replacement, but as a powerful collaborator.",
+    content: `🚨 Not all events leave a mark — but this one will stay with me.
 
-💬 Feel free to DM if you're working on something exciting in AI — always open to connect!`,
-    date: '2025-06-05',
-    readingTime: '6 min',
+Invited to attend “UI/UX Design in the World of AI” by the UXD Talks Community, I came expecting insights.  
+But what I got was a design paradigm shift.
+
+💭 As someone who regularly joins UXD Talks sessions, each one brings value — but this? This was different.  
+It wasn’t just an event; it was a mirror to the future of creative thinking.  
+
+And the future?  
+It’s AI + Designers, not AI vs Designers.
+
+🎯 From tool-user to system-thinker — this session sparked that evolution.
+
+Midway through, Rohan Mishra (Mastry, formerly Design Sundays) took center stage and completely redefined how designers like us need to think about AI.
+
+🎙 He didn’t just show tools. He reshaped workflows:
+
+🔹 What if your research tool could listen like a human? → Hello, Otter.ai, ChatGPT  
+🔹 What if your idea could sketch itself? → Thanks to Uizard by Miro Labs & Figma  
+🔹 What if prototypes were done by lunch? → AI is speeding creativity  
+🔹 What if testing were your starting point? → Maze showed why that matters
+
+His energy, clarity, and examples made it obvious:  
+AI isn’t replacing designers — it’s removing the friction that’s held us back.
+
+That was my aha moment — and I know I wasn’t alone.
+
+✨ Another key takeaway?  
+Designers who embrace AI now will lead the workflows of tomorrow.  
+We’re not designing for the future anymore — we’re designing with it.
+
+And the best part?  
+I got to absorb all this alongside an amazing group of peers:  
+Ansh Verma, Mansi Modi, Pranjal Agarwal, Anjali Mittal, Lucky Jangra, Shubhendra Tiwari, Kashikaa Dhawan, Mehak Singh, Parul Yadav, Shakshi Singh, Suyash Srivastava, Gopesh Kumar, Riddhi Gupta, Rishikesh Chaurasia, Ayush Agrahari, Lakshya Kamra, Aadhya Sharma, Yessica Malhotra, Riya Chhabra, Anant Sharma, and Neha Jawa.  
+
+The exchange of ideas, stories, and energy made it all the more memorable.
+
+🙌 Huge kudos to the UXD Talks volunteer team —  
+Parul Bhargava, Atul Kumar, Shubham Misal, Sujeet Kumar, Pooja Kumari, and Shlok K Nikhil — for crafting such a smooth, high-impact experience.
+
+🙏 Special appreciation to our partners —  
+Reskilll, Rohit Sardana, and Azure Developer Community — for continually enabling spaces to grow, learn, and rethink.
+
+🎨 So, will AI replace designers?  
+Wrong question.  
+
+✅ The right one is:  
+What can designers now do — that they couldn’t before — with AI by their side?
+
+Let’s stop fearing AI.  
+Let’s start designing fearlessly with it.`,
+    date: '2025-08-03',
+    readingTime: '5 min',
     author: {
       name: 'Brajesh Kumar',
       avatar: '/personal-dark.jpg'
     },
     images: [
+      '/blog/15/image1.jpg',
+      '/blog/15/image2.jpg',
+      '/blog/15/image3.jpg',
+      '/blog/15/image4.jpg',
+      '/blog/15/image5.jpg',
+      '/blog/15/image6.jpg',
+      '/blog/15/image7.jpg',
+      '/blog/15/image8.jpg',
+      '/blog/15/image9.jpg',
+      '/blog/15/image10.jpg',
+      '/blog/15/image11.jpg',
+      '/blog/15/image12.jpg'
+    ],
+    tags: ["AI in Design",
+      "UX Design",
+      "Human-Centered AI",
+      "Design Tools",
+      "Future of Work",
+      "Creative AI",
+      "Prototyping",
+      "Otter.ai",
+      "Uizard",
+      "ChatGPT",
+      "Figma",
+      "Maze",
+      "Design Systems",
+      "Productivity Tools",
+      "UI/UX Trends",
+      "Design Workflow",
+      "UXD Talks",
+      "Mastry",
+      "Innovation",
+      "AI x Design"
+    ]
+  },
+  {
+    "id": '1',
+    "title": "OpenAI Academy Launch 2025 – Future Skills for India: My Reflections",
+    "summary": "Invited to The Oberoi, New Delhi for the OpenAI Academy launch — a visionary leap in India's AI journey. Here's what made it unforgettable.",
+    "content": `🚀 Humbled to Be Invited: Shaping India's AI Future with OpenAI, MeitY Startup Hub & IndiaAI 🇮🇳🤖
+
+On June 5, 2025, I had the incredible honor of being invited to attend the landmark launch of OpenAI Academy: Future Skills for India — hosted at The Oberoi, New Delhi, in collaboration with IndiaAI Future Skills Mission and the Ministry of Electronics & Information Technology (MeitY).
+
+This event wasn't just about tech — it was about inclusion, vision, and responsibility in AI.
+
+✨ Key Moments That Made It Unforgettable:
+
+🎤 Alex Nawar (Head, OpenAI Academy) shared how India is the second-largest user of ChatGPT globally and how the new Academy will democratize AI literacy with localized content and hands-on training.
+
+💬 Lauren Oliphant (Solutions Engineer, OpenAI) gave jaw-dropping live demos:
+- ChatGPT conversing in Hindi & English
+- Generating Hindi dohaas
+- Visualizing real-time web data
+- Use cases in yoga, education, art, and even as a personal employee assistant.
+
+🧠 Jason K. (Chief Strategy Officer, OpenAI) reminded us that India isn't just a user base — it's a global AI catalyst. His words: "This is just the beginning." resonated deeply.
+
+💡 Abhishek Singh, DG (NIC) & AS at MeitY, emphasized regional learning, prompt engineering, and the power of OpenAI's APIs to transform sectors like agri-tech, education, and governance.
+
+👥 The panel discussion was pure inspiration:
+- Azeez Gupta (Rocket Learning)
+- Amrita Mahale (ARMMAN)
+- Nidhi Bhasin (Digital Green Trust)
+- Anubhav Arora (Noora Health)
+
+Their real-world AI impact — from rural education to public health — proved one thing: AI is not just about algorithms; it's about people. 💛
+
+🎉 And yes — finally meeting Ansh Mehra in person was a huge highlight for me. Humble, brilliant, and a powerhouse of design + AI wisdom. 🙌
+
+Gratitude to OpenAI, IndiaAI, MeitY, and all the minds behind the mission for crafting such an immersive and action-driven event. This wasn't about the future of AI — it was about building that future, here and now.
+
+Let's collaborate, innovate, and grow — for India and beyond. 🌐
+
+💬 Feel free to DM if you're working on something exciting in AI — always open to connect!`,
+    "date": '2025-06-05',
+    "readingTime": '6 min',
+    "author": {
+      "name": 'Brajesh Kumar',
+      "avatar": '/personal-dark.jpg'
+    },
+    "images": [
       '/blog/1/image1.jpg',
       '/blog/1/image2.jpg',
       '/blog/1/image3.jpg',
       '/blog/1/image4.jpg'
     ],
-    tags: [...globalKeywords.slice(0, 20), 'OpenAI', 'IndiaAI', 'Future Skills', 'MeitY', 'AI Literacy', 'Event'],
-    featured: true,
-    linkedin: "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_openaiacademy-indiaai-meity-activity-7336473782242414592-QOtx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCJbVkBL4mpYTJ2XrizFU62a7YHFvVcvoQ"
+    "tags": [...globalKeywords.slice(0, 20), 'OpenAI', 'IndiaAI', 'Future Skills', 'MeitY', 'AI Literacy', 'Event'],
+    "featured": true,
+    "linkedin": "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_openaiacademy-indiaai-meity-activity-7336473782242414592-QOtx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCJbVkBL4mpYTJ2XrizFU62a7YHFvVcvoQ"
   },
   {
     id: '2',
     title: 'AICamp Meetup at Tata 1mg – Gurugram: Where Vision Met Reality',
     summary: "Attended a power-packed AICamp Meetup at Tata 1mg, Gurugram — where GenAI, community, and execution came together to define the future of AI.",
     content: `🚀 What happens when vision, technology, and community collide?  
-You get something like the **AICamp Meetup at Tata 1mg, Gurugram** — a day where **#AI** wasn't just discussed, it was demonstrated.
+You get something like the AICamp Meetup at Tata 1mg, Gurugram — a day where #AI wasn't just discussed, it was demonstrated.
 
-⚡ From voice-to-voice bots to real-time GenAI demos, this wasn't just a meetup — **it was a movement**.  
+⚡ From voice-to-voice bots to real-time GenAI demos, this wasn't just a meetup — it was a movement.  
 #AICamp #FutureWithAI
 
 ✨ The real magic, however, wasn't just in the talks.  
-It was in the **execution, energy, and experience** — and for that, a huge shoutout to **Nisha Keswani** 👏  
+It was in the execution, energy, and experience — and for that, a huge shoutout to Nisha Keswani 👏  
 Her incredible effort in organizing, coordinating, and making every moment of this camp insightful and seamless didn't go unnoticed.  
 💎 True leadership isn't always loud — sometimes it's in every detail being just right.
 
-🎯 **Top Highlights That Shifted My Perspective:**
+🎯 Top Highlights That Shifted My Perspective:
 
-🔬 **Gaurav Talebailkar** broke down **#TransformerModels** like few can — from tokenization and attention to how these architectures are powering Tata 1mg's real-world GenAI solutions.
+🔬 Gaurav Talebailkar broke down #TransformerModels like few can — from tokenization and attention to how these architectures are powering Tata 1mg's real-world GenAI solutions.
 
-💡 **Vishal Khare** introduced **DeputyDev** — a native VS Code extension blending **#AIproductivity** with developer-first UX.  
+💡 Vishal Khare introduced DeputyDev — a native VS Code extension blending #AIproductivity with developer-first UX.  
 This is what it looks like when developer tools meet deep tech.
 
-🧪 **Stuti Pasricha**'s workshop?  
+🧪 Stuti Pasricha's workshop?  
 Hands-on and hands-down amazing:  
-📷 A vision-powered **calorie tracker** (GenAI + computer vision)  
-🎙 A **WebRTC-based voice-to-voice chatbot** that made us rethink interaction.  
+📷 A vision-powered calorie tracker (GenAI + computer vision)  
+🎙 A WebRTC-based voice-to-voice chatbot that made us rethink interaction.  
 #HandsOnAI
 
-💬 And then came what we all secretly love — **networking over pizza** 🍕  
+💬 And then came what we all secretly love — networking over pizza 🍕  
 Real convos. New ideas. Devs, founders, and AI geeks all jamming over possibilities.  
 #TechNetworking #AICommunity
 
 👥 Attended this power-packed day with amazing peers and friends:  
-**Tarun Kumar**, **Vani Sen**, and **Kumar Gaurav Tiwari** — and the vibe was unforgettable.
+Tarun Kumar, Vani Sen, and Kumar Gaurav Tiwari — and the vibe was unforgettable.
 
 📍 The energy in the room was electric, the learnings deep, and the people inspiring.  
-I walked away not just with knowledge — but with **direction**.
+I walked away not just with knowledge — but with direction.
 
 🙌 Here's to more community-led, purpose-driven tech gatherings that shape the future.`,
     date: '2025-05-31',
@@ -654,6 +835,7 @@ As we move deeper into the era of #AutonomousSystems, one thing is clear—our a
     featured: false,
     linkedin: "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_drone-interactions-autonomousdronesystems-activity-7299113247222198273-fui9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCJbVkBL4mpYTJ2XrizFU62a7YHFvVcvoQ"
   }
+
 ];
 
 // Helper function to get unique tags from all blog posts

@@ -1,5 +1,4 @@
 // SEO keywords globally merged by Bolt AI on 2025-01-27 for maximum ranking – excludes milestone page
-import React from 'react';
 import About from '../components/sections/About';
 import MetaTags from '../components/SEO/MetaTags';
 

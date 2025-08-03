@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../common/SectionHeading';
 import FlippingImage from '../FlippingImage';

@@ -34,7 +34,7 @@ const StatItem: React.FC<StatItemProps> = ({ icon, value, label, delay }) => {
 };
 
 const Stats = () => {
-  const { theme } = useTheme();
+  useTheme();
   
   const stats = [
     {
