@@ -22,6 +22,210 @@ const globalKeywords = [
 
 export const blogPosts: BlogPost[] = [
   {
+    "id": "19",
+    "title": "🚀 From the Audience to the Organizer's Stage: TechFront 2025 Was Built to Inspire!",
+    "summary": "TechFront: AI x Blockchain Summit 2025 wasn’t just another event — it was a community-powered movement. From panel discussions to mentorship, here’s how we built an experience that resonated.",
+    "content": `🚀 **From the Audience to the Organizer's Stage: TechFront 2025 Was Built to Inspire!**
+
+Just a year ago, I was attending events, taking notes, and wondering what it takes to run something impactful. On **July 12th, 2025**, that question turned into action.
+
+📍 **TechFront: AI x Blockchain Summit 2025**, hosted at **Thoughtworks, Gurugram**, wasn’t just another tech meetup; it was a living, breathing showcase of what happens when **passion meets purpose**.
+
+Organized by **Tech Dev Club** in collaboration with **HackwithIndia**, and powered by **Devnovate**, we brought together **130+ attendees** — students, professionals, developers, educators, startup founders — all eager to build, learn, and shape the future of emerging technologies.
+
+🔥 **What Made TechFront 2025 Different?**
+This wasn’t your average “keynote + photo-op” tech event. Instead, we curated:
+- 🎤 **Panel discussions** on safer AI, scalable blockchain, and realistic career paths
+- 🤝 **Community-first spaces** for deep conversations and real-world collaborations
+- 🧠 **Mentorship**, swag, certificates, and plenty of unforgettable moments
+
+🎙 **Speaker Highlights**
+We welcomed thought leaders from across the tech space:
+- 🔹 **Mukul Goyal** – Breaking blockchain beyond crypto for real-world use
+- 🔹 **ARGHYA K. GUHA** – AI-driven ERP & MarComm workflows
+- 🔹 **Aashi Gupta** – Guardrails for safe and ethical LLM deployment
+- 🔹 **Arun Kumar Yadav** – Blockchain’s potential for the next billion users
+- 🔹 **Kuldeep Singh Rathore & Adfar Rasheed (PW)** – GATE prep, upskilling, and building tech-ready India
+
+Their talks weren’t just informative — they were **actionable blueprints** for innovation.
+
+💼 **Meet the Brains Behind the Show**
+Proud to co-organize this summit with:
+- Organizers: **Kumar Gaurav Tiwari**, **Brajesh Kumar**, **Vani Sen**, **Bhavya Shukla**
+- Volunteers: **Ishika Patel**, **ARYAN RAJ**, **Aditya Dhanraj**, **Udit Singh**, **Adarsh Kumar**, **Nikhil Sagar**, **Priyam Kumar**, **Aman Jyoti Jha**
+
+You made the experience seamless, empowering, and unforgettable. 🙌
+
+🤝 **And the Energy? Next Level.**
+We had attendees like **Shruti Gautam**, **Sakshi Chaturvedi**, **Damanveer Singh**, **Shivang Yadav**, **Akshat Agarwal**, and so many more — each bringing curiosity, questions, and collaboration to the table.
+
+✨ It’s one thing to attend an event. It’s another to feel like you’re part of a **movement**.
+
+🔗 **Explore more**:  
+📲 [Tech Dev Club](https://techdevclub.com) — Stay tuned for what’s next!`,
+    "date": "2025-07-12",
+    "readingTime": "4 min",
+    "author": {
+      "name": "Brajesh Kumar",
+      "avatar": "/personal-dark.jpg"
+    },
+    "images": [
+      "/blog/19/image1.jpg",
+      "/blog/19/image2.jpg",
+      "/blog/19/image3.jpg",
+      "/blog/19/image4.jpg",
+      "/blog/19/image5.jpg",
+      "/blog/19/image6.jpg",
+      "/blog/19/image7.jpg",
+      "/blog/19/image8.jpg",
+      "/blog/19/image9.jpg",
+      "/blog/19/image10.jpg",
+      "/blog/19/image11.jpg",
+      "/blog/19/image12.jpg",
+      "/blog/19/image13.jpg",
+      "/blog/19/image14.jpg",
+      "/blog/19/image15.jpg",
+      "/blog/19/image16.jpg",
+      "/blog/19/image17.jpg",
+      "/blog/19/image18.jpg"
+    ],
+    "tags": [
+      "TechFront", "AI Summit", "Blockchain", "Tech Events",
+      "Thoughtworks", "Tech Dev Club", "HackwithIndia",
+      "Devnovate", "Community Building", "Open Source",
+      "Career in Tech", "Web3", "Ethical AI", "LLMs",
+      "Developer Conference", "Networking", "Event Recap",
+      "India Tech Community", "Startup Culture", "Future Tech"
+    ],
+    "featured": true,
+    "linkedin": "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_techfront-2025-ai-blockchain-summit-activity-xxxxxx/"
+  },
+  {
+    "id": "18",
+    "title": "Reimagining CLI Productivity with Amazon Q Developer – AWS UG NCR Event Recap",
+    "summary": "Explored AI-powered CLI workflows with Amazon Q Developer at AWS Office, Gurugram. A hands-on event that showcased the future of cloud productivity.",
+    "content": `🚀 Thrilled to be part of an inspiring and hands-on event hosted by **AWS User Group NCR** at the **Amazon Web Services (AWS) Office, Gurugram** on June 27 —  
+“**Reimagining CLI Productivity with Amazon Q Developer**” 🌟
+
+As a tech enthusiast and someone constantly exploring how AI can enhance developer workflows, this session was a deep dive into what the future of cloud productivity looks like — and it’s already here with **Amazon Q Developer**! ⚙️
+
+We explored:  
+✅ Seamless integration of Q Developer with IDEs and the CLI  
+✅ Natural language to CLI command generation — yes, you can literally *"talk"* your way into deploying and managing!  
+✅ Live comparison: traditional CLI vs Q-enhanced CLI workflows  
+✅ Real-time troubleshooting, doc fetching, and log exploration — all without switching tools  
+
+The **practical demos** and **real-world scenarios** made it even more valuable, transforming complex command-line workflows into intuitive, AI-augmented processes.
+
+🎤 **Big shoutout to our brilliant speakers**:  
+🔹 **Anutosh ☁️**  
+🔹 **Iqbaal Singh**  
+Their insights and live walkthroughs brought a fresh perspective to developer efficiency.
+
+🎯 Huge thanks to the amazing organizers who made this happen:  
+🔸 **Rajat Arora**  
+🔸 **Dipali Kulshrestha**  
+Your efforts made this power-packed community event possible — insightful, interactive, and truly relevant.
+
+From the thoughtful sessions to the vibrant crowd and memorable networking, this event was a real reflection of how AI is **reshaping the developer experience**. 🤖💡
+
+Grateful to have been a part of it as an attendee — and excited to start applying what I’ve learned.
+
+Let’s keep building, exploring, and sharing — together! 🚀`,
+    "date": "2025-06-27",
+    "readingTime": "4 min",
+    "author": {
+      "name": "Brajesh Kumar",
+      "avatar": "/personal-dark.jpg"
+    },
+    "images": [
+      "/blog/18/image1.jpg",
+      "/blog/18/image2.jpg",
+      "/blog/18/image3.jpg",
+      "/blog/18/image4.jpg",
+      "/blog/18/image5.jpg",
+      "/blog/18/image6.jpg"
+    ],
+    "tags": [
+      "Amazon Q Developer", "AWS", "Command Line", "Developer Productivity",
+      "AI Tools", "Cloud Computing", "AWS UG NCR", "DevOps", "CLI",
+      "Natural Language Interfaces", "AI in DevOps", "Amazon Web Services",
+      "Developer Tools", "Tech Community", "Event Recap", "Automation",
+      "IDE", "Productivity Hacks", "Q Developer", "Future of Work"
+    ],
+    "featured": false,
+    "linkedin": "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_amazonqdeveloper-aws-cli-productivity-activity-xxxxxxx/"
+  },
+  {
+    "id": "17",
+    "title": "Social Summer Of Code 4.0: Open Source, Real Conversations & Future-Proof Tech",
+    "summary": "SSOC 4.0 wasn’t just an event — it was a blueprint for the future of community-driven tech. From DevRel to Web3, here's what made it unforgettable.",
+    "content": `🚨 Open Source, Real Conversations & Future-Proof Tech – My Key Takeaways from Social Summer Of Code (SSOC)
+
+Recently had the privilege to attend Social Summer Of Code (SSOC 4.0), an event that not only celebrated open-source culture but truly embodied the spirit of collaborative development, learning, and innovation. For anyone serious about community-building, dev culture, and next-gen careers in tech, this was the place to be.
+
+💡 What made this open-source meetup in India so powerful? The insight-rich speaker lineup, each one a thought leader shaping the tech narrative in their own way:
+
+🔹 Arpan Mondal shared how developer relations is more than advocacy. It’s about enabling authentic engagement and creating inclusive growth.  
+🔹 Uday Sharma explained the fine line between content chaos and community creativity, teaching how to harness both for scalable communities.  
+🔹 Raajeev Anand gave clarity on #Web3 and crypto content, showing how creator ecosystems are evolving in blockchain-powered worlds.  
+🔹 Jay Saadana made us rethink personal branding through domains and digital identity — a major shift for today’s digital professionals.  
+🔹 Shivam Arora delivered community growth tactics that go beyond vanity metrics, focusing on purpose-driven engagement strategies.  
+🔹 Sudhansu Kumar walked us through Reskilll’s success story, proving how nurturing grassroots communities creates long-term impact.
+
+🎯 Whether you're a software engineer, product designer, community manager, or tech enthusiast, the stories, strategies, and frameworks shared here were pure gold. This wasn’t just networking — it was high-context collaboration.
+
+💡 One of the most rewarding moments? Finally putting faces to names I've only seen behind usernames and GitHub profiles:  
+Aryan Chauhan, Kanik Gupta, Raman Mahadevan, Arni Johry, Vanshika Chauhan, Rashmeet Kaur, Himanshu Kabra, Rishita Chaudhary, Riya Chhabra, Gunjan Pasricha, AKANKSHA YADAV, Khushi Gupta, Yuvraj Sharma, Yakshit Ranga, Abhienaya Sri, Neetu Naikyaz, Bhavya Mishra, Yuvika ., Vansh Chauhan, Chhavi Bhalla, Anshul Gupta, Pooja Jain, Aditya Singh, Shubrali Jain, and Shonal Dhauni.  
+No more just GitHub handles — these are now connections with real conversations and real stories behind them.
+
+🌐 Grateful to Reskilll, Microsoft, Social Summer Of Code, Microsoft Azure, and Azure Developer Community for being the backbone behind enabling such high-quality learning experiences and professional synergy.
+
+This event wasn’t about hype. It was about impact — and I left feeling more equipped, connected, and inspired than ever.
+
+🧠 Want to dive deeper into:  
+- Open Source career growth?  
+- Real DevRel case studies?  
+- AI & Blockchain project building?  
+- Community-led product journeys?
+
+Let’s connect. I’m always up to share, collaborate, and contribute to meaningful tech conversations.
+`,
+    "date": "2025-08-03",
+    "readingTime": "6 min",
+    "author": {
+      "name": "Brajesh Kumar",
+      "avatar": "/personal-dark.jpg"
+    },
+    "images": [
+      "/blog/17/image1.jpg",
+      "/blog/17/image2.jpg",
+      "/blog/17/image3.jpg",
+      "/blog/17/image4.jpg",
+      "/blog/17/image5.jpg",
+      "/blog/17/image6.jpg",
+      "/blog/17/image7.jpg",
+      "/blog/17/image8.jpg",
+      "/blog/17/image9.jpg",
+      "/blog/17/image10.jpg",
+      "/blog/17/image11.jpg",
+      "/blog/17/image12.jpg",
+      "/blog/17/image13.jpg",
+      "/blog/17/image14.jpg",
+      "/blog/17/image15.jpg",
+      "/blog/17/image16.jpg",
+      "/blog/17/image17.jpg"
+    ],
+    "tags": [
+      "Open Source", "DevRel", "Community Building", "Web3", "Blockchain", "Crypto",
+      "Microsoft", "SSOC", "Developer Relations", "Tech Events", "Networking",
+      "Reskilll", "Azure", "Developer Community", "Software Development",
+      "Digital Identity", "Tech Careers", "GitHub", "Open Innovation", "Future of Work"
+    ],
+    "featured": false,
+    "linkedin": "https://www.linkedin.com/posts/brajesh-kumar-9b58651a8_socialsummerofcode-open-source-devrel-activity-xxxxxxx/"
+  },
+  {
     "id": "16",
     "title": "Social Summer Of Code 4.0 – Debugging Motivation, Not Just Code",
     "summary": "What started as a tech meetup turned into a celebration of community, memes, and mentorship. SSOC 4.0 brought energy, insight, and open-source love to Noida.",
@@ -176,7 +380,7 @@ Let’s start designing fearlessly with it.`,
       '/blog/15/image7.jpg',
       '/blog/15/image8.jpg',
       '/blog/15/image9.jpg',
-      '/blog/15/image10.jpg',
+      '/blog/15/image10.jpg.jpg',
       '/blog/15/image11.jpg',
       '/blog/15/image12.jpg'
     ],
@@ -312,7 +516,7 @@ I walked away not just with knowledge — but with direction.
       '/blog/2/image7.jpg',
       '/blog/2/image8.jpg',
       '/blog/2/image9.jpg',
-      '/blog/2/image10.jpg'
+      '/blog/2/image10.jpg.jpg'
     ],
     tags: [...globalKeywords.slice(0, 20), 'AI', 'GenAI', 'AICamp', 'Tata 1mg', 'Tech Community', 'Event'],
     featured: true,
@@ -354,7 +558,7 @@ I left feeling curious, inspired, and ready to build smarter.`,
       '/blog/3/image7.jpg',
       '/blog/3/image8.jpg',
       '/blog/3/image9.jpg',
-      '/blog/3/image10.jpg',
+      '/blog/3/image10.jpg.jpg',
       '/blog/3/image11.jpg',
       '/blog/3/image12.jpg'
     ],
@@ -426,7 +630,7 @@ Grateful to be part of a community that's pushing the boundaries of what's possi
       '/blog/5/image7.jpg',
       '/blog/5/image8.jpg',
       '/blog/5/image9.jpg',
-      '/blog/5/image10.jpg',
+      '/blog/5/image10.jpg.jpg',
       '/blog/5/image11.jpg'
     ],
     tags: ['AI', 'Summit', 'Machine Learning', 'Networking'],
@@ -471,7 +675,7 @@ Events like this remind me how important it is to stay connected, stay curious, 
       '/blog/6/image7.jpg',
       '/blog/6/image8.jpg',
       '/blog/6/image9.jpg',
-      '/blog/6/image10.jpg',
+      '/blog/6/image10.jpg.jpg',
       '/blog/6/image11.jpg',
       '/blog/6/image12.jpg'
     ],
@@ -508,7 +712,7 @@ Here's to more learning, more collaboration, and a smarter, more connected tomor
       '/blog/7/image7.jpg',
       '/blog/7/image8.jpg',
       '/blog/7/image9.jpg',
-      '/blog/7/image10.jpg'
+      '/blog/7/image10.jpg.jpg'
     ],
     tags: ['AI', 'Business', 'Generative AI', 'Networking'],
     featured: false,
@@ -548,7 +752,7 @@ The future of art, music, and innovation is now — and it's just getting starte
       '/blog/8/image7.jpg',
       '/blog/8/image8.jpg',
       '/blog/8/image9.jpg',
-      '/blog/8/image10.jpg'
+      '/blog/8/image10.jpg.jpg'
     ],
     tags: ['AI', 'Creativity', 'Music', 'Art', 'Event'],
     featured: false,
@@ -594,7 +798,7 @@ I am super inspired to dive deeper into the possibilities of AI-powered music pr
       '/blog/9/image7.jpg',
       '/blog/9/image8.jpg',
       '/blog/9/image9.jpg',
-      '/blog/9/image10.jpg'
+      '/blog/9/image10.jpg.jpg'
     ],
     tags: ['AI', 'Music', 'Art', 'Creativity', 'Event'],
     featured: false,
@@ -631,7 +835,7 @@ Let's keep building the #FutureOfTech together! 💻⚙️`,
       '/blog/10/image7.jpg',
       '/blog/10/image8.jpg',
       '/blog/10/image9.jpg',
-      '/blog/10/image10.jpg',
+      '/blog/10/image10.jpg.jpg',
       '/blog/10/image11.jpg',
       '/blog/10/image12.jpg',
       '/blog/10/image13.jpg',
@@ -685,7 +889,7 @@ Let's continue building a world where design speaks to everyone — with empathy
       '/blog/11/image7.jpg',
       '/blog/11/image8.jpg',
       '/blog/11/image9.jpg',
-      '/blog/11/image10.jpg',
+      '/blog/11/image10.jpg.jpg',
       '/blog/11/image11.jpg',
       '/blog/11/image12.jpg',
       '/blog/11/image13.jpg'
@@ -739,7 +943,7 @@ The experience was even more memorable and impactful because I got to explore th
       '/blog/12/image7.jpg',
       '/blog/12/image8.jpg',
       '/blog/12/image9.jpg',
-      '/blog/12/image10.jpg',
+      '/blog/12/image10.jpg.jpg',
       '/blog/12/image11.jpg',
       '/blog/12/image12.jpg'
     ],
@@ -792,7 +996,7 @@ Let's connect and discuss how AI is shaping the future! 🚀`,
       '/blog/13/image7.jpg',
       '/blog/13/image8.jpg',
       '/blog/13/image9.jpg',
-      '/blog/13/image10.jpg',
+      '/blog/13/image10.jpg.jpg',
       '/blog/13/image11.jpg',
       '/blog/13/image12.jpg'
     ],
@@ -827,7 +1031,7 @@ As we move deeper into the era of #AutonomousSystems, one thing is clear—our a
       '/blog/14/image7.jpg',
       '/blog/14/image8.jpg',
       '/blog/14/image9.jpg',
-      '/blog/14/image10.jpg',
+      '/blog/14/image10.jpg.jpg',
       '/blog/14/image11.jpg',
       '/blog/14/image12.jpg'
     ],
