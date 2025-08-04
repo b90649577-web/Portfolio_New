@@ -1,5 +1,4 @@
 // Added Co-Founder, Tech Dev Club (non-SEO update) for Brajesh Kumar by Bolt AI, 2025-01-27.
-import React from 'react';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Briefcase } from 'lucide-react';
@@ -21,6 +20,20 @@ const experienceList = [
       'Mentoring aspiring developers and fostering open-source contributions'
     ],
     link: 'https://techdevclub.com/'
+  },
+  {
+    title: 'Open Source Mentor - GSSoC 2025',
+    company: 'GirlScript Summer of Code',
+    location: 'Remote, India',
+    date: 'May 2025 – Present',
+    logo: '/gssoc2.png',
+    description: [
+      'Mentoring contributors in GSSoC 2025 by offering guidance on open source best practices and development workflows',
+      'Assisting with technical challenges, reviewing pull requests, and providing constructive feedback',
+      'Helping newcomers navigate project repositories, understand contribution guidelines, and get started effectively',
+      'Hosting sessions on Git, GitHub, coding standards, and effective collaboration techniques',
+      'Fostering a welcoming and inclusive environment that encourages learning, growth, and community engagement'
+    ],
   },
   {
     title: 'Open Source Contributor - GSSoC 2025',

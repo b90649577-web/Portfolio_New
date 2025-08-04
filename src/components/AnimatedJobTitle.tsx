@@ -13,7 +13,7 @@ const AnimatedJobTitle: React.FC<AnimatedJobTitleProps> = ({
   className = ''
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
