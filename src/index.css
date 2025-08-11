@@ -16,6 +16,14 @@
 body {
   @apply bg-light-bg dark:bg-dark-bg text-gray-900 dark:text-white font-sans;
   overflow-x: hidden;
+  /* Add bottom padding on mobile to prevent content being covered by social bar */
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 100px;
+  }
 }
 
 .vertical-timeline-element-content {
